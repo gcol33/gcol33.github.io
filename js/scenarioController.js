@@ -2,6 +2,7 @@ const locationOptions = ["random", "protected"];
 const mortalityLabels = ["low", "medium", "high"];
 const mortalityFunctions = ["constant", "exponential"]; // Updated from "linear" to "constant"
 
+// Update slider value labels
 function updateValue(slider, labelId) {
   document.getElementById(labelId).textContent = slider.value;
 }
@@ -12,7 +13,8 @@ function updateMortalityLabel(slider) {
 }
 
 function toggleCapacityVisibility() {
-  const mortality_func = mortalityFunctions[document.getElementById("mortality_func").value];
+  const mortality_func =
+    mortalityFunctions[document.getElementById("mortality_func").value];
   const capacityContainer = document.getElementById("capacityContainer");
 
   if (mortality_func === "constant") {
@@ -25,8 +27,10 @@ function toggleCapacityVisibility() {
 function updateMedia() {
   const pairs = document.getElementById("pairs").value;
   const location = locationOptions[document.getElementById("location").value];
-  const mortality_label = mortalityLabels[document.getElementById("mortality_label").value];
-  const mortality_func = mortalityFunctions[document.getElementById("mortality_func").value];
+  const mortality_label =
+    mortalityLabels[document.getElementById("mortality_label").value];
+  const mortality_func =
+    mortalityFunctions[document.getElementById("mortality_func").value];
 
   let combo_id;
 
@@ -47,13 +51,14 @@ function updateMedia() {
   const video = document.getElementById("scenarioVideo");
   const source = document.getElementById("videoSource");
 
+  // Preload image
   const preloadImage = new Image();
   preloadImage.src = imagePath;
-
   preloadImage.onload = () => {
     image.src = imagePath;
   };
 
+  // Preload video if source has changed
   const currentVideoSrc = source.getAttribute("src");
   if (videoPath !== currentVideoSrc) {
     const preloadVideo = document.createElement("video");
@@ -95,13 +100,17 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 // 🔥 Block accidental submit events
-document.addEventListener("submit", function (e) {
-  e.preventDefault();
-  e.stopPropagation();
-}, true);
+document.addEventListener(
+  "submit",
+  function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  },
+  true
+);
 
 // ✅ Prevent form-triggered reloads from Blocs’ injected structure
-document.querySelectorAll("input[type='radio']").forEach(input => {
+document.querySelectorAll("input[type='radio']").forEach((input) => {
   input.addEventListener("click", function (e) {
     if (e.target.form) {
       e.preventDefault();
