@@ -1,0 +1,46 @@
+/* ---------- Base Table (General Styling) ---------- */
+.base-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    color: #5E5E5E;
+    font-family: 'RobotoSlab-Regular', serif;
+}
+
+/* Borders and padding */
+.base-table th, .base-table td {
+    border: 1px solid #212121;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Header Background (Prevents Wrapping) */
+.base-table th {
+    background-color: #f2f2f2;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* ---------- Collapsible Table (Optional) ---------- */
+.collapsible-table th {
+    cursor: pointer; /* Indicates interactivity */
+}
+
+/* Default arrow (open state) placed inline to the left */
+.collapsible-table th::before {
+    content: "\25BC"; /* Downward triangle (▼) */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px; /* Space between arrow and text */
+    font-size: 12px;
+    color: #5E5E5E;
+}
+
+/* When table is collapsed, change arrow to right arrow */
+.collapsible-table.collapsed th::before {
+    content: "\25B6"; /* Rightward triangle (▶) */
+}
+
+/* Hide rows when collapsed */
+.collapsible-table .collapsedRow {
+    display: none !important;
+}
