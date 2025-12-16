@@ -1,0 +1,45 @@
+---
+layout: default
+math: true
+---
+
+<!-- Breadcrumb -->
+<div class="bloc l-bloc" id="bloc-46">
+  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+    <div class="row">
+      <div class="text-start col-12">
+        {% include breadcrumb.html items=page.breadcrumb %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chapter Content -->
+<div class="bloc l-bloc" id="bloc-32">
+  <div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+    <div class="row">
+      <div class="col text-start">
+        <h1 class="text-lg-center">{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation (Previous/Next) -->
+<div class="bloc l-bloc" id="bloc-50">
+  <div class="container bloc-sm-lg bloc-no-padding">
+    <div class="row">
+      <div class="col-md-6 text-start text-lg-start col-6">
+        {% if page.prev_chapter %}
+        <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d btn-lg btn-chap-10-style">{{ page.prev_chapter.title }}</a>
+        {% endif %}
+      </div>
+      <div class="col-md-6 text-start text-lg-end col-6">
+        {% if page.next_chapter %}
+        <a href="{{ page.next_chapter.url | relative_url }}" class="btn btn-d btn-lg btn-chap-12-style">{{ page.next_chapter.title }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<!-- Project Hero -->
+<div class="bloc bgc-4819 bloc-bg-texture texture-darken{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %} d-bloc" id="hero"{% if page.hero_image and not page.hero_bg_class %} style="background-image: url('{{ page.hero_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+  <div class="bloc-shape-divider bloc-divider-bottom">
+    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+      <path d="M1000,0V250H0v-1Z"></path>
+    </svg>
+  </div>
+  <div class="container bloc-md bloc-lg-md bloc-xxl-lg">
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+          <a href="{{ '/' | relative_url }}" class="a-btn a-block mt-1 mb-3 text-bold text-link-02 display-md link-style">{{ page.title }}</a>
+          <div class="pencil-post-footer">
+            <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.category | default: 'Project' }}</a>
+            <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02 link---style">–</a>
+            <p class="mb-0 p-sm tc-4629">{{ page.status | default: 'Currently running' }}</p>
+          </div>
+          {% if page.description %}
+          <p class="p-md tc-4629 mt-2">{{ page.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Content -->
+<div class="bloc l-bloc background-blocs" id="contents">
+  <div class="container bloc-md">
+    <div class="row">
+      <div class="text-start col-sm-12 col-md-8 col-lg-12">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if page.team %}
+<!-- Team Section -->
+<div class="bloc l-bloc bgc-4819" id="team">
+  <div class="container bloc-md">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="mb-4 text-bold text-lg-center">Team</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for member in page.team %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="text-center">
+          {% if member.image %}
+          <picture>
+            <source type="image/webp" srcset="{{ member.image_webp | relative_url }}">
+            <img src="{{ member.image | relative_url }}" class="img-fluid mx-auto d-block mb-3 img-rd-md" alt="{{ member.name }}" width="200" height="200">
+          </picture>
+          {% endif %}
+          <h5 class="text-bold">{{ member.name }}</h5>
+          {% if member.role %}
+          <p class="tc-7951">{{ member.role }}</p>
+          {% endif %}
+          {% if member.affiliation %}
+          <p class="p-sm">{{ member.affiliation }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if page.publications %}
+<!-- Publications Section -->
+<div class="bloc l-bloc" id="publications">
+  <div class="container bloc-md">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="mb-4 text-bold text-lg-center">Publications</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <ul class="list-unstyled">
+          {% for pub in page.publications %}
+          <li class="mb-3">
+            <a href="{{ pub.url }}" class="text-link-01" target="_blank">{{ pub.citation }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if page.funding %}
+<!-- Funding Section -->
+<div class="bloc l-bloc bgc-4819" id="funding">
+  <div class="container bloc-sm">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="p-sm tc-7951 mb-2">Funded by</p>
+        <p class="text-bold">{{ page.funding }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

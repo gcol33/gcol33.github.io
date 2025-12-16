@@ -1,0 +1,158 @@
+---
+layout: default
+---
+
+<!-- Breadcrumb -->
+<div class="bloc l-bloc" id="bloc-41">
+  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+    <div class="row">
+      <div class="text-start col-12">
+        {% include breadcrumb.html items=page.breadcrumb %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="bloc l-bloc" id="hero">
+  <div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+    <div class="row">
+      <div class="text-start col-md-10 offset-md-1 offset-lg-0 col-lg-12">
+        <h1 class="display-md text-bold text-lg-start">{{ page.title }}</h1>
+        <div class="mt-3 writer-post-group mb-3">
+          <p class="mb-0 p-sm">{{ page.date | date: "%b %d, %Y" }}</p>
+          <a href="{{ page.category_url }}" class="a-btn text-link-01 post-label">{{ page.category | default: 'Education' }}</a>
+        </div>
+        {% if page.description %}
+        <p>{{ page.description | markdownify }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Image with Course Highlights -->
+{% if page.intro_content %}
+<div class="bloc {{ page.hero_classes | default: 'bgc-4819 d-bloc bloc-bg-texture texture-darken-strong' }}" id="hero-img">
+  <div class="bloc-shape-divider bloc-divider-bottom">
+    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+      <path d="M1000,0V250H0v-1Z"></path>
+    </svg>
+  </div>
+  <div class="container bloc-md bloc-lg-md bloc-lg-lg">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-12">
+        <h2 class="mb-4 display-md tc-4629 text-bold">{{ page.intro_title | default: 'Course Highlights' }}</h2>
+        <div>
+          <p class="tc-4629">{{ page.intro_content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Project Section (if exists) -->
+{% if page.project %}
+<div class="bloc l-bloc" id="bloc-43">
+  <div class="container bloc-lg">
+    <div class="row">
+      <div class="col text-start">
+        <div class="row">
+          <div class="col">
+            <h1 class="mb-4 text-lg-center mb-lg-0">
+              <a class="text-link-01 mb-lg-0" href="{{ page.project.url }}">{{ page.project.title }}</a>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <div class="img-overlay-main-container overlay-push-down none animSpeedSlow" used-anim-speed="animSpeedSlow">
+                <div class="img-overlay-container d-flex align-items-center" style="background: rgb(254, 255, 255);">
+                  <div class="w-100">
+                    <h4 class="overlay-title" style="color: var(--swatch-var-4629); font-family: RobotoSlab-Regular;">{{ page.project.overlay_title }}</h4>
+                    <a href="{{ page.project.url }}" class="overlay-btn btn btn-light" style="font-family: RobotoSlab-Regular;">More Info</a>
+                  </div>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="/img/lazyload-ph.png" data-srcset="{{ page.project.image_webp }}">
+                  <img class="custom-bric-img-item img-fluid lazyload" src="/img/lazyload-ph.png" data-src="{{ page.project.image }}" alt="{{ page.project.title }}">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Lectures/Chapters Section -->
+{% if page.lectures %}
+<div class="bloc l-bloc" id="bloc-44">
+  <div class="container bloc-lg bloc-md-lg">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 text-center mb-lg-5">Lectures</h1>
+        <div class="blocs-horizontal-scroll-container">
+          <div class="blocs-horizontal-scroll-control blocs-scroll-control-prev">
+            <span class="blocs-round-btn">
+              <svg width="26" height="26" viewBox="0 0 32 32">
+                <path class="horizontal-scroll-icon" d="M22,2L9,16,22,30"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="none blocs-horizontal-scroll-area animSpeedFast" data-scroll-fx-resistance="10" data-no-scroll-correction="true">
+            {% for lecture in page.lectures %}
+            <div class="blocs-card-width">
+              <picture>
+                <source type="image/webp" srcset="/img/lazyload-ph.png" data-srcset="{{ lecture.image_webp }}">
+                <img src="/img/lazyload-ph.png" data-src="{{ lecture.image }}" class="img-fluid mx-auto d-block lazyload" alt="{{ lecture.title }}" width="256" height="171">
+              </picture>
+              <h5 class="tc-7343 mt-3{% if forloop.first %} text-lg-start{% endif %}">
+                <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
+              </h5>
+              <p{% unless forloop.first %} class="text-lg-start"{% endunless %}>{{ lecture.subtitle }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="blocs-horizontal-scroll-control blocs-scroll-control-next">
+            <span class="blocs-round-btn">
+              <svg width="26" height="26" viewBox="0 0 32 32">
+                <path class="horizontal-scroll-icon" d="M10.344,2l13,14-13,14"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Chapters Grid (alternative to horizontal scroll) -->
+{% if page.chapters %}
+<div class="bloc l-bloc" id="bloc-57">
+  <div class="container bloc-lg none-lg bloc-no-padding-lg">
+    <div class="row voffset">
+      <div class="text-start col-lg-12 col-12 col-md-12">
+        <h1 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Lectures' }}</h1>
+        <div class="grid-style blocs-grid-container text-md-center text-sm-center text-center">
+          {% for chapter in page.chapters %}
+          <div>
+            <h2 class="mb-lg-0 text-lg-center mb-0 text-link-01">
+              <a class="text-link-01" href="{{ chapter.url }}">{{ chapter.title }}</a>
+            </h2>
+            <p class="text-lg-center">{{ chapter.subtitle }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,101 @@
+# Site settings
+title: Gilles Colling
+description: "Physicist turned biologist in the search of aliens"
+url: "https://gillescolling.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Sass/SCSS
+sass:
+  style: compressed
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  presentations:
+    output: true
+    permalink: /presentations/:name/
+  workshops:
+    output: true
+    permalink: /workshop-:name/
+  courses:
+    output: true
+    permalink: /course-:name/
+  projects:
+    output: true
+    permalink: /proj:name/
+  side-projects:
+    output: true
+    permalink: /project-:name/
+
+# Include pages from _pages directory
+include:
+  - _pages
+
+# Default front matter
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      sitemap: true
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "archive-item"
+      category: "Publication"
+  - scope:
+      path: ""
+      type: "presentations"
+    values:
+      layout: "workshop"
+      category: "Presentation"
+  - scope:
+      path: ""
+      type: "workshops"
+    values:
+      layout: "workshop"
+      category: "Education"
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course-overview"
+      category: "Education"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "workshop"
+      category: "Project"
+  - scope:
+      path: ""
+      type: "side-projects"
+    values:
+      layout: "workshop"
+      category: "Side Project"
+
+# Exclude from build
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Kramdown settings (KaTeX loaded via JS in templates)
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

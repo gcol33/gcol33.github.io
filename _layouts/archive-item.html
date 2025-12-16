@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="bloc l-bloc" id="item-header">
+  <div class="container bloc-md bloc-sm-lg">
+    <div class="row">
+      <div class="col-12">
+        {% include breadcrumb.html items=page.breadcrumb %}
+        <div class="writer-post-group mb-3">
+          <p class="mb-0 p-sm">{{ page.date | date: "%b %d, %Y" }}</p>
+          <span class="post-label">{{ page.category }}</span>
+        </div>
+        <h1 class="text-bold mb-4">{{ page.title }}</h1>
+        {% if page.authors %}
+        <p class="tc-7951">{{ page.authors }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if page.thumbnail %}
+<div class="bloc l-bloc bgc-4819" id="item-image">
+  <div class="container bloc-sm">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <picture>
+          <source type="image/webp" srcset="{{ page.thumbnail_webp | relative_url }}">
+          <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto d-block img-rd-md" alt="{{ page.title }}">
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="bloc l-bloc" id="item-content">
+  <div class="container bloc-md">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        {{ content }}
+
+        {% if page.external_url %}
+        <div class="mt-4">
+          <a href="{{ page.external_url }}" class="btn btn-d button-01" target="_blank">
+            View Publication <span class="fa fa-external-link-alt ms-2"></span>
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

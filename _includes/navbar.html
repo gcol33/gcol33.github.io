@@ -1,0 +1,75 @@
+<div class="bloc l-bloc" id="navbar">
+  <div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+    <div class="row">
+      <div class="order-md-0 offset-sm-0 text-start align-self-center text-sm-start offset-0 col-lg-9 navs-controls col-md-9 col-12 order-1 col-sm-9 order-sm-0">
+        <nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+          <div class="container-fluid">
+            <a class="navbar-brand animated pulse-hvr" href="{{ '/' | relative_url }}" target="_blank">
+              <picture>
+                <source type="image/webp" srcset="{{ '/assets/images/logos/bioinvasion_logo_500x500_BW.webp' | relative_url }}">
+                <img src="{{ '/assets/images/logos/bioinvasion_logo_500x500_BW.png' | relative_url }}" alt="logo" class="me-2" width="36" height="36">
+              </picture>
+              Researcher
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-light row navbar-expand-md pt-0 pb-0 nav-invert hover-open-submenu">
+          <div class="container-fluid nav-invert">
+            <button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-17897">
+              <span class="navbar-toggler-icon">
+                <svg height="32" viewBox="0 0 32 32" width="32">
+                  <path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path>
+                </svg>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse navbar-19859 navbar-17897 sidebar-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li class="nav-item">
+                  <div class="dropdown btn-dropdown dropdown">
+                    <a href="#" class="nav-link nav-links dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">Research</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="nav-item"><a href="{{ '/publications/' | relative_url }}" class="nav-link nav-list-links">Publications</a></li>
+                      <li class="nav-item"><a href="{{ '/presentations/' | relative_url }}" class="nav-link nav-list-links">Presentations</a>
+                        <div class="devmargin"><div class="divider-h nav-divider-0"></div></div>
+                      </li>
+                      <li class="nav-item"><a href="{{ '/research-archive/' | relative_url }}" class="nav-link nav-list-links">All Posts</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown btn-dropdown dropdown">
+                    <a href="#" class="nav-link nav-links dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">Engagement</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="nav-item"><a href="{{ '/education/' | relative_url }}" class="nav-link nav-list-links">Education</a></li>
+                      <li class="nav-item"><a href="{{ '/side-projects/' | relative_url }}" class="nav-link nav-list-links">Side Projects</a>
+                        <div class="devmargin"><div class="divider-h nav-divider-0"></div></div>
+                      </li>
+                      <li class="nav-item"><a href="{{ '/engagement-archive/' | relative_url }}" class="nav-link nav-list-links">All Posts</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown btn-dropdown dropdown">
+                    <a href="#" class="nav-link nav-links dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">Projects</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="nav-item"><a href="{{ '/projasaas/' | relative_url }}" class="nav-link nav-list-links">ASAAS</a></li>
+                      <li class="nav-item"><a href="{{ '/projagriweed/' | relative_url }}" class="nav-link nav-list-links">AgriWeedClim</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="https://www.gillescolling.com/blog" class="nav-link nav-links link-about-style">Blog</a></li>
+                <li class="nav-item"><a href="{{ '/contact/' | relative_url }}" class="nav-link nav-links link-about-style">Contact</a></li>
+                <li class="nav-item"><a href="{{ '/author/' | relative_url }}" class="nav-link nav-links link-about-style">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-lg-3 col-md-3 text-start order-sm-0 col-12 order-0 nav-icon-background align-self-center mb-md-1 mb-lg-1 mt-sm-0 mt-0 col-sm-3">
+        <div>
+          {% include social-icons.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

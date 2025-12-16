@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+<link rel="shortcut icon" type="image/svg" href="{{ '/favicon.svg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/animate.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/tables.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/all.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/ionicons.min.css' | relative_url }}">
+{% if page.math %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+{% endif %}
+
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+{% seo %}
