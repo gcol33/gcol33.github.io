@@ -19,6 +19,12 @@ blockquote p {
     font-style: italic;
 }
 
+/* Zoom thumbnails slightly to hide image borders */
+.writer-post-image {
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
 /* Hero iframe background */
 .hero-iframe-bg {
     position: absolute;
