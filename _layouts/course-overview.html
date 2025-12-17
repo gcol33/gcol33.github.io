@@ -96,40 +96,55 @@ layout: default
     <div class="row">
       <div class="col">
         <h1 class="mb-4 text-center mb-lg-5">Lectures</h1>
-        <div class="blocs-horizontal-scroll-container">
-          <div class="blocs-horizontal-scroll-control blocs-scroll-control-prev">
-            <span class="blocs-round-btn">
-              <svg width="26" height="26" viewBox="0 0 32 32">
-                <path class="horizontal-scroll-icon" d="M22,2L9,16,22,30"></path>
-              </svg>
-            </span>
-          </div>
-          <div class="none blocs-horizontal-scroll-area animSpeedFast" data-scroll-fx-resistance="10" data-no-scroll-correction="true">
+        <div class="lectures-scroll-container">
+          <button class="lectures-scroll-btn lectures-scroll-prev" aria-label="Scroll left">
+            <svg width="26" height="26" viewBox="0 0 32 32">
+              <path d="M22,2L9,16,22,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="lectures-scroll-area">
             {% for lecture in page.lectures %}
-            <div class="blocs-card-width">
-              <picture>
-                <source type="image/webp" srcset="/img/lazyload-ph.png" data-srcset="{{ lecture.image_webp }}">
-                <img src="/img/lazyload-ph.png" data-src="{{ lecture.image }}" class="img-fluid mx-auto d-block lazyload" alt="{{ lecture.title }}" width="256" height="171">
-              </picture>
-              <h5 class="tc-7343 mt-3{% if forloop.first %} text-lg-start{% endif %}">
+            <div class="lecture-card">
+              <a href="{{ lecture.url }}">
+                <picture>
+                  <source type="image/webp" srcset="/img/lazyload-ph.png" data-srcset="{{ lecture.image_webp }}">
+                  <img src="/img/lazyload-ph.png" data-src="{{ lecture.image }}" class="img-fluid mx-auto d-block lazyload lecture-img" alt="{{ lecture.title }}" width="256" height="171">
+                </picture>
+              </a>
+              <h5 class="tc-7343 mt-3">
                 <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
               </h5>
-              <p{% unless forloop.first %} class="text-lg-start"{% endunless %}>{{ lecture.subtitle }}</p>
+              <p>{{ lecture.subtitle }}</p>
             </div>
             {% endfor %}
           </div>
-          <div class="blocs-horizontal-scroll-control blocs-scroll-control-next">
-            <span class="blocs-round-btn">
-              <svg width="26" height="26" viewBox="0 0 32 32">
-                <path class="horizontal-scroll-icon" d="M10.344,2l13,14-13,14"></path>
-              </svg>
-            </span>
-          </div>
+          <button class="lectures-scroll-btn lectures-scroll-next" aria-label="Scroll right">
+            <svg width="26" height="26" viewBox="0 0 32 32">
+              <path d="M10,2l13,14-13,14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+(function() {
+  const container = document.querySelector('.lectures-scroll-container');
+  if (!container) return;
+  const area = container.querySelector('.lectures-scroll-area');
+  const prevBtn = container.querySelector('.lectures-scroll-prev');
+  const nextBtn = container.querySelector('.lectures-scroll-next');
+  const scrollAmount = 300;
+
+  prevBtn.addEventListener('click', () => {
+    area.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+  nextBtn.addEventListener('click', () => {
+    area.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+})();
+</script>
 {% endif %}
 
 <!-- Chapters Grid (alternative to horizontal scroll) -->

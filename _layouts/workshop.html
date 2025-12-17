@@ -16,7 +16,7 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="bloc bgc-4819 bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+<div class="bloc bgc-4819 bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
   <div class="bloc-shape-divider bloc-divider-bottom">
     <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>

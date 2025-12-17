@@ -1,6 +1,7 @@
 ---
 layout: workshop
 title: "BART (Bayesian Additive Regression Trees) Workshop"
+short_title: "BART Workshop"
 date: 2025-09-22
 category: "Education"
 category_url: "/education/"
@@ -229,7 +230,7 @@ In ecological applications, this posterior uncertainty is not noise, it reflects
 
 The lecture closed with live coding using [`embarcadero`](https://github.com/cjcarlson/embarcadero) and [`dbarts`](https://cran.r-project.org/web/packages/dbarts/index.html), fitting BART to the Joshua tree dataset and visualizing how the sum-of-trees structure captured nonlinear temperature-precipitation responses far beyond the reach of traditional regression.
 
-## Interpreting Models — Partials and Spartials
+## Interpreting Models: Partials and Spartials
 
 Once BART models are fitted, the focus shifts from prediction to interpretation. Unlike classical regressions with explicit coefficients, BART encodes relationships implicitly through the structure and frequency of tree splits. Understanding how predictors influence the response requires summarizing the model's posterior behavior rather than inspecting parameter estimates.
 

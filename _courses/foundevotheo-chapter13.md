@@ -38,7 +38,7 @@ He illustrates this with the presence of branchial arches (structures that resem
 
 Darwin insists that these embryonic similarities are not the result of chance. He argues that evolutionary change tends to occur later in development, preserving early stages across species. New adaptations are more likely to emerge in adulthood, where selection pressures are strongest. That's why adult forms diverge so much, while embryos remain relatively conserved.
 
-Importantly, Darwin does not accept the popular theory of the time that embryos recapitulate adult stages of their ancestors—an idea later associated with Ernst Haeckel. Instead, he sees the embryo as a shadow of the ancestral form, not a full replay. It is *a picture, more or less obscured, of the common parent-form of each great class of animals.*
+Importantly, Darwin does not accept the popular theory of the time that embryos recapitulate adult stages of their ancestors, an idea later associated with Ernst Haeckel. Instead, he sees the embryo as a shadow of the ancestral form, not a full replay. It is *a picture, more or less obscured, of the common parent-form of each great class of animals.*
 
 Darwin then turns to rudimentary or vestigial organs: Structures that once had a function but are now reduced or unused. Male mammals have rudimentary mammary glands. Baleen whales develop teeth as embryos, only to resorb them before birth. Some snakes possess tiny, hidden remnants of pelvic bones. These structures, Darwin argues, are vestiges of evolutionary history. They are not adaptive; they exist because natural selection has not fully eliminated them yet. In cases where disuse is sustained over generations, selection may eventually lead to their complete disappearance.
 

@@ -41,12 +41,12 @@ A random walk is a mathematical model where movement consists of a series of ste
 
 The simplest form is Brownian motion, where each step is independent of the previous one. This can be modeled in two dimensions by allowing movement in any of the following directions:
 
-$$\begin{array}{ccc}(+1,-1) & (+1,\pm0) & (+1,+1) \\(\pm0,-1) & \bullet & (\pm0,+1) \\(-1,-1) & (-1,\pm0) & (-1,+1)\end{array}$$
+$$\begin{array}{ccc}(+1,-1) & (+1,\pm0) & (+1,+1) \\ (\pm0,-1) & \bullet & (\pm0,+1) \\ (-1,-1) & (-1,\pm0) & (-1,+1)\end{array}$$
 
 At each step, one of these movements is chosen randomly. A dispersal event consists of multiple steps. To simulate a basic random walk:
 
 1. Identify all possible movements.
-2. Build an array representing movement options, with one column for \( x \) displacement and one for \( y \) displacement.
+2. Build an array representing movement options, with one column for $ x $ displacement and one for $ y $ displacement.
 3. Sample from these movements using a random selection process.
 4. Sum the movements over time to get the final position.
 
@@ -69,7 +69,7 @@ $$P_i = \frac{1}{\text{distance}_i + 1/\text{weight}},$$
 
 where the weight determines the strength of persistence.
 
-A small weight reduces directional bias, while a larger weight strongly favors continued movement in the same direction. For example, if an individual previously moved to the right (\(+1,0\)), the probability of continuing in that direction is increased, while the probability of reversing direction is decreased. To visualize directional bias, consider a matrix of possible moves:
+A small weight reduces directional bias, while a larger weight strongly favors continued movement in the same direction. For example, if an individual previously moved to the right ($+1,0$), the probability of continuing in that direction is increased, while the probability of reversing direction is decreased. To visualize directional bias, consider a matrix of possible moves:
 
 $$\begin{array}{ccc}4 & 3 & 2 \\3 & 1 & 0 \\2 & 1 & 0\end{array}$$
 

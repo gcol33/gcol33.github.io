@@ -41,7 +41,7 @@ breadcrumb:
                 <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
                 <span class="post-label">{{ item.category }}</span>
               </div>
-              <a href="{{ item.url | relative_url }}" class="a-btn a-block tital-post mt-0 mb-2">{{ item.title }}</a>
+              <a href="{{ item.url | relative_url }}" class="a-btn a-block tital-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
             </div>
           </div>
           {% endfor %}

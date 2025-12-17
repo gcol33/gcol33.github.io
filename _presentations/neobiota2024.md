@@ -4,8 +4,8 @@ title: "Neobiota 2024"
 date: 2024-09-03
 category: "Presentation"
 category_url: "/presentations/"
-thumbnail: "/img/conference_neobiota2024_day3_gilles.JPG"
-thumbnail_webp: "/img/conference_neobiota2024_day3_gilles.webp"
+thumbnail: "/assets/images/content/neobiota_2024.jpg"
+thumbnail_webp: "/assets/images/content/neobiota_2024.webp"
 hero_bg_class: "bg-conference-neobiota2024-bg"
 permalink: /neobiota2024/
 description: "The 13th International Conference on Biological Invasions (NEOBIOTA 2024) was held from September 4 to 6, 2024, at the Faculty of Sciences of the University of Lisbon, Portugal. Organized by MARE – Marine and Environmental Research Centre, in collaboration with the University of Évora, the conference convened over 460 experts from approximately 50 countries to discuss the latest research and strategies concerning invasive alien species."
@@ -211,7 +211,7 @@ At 18:00, the closing ceremony marked the official end of NEOBIOTA 2024. After t
 
 After the closing ceremony, we went out for a nice dinner with our group, enjoying a relaxed evening together after three days of intense discussions and presentations. Anna, Ali, Adrián, Ekin, Franz, Lisa, Tom, Fabio, and Adrián's wife joined as we found a spot to sit down, eat, and talk outside the conference setting. It was a good opportunity to reflect on the past few days, exchange final thoughts, and simply enjoy each other's company.
 
-Later in the evening, Adrián took us to a typical South American salsa place—a lively venue filled with music, dancing, and a completely different energy from the conference halls. The atmosphere was vibrant, with locals and visitors dancing to Latin rhythms, and while some of us stayed at the bar, others joined in, picking up a few steps on the dance floor. It was a great way to end the trip, mixing Lisbon's international nightlife with a fun and unexpected experience before heading home.
+Later in the evening, Adrián took us to a typical South American salsa place, a lively venue filled with music, dancing, and a completely different energy from the conference halls. The atmosphere was vibrant, with locals and visitors dancing to Latin rhythms, and while some of us stayed at the bar, others joined in, picking up a few steps on the dance floor. It was a great way to end the trip, mixing Lisbon's international nightlife with a fun and unexpected experience before heading home.
 
 <div class="row mb-lg-3">
 <div class="col-12 col-lg-6">

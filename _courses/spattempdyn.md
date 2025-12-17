@@ -1,6 +1,7 @@
 ---
 layout: course-overview
 title: "Modelling Spatial and Temporal Dynamics of (Ecological) Animal and Plant Populations"
+short_title: "Spatial and Temporal Dynamics"
 date: 2023-10-05
 category: "Education"
 category_url: "/education/"

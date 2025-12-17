@@ -1,6 +1,7 @@
 ---
 layout: workshop
 title: "ASAAS – Alien Species Accumulation Across Scales"
+short_title: "ASAAS"
 date: 2022-01-01
 category: "Project"
 category_url: "/projects/"

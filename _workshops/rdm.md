@@ -74,52 +74,52 @@ The final lesson was that licensing should be built into project planning. Choos
 <tr>
 <td>Permissive</td>
 <td>MIT</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>Apache 2.0</td>
-<td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>BSD 3-Clause</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>BSD 2-Clause</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>CC0 (Public Domain)</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td>Copyleft</td>
 <td>GPL v3</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>LGPL v3</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>AGPL v3</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>EUPL 1.2</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+<td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td>
 </tr>
 <tr>
 <td></td>
 <td>CC-BY-SA 4.0</td>
-<td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td>
+<td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td>
 </tr>
 </tbody>
 </table>

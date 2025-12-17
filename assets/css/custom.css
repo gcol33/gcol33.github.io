@@ -4,3 +4,170 @@
 .writer-post-image {
     border-radius: 20px;
 }
+
+/* Fix: Blockquote styling to match Blocs .blockquote class */
+blockquote {
+    padding: 0 20px !important;
+    border-left: 10px solid var(--swatch-var-7951) !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 1.5em 0 !important;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+/* Hero iframe background */
+.hero-iframe-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#hero:has(.hero-iframe-bg) {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero:has(.hero-iframe-bg) > *:not(.hero-iframe-bg) {
+    position: relative;
+    z-index: 1;
+}
+
+/* KaTeX math styling - match body text color */
+.katex, .katex * {
+    color: var(--swatch-var-7951) !important;
+}
+
+/* List styling - match body text (scoped to content areas, not navbar) */
+#bloc-32 ol, #bloc-32 ul,
+.bloc-lg ol, .bloc-lg ul,
+article ol, article ul {
+    font-family: "RobotoSlab-Regular";
+    font-size: 17px;
+}
+
+#bloc-32 ol li, #bloc-32 ul li,
+.bloc-lg ol li, .bloc-lg ul li,
+article ol li, article ul li {
+    font-family: "RobotoSlab-Regular";
+    font-size: 17px !important;
+    color: var(--swatch-var-7951) !important;
+    line-height: 29px;
+    margin-bottom: 0.5em;
+}
+
+/* Lectures horizontal scroll */
+.lectures-scroll-container {
+    position: relative;
+}
+
+.lectures-scroll-area {
+    display: flex;
+    overflow-x: auto;
+    align-items: flex-start;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    padding: 0 60px;
+}
+
+.lectures-scroll-area::-webkit-scrollbar {
+    display: none;
+}
+
+.lecture-card {
+    flex-shrink: 0;
+    min-width: 128px;
+    width: 20%;
+}
+
+.lectures-scroll-btn {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    background: var(--swatch-var-7020);
+    border: none;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--swatch-var-4629);
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.2s;
+}
+
+.lectures-scroll-container:hover .lectures-scroll-btn {
+    opacity: 1;
+}
+
+.lectures-scroll-btn:hover {
+    background: var(--swatch-var-2374);
+}
+
+.lectures-scroll-btn:active {
+    transform: scale(0.9);
+}
+
+.lectures-scroll-prev {
+    left: 0;
+}
+
+.lectures-scroll-next {
+    right: 0;
+}
+
+.lectures-scroll-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.lecture-img {
+    transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lecture-img:hover {
+    filter: saturate(170%);
+    box-shadow: 0px 10px 10px #F3F3F3;
+}
+
+/* Mobile: larger touch targets, always visible */
+@media (max-width: 767px) {
+    .lectures-scroll-area {
+        padding: 0 50px;
+    }
+
+    .lecture-card {
+        width: 60%;
+        min-width: 200px;
+    }
+
+    .lectures-scroll-btn {
+        opacity: 0.8;
+        width: 40px;
+        height: 40px;
+    }
+
+    .lectures-scroll-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .lecture-card {
+        width: 30%;
+    }
+}

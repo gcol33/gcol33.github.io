@@ -65,7 +65,7 @@ This replaces the need for tracking individual movement, instead allowing popula
 
 1. Check if the cell contains individuals and skip if empty
 2. Apply the dispersal kernel
-    - The population in each cell is multiplied by the movement probabilities defined in the dispersal kernel. If \( N(x,y,t) \) represents the number of individuals in cell \( (x,y) \) at time \( t \), and \( p(i,j) \) is the probability of moving to a neighboring cell \( (i,j) \), then the expected number of dispersers to each adjacent cell is given by:
+    - The population in each cell is multiplied by the movement probabilities defined in the dispersal kernel. If $ N(x,y,t) $ represents the number of individuals in cell $ (x,y) $ at time $ t $, and $ p(i,j) $ is the probability of moving to a neighboring cell $ (i,j) $, then the expected number of dispersers to each adjacent cell is given by:
 
 $$N(i,j,t+1) = \sum_{x,y} p(i-x, j-y) \cdot N(x,y,t)$$
 
@@ -79,7 +79,7 @@ By applying this probabilistic update at each time step, dispersal models repres
 
 1. Store the initial population raster
 2. Iteratively apply the dispersal function
-    - For each time step \( t \), the dispersal equation is applied, updating the raster according to:
+    - For each time step $ t $, the dispersal equation is applied, updating the raster according to:
 
 $$N(x,y,t+1) = \sum_{i,j} p(i,j) \cdot N(i,j,t),$$
 
@@ -91,5 +91,5 @@ where, dispersal is modeled as a convolution of the dispersal kernel with the cu
 
 Simulating large-scale dispersal events requires several optimizations to ensure the model runs efficiently:
 
-- Skipping empty cells, if  \( N(x,y,t) = 0 \), the cell is ignored to avoid unnecessary computations
+- Skipping empty cells, if  $ N(x,y,t) = 0 $, the cell is ignored to avoid unnecessary computations
 - Using cumulative sum functions, matrix operations efficiently track dispersal in a single step

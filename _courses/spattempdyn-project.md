@@ -16,6 +16,8 @@ breadcrumb:
 prev_chapter:
   title: "Lecture 8"
   url: "/course-spattempdyn-lecture8/"
+
+math: true
 ---
 
 <div class="row">
