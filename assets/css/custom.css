@@ -41,6 +41,45 @@ blockquote p {
     color: var(--swatch-var-7951) !important;
 }
 
+/* KaTeX - prevent horizontal scrollbars on math formulas */
+.katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5em 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* For inline math that might overflow */
+.katex {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Hide scrollbar but keep functionality if needed */
+.katex-display::-webkit-scrollbar {
+    height: 0;
+    display: none;
+}
+
+.katex-display {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Scale down large formulas on small screens */
+@media (max-width: 767px) {
+    .katex-display > .katex {
+        font-size: 0.9em;
+    }
+
+    .katex-display {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 /* List styling - match body text (scoped to content areas, not navbar) */
 #bloc-32 ol, #bloc-32 ul,
 .bloc-lg ol, .bloc-lg ul,
