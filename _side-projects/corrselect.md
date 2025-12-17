@@ -10,7 +10,7 @@ hero_bg_image: "/assets/images/content/corrselect.jpg"
 hero_combined: true
 hero_label: "Released"
 subtitle: "Aug 05, 2025"
-description: "The corrselect package automatically identifies all maximal subsets of variables in your data whose pairwise correlations or associations remain below a user-defined threshold."
+description: "Predictor pruning using association-based and model-based approaches. Fast, deterministic solutions with minimal code."
 breadcrumb:
   - name: "Home"
     url: "/"
@@ -21,22 +21,34 @@ breadcrumb:
   - name: "Corrselect"
 ---
 
-The [corrselect](https://gillescolling.com/corrselect/) package automatically identifies all maximal subsets of variables in your data whose pairwise correlations or associations remain below a user-defined threshold. This helps reduce multicollinearity and redundancy while retaining interpretability. The method is model-agnostic, making it applicable to regression, clustering, ecological modeling, and other workflows.
+<p class="mb-4"><a href="https://gillescolling.com/corrselect/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
 
-<h1 class="mb-4 text-lg-center mt-lg-4 mb-lg-3">Overview</h1>
+The [corrselect](https://gillescolling.com/corrselect/) package is an R tool designed for predictor pruning using association-based and model-based approaches. It addresses the admissible set problem by selecting maximal variable subsets where pairwise associations remain below user-defined thresholds.
 
-I started working on corrselect as a side project in the summer of 2025 and first submitted it on August 5. The idea came from working with bioclimatic variables, where many predictors are strongly correlated, and I wanted a way to define multiple maximal subsets without discarding more than necessary. The package provides a systematic way to select subsets where no pair of variables exceeds a chosen correlation or association threshold. At its core, it tackles the admissible set problem, which is about finding all maximal subsets of predictors that remain below a user-defined threshold. My goal was to make something practical for reducing multicollinearity while keeping models interpretable, and to design it so it could slot into many different workflows, from regression and clustering to trait-based selection and interpretable machine learning.
+## Core Functions
 
-<h1 class="mb-4 text-lg-center mt-lg-4 mb-lg-3">Core Functionality</h1>
+### corrPrune() - Association-Based Pruning
 
-The methods I implemented are graph based. corrselect uses two algorithms, the ELS method by Eppstein, Löffler, and Strash, and the Bron-Kerbosch algorithm with optional pivoting. Both can enumerate all maximal subsets that satisfy a threshold. I wanted an approach that was exhaustive rather than heuristic, so users would not miss valid combinations that greedy filters might skip.
+Association-based variable reduction operating on raw data without requiring model specification. It offers exact mode for optimal solutions (recommended when p ≤ 100) and greedy mode for larger datasets. The function supports automatic metric selection and includes a `force_in` parameter to protect key variables.
 
-To make it useful beyond purely numeric datasets, I added support for multiple correlation and association measures. Alongside Pearson, Spearman, Kendall, and biweight midcorrelation, the package includes distance correlation, maximal information coefficient, eta, and Cramér's V. With [`assocSelect()`](https://gillescolling.com/corrselect/reference/assocSelect.html) the package automatically chooses the right measure depending on variable types, which makes it possible to handle mixed datasets with both numerical and categorical predictors.
+### modelPrune() - Model-Based Pruning
 
-For usability, I built in options to work directly with data frames ([`corrSelect()`](https://gillescolling.com/corrselect/reference/corrSelect.html) and [`assocSelect()`](https://gillescolling.com/corrselect/reference/assocSelect.html)) or with precomputed matrices ([`MatSelect()`](https://gillescolling.com/corrselect/reference/MatSelect.html)). Users can also force specific variables into every subset when these are required by design. The results are returned as S4 objects of class [`CorrCombo`](https://gillescolling.com/corrselect/reference/CorrCombo.html), with summary methods for quick inspection and easy conversion into tidy data frames.
+Model-dependent pruning using VIF (Variance Inflation Factor) methodology. It accommodates multiple engines including `lm`, `glm`, `lme4`, and `glmmTMB`, with extensibility for custom modeling packages like INLA, mgcv, or brms. This approach iteratively removes predictors while refitting models.
 
-<h1 class="mb-4 text-lg-center mt-lg-4 mb-lg-3">Development</h1>
+## Key Features
 
-I built corrselect because I wanted a complete solution for correlation-based variable selection. Most existing approaches rely on heuristics or greedy filtering, which often miss valid combinations. By using graph algorithms, corrselect guarantees that all maximal subsets are returned, which makes the process transparent and reproducible.
+The package implements exhaustive subset enumeration via graph algorithms (Eppstein–Löffler–Strash and Bron–Kerbosch methods). It supports multiple association metrics: Pearson, Spearman, Kendall correlations; specialized measures like bicor and cramersv for mixed data; and energy distance calculations.
 
-What excites me about this project is how flexible it turned out to be. It works across different kinds of datasets, not just numeric ones, and it is independent of any specific modeling framework. That makes it useful for regression, clustering, trait-based analyses, or machine learning where interpretability is important. In the end, it was also just a fun project to build an R package from scratch, to see the algorithms come together, and to release something that others can use in their own work.
+Advanced functionality includes `assocSelect()` for mixed-type data handling and `MatSelect()` for precomputed correlation matrices. Deterministic tie-breaking ensures reproducibility across analyses.
+
+## Applicable Domains
+
+The package benefits ecological modeling, trait-based species selection, and interpretable machine learning workflows.
+
+## Installation
+
+Available via CRAN or development installation through GitHub. Distributed under MIT license.
+
+```r
+install.packages("corrselect")
+```

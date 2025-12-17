@@ -56,15 +56,70 @@ The final lesson was that licensing should be built into project planning. Choos
 
 ### License Comparison
 
-| License Type | License | Modification | Distribution | Patent Use | License Notice | Must Share Changes | Closed-Source Allowed | Attribution Required |
-|--------------|---------|--------------|--------------|------------|----------------|-------------------|----------------------|---------------------|
-| Permissive | MIT | Yes | Yes | No | Yes | No | Yes | No |
-| Permissive | Apache 2.0 | Yes | Yes | Yes | Yes | No | Yes | No |
-| Permissive | BSD 3-Clause | Yes | Yes | No | Yes | No | Yes | No |
-| Permissive | BSD 2-Clause | Yes | Yes | No | Yes | No | Yes | No |
-| Permissive | CC0 | Yes | Yes | No | No | No | Yes | No |
-| Copyleft | GPL v3 | Yes | Yes | No | Yes | Yes | No | No |
-| Copyleft | LGPL v3 | Yes | Yes | No | Yes | Yes | Yes | No |
-| Copyleft | AGPL v3 | Yes | Yes | No | Yes | Yes | No | No |
-| Copyleft | EUPL 1.2 | Yes | Yes | No | Yes | Yes | No | No |
-| Copyleft | CC-BY-SA 4.0 | Yes | Yes | No | No | Yes | Yes | Yes |
+<table class="base-table">
+<thead>
+<tr>
+<th>License Type</th>
+<th>License</th>
+<th>Modification</th>
+<th>Distribution</th>
+<th>Patent Use</th>
+<th>License Notice Required</th>
+<th>Must Share Changes</th>
+<th>Closed-Source Allowed</th>
+<th>Attribution Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Permissive</td>
+<td>MIT</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>Apache 2.0</td>
+<td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>BSD 3-Clause</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>BSD 2-Clause</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>CC0 (Public Domain)</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td>Copyleft</td>
+<td>GPL v3</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>LGPL v3</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>AGPL v3</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>EUPL 1.2</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>CC-BY-SA 4.0</td>
+<td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td>
+</tr>
+</tbody>
+</table>
