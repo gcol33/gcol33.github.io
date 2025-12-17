@@ -1,3 +1,24 @@
+/* ---------- Responsive Table Wrapper ---------- */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+}
+
+/* Make all tables responsive by default */
+table {
+    display: table;
+    width: 100%;
+    min-width: max-content;
+}
+
+/* Wrap tables in a scrollable container via JS or use this wrapper */
+.table-scroll-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+}
+
 /* ---------- Base Table (General Styling) ---------- */
 .base-table {
     width: 100%;
@@ -5,6 +26,7 @@
     table-layout: auto;
     color: #5E5E5E;
     font-family: 'RobotoSlab-Regular', serif;
+    display: table;
 }
 
 /* Borders and padding */
@@ -43,4 +65,38 @@
 /* Hide rows when collapsed */
 .collapsible-table .collapsedRow {
     display: none !important;
+}
+
+/* ---------- Dark Mode ---------- */
+[data-bs-theme="dark"] .base-table {
+    color: #b0b0b0;
+}
+
+[data-bs-theme="dark"] .base-table th,
+[data-bs-theme="dark"] .base-table td {
+    border-color: #404040;
+}
+
+[data-bs-theme="dark"] .base-table th {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+}
+
+[data-bs-theme="dark"] .collapsible-table th::before {
+    color: #b0b0b0;
+}
+
+/* Generic tables in dark mode */
+[data-bs-theme="dark"] table {
+    color: #b0b0b0;
+}
+
+[data-bs-theme="dark"] table th,
+[data-bs-theme="dark"] table td {
+    border-color: #404040;
+}
+
+[data-bs-theme="dark"] table th {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
 }

@@ -1,12 +1,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="index, follow">
+<script>
+  (function() {
+    var theme = localStorage.getItem('theme');
+    if (!theme) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    }
+  })();
+</script>
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
+<!-- Preload dark mode background for instant theme switching -->
+<link rel="preload" href="{{ '/assets/images/content/background-hero-dark.webp' | relative_url }}" as="image" type="image/webp">
 <link rel="shortcut icon" type="image/svg" href="{{ '/favicon.svg' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -20,4 +33,5 @@
 
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
+{% feed_meta %}
 {% seo %}

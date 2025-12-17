@@ -1,0 +1,75 @@
+{% comment %}
+Related Content Component
+Shows up to 3 related items from the same collection/category, excluding current page.
+Usage: {% include related-content.html %}
+{% endcomment %}
+
+{% assign current_category = page.category %}
+{% assign current_url = page.url %}
+{% assign related = "" | split: "" %}
+
+{% comment %} Determine which collection to search based on category {% endcomment %}
+{% case current_category %}
+  {% when "Publication" %}
+    {% assign collection_items = site.publications %}
+  {% when "Presentation" %}
+    {% assign collection_items = site.presentations %}
+  {% when "Education" %}
+    {% assign collection_items = site.workshops | concat: site.courses %}
+  {% when "Project" %}
+    {% assign collection_items = site.projects %}
+  {% when "Side Project" %}
+    {% assign collection_items = site.side-projects %}
+  {% else %}
+    {% assign collection_items = site.publications | concat: site.presentations | concat: site.workshops | concat: site.projects | concat: site.side-projects %}
+{% endcase %}
+
+{% comment %} Get related items (same category, different URL, max 3) {% endcomment %}
+{% for item in collection_items %}
+  {% if item.url != current_url and related.size < 3 %}
+    {% if item.category == current_category or current_category == nil %}
+      {% assign related = related | push: item %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if related.size > 0 %}
+<aside class="related-content" aria-labelledby="related-heading">
+  <div class="bloc l-bloc" id="related-posts">
+    <div class="container bloc-sm">
+      <div class="row">
+        <div class="col-12">
+          <h3 id="related-heading" class="mb-4">Related Content</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% for item in related %}
+        <div class="col-md-4 mb-4">
+          <article class="related-card">
+            {% if item.thumbnail %}
+            <a href="{{ item.url | relative_url }}" class="related-card-image">
+              <picture>
+                {% if item.thumbnail_webp %}
+                <source type="image/webp" srcset="{{ item.thumbnail_webp | relative_url }}">
+                {% endif %}
+                <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" class="img-fluid" loading="lazy">
+              </picture>
+            </a>
+            {% endif %}
+            <div class="related-card-body">
+              <span class="post-label mb-2">{{ item.category }}</span>
+              <h4 class="related-card-title">
+                <a href="{{ item.url | relative_url }}" class="tital-post">{{ item.title }}</a>
+              </h4>
+              {% if item.date %}
+              <p class="p-sm mb-0">{{ item.date | date: "%b %d, %Y" }}</p>
+              {% endif %}
+            </div>
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</aside>
+{% endif %}

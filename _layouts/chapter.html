@@ -28,22 +28,22 @@ math: true
 
 {% if page.prev_chapter and page.next_chapter %}
 <!-- Sticky Bottom Navigation -->
-<div class="chapter-nav-sticky">
+<nav class="chapter-nav-sticky" aria-label="Chapter navigation">
   {% include scroll-to-top.html %}
   <div class="container">
     <div class="row align-items-center">
       <div class="col-4 text-start">
-        <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d button-01">← {{ page.prev_chapter.title }}</a>
+        <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d button-01" aria-label="Previous chapter: {{ page.prev_chapter.title }}">← {{ page.prev_chapter.title }}</a>
       </div>
       <div class="col-4 text-center">
         {% if page.course %}
-        <a href="{{ page.course.url | relative_url }}" class="text-link-01">{{ page.course.name }}</a>
+        <a href="{{ page.course.url | relative_url }}" class="text-link-01" aria-label="Back to course: {{ page.course.name }}">{{ page.course.name }}</a>
         {% endif %}
       </div>
       <div class="col-4 text-end">
-        <a href="{{ page.next_chapter.url | relative_url }}" class="btn btn-d button-01">{{ page.next_chapter.title }} →</a>
+        <a href="{{ page.next_chapter.url | relative_url }}" class="btn btn-d button-01" aria-label="Next chapter: {{ page.next_chapter.title }}">{{ page.next_chapter.title }} →</a>
       </div>
     </div>
   </div>
-</div>
+</nav>
 {% endif %}

@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+  // Wrap all tables in a scrollable container for horizontal scroll on mobile
+  document.querySelectorAll("table").forEach(function(table) {
+    // Skip if already wrapped
+    if (table.parentElement.classList.contains('table-scroll-wrapper')) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'table-scroll-wrapper';
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+
+  // Collapsible table functionality
   document.querySelectorAll("table.collapsible-table").forEach(function(table) {
     let headerRow = table.tHead ? table.tHead.rows[0] : table.rows[0];
     if (!headerRow) return;

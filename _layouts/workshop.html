@@ -87,22 +87,17 @@ layout: default
     <div class="row">
       <div class="col text-start">
         {{ content }}
+        {% if page.downloads %}
+        <div class="mt-4 pt-3 border-top">
+          <p class="mb-2 text-bold">Downloads</p>
+          {% for download in page.downloads %}
+          <a href="{{ download.url | relative_url }}" class="btn btn-sm btn-d button-01 me-2 mb-2" download>{{ download.name }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
 </div>
 
-{% if page.downloads %}
-<div class="bloc l-bloc bgc-4819" id="workshop-downloads">
-  <div class="container bloc-sm">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="mb-4">Downloads</h3>
-        {% for download in page.downloads %}
-        <a href="{{ download.url | relative_url }}" class="btn btn-d button-01 me-2 mb-2" download>{{ download.name }}</a>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
+{% include related-content.html %}

@@ -216,7 +216,7 @@ Later in the evening, Adrián took us to a typical South American salsa place, a
 <div class="row mb-lg-3">
 <div class="col-12 col-lg-6">
 <div class="ratio ratio-16x9">
-<video class="embed-responsive-item lazyload" loop="loop" playsinline="true" muted="muted" autoplay="autoplay" src="/vid/conference_neobiota2024_dance-ezgif.com-gif-to-mp4-converter.mp4">Your browser does not support HTML5 video.</video>
+<video class="embed-responsive-item lazyload" loop="loop" playsinline="true" muted="muted" autoplay="autoplay" src="/assets/vid/conference_neobiota2024_dance-ezgif.com-gif-to-mp4-converter.mp4">Your browser does not support HTML5 video.</video>
 </div>
 </div>
 <div class="col-12 col-lg-6">

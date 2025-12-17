@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+  {% assign items = site.publications | concat: site.presentations | concat: site.workshops | concat: site.courses | concat: site.projects | concat: site.side-projects %}
+  {% for item in items %}
+  {
+    "title": {{ item.title | jsonify }},
+    "url": "{{ item.url | relative_url }}",
+    "category": {{ item.category | default: "" | jsonify }},
+    "content": {{ item.content | strip_html | truncatewords: 100 | jsonify }},
+    "date": "{{ item.date | date: '%Y-%m-%d' }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

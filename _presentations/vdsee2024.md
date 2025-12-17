@@ -7,6 +7,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_header_2024.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
 hero_bg_class: "bg-presentation-vdsee-2024-personal"
+hero_combined: true
 description: "At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century."
 hero_title: "A Platform for Early-Career Researchers"
 breadcrumb:
@@ -22,11 +23,9 @@ downloads:
     url: "/assets/downloads/presentation_vdsee2024_booklet.pdf"
 ---
 
-
+## Symposium Highlights
 
 The VDSEE Symposium 2024, organized by the Vienna Doctoral School of Ecology and Evolution, took place on 16 February 2024 at the University of Vienna's Biology Building (Hörsaal 1). The event provided PhD candidates with the opportunity to present their research, connect with other researchers, and discuss ongoing projects in ecology and evolution.
-
-## Symposium Highlights
 
 The program featured two keynote lectures, oral presentations, and poster sessions. Gianluca Corno (CNR-IRSA, Italy) gave a keynote on antibiotic resistance from an ecological and evolutionary perspective, while Bianca Vienni-Baptista (ETH Zurich, Switzerland) discussed interdisciplinary research for sustainable futures. Participants presented their work across a range of topics, including microbial ecology, species interactions, and conservation strategies. The poster sessions, held in the foyer behind Hörsaal 1, provided a space for discussions with faculty and fellow researchers. The event concluded with an awards ceremony and a networking dinner.
 

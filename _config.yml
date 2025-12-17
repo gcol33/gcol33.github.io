@@ -94,6 +94,11 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+
+# Feed settings
+feed:
+  path: feed.xml
 
 # Kramdown settings (KaTeX loaded via JS in templates)
 kramdown:

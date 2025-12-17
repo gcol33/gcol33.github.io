@@ -1,5 +1,75 @@
 /* Custom CSS overrides */
 
+/* Fix: Prevent text overflow on mobile */
+#hero p,
+#hero .display-md,
+#hero-img p,
+.bloc p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Fix: Ensure hero banner has enough height for content on mobile */
+@media (max-width: 991px) {
+    .bloc.d-bloc {
+        min-height: auto !important;
+        padding-top: 60px !important;
+        padding-bottom: 80px !important;
+    }
+}
+
+/* Links - no underline, proper colors */
+a {
+    text-decoration: none;
+}
+
+/* Content links (inside paragraphs) - styled distinctly */
+p a, li a, .bloc-lg a {
+    color: var(--swatch-var-2374);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+p a:hover, li a:hover, .bloc-lg a:hover {
+    color: var(--swatch-var-7020);
+    border-bottom-color: var(--swatch-var-7020);
+}
+
+[data-bs-theme="dark"] p a:not(.btn):not(.a-btn),
+[data-bs-theme="dark"] li a:not(.btn):not(.a-btn),
+[data-bs-theme="dark"] .bloc-lg a:not(.btn):not(.a-btn),
+[data-bs-theme="dark"] .l-bloc a:not(.btn):not(.a-btn):not(.nav-link),
+[data-bs-theme="dark"] #bloc-32 a:not(.btn):not(.a-btn) {
+    color: #b8b8b8 !important;
+}
+
+[data-bs-theme="dark"] p a:not(.btn):not(.a-btn):hover,
+[data-bs-theme="dark"] li a:not(.btn):not(.a-btn):hover,
+[data-bs-theme="dark"] .bloc-lg a:not(.btn):not(.a-btn):hover,
+[data-bs-theme="dark"] .l-bloc a:not(.btn):not(.a-btn):not(.nav-link):hover,
+[data-bs-theme="dark"] #bloc-32 a:not(.btn):not(.a-btn):hover {
+    color: #e0e0e0 !important;
+    border-bottom-color: #e0e0e0;
+}
+
+/* Inline code - dark mode */
+[data-bs-theme="dark"] code {
+    color: #e8b4b8 !important;
+    background-color: #3d3d3d !important;
+}
+
+[data-bs-theme="dark"] pre {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+[data-bs-theme="dark"] pre code {
+    color: #d4d4d4 !important;
+    background-color: transparent !important;
+}
+
 /* Background image for ASAAS project */
 .bg-project-asaas {
     background-image: url("/assets/images/content/project_asaas_field.jpg");
@@ -19,6 +89,17 @@
 
 /* Fix: Apply border-radius to writer-post-image border */
 .writer-post-image {
+    border-radius: 20px;
+}
+
+/* Fix: Apply border-radius to embedded videos */
+.ratio {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ratio video,
+.ratio iframe {
     border-radius: 20px;
 }
 
@@ -304,4 +385,821 @@ article ol li, article ul li {
     display: block;
     width: auto;
     height: auto;
+}
+
+/* Light mode hover - darken icons */
+.social-icons-grid a:hover svg {
+    fill: #000000;
+}
+
+/* ======================================
+   ACCESSIBILITY
+   ====================================== */
+
+/* Skip link - hidden until focused */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--swatch-var-7020);
+    color: var(--swatch-var-4629) !important;
+    padding: 12px 24px;
+    border-radius: 0 0 8px 8px;
+    z-index: 100001;
+    text-decoration: none;
+    font-weight: 600;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--swatch-var-2374);
+    outline-offset: 2px;
+}
+
+/* Focus states for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--swatch-var-7020);
+    outline-offset: 2px;
+}
+
+/* Remove default outline for mouse users, keep for keyboard */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[tabindex]:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Specific focus styles for buttons */
+.btn:focus-visible,
+.button-01:focus-visible,
+.button-02:focus-visible {
+    outline: 2px solid var(--swatch-var-4629);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--swatch-var-7020);
+}
+
+/* Focus styles for nav links */
+.nav-link:focus-visible,
+.nav-links:focus-visible {
+    outline: 2px solid var(--swatch-var-7020);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Focus styles for form elements */
+.form-control:focus-visible {
+    border-color: var(--swatch-var-7020) !important;
+    box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.2) !important;
+    outline: none;
+}
+
+/* Skip link styles for dark mode */
+[data-bs-theme="dark"] .skip-link {
+    background: var(--swatch-var-4629);
+    color: var(--swatch-var-7020) !important;
+}
+
+/* ======================================
+   DARK MODE
+   ====================================== */
+
+/* Dark mode CSS variables */
+[data-bs-theme="dark"] {
+    --dm-bg-primary: #1a1a1a;
+    --dm-bg-secondary: #2d2d2d;
+    --dm-bg-tertiary: #3d3d3d;
+    --dm-text-primary: #f0f0f0;
+    --dm-text-secondary: #b0b0b0;
+    --dm-accent: #f8f0ea;
+    --dm-border: #404040;
+}
+
+/* Body and page container */
+[data-bs-theme="dark"] body,
+[data-bs-theme="dark"] .page-container {
+    background-color: var(--dm-bg-primary);
+}
+
+/* Main text colors */
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6,
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .tital-post,
+[data-bs-theme="dark"] .text-link-01 {
+    color: var(--dm-text-primary) !important;
+}
+
+[data-bs-theme="dark"] p,
+[data-bs-theme="dark"] li,
+[data-bs-theme="dark"] .p-md,
+[data-bs-theme="dark"] .p-sm,
+[data-bs-theme="dark"] label {
+    color: var(--dm-text-secondary) !important;
+}
+
+/* Navigation */
+[data-bs-theme="dark"] .nav-links,
+[data-bs-theme="dark"] .nav-list-links {
+    color: var(--dm-text-primary) !important;
+}
+
+[data-bs-theme="dark"] .nav-links:hover,
+[data-bs-theme="dark"] .nav-list-links:hover {
+    color: var(--dm-accent) !important;
+}
+
+[data-bs-theme="dark"] nav .dropdown-menu {
+    background-color: var(--dm-bg-secondary);
+    border-color: var(--dm-border) !important;
+}
+
+/* Disable hover on dropdowns when one is clicked open */
+.hover-open-submenu.dropdown-clicked .dropdown:hover > .dropdown-menu {
+    display: none !important;
+}
+
+.hover-open-submenu.dropdown-clicked .dropdown.show > .dropdown-menu {
+    display: block !important;
+}
+
+/* Blocs */
+[data-bs-theme="dark"] .l-bloc {
+    background-color: var(--dm-bg-primary);
+}
+
+[data-bs-theme="dark"] .bgc-4819 {
+    background-color: var(--dm-bg-secondary) !important;
+}
+
+/* Hero section - use inverted background image for dark mode */
+[data-bs-theme="dark"] .bg-background-hero {
+    background-image: url("/assets/images/content/background-hero-dark.jpg");
+    background-image: -webkit-image-set(url("/assets/images/content/background-hero-dark.webp") 1x, url("/assets/images/content/background-hero-dark.webp") 2x);
+    background-image: image-set(url("/assets/images/content/background-hero-dark.jpg") 1x, url("/assets/images/content/background-hero-dark.jpg") 2x, url("/assets/images/content/background-hero-dark.webp") 1x, url("/assets/images/content/background-hero-dark.webp") 2x);
+}
+
+/* Darken hero banners with background images in dark mode */
+[data-bs-theme="dark"] #hero.d-bloc,
+[data-bs-theme="dark"] #hero-img.d-bloc {
+    position: relative;
+}
+
+[data-bs-theme="dark"] #hero.d-bloc::before,
+[data-bs-theme="dark"] #hero-img.d-bloc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 0;
+}
+
+[data-bs-theme="dark"] #hero.d-bloc > *,
+[data-bs-theme="dark"] #hero-img.d-bloc > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Keep text colors unchanged on hero banners with background images in dark mode */
+/* Only target the direct banner/hero bloc by ID, not content sections */
+/* Note: #hero-writer (homepage) is excluded so it CAN change in dark mode */
+[data-bs-theme="dark"] #hero.d-bloc h1,
+[data-bs-theme="dark"] #hero.d-bloc h2,
+[data-bs-theme="dark"] #hero.d-bloc h3,
+[data-bs-theme="dark"] #hero.d-bloc h1,
+[data-bs-theme="dark"] #hero.d-bloc h2,
+[data-bs-theme="dark"] #hero.d-bloc h3,
+[data-bs-theme="dark"] #hero.d-bloc h4,
+[data-bs-theme="dark"] #hero.d-bloc p,
+[data-bs-theme="dark"] #hero.d-bloc .tc-4629,
+[data-bs-theme="dark"] #hero.d-bloc .display-md,
+[data-bs-theme="dark"] #hero-img.d-bloc h1,
+[data-bs-theme="dark"] #hero-img.d-bloc h2,
+[data-bs-theme="dark"] #hero-img.d-bloc h3,
+[data-bs-theme="dark"] #hero-img.d-bloc h4,
+[data-bs-theme="dark"] #hero-img.d-bloc p,
+[data-bs-theme="dark"] #hero-img.d-bloc .tc-4629 {
+    color: inherit !important;
+}
+
+/* Homepage hero - text SHOULD change to light in dark mode */
+[data-bs-theme="dark"] #hero-writer h1,
+[data-bs-theme="dark"] #hero-writer h2,
+[data-bs-theme="dark"] #hero-writer h3,
+[data-bs-theme="dark"] #hero-writer h4,
+[data-bs-theme="dark"] #hero-writer p {
+    color: var(--dm-text-primary) !important;
+}
+
+/* Gradient backgrounds - dark mode variant */
+[data-bs-theme="dark"] .background-blocs {
+    background: linear-gradient(0deg, var(--dm-bg-primary) 0%, var(--dm-bg-secondary) 20%, var(--dm-bg-tertiary) 50%, var(--dm-bg-secondary) 80%, var(--dm-bg-primary) 100%);
+}
+
+/* SVG dividers - dark mode fill (must match section backgrounds) */
+[data-bs-theme="dark"] .bloc-divider-b-fill,
+[data-bs-theme="dark"] .bloc-divider-b-0-fill,
+[data-bs-theme="dark"] .bloc-divider-b-bloc-2-fill,
+[data-bs-theme="dark"] .bloc-divider-t-fill,
+[data-bs-theme="dark"] .svg-divider {
+    fill: var(--dm-bg-primary) !important;
+}
+
+/* Cards and containers */
+[data-bs-theme="dark"] .card-auther,
+[data-bs-theme="dark"] .chapter-card {
+    background-color: var(--dm-bg-secondary);
+}
+
+[data-bs-theme="dark"] .chapter-card:hover {
+    background-color: var(--dm-bg-tertiary);
+}
+
+[data-bs-theme="dark"] .writer-posts {
+    border-color: var(--dm-border) !important;
+}
+
+[data-bs-theme="dark"] .writer-post-image {
+    border-color: var(--dm-border) !important;
+}
+
+/* Buttons - keep same style as light mode */
+[data-bs-theme="dark"] .button-01,
+[data-bs-theme="dark"] .button-02,
+[data-bs-theme="dark"] .btn-d {
+    /* Keep original light mode appearance */
+}
+
+/* Labels and tags */
+[data-bs-theme="dark"] .post-label,
+[data-bs-theme="dark"] .menu-link {
+    background-color: var(--dm-bg-tertiary);
+    border-color: var(--dm-bg-tertiary) !important;
+    color: var(--dm-text-secondary) !important;
+}
+
+/* Dividers */
+[data-bs-theme="dark"] .nav-divider-0,
+[data-bs-theme="dark"] .footer-divider {
+    background-color: var(--dm-border);
+}
+
+[data-bs-theme="dark"] .divider-background-color {
+    background-color: var(--dm-border);
+}
+
+/* Chapter navigation */
+[data-bs-theme="dark"] .chapter-nav-sticky {
+    background-color: var(--dm-bg-secondary);
+    border-top-color: var(--dm-border);
+}
+
+/* Scroll to top */
+[data-bs-theme="dark"] .scrollToTop,
+[data-bs-theme="dark"] .blocs-round-btn {
+    background-color: var(--dm-text-primary);
+}
+
+[data-bs-theme="dark"] .scrollToTop .scroll-to-top-btn-icon {
+    stroke: var(--dm-bg-primary);
+    fill: none;
+}
+
+/* Form elements */
+[data-bs-theme="dark"] .form-control {
+    background-color: var(--dm-bg-secondary);
+    border-color: var(--dm-border) !important;
+    color: var(--dm-text-primary) !important;
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+    color: var(--dm-text-secondary);
+}
+
+/* Icons */
+[data-bs-theme="dark"] .iconstyle {
+    color: var(--dm-text-secondary) !important;
+}
+
+[data-bs-theme="dark"] .iconstyle:hover {
+    color: var(--dm-text-primary) !important;
+}
+
+/* Social icons in dark mode */
+[data-bs-theme="dark"] .social-icons-grid a svg {
+    fill: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .social-icons-grid a:hover svg {
+    fill: var(--dm-text-primary);
+}
+
+/* Blockquote */
+[data-bs-theme="dark"] blockquote {
+    border-left-color: var(--dm-text-secondary) !important;
+}
+
+/* Images - slight brightness boost */
+[data-bs-theme="dark"] .writer-post-image img,
+[data-bs-theme="dark"] .lecture-img {
+    filter: brightness(0.9);
+}
+
+[data-bs-theme="dark"] .writer-post-image:hover img,
+[data-bs-theme="dark"] .lecture-img:hover {
+    filter: brightness(1) saturate(1.2);
+}
+
+/* Content images - rounded corners */
+#bloc-32 img:not(.writer-post-image):not(.img-rd-md),
+.background-blocs img:not(.writer-post-image):not(.img-rd-md) {
+    border-radius: 8px;
+}
+
+/* Content images in dark mode - invert white backgrounds */
+[data-bs-theme="dark"] #bloc-32 img:not(.writer-post-image):not(.img-rd-md):not(.no-invert),
+[data-bs-theme="dark"] .background-blocs img:not(.writer-post-image):not(.img-rd-md):not(.no-invert) {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Preloader */
+[data-bs-theme="dark"] .page-preloader {
+    background-color: var(--dm-bg-primary);
+}
+
+/* KaTeX math */
+[data-bs-theme="dark"] .katex,
+[data-bs-theme="dark"] .katex * {
+    color: var(--dm-text-secondary) !important;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background-color: var(--swatch-var-684);
+}
+
+[data-bs-theme="dark"] .theme-toggle:hover {
+    background-color: var(--dm-bg-tertiary);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--swatch-var-7951);
+    transition: fill 0.2s ease;
+}
+
+[data-bs-theme="dark"] .theme-toggle svg {
+    fill: var(--dm-text-secondary);
+}
+
+/* Hide/show icons based on theme */
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+.theme-toggle .icon-moon {
+    display: block;
+}
+
+[data-bs-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+[data-bs-theme="dark"] .theme-toggle .icon-moon {
+    display: none;
+}
+
+/* ======================================
+   SEARCH
+   ====================================== */
+
+/* Search button in navbar */
+.search-btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    background-color: var(--swatch-var-684);
+}
+
+.search-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--swatch-var-7951);
+}
+
+[data-bs-theme="dark"] .search-btn:hover {
+    background-color: var(--dm-bg-tertiary);
+}
+
+[data-bs-theme="dark"] .search-btn svg {
+    stroke: var(--dm-text-secondary);
+}
+
+/* Search modal overlay */
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 100002;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.search-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Search modal content */
+.search-modal-content {
+    background: var(--swatch-var-4629);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 70vh;
+    margin: 0 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20px);
+    transition: transform 0.2s ease;
+}
+
+.search-modal.show .search-modal-content {
+    transform: translateY(0);
+}
+
+[data-bs-theme="dark"] .search-modal-content {
+    background: var(--dm-bg-secondary);
+}
+
+/* Search header */
+.search-modal-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--swatch-var-1166);
+    gap: 12px;
+}
+
+[data-bs-theme="dark"] .search-modal-header {
+    border-bottom-color: var(--dm-border);
+}
+
+.search-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px 0;
+    gap: 12px;
+}
+
+[data-bs-theme="dark"] .search-input-wrapper {
+    background: transparent;
+}
+
+.search-icon {
+    flex-shrink: 0;
+    color: var(--swatch-var-7951);
+    stroke: var(--swatch-var-7951);
+    margin-right: 10px;
+}
+
+[data-bs-theme="dark"] .search-icon {
+    color: var(--dm-text-secondary);
+    stroke: var(--dm-text-secondary);
+}
+
+.search-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: var(--swatch-var-7020);
+    outline: none;
+    font-family: "RobotoSlab-Regular";
+}
+
+.search-input::placeholder {
+    color: var(--swatch-var-7951);
+}
+
+[data-bs-theme="dark"] .search-input {
+    color: var(--dm-text-primary);
+}
+
+[data-bs-theme="dark"] .search-input::placeholder {
+    color: var(--dm-text-secondary);
+}
+
+.search-kbd {
+    flex-shrink: 0;
+    background: var(--swatch-var-4819);
+    border: 1px solid var(--swatch-var-5583);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    color: var(--swatch-var-7020);
+    font-family: monospace;
+}
+
+[data-bs-theme="dark"] .search-kbd {
+    background: var(--dm-bg-tertiary);
+    border-color: var(--dm-border);
+    color: var(--dm-text-secondary);
+}
+
+.search-close {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--swatch-var-7951);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-close:hover {
+    background: var(--swatch-var-4819);
+}
+
+[data-bs-theme="dark"] .search-close {
+    color: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .search-close:hover {
+    background: var(--dm-bg-tertiary);
+}
+
+/* Search results */
+.search-results {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.search-hint,
+.search-loading,
+.search-no-results {
+    color: var(--swatch-var-7951);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+[data-bs-theme="dark"] .search-hint,
+[data-bs-theme="dark"] .search-loading,
+[data-bs-theme="dark"] .search-no-results {
+    color: var(--dm-text-secondary);
+}
+
+.search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-result-item {
+    margin-bottom: 8px;
+}
+
+.search-result-link {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+
+.search-result-link:hover {
+    background: var(--swatch-var-4819);
+}
+
+[data-bs-theme="dark"] .search-result-link:hover {
+    background: var(--dm-bg-tertiary);
+}
+
+.search-result-title {
+    display: block;
+    font-weight: 600;
+    color: var(--swatch-var-7020) !important;
+    margin-bottom: 4px;
+}
+
+[data-bs-theme="dark"] .search-result-title {
+    color: var(--dm-text-primary) !important;
+}
+
+.search-result-category {
+    display: inline-block;
+    font-size: 12px;
+    background: var(--swatch-var-684);
+    color: var(--swatch-var-7951) !important;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+[data-bs-theme="dark"] .search-result-category {
+    background: var(--dm-bg-tertiary);
+    color: var(--dm-text-secondary) !important;
+}
+
+.search-result-excerpt {
+    display: block;
+    font-size: 14px;
+    color: var(--swatch-var-7951) !important;
+    line-height: 1.4;
+}
+
+[data-bs-theme="dark"] .search-result-excerpt {
+    color: var(--dm-text-secondary) !important;
+}
+
+.search-more {
+    text-align: center;
+    font-size: 14px;
+    color: var(--swatch-var-7951);
+    margin-top: 16px;
+}
+
+[data-bs-theme="dark"] .search-more {
+    color: var(--dm-text-secondary);
+}
+
+/* Search footer */
+.search-modal-footer {
+    padding: 12px 16px;
+    border-top: 1px solid var(--swatch-var-1166);
+    text-align: center;
+}
+
+[data-bs-theme="dark"] .search-modal-footer {
+    border-top-color: var(--dm-border);
+}
+
+.search-shortcut {
+    font-size: 12px;
+    color: var(--swatch-var-7951);
+}
+
+.search-shortcut kbd {
+    background: var(--swatch-var-4819);
+    border: 1px solid var(--swatch-var-5583);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--swatch-var-7020);
+}
+
+[data-bs-theme="dark"] .search-shortcut {
+    color: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .search-shortcut kbd {
+    background: var(--dm-bg-tertiary);
+    border-color: var(--dm-border);
+    color: var(--dm-text-secondary);
+}
+
+/* Visually hidden (for screen readers) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ======================================
+   RELATED CONTENT
+   ====================================== */
+
+.related-content {
+    margin-top: 40px;
+}
+
+.related-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.related-card-image {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.related-card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.related-card-image:hover img {
+    transform: scale(1.05);
+    filter: saturate(1.2);
+}
+
+.related-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-card-title {
+    margin-bottom: 8px;
+}
+
+.related-card-title .tital-post {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .related-card-image img {
+    filter: brightness(0.9);
+}
+
+[data-bs-theme="dark"] .related-card-image:hover img {
+    filter: brightness(1) saturate(1.2);
+}
+
+@media (max-width: 767px) {
+    .related-card-image img {
+        height: 150px;
+    }
+}
+
+/* VDSEE 2024 presentation: use darkened banner in dark mode */
+[data-bs-theme="dark"] .bg-presentation-vdsee-2024-personal {
+    background-image: url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg");
+    background-image: -webkit-image-set(
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 1x,
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 2x
+    );
+    background-image: image-set(
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg") 1x,
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg") 2x,
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 1x,
+        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 2x
+    );
 }
