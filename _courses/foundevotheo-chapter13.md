@@ -17,6 +17,10 @@ prev_chapter:
   title: "Chapter 12"
   url: "/course-foundevotheo-chapter12/"
 
+course:
+  name: "Foundation of Evolutionary Theory"
+  url: "/course-foundevotheo/"
+
 next_chapter:
   title: "Chapter 14"
   url: "/course-foundevotheo-chapter14/"

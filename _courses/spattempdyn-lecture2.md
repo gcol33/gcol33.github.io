@@ -17,6 +17,10 @@ prev_chapter:
   title: "Lecture 1"
   url: "/course-spattempdyn-lecture1/"
 
+course:
+  name: "Spatial and Temporal Dynamics"
+  url: "/course-spattempdyn/"
+
 next_chapter:
   title: "Lecture 3"
   url: "/course-spattempdyn-lecture3/"

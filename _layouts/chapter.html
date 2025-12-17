@@ -36,15 +36,8 @@ math: true
         <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d button-01">← {{ page.prev_chapter.title }}</a>
       </div>
       <div class="col-4 text-center">
-        {% assign course_url = nil %}
-        {% for item in page.breadcrumb %}
-          {% if item.name contains 'Spatial' or item.name contains 'Foundation' %}
-            {% assign course_url = item %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% if course_url %}
-        <a href="{{ course_url.url | relative_url }}" class="text-link-01">{{ course_url.name }}</a>
+        {% if page.course %}
+        <a href="{{ page.course.url | relative_url }}" class="text-link-01">{{ page.course.name }}</a>
         {% endif %}
       </div>
       <div class="col-4 text-end">
