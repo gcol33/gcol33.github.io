@@ -1188,18 +1188,3 @@ button:focus:not(:focus-visible),
         height: 150px;
     }
 }
-
-/* VDSEE 2024 presentation: use darkened banner in dark mode */
-[data-bs-theme="dark"] .bg-presentation-vdsee-2024-personal {
-    background-image: url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg");
-    background-image: -webkit-image-set(
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 1x,
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 2x
-    );
-    background-image: image-set(
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg") 1x,
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.jpg") 2x,
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 1x,
-        url("/assets/images/content/presentation_vdsee_2024_personal-dark.webp") 2x
-    );
-}
