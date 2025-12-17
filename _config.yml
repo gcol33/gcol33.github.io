@@ -23,16 +23,16 @@ collections:
     permalink: /presentations/:name/
   workshops:
     output: true
-    permalink: /workshop-:name/
+    permalink: /workshops/:name/
   courses:
     output: true
-    permalink: /course-:name/
+    permalink: /courses/:name/
   projects:
     output: true
-    permalink: /proj:name/
+    permalink: /projects/:name/
   side-projects:
     output: true
-    permalink: /project-:name/
+    permalink: /side-projects/:name/
 
 # Include pages from _pages directory
 include:

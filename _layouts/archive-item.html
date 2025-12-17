@@ -7,7 +7,7 @@ layout: default
     <div class="row">
       <div class="col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
-        <div class="writer-post-group mb-3">
+        <div class="writer-post-group mb-3 mt-5">
           <p class="mb-0 p-sm">{{ page.date | date: "%b %d, %Y" }}</p>
           <span class="post-label">{{ page.category }}</span>
         </div>
@@ -27,7 +27,7 @@ layout: default
       <div class="col-lg-8 offset-lg-2">
         <picture>
           <source type="image/webp" srcset="{{ page.thumbnail_webp | relative_url }}">
-          <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto d-block img-rd-md" alt="{{ page.title }}">
+          <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto d-block img-rd-md" alt="{{ page.title }}" loading="lazy">
         </picture>
       </div>
     </div>

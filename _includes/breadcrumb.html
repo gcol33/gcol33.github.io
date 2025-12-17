@@ -1,12 +1,14 @@
 {% if include.items %}
-<div class="dev-nav-link">
-  {% for item in include.items %}
-    {% if forloop.last %}
-      <a href="." class="a-btn text-link-01">{{ item.name }}</a>
-    {% else %}
-      <a href="{{ item.url | relative_url }}" class="a-btn text-link-01">{{ item.name }}</a>
-      <span class="ion ion-chevron-right arrow-arrow"></span>
-    {% endif %}
-  {% endfor %}
-</div>
+<nav aria-label="Breadcrumb">
+  <div class="dev-nav-link">
+    {% for item in include.items %}
+      {% if forloop.last %}
+        <span class="a-btn text-link-01" aria-current="page">{{ item.name }}</span>
+      {% else %}
+        <a href="{{ item.url | relative_url }}" class="a-btn text-link-01">{{ item.name }}</a>
+        <span class="fa fa-chevron-right arrow-arrow" aria-hidden="true"></span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>
 {% endif %}

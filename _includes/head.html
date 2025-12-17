@@ -4,13 +4,15 @@
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
 <link rel="shortcut icon" type="image/svg" href="{{ '/favicon.svg' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/animate.min.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/tables.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/all.min.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/ionicons.min.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 {% if page.math or layout.math %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
