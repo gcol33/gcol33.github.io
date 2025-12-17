@@ -1,0 +1,6 @@
+/* Custom CSS overrides */
+
+/* Fix: Apply border-radius to writer-post-image border */
+.writer-post-image {
+    border-radius: 20px;
+}

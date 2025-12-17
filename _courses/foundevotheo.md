@@ -5,6 +5,8 @@ date: 2024-04-09
 category: "Education"
 category_url: "/education/"
 permalink: /course-foundevotheo/
+thumbnail: "/assets/images/content/course_fet.jpg"
+thumbnail_webp: "/assets/images/content/course_fet.webp"
 breadcrumb:
   - name: "Home"
     url: "/"

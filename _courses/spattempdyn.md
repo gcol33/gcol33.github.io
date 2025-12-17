@@ -5,6 +5,8 @@ date: 2023-10-05
 category: "Education"
 category_url: "/education/"
 permalink: /course-spattempdyn/
+thumbnail: "/assets/images/content/course_std.jpg"
+thumbnail_webp: "/assets/images/content/course_std.webp"
 breadcrumb:
   - name: "Home"
     url: "/"

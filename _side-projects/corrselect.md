@@ -10,6 +10,7 @@ hero_bg_image: "/assets/images/content/corrselect.jpg"
 hero_combined: true
 hero_label: "Released"
 subtitle: "Aug 05, 2025"
+description: "The corrselect package automatically identifies all maximal subsets of variables in your data whose pairwise correlations or associations remain below a user-defined threshold."
 breadcrumb:
   - name: "Home"
     url: "/"

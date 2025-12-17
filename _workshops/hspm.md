@@ -11,6 +11,7 @@ hero_bg_class: "bg-hspm-ws-bg"
 texture_class: "texture-darken-strong"
 hero_title: "Course Highlights"
 hero_content: "The course combined theoretical background with hands-on implementation, with about 70 percent of the time dedicated to lectures and the remaining 30 percent to exercises. It began with an overview of hierarchical modelling and spatial statistics, then moved into scalable modelling techniques using `spOccupancy` and `spAbundance`. Over four packed days, participants worked through topics including single- and multi-species occupancy models, joint species distribution models with imperfect detection, and multi-season models. Later sessions focused on modelling count data using spatial GLMMs, N-mixture models, and hierarchical distance sampling. Real-world applications, such as analyses of Swiss bird data, anchored the exercises in practice. Each day ran from 9:00 to around 17:30, with generous breaks and time set aside for questions and discussion."
+math: true
 breadcrumb:
   - name: "Home"
     url: "/"

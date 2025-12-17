@@ -26,7 +26,8 @@ breadcrumb:
     <div class="row">
       <div class="text-start col-lg-12">
         <div class="blocs-grid-container writer-post-library">
-          {% assign items = site.workshops | concat: site.courses | sort: 'date' | reverse %}
+          {% assign course_overviews = site.courses | where: "layout", "course-overview" %}
+          {% assign items = site.workshops | concat: course_overviews | sort: 'date' | reverse %}
           {% for item in items %}
           <div class="writer-posts">
             <div>

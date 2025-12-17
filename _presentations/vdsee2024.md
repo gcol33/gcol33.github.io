@@ -7,6 +7,8 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_header_2024.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
 hero_bg_class: "bg-presentation-vdsee-2024-personal"
+description: "At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century."
+hero_title: "A Platform for Early-Career Researchers"
 breadcrumb:
   - name: "Home"
     url: "/"
@@ -20,9 +22,7 @@ downloads:
     url: "/assets/downloads/presentation_vdsee2024_booklet.pdf"
 ---
 
-At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century.
 
-## A Platform for Early-Career Researchers
 
 The VDSEE Symposium 2024, organized by the Vienna Doctoral School of Ecology and Evolution, took place on 16 February 2024 at the University of Vienna's Biology Building (Hörsaal 1). The event provided PhD candidates with the opportunity to present their research, connect with other researchers, and discuss ongoing projects in ecology and evolution.
 
@@ -32,7 +32,6 @@ The program featured two keynote lectures, oral presentations, and poster sessio
 
 ## My Presentation: Developing My First Paper
 
-At the VDSEE Symposium 2024, I presented a poster on the early stages of my first paper, which was in development at the time. My research, based on the AgriWeedClim database, examined how alien plant species accumulated in arable fields across ten Central European countries over the past 90 years.
 
 <div class="row nonein">
 <div class="col-12 col-lg-6">

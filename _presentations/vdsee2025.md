@@ -7,6 +7,8 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_2025.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_2025.webp"
 hero_bg_class: "bg-presentation-vdsee-2025-personal"
+description: "At the VDSEE Symposium 2025, I presented my first paper, showcasing how neophyte species have significantly increased in agricultural landscapes over the past century, while archaeophytes have followed a more stable trajectory."
+hero_title: "A Gathering of Early-Career Researchers in Ecology and Evolution"
 breadcrumb:
   - name: "Home"
     url: "/"
@@ -20,9 +22,7 @@ downloads:
     url: "/assets/downloads/presentation_vdsee2025_booklet.pdf"
 ---
 
-At the VDSEE Symposium 2025, I presented my first paper, showcasing how neophyte species have significantly increased in agricultural landscapes over the past century, while archaeophytes have followed a more stable trajectory.
 
-## A Gathering of Early-Career Researchers in Ecology and Evolution
 
 The VDSEE Symposium 2025, organized by the Vienna Doctoral School of Ecology and Evolution, took place on 21 February 2025 at the University of Vienna's Biology Building (Hörsaal 1). Now in its second year, the symposium serves as a platform for PhD candidates to present their work, exchange ideas, and build networks across diverse research fields in ecology and evolution. The event featured oral and poster presentations, two keynote lectures, and networking opportunities with fellow researchers, faculty members, and invited experts.
 
