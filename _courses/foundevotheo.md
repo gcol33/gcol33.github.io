@@ -19,8 +19,8 @@ breadcrumb:
 description: |
   This lecture series, taught by Sonia Kleindorfer, explored Darwin's *On the Origin of Species* chapter by chapter, combining historical context with modern evolutionary insights. Over five weeks, we met every Tuesday to examine the core arguments presented by Darwin. The course was grounded in Darwin's original text, but framed through the lens of current evolutionary theory and recent empirical studies. In particular, she emphasized how Darwin's reasoning foreshadowed many modern developments in population genetics, phylogenetics, and developmental biology.
 
-hero_image: "/assets/images/content/bg.jpg"
-hero_image_webp: "/assets/images/content/bg.webp"
+hero_image: "/assets/images/content/course_fet_hero.jpg"
+hero_image_webp: "/assets/images/content/course_fet_hero.webp"
 hero_classes: "bgc-4819 bg-bg d-bloc bloc-bg-texture texture-darken-strong"
 
 intro_title: "Course Highlights"

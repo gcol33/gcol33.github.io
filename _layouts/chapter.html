@@ -26,20 +26,25 @@ math: true
   </div>
 </div>
 
-<!-- Navigation (Previous/Next) -->
-<div class="bloc l-bloc" id="bloc-50">
-  <div class="container bloc-sm-lg bloc-no-padding">
-    <div class="row">
-      <div class="col-md-6 text-start text-lg-start col-6">
-        {% if page.prev_chapter %}
-        <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d btn-lg btn-chap-10-style">{{ page.prev_chapter.title }}</a>
+{% if page.prev_chapter and page.next_chapter %}
+<!-- Sticky Bottom Navigation -->
+<div class="chapter-nav-sticky">
+  {% include scroll-to-top.html %}
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-4 text-start">
+        <a href="{{ page.prev_chapter.url | relative_url }}" class="btn btn-d button-01">← {{ page.prev_chapter.title }}</a>
+      </div>
+      <div class="col-4 text-center">
+        {% assign course_url = page.breadcrumb | where_exp: "item", "item.name contains 'Spatial' or item.name contains 'Foundation'" | first %}
+        {% if course_url %}
+        <a href="{{ course_url.url | relative_url }}" class="text-link-01">{{ course_url.name }}</a>
         {% endif %}
       </div>
-      <div class="col-md-6 text-start text-lg-end col-6">
-        {% if page.next_chapter %}
-        <a href="{{ page.next_chapter.url | relative_url }}" class="btn btn-d btn-lg btn-chap-12-style">{{ page.next_chapter.title }}</a>
-        {% endif %}
+      <div class="col-4 text-end">
+        <a href="{{ page.next_chapter.url | relative_url }}" class="btn btn-d button-01">{{ page.next_chapter.title }} →</a>
       </div>
     </div>
   </div>
 </div>
+{% endif %}

@@ -3,7 +3,7 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body{% if page.layout == 'chapter' and page.prev_chapter and page.next_chapter %} class="has-sticky-nav"{% endif %}>
 {% include preloader.html %}
 
 <div class="page-container">
@@ -11,7 +11,9 @@
 
   {{ content }}
 
+  {% unless page.layout == 'chapter' and page.prev_chapter and page.next_chapter %}
   {% include scroll-to-top.html %}
+  {% endunless %}
   {% include footer.html %}
 </div>
 

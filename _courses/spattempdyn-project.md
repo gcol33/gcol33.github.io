@@ -81,14 +81,14 @@ Under the constant scenarios, individuals experienced a fixed monthly death rate
 <div class="row mb-4">
   <div class="col-md-6">
     <picture>
-      <source type="image/webp" srcset="/assets/images/content/Mortality_Constant.webp">
-      <img src="/assets/images/content/Mortality_Constant.jpg" class="img-fluid" alt="Constant mortality">
+      <source type="image/webp" srcset="/assets/images/content/course_std_mortality_constant.webp">
+      <img src="/assets/images/content/course_std_mortality_constant.jpg" class="img-fluid" alt="Constant mortality">
     </picture>
   </div>
   <div class="col-md-6">
     <picture>
-      <source type="image/webp" srcset="/assets/images/content/Mortality_Exponential.webp">
-      <img src="/assets/images/content/Mortality_Exponential.jpg" class="img-fluid" alt="Exponential mortality">
+      <source type="image/webp" srcset="/assets/images/content/course_std_mortality_exponential.webp">
+      <img src="/assets/images/content/course_std_mortality_exponential.jpg" class="img-fluid" alt="Exponential mortality">
     </picture>
   </div>
 </div>
@@ -162,13 +162,13 @@ Finding mates in a simulation is a challenge. Instead of iterating over every po
 
 <ol><li><p>Filters for mature males and females separately.</p></li><li><p>Iterates through available males and checks if they are in proximity to available females.</p></li><li><p>Checks available territories that both individuals can access before confirming a pair.</p></li></ol>
 
-This avoids an exhaustive $$\mathcal{O}(n^2)$$ complexity for pairwise comparisons.
+This avoids an exhaustive $\mathcal{O}(n^2)$ complexity for pairwise comparisons.
 
 Instead of dynamically expanding lists or recalculating movement at every step, the model preallocates space for individuals, their movement history, and population statistics. We aimed to keep the simulation realistic without adding unnecessary complexity. This led to the choice of fixing territories in advance rather than assigning them dynamically. Density-dependent mortality was left out to avoid slowdowns. Similarly, once a pair occupies a territory, they remain there until one of them dies.
 
 <div class="row">
   <div class="col-md-4">
-    <div style="position: relative; aspect-ratio: 712 / 650; width: 100%; margin-top: 20px; background: url('assets/backgrounds/scenario-bg.jpg') center/cover no-repeat;">
+    <div style="position: relative; aspect-ratio: 712 / 650; width: 100%; margin-top: 20px; background: url('/assets/backgrounds/scenario-bg.jpg') center/cover no-repeat;">
       <video id="scenarioVideo" autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;">
         <source id="videoSource" type="video/mp4">
         Your browser does not support the video tag.

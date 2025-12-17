@@ -38,14 +38,14 @@ Our group was well represented at the symposium, contributing to discussions on 
 <div class="col-12 mb-3 mb-lg-0 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_ekin.webp">
-<img src="/assets/images/content/presentation_vdsee_ekin.jpeg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_ekin.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Ekin Kaplan presenting a literature review on local plant community changes</i></p>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_pablo.webp">
-<img src="/assets/images/content/presentation_vdsee_pablo.jpeg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_pablo.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Pablo Aycart-Lazo presenting his research on bat conservation</i></p>
 </div>
@@ -60,7 +60,7 @@ Our group was well represented at the symposium, contributing to discussions on 
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_krystof.webp">
-<img src="/assets/images/content/presentation_vdsee_krystof.jpeg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="presentation_vdsee_krystof.jpeg" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_krystof.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="presentation_vdsee_krystof.jpg" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Krystof Chytry presenting his research of austrian alpine plants</i></p>
 </div>

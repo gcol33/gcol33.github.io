@@ -2,17 +2,17 @@
 layout: default
 title: "Contact"
 permalink: /contact/
+breadcrumb:
+  - name: "Home"
+    url: "/"
+  - name: "Contact"
 ---
 
 <div class="bloc l-bloc" id="bloc-6">
   <div class="container bloc-sm">
     <div class="row">
       <div class="text-start col-12">
-        <div class="dev-nav-link">
-          <a href="/" class="a-btn text-link-01">Home</a>
-          <span class="ion ion-chevron-right arrow-arrow"></span>
-          <a href="/contact/" class="a-btn text-link-01">Contact</a>
-        </div>
+        {% include breadcrumb.html items=page.breadcrumb %}
       </div>
     </div>
   </div>
@@ -52,8 +52,36 @@ permalink: /contact/
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
+  const RATE_LIMIT_KEY = "contact_submissions";
+  const MAX_SUBMISSIONS = 10;
+  const WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+  function getSubmissions() {
+    try {
+      const data = JSON.parse(localStorage.getItem(RATE_LIMIT_KEY) || "[]");
+      const now = Date.now();
+      return data.filter(t => now - t < WINDOW_MS);
+    } catch { return []; }
+  }
+
+  function recordSubmission() {
+    const submissions = getSubmissions();
+    submissions.push(Date.now());
+    localStorage.setItem(RATE_LIMIT_KEY, JSON.stringify(submissions));
+  }
+
+  function isRateLimited() {
+    return getSubmissions().length >= MAX_SUBMISSIONS;
+  }
+
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
+
+    if (isRateLimited()) {
+      alert("Too many submissions. Please try again later.");
+      return;
+    }
+
     const formData = new FormData(this);
     const fields = ['name', 'email', 'message'];
 
@@ -79,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const result = await response.json();
 
       if (response.ok) {
+        recordSubmission();
         alert("Form submitted successfully!");
         form.reset();
       } else {
@@ -94,6 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <noscript>
   <p style="color:red;">
-    JavaScript is disabled in your browser. Please enable JavaScript to use the contact form.
+    JavaScript is disabled in your browser. Please enable JavaScript to use the contact form, or email me directly at <a href="mailto:gilles.colling@univie.ac.at">gilles.colling@univie.ac.at</a>.
   </p>
 </noscript>

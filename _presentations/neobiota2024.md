@@ -140,7 +140,7 @@ Ekin Kaplan presented a global literature review on the trajectories of local ve
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_gilles.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_gilles.JPG" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_gilles.JPG" width="628" height="942">
+<img src="/assets/images/content/conference_neobiota2024_day3_gilles.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_gilles.jpg" width="628" height="942">
 </picture>
 <p class="text-justify"><i>Me (Gilles Colling) presenting my soon to be submitted work on alien species accumulation in agricultural fields</i></p>
 </div>
@@ -162,7 +162,7 @@ In the afternoon, Franz Essl, the head of our group, gave a talk introducing a n
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_franz.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_franz.JPG" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_franz.JPG" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day3_franz.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_franz.jpg" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Franz Essl presenting on the global biogeography and macroecology of biological invasions in the Anthropocene</i></p>
 </div>
@@ -222,7 +222,7 @@ Later in the evening, Adrián took us to a typical South American salsa place, a
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_dance2.webp">
-<img src="/assets/images/content/conference_neobiota2024_dance2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day4_final.JPG" width="628" height="353">
+<img src="/assets/images/content/conference_neobiota2024_dance2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day4_final.jpg" width="628" height="353">
 </picture>
 </div>
 </div>

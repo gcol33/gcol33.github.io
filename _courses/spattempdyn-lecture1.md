@@ -18,7 +18,7 @@ prev_chapter:
   url: "/course-spattempdyn/"
 
 next_chapter:
-  title: "Lecture 2 - Single Species Models"
+  title: "Lecture 2"
   url: "/course-spattempdyn-lecture2/"
 
 math: true

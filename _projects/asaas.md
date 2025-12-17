@@ -5,9 +5,9 @@ short_title: "ASAAS"
 date: 2022-01-01
 category: "Project"
 category_url: "/projects/"
-thumbnail: "/assets/images/content/R0008998.jpg"
-thumbnail_webp: "/assets/images/content/R0008998.webp"
-hero_bg_class: "bg-R0008998"
+thumbnail: "/assets/images/content/project_asaas_field.jpg"
+thumbnail_webp: "/assets/images/content/project_asaas_field.webp"
+hero_bg_class: "bg-project-asaas"
 hero_combined: true
 hero_title: "Alien Species Accumulation Across Scales"
 hero_label: "Project"

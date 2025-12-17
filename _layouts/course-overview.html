@@ -131,27 +131,40 @@ layout: default
 <script src="{{ '/assets/js/lectures-scroll.js' | relative_url }}"></script>
 {% endif %}
 
-<!-- Chapters Grid (alternative to horizontal scroll) -->
+<!-- Chapters Section (horizontal scroll, no images) -->
 {% if page.chapters %}
 <div class="bloc l-bloc" id="bloc-57">
-  <div class="container bloc-lg none-lg bloc-no-padding-lg">
-    <div class="row voffset">
-      <div class="text-start col-lg-12 col-12 col-md-12">
-        <h1 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Lectures' }}</h1>
-        <div class="grid-style blocs-grid-container text-md-center text-sm-center text-center">
-          {% for chapter in page.chapters %}
-          <div>
-            <h2 class="mb-lg-0 text-lg-center mb-0 text-link-01">
-              <a class="text-link-01" href="{{ chapter.url }}">{{ chapter.title }}</a>
-            </h2>
-            <p class="text-lg-center">{{ chapter.subtitle }}</p>
+  <div class="container bloc-lg bloc-md-lg">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Chapters' }}</h1>
+        <div class="lectures-scroll-container">
+          <button class="lectures-scroll-btn lectures-scroll-prev" aria-label="Scroll left">
+            <svg width="26" height="26" viewBox="0 0 32 32">
+              <path d="M22,2L9,16,22,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="lectures-scroll-area">
+            {% for chapter in page.chapters %}
+            <div class="lecture-card chapter-card">
+              <h5 class="tc-7343 mt-0">
+                <a class="text-link-01" href="{{ chapter.url }}">{{ chapter.title }}</a>
+              </h5>
+              <p class="mb-0">{{ chapter.subtitle }}</p>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
+          <button class="lectures-scroll-btn lectures-scroll-next" aria-label="Scroll right">
+            <svg width="26" height="26" viewBox="0 0 32 32">
+              <path d="M10,2l13,14-13,14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="{{ '/assets/js/lectures-scroll.js' | relative_url }}"></script>
 {% endif %}
 
 {{ content }}

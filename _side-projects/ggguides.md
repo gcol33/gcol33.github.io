@@ -4,8 +4,8 @@ title: "ggguides"
 date: 2025-12-17
 category: "Side Project"
 category_url: "/side-projects/"
-thumbnail: "/assets/images/content/corrselect.jpg"
-thumbnail_webp: "/assets/images/content/corrselect.webp"
+thumbnail: "/assets/images/content/ggguides.jpg"
+thumbnail_webp: "/assets/images/content/ggguides.webp"
 hero_bg_color: "#343739"
 hero_combined: true
 hero_container_class: "bloc-md"

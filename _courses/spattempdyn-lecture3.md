@@ -14,11 +14,11 @@ breadcrumb:
   - name: "Lecture 3"
 
 prev_chapter:
-  title: "Lecture 2 - Single Species Models"
+  title: "Lecture 2"
   url: "/course-spattempdyn-lecture2/"
 
 next_chapter:
-  title: "Lecture 4 - Predator-Prey Models"
+  title: "Lecture 4"
   url: "/course-spattempdyn-lecture4/"
 
 math: true

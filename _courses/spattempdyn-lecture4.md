@@ -14,7 +14,7 @@ breadcrumb:
   - name: "Lecture 4"
 
 prev_chapter:
-  title: "Lecture 3 - Density-Dependent Growth"
+  title: "Lecture 3"
   url: "/course-spattempdyn-lecture3/"
 
 next_chapter:

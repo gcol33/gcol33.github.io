@@ -14,11 +14,11 @@ breadcrumb:
   - name: "Lecture 2"
 
 prev_chapter:
-  title: "Lecture 1 - What is a model?"
+  title: "Lecture 1"
   url: "/course-spattempdyn-lecture1/"
 
 next_chapter:
-  title: "Lecture 3 - Density-Dependent Growth"
+  title: "Lecture 3"
   url: "/course-spattempdyn-lecture3/"
 
 math: true

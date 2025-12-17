@@ -4,7 +4,7 @@ title: "AgriWeedClim"
 date: 2021-11-01
 category: "Project"
 category_url: "/projects/"
-thumbnail: "/assets/images/content/agriweed_proj.JPG"
+thumbnail: "/assets/images/content/agriweed_proj.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_proj.webp"
 hero_bg_class: "bg-agriweed-proj"
 hero_combined: true

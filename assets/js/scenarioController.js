@@ -41,8 +41,8 @@ function updateMedia() {
     combo_id = `Pairs${pairs}_${location}_K${capacity}_${mortality_label}_${mortality_func}`;
   }
 
-  const imagePath = "assets/scenario_plots/" + combo_id + ".jpg";
-  const videoPath = "assets/scenario_videos/" + combo_id + ".mp4";
+  const imagePath = "/assets/scenario_plots/" + combo_id + ".jpg";
+  const videoPath = "/assets/scenario_videos/" + combo_id + ".mp4";
 
   console.log("✅ Image path:", imagePath);
   console.log("✅ Video path:", videoPath);
@@ -58,25 +58,12 @@ function updateMedia() {
     image.src = imagePath;
   };
 
-  // Preload video if source has changed
+  // Update video directly
   const currentVideoSrc = source.getAttribute("src");
   if (videoPath !== currentVideoSrc) {
-    const preloadVideo = document.createElement("video");
-    preloadVideo.muted = true;
-    preloadVideo.autoplay = true;
-    preloadVideo.loop = true;
-    preloadVideo.playsInline = true;
-
-    const preloadSource = document.createElement("source");
-    preloadSource.src = videoPath;
-    preloadSource.type = "video/mp4";
-    preloadVideo.appendChild(preloadSource);
-
-    preloadVideo.oncanplaythrough = () => {
-      source.src = videoPath;
-      video.load();
-      video.play();
-    };
+    source.src = videoPath;
+    video.load();
+    video.play().catch(e => console.log("Video autoplay blocked:", e));
   }
 }
 

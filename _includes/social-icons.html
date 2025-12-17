@@ -1,6 +1,6 @@
-<div class="social-link-bric" data-aria="true">
+<div class="social-link-bric social-icons-grid" data-aria="true">
   {% for social in site.data.social %}
-  <a href="{{ social.url }}" target="_blank" rel="noopener" aria-label="{{ social.name }}" style="margin-left: 4px; margin-right: 4px;">
+  <a href="{{ social.url }}" target="_blank" rel="noopener" aria-label="{{ social.name }}">
     {{ social.icon }}
   </a>
   {% endfor %}

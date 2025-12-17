@@ -33,13 +33,13 @@ After the coffee break, Georg Martin Hörmann presented risk maps for current an
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/agriweed_gilles.webp">
-<img src="/assets/images/content/agriweed_gilles.JPG" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_gilles.JPG" width="628" height="419">
+<img src="/assets/images/content/agriweed_gilles.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_gilles.jpg" width="628" height="419">
 </picture>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/agriweed_georg.webp">
-<img src="/assets/images/content/agriweed_georg.JPG" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_georg.JPG" width="628" height="419">
+<img src="/assets/images/content/agriweed_georg.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_georg.jpg" width="628" height="419">
 </picture>
 </div>
 </div>

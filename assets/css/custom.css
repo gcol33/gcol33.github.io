@@ -1,5 +1,22 @@
 /* Custom CSS overrides */
 
+/* Background image for ASAAS project */
+.bg-project-asaas {
+    background-image: url("/assets/images/content/project_asaas_field.jpg");
+    background-image: image-set(
+        url("/assets/images/content/project_asaas_field.webp") type("image/webp"),
+        url("/assets/images/content/project_asaas_field.jpg") type("image/jpeg")
+    );
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fix: Breadcrumb font consistency */
+.dev-nav-link .a-btn,
+.dev-nav-link span.a-btn {
+    font-family: "RobotoSlab-Regular";
+}
+
 /* Fix: Apply border-radius to writer-post-image border */
 .writer-post-image {
     border-radius: 20px;
@@ -17,28 +34,6 @@ blockquote {
 
 blockquote p {
     font-style: italic;
-}
-
-/* Hero iframe background */
-.hero-iframe-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    pointer-events: none;
-    z-index: 0;
-}
-
-#hero:has(.hero-iframe-bg) {
-    position: relative;
-    overflow: hidden;
-}
-
-#hero:has(.hero-iframe-bg) > *:not(.hero-iframe-bg) {
-    position: relative;
-    z-index: 1;
 }
 
 /* KaTeX math styling - match body text color */
@@ -88,6 +83,37 @@ article ol li, article ul li {
     flex-shrink: 0;
     min-width: 128px;
     width: 20%;
+}
+
+/* Chapter cards (text-only, no images) */
+.chapter-card {
+    min-width: 160px;
+    width: 15%;
+    padding: 15px 20px;
+    background: var(--swatch-var-4819);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.chapter-card:hover {
+    background: var(--swatch-var-1166);
+}
+
+/* Make chapter scroll area align items to stretch */
+.lectures-scroll-area:has(.chapter-card) {
+    align-items: stretch;
+}
+
+/* Adjust scroll button position for chapter cards */
+.lectures-scroll-container:has(.chapter-card) .lectures-scroll-btn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lectures-scroll-container:has(.chapter-card) .lectures-scroll-btn:active {
+    transform: translateY(-50%) scale(0.9);
 }
 
 .lectures-scroll-btn {
@@ -170,4 +196,73 @@ article ol li, article ul li {
     .lecture-card {
         width: 30%;
     }
+}
+
+/* Sticky chapter navigation */
+.chapter-nav-sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--swatch-var-4629);
+    border-top: 1px solid var(--swatch-var-1166);
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    overflow: visible;
+}
+
+.chapter-nav-sticky .btn {
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .chapter-nav-sticky .btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .chapter-nav-sticky .text-center {
+        display: none;
+    }
+
+    .chapter-nav-sticky .col-4:first-child,
+    .chapter-nav-sticky .col-4:last-child {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Position scroll-to-top button above sticky nav */
+.chapter-nav-sticky .scrollToTop {
+    position: absolute !important;
+    top: -60px !important;
+    right: 20px !important;
+    bottom: auto !important;
+    /* Preserve default size */
+    width: 36px !important;
+    height: 36px !important;
+    padding: 5px !important;
+    font-size: inherit !important;
+}
+
+/* Social icons - always 4 in a row, never wrap */
+.social-icons-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-icons-grid a {
+    display: block;
+    line-height: 0;
+    flex: 0 0 auto;
+}
+
+.social-icons-grid svg {
+    display: block;
+    width: auto;
+    height: auto;
 }
