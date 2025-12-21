@@ -593,7 +593,7 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] #hero-img.d-bloc h4,
 [data-bs-theme="dark"] #hero-img.d-bloc p,
 [data-bs-theme="dark"] #hero-img.d-bloc .tc-4629 {
-    color: inherit !important;
+    color: rgba(255,255,255,0.9) !important;
 }
 
 /* Homepage hero - text SHOULD change to light in dark mode */
