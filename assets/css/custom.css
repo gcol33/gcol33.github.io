@@ -568,8 +568,8 @@ button:focus:not(:focus-visible),
     z-index: 0;
 }
 
-[data-bs-theme="dark"] #hero.d-bloc > *,
-[data-bs-theme="dark"] #hero-img.d-bloc > * {
+[data-bs-theme="dark"] #hero.d-bloc > .container,
+[data-bs-theme="dark"] #hero-img.d-bloc > .container {
     position: relative;
     z-index: 1;
 }
