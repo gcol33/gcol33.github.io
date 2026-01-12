@@ -60,25 +60,21 @@ layout: default
 </div>
 
 {% if page.hero_image or page.hero_bg_class or page.hero_content %}
-<div class="bloc bgc-4819 bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero-img"{% if page.hero_image %}{% unless page.hero_bg_class %} style="background-image: url('{{ page.hero_image | relative_url }}'); background-size: cover; background-position: center;"{% endunless %}{% endif %}>
-  <div class="bloc-shape-divider bloc-divider-bottom">
-    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
-      <path d="M1000,0V250H0v-1Z"></path>
-    </svg>
-  </div>
-  <div class="container {{ page.hero_container_class | default: "bloc-md bloc-lg-md bloc-lg-lg" }}">
-    <div class="row">
-      <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-12">
-        {% if page.hero_content %}
-        <h2 class="mb-4 display-md tc-4629 text-bold">{{ page.hero_title | default: "Take aways" }}</h2>
-        <div class="tc-4629">
-          <p class="tc-4629">{{ page.hero_content }}</p>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+{% capture hero_content %}
+{% if page.hero_content %}
+<h2 class="mb-4 display-md tc-4629 text-bold">{{ page.hero_title | default: "Take aways" }}</h2>
+<div class="tc-4629">
+  <p class="tc-4629">{{ page.hero_content }}</p>
 </div>
+{% endif %}
+{% endcapture %}
+{% include hero-banner.html
+   content=hero_content
+   texture=page.texture_class
+   bg_class=page.hero_bg_class
+   bg_image=page.hero_image
+   container_class=page.hero_container_class
+%}
 {% endif %}
 {% endif %}
 

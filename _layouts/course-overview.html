@@ -24,23 +24,17 @@ layout: default
 
 <!-- Hero Image with Course Highlights -->
 {% if page.intro_content %}
-<div class="bloc {{ page.hero_classes | default: 'bgc-4819 d-bloc bloc-bg-texture texture-darken-strong' }}" id="hero-img">
-  <div class="bloc-shape-divider bloc-divider-bottom">
-    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
-      <path d="M1000,0V250H0v-1Z"></path>
-    </svg>
-  </div>
-  <div class="container bloc-md bloc-lg-md bloc-lg-lg">
-    <div class="row">
-      <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-12">
-        <h2 class="mb-4 display-md tc-4629 text-bold">{{ page.intro_title | default: 'Course Highlights' }}</h2>
-        <div class="tc-4629">
-          {{ page.intro_content | markdownify }}
-        </div>
-      </div>
-    </div>
-  </div>
+{% capture hero_content %}
+<h2 class="mb-4 display-md tc-4629 text-bold">{{ page.intro_title | default: 'Course Highlights' }}</h2>
+<div class="tc-4629">
+  {{ page.intro_content | markdownify }}
 </div>
+{% endcapture %}
+{% include hero-banner.html
+   content=hero_content
+   classes=page.hero_classes
+   texture="texture-darken-strong"
+%}
 {% endif %}
 
 <!-- Project Section (if exists) -->
