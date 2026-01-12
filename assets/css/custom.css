@@ -19,6 +19,16 @@
     }
 }
 
+/* Reduce padding on project and lectures sections */
+#project-section > .container,
+#lectures-section > .container {
+    padding-top: 50px;
+}
+
+#project-section > .container {
+    padding-bottom: 30px;
+}
+
 /* Links - no underline, proper colors */
 a {
     text-decoration: none;
@@ -167,7 +177,7 @@ article ol, article ul {
 article ol li, article ul li {
     font-family: "RobotoSlab-Regular";
     font-size: 17px !important;
-    color: var(--color-text-secondary) !important;
+    color: inherit;
     line-height: 29px;
     margin-bottom: 0.5em;
 }
@@ -699,13 +709,14 @@ button:focus:not(:focus-visible),
     filter: brightness(0.85) saturate(1.1);
 }
 
-/* Project overlay - dark mode */
-.project-overlay {
-    background: rgba(255, 255, 255, 0.9);
+/* Project overlay */
+.img-overlay-container {
+    z-index: 10;
 }
 
+/* Dark mode overlay styling */
 [data-bs-theme="dark"] .project-overlay {
-    background: rgba(30, 30, 30, 0.95) !important;
+    background: var(--dm-bg-primary) !important;
 }
 
 [data-bs-theme="dark"] .project-overlay .overlay-title {
@@ -716,7 +727,7 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] .project-overlay .btn-light {
     background: var(--dm-bg-tertiary) !important;
     color: var(--dm-text-primary) !important;
-    border-color: var(--dm-text-secondary) !important;
+    border-color: var(--dm-border) !important;
 }
 
 /* Project section title - keep white in dark mode (needs high specificity) */

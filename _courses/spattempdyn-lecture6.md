@@ -45,7 +45,7 @@ A random walk is a mathematical model where movement consists of a series of ste
 
 The simplest form is Brownian motion, where each step is independent of the previous one. This can be modeled in two dimensions by allowing movement in any of the following directions:
 
-$$\begin{array}{ccc}(+1,-1) & (+1,\pm0) & (+1,+1) \\ (\pm0,-1) & \bullet & (\pm0,+1) \\ (-1,-1) & (-1,\pm0) & (-1,+1)\end{array}$$
+$$\begin{array}{ccc}(+1,-1) & (+1,\pm0) & (+1,+1) \\\\ (\pm0,-1) & \bullet & (\pm0,+1) \\\\ (-1,-1) & (-1,\pm0) & (-1,+1)\end{array}$$
 
 At each step, one of these movements is chosen randomly. A dispersal event consists of multiple steps. To simulate a basic random walk:
 
@@ -56,7 +56,7 @@ At each step, one of these movements is chosen randomly. A dispersal event consi
 
 The cumulative sum function is used to track position changes over multiple steps. For example, a simple random walk with four moves might follow this sequence:
 
-$$\begin{array}{c|cc}\text{Step} & x \text{ movement} & y \text{ movement} \\\hline1 & 0 & +1 \\2 & -1 & +1 \\3 & -1 & +1 \\4 & +1 & -1\end{array}$$
+$$\begin{array}{c|cc}\text{Step} & x \text{ movement} & y \text{ movement} \\\\ \hline 1 & 0 & +1 \\\\ 2 & -1 & +1 \\\\ 3 & -1 & +1 \\\\ 4 & +1 & -1\end{array}$$
 
 Summing the columns gives the final position.
 
@@ -75,7 +75,7 @@ where the weight determines the strength of persistence.
 
 A small weight reduces directional bias, while a larger weight strongly favors continued movement in the same direction. For example, if an individual previously moved to the right ($+1,0$), the probability of continuing in that direction is increased, while the probability of reversing direction is decreased. To visualize directional bias, consider a matrix of possible moves:
 
-$$\begin{array}{ccc}4 & 3 & 2 \\3 & 1 & 0 \\2 & 1 & 0\end{array}$$
+$$\begin{array}{ccc}4 & 3 & 2 \\\\ 3 & 1 & 0 \\\\ 2 & 1 & 0\end{array}$$
 
 Lower values indicate preferred directions. When calculating movement probabilities, these values are inverted and normalized to sum to 1, creating a biased movement pattern. If an individual previously moved upward, future moves upward will have a higher probability than lateral or downward moves. By adjusting weight, different movement behaviors emerge:
 

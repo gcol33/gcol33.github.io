@@ -67,7 +67,7 @@ A Leslie matrix is a discrete, age-structured model of population growth, develo
 
 The model is written in matrix notation as:
 
-$$\begin{bmatrix}N_{1,t+1} \\N_{2,t+1} \\N_{3,t+1}\end{bmatrix}=\begin{bmatrix}F_1 & F_2 & F_3 \\S_1 & 0 & 0 \\0 & S_2 & 0\end{bmatrix}\begin{bmatrix}N_{1,t} \\N_{2,t} \\N_{3,t}\end{bmatrix},$$
+$$\begin{bmatrix}N_{1,t+1} \\\\ N_{2,t+1} \\\\ N_{3,t+1}\end{bmatrix}=\begin{bmatrix}F_1 & F_2 & F_3 \\\\ S_1 & 0 & 0 \\\\ 0 & S_2 & 0\end{bmatrix}\begin{bmatrix}N_{1,t} \\\\ N_{2,t} \\\\ N_{3,t}\end{bmatrix},$$
 
 where $F_1, F_2, F_3$ are age-specific fertility rates, $S_1, S_2$ represent the fraction of individuals surviving to the next class, the first row represents births, and the subdiagonal entries represent survival to the next age class.
 
@@ -88,7 +88,7 @@ Let's consider whale populations divided into four classes:
 
 Each class has specific transition probabilities:
 
-$$\begin{bmatrix}n_{C,t+1} \\n_{I,t+1} \\n_{M,t+1} \\n_{R,t+1}\end{bmatrix}=\begin{bmatrix}0 & 0 & 0 & F \\S_{IC} & S_{II} & 0 & 0 \\0 & S_{MI} & S_{MM} & S_{MR} \\0 & S_{RI} & S_{RM} & S_{RR}\end{bmatrix}\begin{bmatrix}n_{C,t} \\n_{I,t} \\n_{M,t} \\n_{R,t}\end{bmatrix},$$
+$$\begin{bmatrix}n_{C,t+1} \\\\ n_{I,t+1} \\\\ n_{M,t+1} \\\\ n_{R,t+1}\end{bmatrix}=\begin{bmatrix}0 & 0 & 0 & F \\\\ S_{IC} & S_{II} & 0 & 0 \\\\ 0 & S_{MI} & S_{MM} & S_{MR} \\\\ 0 & S_{RI} & S_{RM} & S_{RR}\end{bmatrix}\begin{bmatrix}n_{C,t} \\\\ n_{I,t} \\\\ n_{M,t} \\\\ n_{R,t}\end{bmatrix},$$
 
 where $S_{IC}, S_{MI}, S_{RI}$ represent transitions between classes, $S_{II}, S_{MM}, S_{RR}$ are within-class survival probabilities, and $F$ is the fertility rate of reproductive individuals.
 
