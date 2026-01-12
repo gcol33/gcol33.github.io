@@ -542,25 +542,7 @@ button:focus:not(:focus-visible),
     background-image: image-set(url("/assets/images/content/background-hero-dark.jpg") 1x, url("/assets/images/content/background-hero-dark.jpg") 2x, url("/assets/images/content/background-hero-dark.webp") 1x, url("/assets/images/content/background-hero-dark.webp") 2x);
 }
 
-/* Darken hero banners with background images in dark mode */
-[data-bs-theme="dark"] #hero.d-bloc,
-[data-bs-theme="dark"] #hero-img.d-bloc {
-    position: relative;
-}
-
-[data-bs-theme="dark"] #hero.d-bloc::before,
-[data-bs-theme="dark"] #hero-img.d-bloc::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-    z-index: 0;
-}
-
+/* Hero banners in dark mode - ensure container is above texture overlay */
 [data-bs-theme="dark"] #hero.d-bloc > .container,
 [data-bs-theme="dark"] #hero-img.d-bloc > .container {
     position: relative;
@@ -723,9 +705,10 @@ button:focus:not(:focus-visible),
     border-radius: 8px;
 }
 
-/* Content images in dark mode - invert white backgrounds */
-[data-bs-theme="dark"] #main-content img:not(.writer-post-image):not(.img-rd-md):not(.no-invert),
-[data-bs-theme="dark"] .background-blocs img:not(.writer-post-image):not(.img-rd-md):not(.no-invert) {
+/* Content images in dark mode - invert white backgrounds (charts, diagrams)
+   Only apply to images that explicitly opt-in with .invert-dark class */
+[data-bs-theme="dark"] #main-content img.invert-dark,
+[data-bs-theme="dark"] .background-blocs img.invert-dark {
     filter: invert(1) hue-rotate(180deg);
 }
 
