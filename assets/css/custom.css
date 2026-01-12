@@ -37,27 +37,20 @@ p a:hover, li a:hover, .bloc-lg a:hover {
     border-bottom-color: var(--swatch-var-7020);
 }
 
-[data-bs-theme="dark"] p a:not(.btn):not(.a-btn),
-[data-bs-theme="dark"] li a:not(.btn):not(.a-btn),
-[data-bs-theme="dark"] .bloc-lg a:not(.btn):not(.a-btn),
-[data-bs-theme="dark"] .l-bloc a:not(.btn):not(.a-btn):not(.nav-link),
-[data-bs-theme="dark"] #bloc-32 a:not(.btn):not(.a-btn) {
-    color: #b8b8b8 !important;
+/* Dark mode content links - consolidated selector */
+[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #bloc-32) a:not(.btn):not(.a-btn):not(.nav-link) {
+    color: var(--dm-text-secondary) !important;
 }
 
-[data-bs-theme="dark"] p a:not(.btn):not(.a-btn):hover,
-[data-bs-theme="dark"] li a:not(.btn):not(.a-btn):hover,
-[data-bs-theme="dark"] .bloc-lg a:not(.btn):not(.a-btn):hover,
-[data-bs-theme="dark"] .l-bloc a:not(.btn):not(.a-btn):not(.nav-link):hover,
-[data-bs-theme="dark"] #bloc-32 a:not(.btn):not(.a-btn):hover {
-    color: #e0e0e0 !important;
-    border-bottom-color: #e0e0e0;
+[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #bloc-32) a:not(.btn):not(.a-btn):not(.nav-link):hover {
+    color: var(--dm-text-primary) !important;
+    border-bottom-color: var(--dm-text-primary);
 }
 
 /* Inline code - dark mode */
 [data-bs-theme="dark"] code {
     color: #e8b4b8 !important;
-    background-color: #3d3d3d !important;
+    background-color: var(--dm-bg-tertiary) !important;
 }
 
 [data-bs-theme="dark"] pre {
@@ -66,7 +59,7 @@ p a:hover, li a:hover, .bloc-lg a:hover {
 }
 
 [data-bs-theme="dark"] pre code {
-    color: #d4d4d4 !important;
+    color: var(--dm-text-secondary) !important;
     background-color: transparent !important;
 }
 
@@ -285,7 +278,7 @@ article ol li, article ul li {
 
 .lecture-img:hover {
     filter: saturate(170%);
-    box-shadow: 0px 10px 10px #F3F3F3;
+    box-shadow: 0px 10px 10px var(--swatch-var-7879);
 }
 
 /* Mobile: larger touch targets, always visible */
@@ -389,7 +382,7 @@ article ol li, article ul li {
 
 /* Light mode hover - darken icons */
 .social-icons-grid a:hover svg {
-    fill: #000000;
+    fill: var(--swatch-var-7343);
 }
 
 /* ======================================

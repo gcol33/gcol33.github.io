@@ -3,16 +3,7 @@ layout: default
 math: true
 ---
 
-<!-- Breadcrumb -->
-<div class="bloc l-bloc" id="bloc-46">
-  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
-    <div class="row">
-      <div class="text-start col-12">
-        {% include breadcrumb.html items=page.breadcrumb %}
-      </div>
-    </div>
-  </div>
-</div>
+{% include bloc-breadcrumb.html items=page.breadcrumb id="bloc-46" %}
 
 <!-- Chapter Content -->
 <div class="bloc l-bloc" id="bloc-32">

@@ -24,21 +24,21 @@ table {
     width: 100%;
     border-collapse: collapse;
     table-layout: auto;
-    color: #5E5E5E;
+    color: var(--swatch-var-7951);
     font-family: 'RobotoSlab-Regular', serif;
     display: table;
 }
 
 /* Borders and padding */
 .base-table th, .base-table td {
-    border: 1px solid #212121;
+    border: 1px solid var(--swatch-var-7020);
     padding: 8px;
     text-align: left;
 }
 
 /* Header Background (Prevents Wrapping) */
 .base-table th {
-    background-color: #f2f2f2;
+    background-color: var(--swatch-var-4819);
     white-space: nowrap; /* Prevents text wrapping */
 }
 
@@ -54,7 +54,7 @@ table {
     vertical-align: middle;
     margin-right: 8px; /* Space between arrow and text */
     font-size: 12px;
-    color: #5E5E5E;
+    color: var(--swatch-var-7951);
 }
 
 /* When table is collapsed, change arrow to right arrow */
@@ -69,34 +69,34 @@ table {
 
 /* ---------- Dark Mode ---------- */
 [data-bs-theme="dark"] .base-table {
-    color: #b0b0b0;
+    color: var(--dm-text-secondary);
 }
 
 [data-bs-theme="dark"] .base-table th,
 [data-bs-theme="dark"] .base-table td {
-    border-color: #404040;
+    border-color: var(--dm-border);
 }
 
 [data-bs-theme="dark"] .base-table th {
-    background-color: #2d2d2d;
-    color: #f0f0f0;
+    background-color: var(--dm-bg-secondary);
+    color: var(--dm-text-primary);
 }
 
 [data-bs-theme="dark"] .collapsible-table th::before {
-    color: #b0b0b0;
+    color: var(--dm-text-secondary);
 }
 
 /* Generic tables in dark mode */
 [data-bs-theme="dark"] table {
-    color: #b0b0b0;
+    color: var(--dm-text-secondary);
 }
 
 [data-bs-theme="dark"] table th,
 [data-bs-theme="dark"] table td {
-    border-color: #404040;
+    border-color: var(--dm-border);
 }
 
 [data-bs-theme="dark"] table th {
-    background-color: #2d2d2d;
-    color: #f0f0f0;
+    background-color: var(--dm-bg-secondary);
+    color: var(--dm-text-primary);
 }

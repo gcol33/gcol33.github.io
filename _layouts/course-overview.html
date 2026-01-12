@@ -2,16 +2,7 @@
 layout: default
 ---
 
-<!-- Breadcrumb -->
-<div class="bloc l-bloc" id="bloc-41">
-  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
-    <div class="row">
-      <div class="text-start col-12">
-        {% include breadcrumb.html items=page.breadcrumb %}
-      </div>
-    </div>
-  </div>
-</div>
+{% include bloc-breadcrumb.html items=page.breadcrumb id="bloc-41" %}
 
 <!-- Hero Section -->
 <div class="bloc l-bloc" id="hero">
@@ -75,10 +66,7 @@ layout: default
                     <a href="{{ page.project.url }}" class="overlay-btn btn btn-light" style="font-family: RobotoSlab-Regular;">More Info</a>
                   </div>
                 </div>
-                <picture>
-                  <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.project.image_webp }}">
-                  <img class="custom-bric-img-item img-fluid lazyload" src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.project.image }}" alt="{{ page.project.title }}" loading="lazy">
-                </picture>
+                {% include lazy-image.html src=page.project.image src_webp=page.project.image_webp alt=page.project.title class="custom-bric-img-item img-fluid lazyload" %}
               </div>
             </div>
           </div>
@@ -106,10 +94,7 @@ layout: default
             {% for lecture in page.lectures %}
             <div class="lecture-card">
               <a href="{{ lecture.url }}">
-                <picture>
-                  <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ lecture.image_webp }}">
-                  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ lecture.image }}" class="img-fluid mx-auto d-block lazyload lecture-img" alt="{{ lecture.title }}" width="256" height="171" loading="lazy">
-                </picture>
+                {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto d-block lazyload lecture-img" width="256" height="171" %}
               </a>
               <h5 class="tc-7343 mt-3">
                 <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
@@ -128,7 +113,6 @@ layout: default
     </div>
   </div>
 </div>
-<script src="{{ '/assets/js/lectures-scroll.js' | relative_url }}"></script>
 {% endif %}
 
 <!-- Chapters Section (horizontal scroll, no images) -->
@@ -164,6 +148,9 @@ layout: default
     </div>
   </div>
 </div>
+{% endif %}
+
+{% if page.lectures or page.chapters %}
 <script src="{{ '/assets/js/lectures-scroll.js' | relative_url }}"></script>
 {% endif %}
 

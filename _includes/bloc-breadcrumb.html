@@ -1,0 +1,9 @@
+<div class="bloc l-bloc" id="{{ include.id | default: 'bloc-breadcrumb' }}">
+  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+    <div class="row">
+      <div class="text-start col-12">
+        {% include breadcrumb.html items=include.items %}
+      </div>
+    </div>
+  </div>
+</div>
