@@ -51,9 +51,9 @@ Many of us work with plot data, yet we often do so in isolation, reinventing the
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_pie.webp">
-<img src="/assets/images/content/workshop_pd_pie.png" class="img-fluid mx-auto d-block img-workshop-pd-p-style mb-lg-2 lazyload" alt="workshop_pd_pie" width="605" height="298">
+<img src="/assets/images/content/workshop_pd_pie.png" class="img-fluid mx-auto d-block img-chart-medium mb-lg-2 lazyload" alt="workshop_pd_pie" width="605" height="298">
 </picture>
-<p class="p-bloc-32-style text-justify">The majority of respondents (61.5%) plan to work with plot data in the future, with a smaller portion uncertain (30.8%) and only one person indicating they won't. This confirms that plot data will remain an important component for our group, making discussions around best practices still relevant.</p>
+<p class="text-full-width text-justify">The majority of respondents (61.5%) plan to work with plot data in the future, with a smaller portion uncertain (30.8%) and only one person indicating they won't. This confirms that plot data will remain an important component for our group, making discussions around best practices still relevant.</p>
 </div>
 </div>
 
@@ -69,7 +69,7 @@ In the survey, participants ranked common challenges in working with plot data. 
 </ol>
 
 <div class="blockquote">
-<p class="p-234-style">*The ranking was calculated using Likert scaling, where topics were scored from -3 (not relevant) to +3 (highly relevant) and weighted by the number of votes. Other ranking methods produced similar results, reinforcing these as priority areas for the community. Ultimately, people can decide what they find relevant.</p>
+<p class="text-caption">*The ranking was calculated using Likert scaling, where topics were scored from -3 (not relevant) to +3 (highly relevant) and weighted by the number of votes. Other ranking methods produced similar results, reinforcing these as priority areas for the community. Ultimately, people can decide what they find relevant.</p>
 </div>
 
 ### Forming break out groups
