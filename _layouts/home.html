@@ -14,10 +14,10 @@ layout: default
       <div class="col-lg-6 align-self-center mb-4 mb-lg-0 col-md-7 text-sm-center">
         <h3 class="mb-4"><i>"{{ page.quote | default: 'We live in cities, but the roots of our imagination sink into the forests.' }}"&nbsp;&nbsp;<br></i>({{ page.quote_author | default: 'Italo Calvino' }})<br></h3>
         <h1 class="mb-4"><br></h1>
-        <h1 class="text-bold mb-2 display-md text-md-start text-sm-start">{{ page.hero_title | default: site.title }}<br></h1>
-        <h4 class="mb-4 text-md-start text-sm-start">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }}</h4>
-        <p class="mb-4 text-md-start text-lg-start mx-auto d-block text-sm-start p-style">{{ page.hero_description | default: site.description }}</p>
-        <div class="text-lg-start text-md-start text-sm-start">
+        <h1 class="text-bold mb-2 display-md text-center">{{ page.hero_title | default: site.title }}<br></h1>
+        <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }}</h4>
+        <p class="mb-4 text-center mx-auto d-block p-style">{{ page.hero_description | default: site.description }}</p>
+        <div class="text-center">
           <a href="#" class="btn btn-lg float-md-none btn-d button-01" data-scroll-speed="1000" onclick="scrollToTarget('0',this)">Learn more</a>
         </div>
       </div>
