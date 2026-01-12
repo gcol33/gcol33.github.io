@@ -50,7 +50,7 @@ $$\begin{array}{ccc}(+1,-1) & (+1,\pm0) & (+1,+1) \\ (\pm0,-1) & \bullet & (\pm0
 At each step, one of these movements is chosen randomly. A dispersal event consists of multiple steps. To simulate a basic random walk:
 
 1. Identify all possible movements.
-2. Build an array representing movement options, with one column for $ x $ displacement and one for $ y $ displacement.
+2. Build an array representing movement options, with one column for $x$ displacement and one for $y$ displacement.
 3. Sample from these movements using a random selection process.
 4. Sum the movements over time to get the final position.
 

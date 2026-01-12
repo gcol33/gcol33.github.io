@@ -36,7 +36,7 @@ Population changes can be understood in terms of births and deaths. The populati
 
 $$ N_{t+1} = N_t + B - D $$
 
-where $ N_t $ represents the population size at time $ t $, $ B $ is the number of births, and $ D $ is the number of deaths. The change in population size over time is
+where $N_t$ represents the population size at time $t$, $B$ is the number of births, and $D$ is the number of deaths. The change in population size over time is
 
 $$ N_{t+1} = N_t + B - D $$
 
@@ -45,7 +45,7 @@ Assuming that both births and deaths occur at rates proportional to the current 
 $$B = b \cdot N$$
 $$D = d \cdot N,$$
 
-where $ b $ is the birth rate and $ d $ is the death rate.
+where $b$ is the birth rate and $d$ is the death rate.
 
 ## Exponential Growth Model
 
@@ -65,11 +65,11 @@ which has the well-known solution ($ \int dt$ on both sides)
 
 $$N_t = N_0 \cdot e^{r t},$$
 
-where $ N_0 $ is the initial population size. An important property of the exponential model is the doubling time, which describes the time required for the population to double in size. Setting $ N_t = 2N_0 $ in the exponential growth equation,
+where $N_0$ is the initial population size. An important property of the exponential model is the doubling time, which describes the time required for the population to double in size. Setting $ N_t = 2N_0 $ in the exponential growth equation,
 
 $$2N_0 = N_0 \cdot e^{r \cdot t_{\text{double}}}$$
 
-Solving for $ t_{\text{double}} $ gives
+Solving for $t_{\text{double}}$ gives
 
 $$t_{\text{double}} = \frac{\ln(2)}{r}$$
 
@@ -81,4 +81,4 @@ Continuous time models use differential equations to describe population changes
 
 $$N_{t+1} = N_t + (b - d) \cdot N_t + m,$$
 
-where $ m $ represents net migration during the time step. This approach captures the life-cycle events that occur at distinct points in time rather than assuming continuous change.
+where $m$ represents net migration during the time step. This approach captures the life-cycle events that occur at distinct points in time rather than assuming continuous change.

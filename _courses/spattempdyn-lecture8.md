@@ -67,7 +67,7 @@ The dispersal process can be implemented in a raster environment, where the land
 
 The first step is to define the raster environment by structuring the landscape into a raster grid with a specified extent and resolution. Each cell represents a discrete spatial unit where individuals reside.
 
-The dispersal kernel is applied by multiplying the population in each cell by a dispersal raster, which assigns movement probabilities. If $ N(x,y,t) $ represents the number of individuals in cell $ (x,y) $ at time $ t $, and $ p(i,j) $ is the probability of movement to a neighboring cell $ (i,j) $, then the new population at time $ t+1 $ is computed as
+The dispersal kernel is applied by multiplying the population in each cell by a dispersal raster, which assigns movement probabilities. If $ N(x,y,t) $ represents the number of individuals in cell $ (x,y) $ at time $t$, and $ p(i,j) $ is the probability of movement to a neighboring cell $ (i,j) $, then the new population at time $ t+1 $ is computed as
 
 $$N(i,j,t+1) = \sum_{x,y} p(i-x, j-y) \cdot N(x,y,t)$$
 
@@ -79,7 +79,7 @@ The logistic growth model assumes that population growth slows as individuals co
 
 $$\frac{dN}{dt} = rN \left(1 - \frac{N}{K}\right)$$
 
-where $ r $ is the intrinsic growth rate and $ K $ is the carrying capacity.
+where $r$ is the intrinsic growth rate and $K$ is the carrying capacity.
 
 Discrete growth models are also possible. The Beverton-Holt model represents compensatory density dependence and is defined as
 

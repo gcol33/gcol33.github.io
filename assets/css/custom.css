@@ -688,15 +688,34 @@ button:focus:not(:focus-visible),
     border-left-color: var(--dm-text-secondary) !important;
 }
 
-/* Images - slight brightness boost */
+/* Images - reduce brightness in dark mode */
 [data-bs-theme="dark"] .writer-post-image img,
 [data-bs-theme="dark"] .lecture-img {
-    filter: brightness(0.9);
+    filter: brightness(0.7);
 }
 
 [data-bs-theme="dark"] .writer-post-image:hover img,
 [data-bs-theme="dark"] .lecture-img:hover {
-    filter: brightness(1) saturate(1.2);
+    filter: brightness(0.85) saturate(1.1);
+}
+
+/* Project overlay - dark mode */
+.project-overlay {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+[data-bs-theme="dark"] .project-overlay {
+    background: rgba(30, 30, 30, 0.95) !important;
+}
+
+[data-bs-theme="dark"] .project-overlay .overlay-title {
+    color: var(--dm-text-primary) !important;
+}
+
+[data-bs-theme="dark"] .project-overlay .overlay-btn {
+    background: var(--dm-bg-secondary);
+    color: var(--dm-text-primary);
+    border-color: var(--dm-text-secondary);
 }
 
 /* Content images - rounded corners */
