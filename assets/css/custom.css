@@ -719,6 +719,12 @@ button:focus:not(:focus-visible),
     border-color: var(--dm-text-secondary) !important;
 }
 
+/* Project section title - keep white in dark mode (needs high specificity) */
+[data-bs-theme="dark"] #project-section h1 a.text-link-01,
+[data-bs-theme="dark"] #project-section h1 a:not(.btn):not(.a-btn):not(.nav-link) {
+    color: var(--dm-text-primary) !important;
+}
+
 /* Project section images - reduce brightness in dark mode */
 [data-bs-theme="dark"] #project-section img {
     filter: brightness(0.7);
