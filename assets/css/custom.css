@@ -712,10 +712,20 @@ button:focus:not(:focus-visible),
     color: var(--dm-text-primary) !important;
 }
 
-[data-bs-theme="dark"] .project-overlay .overlay-btn {
-    background: var(--dm-bg-secondary);
-    color: var(--dm-text-primary);
-    border-color: var(--dm-text-secondary);
+[data-bs-theme="dark"] .project-overlay .overlay-btn,
+[data-bs-theme="dark"] .project-overlay .btn-light {
+    background: var(--dm-bg-tertiary) !important;
+    color: var(--dm-text-primary) !important;
+    border-color: var(--dm-text-secondary) !important;
+}
+
+/* Project section images - reduce brightness in dark mode */
+[data-bs-theme="dark"] #project-section img {
+    filter: brightness(0.7);
+}
+
+[data-bs-theme="dark"] #project-section:hover img {
+    filter: brightness(0.8);
 }
 
 /* Content images - rounded corners */
