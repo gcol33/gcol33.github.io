@@ -724,12 +724,14 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] #project-section h1 a:not(.btn):not(.a-btn):not(.nav-link) {
     color: var(--dm-text-primary) !important;
     text-decoration: none !important;
+    border-bottom: none !important;
 }
 
 [data-bs-theme="dark"] #project-section h1 a.text-link-01:hover,
 [data-bs-theme="dark"] #project-section h1 a:not(.btn):not(.a-btn):not(.nav-link):hover {
     color: var(--dm-text-secondary) !important;
     text-decoration: none !important;
+    border-bottom: none !important;
 }
 
 /* Project section images - reduce brightness in dark mode */
