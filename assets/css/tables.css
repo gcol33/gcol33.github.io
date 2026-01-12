@@ -24,21 +24,21 @@ table {
     width: 100%;
     border-collapse: collapse;
     table-layout: auto;
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
     font-family: 'RobotoSlab-Regular', serif;
     display: table;
 }
 
 /* Borders and padding */
 .base-table th, .base-table td {
-    border: 1px solid var(--swatch-var-7020);
+    border: 1px solid var(--color-text-primary);
     padding: 8px;
     text-align: left;
 }
 
 /* Header Background (Prevents Wrapping) */
 .base-table th {
-    background-color: var(--swatch-var-4819);
+    background-color: var(--color-bg-secondary);
     white-space: nowrap; /* Prevents text wrapping */
 }
 
@@ -54,7 +54,7 @@ table {
     vertical-align: middle;
     margin-right: 8px; /* Space between arrow and text */
     font-size: 12px;
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
 }
 
 /* When table is collapsed, change arrow to right arrow */

@@ -26,23 +26,23 @@ a {
 
 /* Content links (inside paragraphs) - styled distinctly */
 p a, li a, .bloc-lg a {
-    color: var(--swatch-var-2374);
+    color: var(--color-text-muted);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
 p a:hover, li a:hover, .bloc-lg a:hover {
-    color: var(--swatch-var-7020);
-    border-bottom-color: var(--swatch-var-7020);
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-text-primary);
 }
 
 /* Dark mode content links - consolidated selector */
-[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #bloc-32) a:not(.btn):not(.a-btn):not(.nav-link) {
+[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #main-content) a:not(.btn):not(.a-btn):not(.nav-link) {
     color: var(--dm-text-secondary) !important;
 }
 
-[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #bloc-32) a:not(.btn):not(.a-btn):not(.nav-link):hover {
+[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #main-content) a:not(.btn):not(.a-btn):not(.nav-link):hover {
     color: var(--dm-text-primary) !important;
     border-bottom-color: var(--dm-text-primary);
 }
@@ -99,7 +99,7 @@ p a:hover, li a:hover, .bloc-lg a:hover {
 /* Fix: Blockquote styling to match Blocs .blockquote class */
 blockquote {
     padding: 0 20px !important;
-    border-left: 10px solid var(--swatch-var-7951) !important;
+    border-left: 10px solid var(--color-text-secondary) !important;
     border-right: none !important;
     border-top: none !important;
     border-bottom: none !important;
@@ -112,7 +112,7 @@ blockquote p {
 
 /* KaTeX math styling - match body text color */
 .katex, .katex * {
-    color: var(--swatch-var-7951) !important;
+    color: var(--color-text-secondary) !important;
 }
 
 /* KaTeX - prevent horizontal scrollbars on math formulas */
@@ -155,19 +155,19 @@ blockquote p {
 }
 
 /* List styling - match body text (scoped to content areas, not navbar) */
-#bloc-32 ol, #bloc-32 ul,
+#main-content ol, #main-content ul,
 .bloc-lg ol, .bloc-lg ul,
 article ol, article ul {
     font-family: "RobotoSlab-Regular";
     font-size: 17px;
 }
 
-#bloc-32 ol li, #bloc-32 ul li,
+#main-content ol li, #main-content ul li,
 .bloc-lg ol li, .bloc-lg ul li,
 article ol li, article ul li {
     font-family: "RobotoSlab-Regular";
     font-size: 17px !important;
-    color: var(--swatch-var-7951) !important;
+    color: var(--color-text-secondary) !important;
     line-height: 29px;
     margin-bottom: 0.5em;
 }
@@ -203,7 +203,7 @@ article ol li, article ul li {
     min-width: 160px;
     width: 15%;
     padding: 15px 20px;
-    background: var(--swatch-var-4819);
+    background: var(--color-bg-secondary);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@ article ol li, article ul li {
 }
 
 .chapter-card:hover {
-    background: var(--swatch-var-1166);
+    background: var(--color-accent-tan);
 }
 
 /* Make chapter scroll area align items to stretch */
@@ -233,7 +233,7 @@ article ol li, article ul li {
     position: absolute;
     top: 80px;
     z-index: 1;
-    background: var(--swatch-var-7020);
+    background: var(--color-text-primary);
     border: none;
     border-radius: 8px;
     width: 44px;
@@ -242,7 +242,7 @@ article ol li, article ul li {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--swatch-var-4629);
+    color: var(--color-white);
     opacity: 0;
     transition: opacity 0.3s ease, background 0.2s;
 }
@@ -252,7 +252,7 @@ article ol li, article ul li {
 }
 
 .lectures-scroll-btn:hover {
-    background: var(--swatch-var-2374);
+    background: var(--color-text-muted);
 }
 
 .lectures-scroll-btn:active {
@@ -278,7 +278,7 @@ article ol li, article ul li {
 
 .lecture-img:hover {
     filter: saturate(170%);
-    box-shadow: 0px 10px 10px var(--swatch-var-7879);
+    box-shadow: 0px 10px 10px var(--color-bg-tertiary);
 }
 
 /* Mobile: larger touch targets, always visible */
@@ -317,8 +317,8 @@ article ol li, article ul li {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--swatch-var-4629);
-    border-top: 1px solid var(--swatch-var-1166);
+    background: var(--color-white);
+    border-top: 1px solid var(--color-accent-tan);
     padding: 20px;
     z-index: 100;
     box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
@@ -382,7 +382,7 @@ article ol li, article ul li {
 
 /* Light mode hover - darken icons */
 .social-icons-grid a:hover svg {
-    fill: var(--swatch-var-7343);
+    fill: var(--color-black);
 }
 
 /* ======================================
@@ -395,8 +395,8 @@ article ol li, article ul li {
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--swatch-var-7020);
-    color: var(--swatch-var-4629) !important;
+    background: var(--color-text-primary);
+    color: var(--color-white) !important;
     padding: 12px 24px;
     border-radius: 0 0 8px 8px;
     z-index: 100001;
@@ -407,7 +407,7 @@ article ol li, article ul li {
 
 .skip-link:focus {
     top: 0;
-    outline: 3px solid var(--swatch-var-2374);
+    outline: 3px solid var(--color-text-muted);
     outline-offset: 2px;
 }
 
@@ -418,7 +418,7 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
-    outline: 2px solid var(--swatch-var-7020);
+    outline: 2px solid var(--color-text-primary);
     outline-offset: 2px;
 }
 
@@ -433,30 +433,30 @@ button:focus:not(:focus-visible),
 .btn:focus-visible,
 .button-01:focus-visible,
 .button-02:focus-visible {
-    outline: 2px solid var(--swatch-var-4629);
+    outline: 2px solid var(--color-white);
     outline-offset: 2px;
-    box-shadow: 0 0 0 4px var(--swatch-var-7020);
+    box-shadow: 0 0 0 4px var(--color-text-primary);
 }
 
 /* Focus styles for nav links */
 .nav-link:focus-visible,
 .nav-links:focus-visible {
-    outline: 2px solid var(--swatch-var-7020);
+    outline: 2px solid var(--color-text-primary);
     outline-offset: 4px;
     border-radius: 4px;
 }
 
 /* Focus styles for form elements */
 .form-control:focus-visible {
-    border-color: var(--swatch-var-7020) !important;
+    border-color: var(--color-text-primary) !important;
     box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.2) !important;
     outline: none;
 }
 
 /* Skip link styles for dark mode */
 [data-bs-theme="dark"] .skip-link {
-    background: var(--swatch-var-4629);
-    color: var(--swatch-var-7020) !important;
+    background: var(--color-white);
+    color: var(--color-text-primary) !important;
 }
 
 /* ======================================
@@ -718,13 +718,13 @@ button:focus:not(:focus-visible),
 }
 
 /* Content images - rounded corners */
-#bloc-32 img:not(.writer-post-image):not(.img-rd-md),
+#main-content img:not(.writer-post-image):not(.img-rd-md),
 .background-blocs img:not(.writer-post-image):not(.img-rd-md) {
     border-radius: 8px;
 }
 
 /* Content images in dark mode - invert white backgrounds */
-[data-bs-theme="dark"] #bloc-32 img:not(.writer-post-image):not(.img-rd-md):not(.no-invert),
+[data-bs-theme="dark"] #main-content img:not(.writer-post-image):not(.img-rd-md):not(.no-invert),
 [data-bs-theme="dark"] .background-blocs img:not(.writer-post-image):not(.img-rd-md):not(.no-invert) {
     filter: invert(1) hue-rotate(180deg);
 }
@@ -754,7 +754,7 @@ button:focus:not(:focus-visible),
 }
 
 .theme-toggle:hover {
-    background-color: var(--swatch-var-684);
+    background-color: var(--color-accent-warm);
 }
 
 [data-bs-theme="dark"] .theme-toggle:hover {
@@ -764,7 +764,7 @@ button:focus:not(:focus-visible),
 .theme-toggle svg {
     width: 20px;
     height: 20px;
-    fill: var(--swatch-var-7951);
+    fill: var(--color-text-secondary);
     transition: fill 0.2s ease;
 }
 
@@ -807,13 +807,13 @@ button:focus:not(:focus-visible),
 }
 
 .search-btn:hover {
-    background-color: var(--swatch-var-684);
+    background-color: var(--color-accent-warm);
 }
 
 .search-btn svg {
     width: 20px;
     height: 20px;
-    stroke: var(--swatch-var-7951);
+    stroke: var(--color-text-secondary);
 }
 
 [data-bs-theme="dark"] .search-btn:hover {
@@ -851,7 +851,7 @@ button:focus:not(:focus-visible),
 
 /* Search modal content */
 .search-modal-content {
-    background: var(--swatch-var-4629);
+    background: var(--color-white);
     border-radius: 16px;
     width: 100%;
     max-width: 600px;
@@ -877,7 +877,7 @@ button:focus:not(:focus-visible),
     display: flex;
     align-items: center;
     padding: 16px;
-    border-bottom: 1px solid var(--swatch-var-1166);
+    border-bottom: 1px solid var(--color-accent-tan);
     gap: 12px;
 }
 
@@ -901,8 +901,8 @@ button:focus:not(:focus-visible),
 
 .search-icon {
     flex-shrink: 0;
-    color: var(--swatch-var-7951);
-    stroke: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
+    stroke: var(--color-text-secondary);
     margin-right: 10px;
 }
 
@@ -917,13 +917,13 @@ button:focus:not(:focus-visible),
     border: none;
     background: transparent;
     font-size: 16px;
-    color: var(--swatch-var-7020);
+    color: var(--color-text-primary);
     outline: none;
     font-family: "RobotoSlab-Regular";
 }
 
 .search-input::placeholder {
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
 }
 
 [data-bs-theme="dark"] .search-input {
@@ -936,12 +936,12 @@ button:focus:not(:focus-visible),
 
 .search-kbd {
     flex-shrink: 0;
-    background: var(--swatch-var-4819);
-    border: 1px solid var(--swatch-var-5583);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 11px;
-    color: var(--swatch-var-7020);
+    color: var(--color-text-primary);
     font-family: monospace;
 }
 
@@ -957,14 +957,14 @@ button:focus:not(:focus-visible),
     padding: 8px;
     cursor: pointer;
     border-radius: 8px;
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .search-close:hover {
-    background: var(--swatch-var-4819);
+    background: var(--color-bg-secondary);
 }
 
 [data-bs-theme="dark"] .search-close {
@@ -985,7 +985,7 @@ button:focus:not(:focus-visible),
 .search-hint,
 .search-loading,
 .search-no-results {
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
     text-align: center;
     padding: 40px 20px;
 }
@@ -1015,7 +1015,7 @@ button:focus:not(:focus-visible),
 }
 
 .search-result-link:hover {
-    background: var(--swatch-var-4819);
+    background: var(--color-bg-secondary);
 }
 
 [data-bs-theme="dark"] .search-result-link:hover {
@@ -1025,7 +1025,7 @@ button:focus:not(:focus-visible),
 .search-result-title {
     display: block;
     font-weight: 600;
-    color: var(--swatch-var-7020) !important;
+    color: var(--color-text-primary) !important;
     margin-bottom: 4px;
 }
 
@@ -1036,8 +1036,8 @@ button:focus:not(:focus-visible),
 .search-result-category {
     display: inline-block;
     font-size: 12px;
-    background: var(--swatch-var-684);
-    color: var(--swatch-var-7951) !important;
+    background: var(--color-accent-warm);
+    color: var(--color-text-secondary) !important;
     padding: 2px 8px;
     border-radius: 4px;
     margin-bottom: 4px;
@@ -1051,7 +1051,7 @@ button:focus:not(:focus-visible),
 .search-result-excerpt {
     display: block;
     font-size: 14px;
-    color: var(--swatch-var-7951) !important;
+    color: var(--color-text-secondary) !important;
     line-height: 1.4;
 }
 
@@ -1062,7 +1062,7 @@ button:focus:not(:focus-visible),
 .search-more {
     text-align: center;
     font-size: 14px;
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
     margin-top: 16px;
 }
 
@@ -1073,7 +1073,7 @@ button:focus:not(:focus-visible),
 /* Search footer */
 .search-modal-footer {
     padding: 12px 16px;
-    border-top: 1px solid var(--swatch-var-1166);
+    border-top: 1px solid var(--color-accent-tan);
     text-align: center;
 }
 
@@ -1083,17 +1083,17 @@ button:focus:not(:focus-visible),
 
 .search-shortcut {
     font-size: 12px;
-    color: var(--swatch-var-7951);
+    color: var(--color-text-secondary);
 }
 
 .search-shortcut kbd {
-    background: var(--swatch-var-4819);
-    border: 1px solid var(--swatch-var-5583);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 11px;
     font-family: monospace;
-    color: var(--swatch-var-7020);
+    color: var(--color-text-primary);
 }
 
 [data-bs-theme="dark"] .search-shortcut {
