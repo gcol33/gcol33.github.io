@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page not found</title>
+  <script>
+  // Case-insensitive redirects for package sites
+  (function() {
+    var path = window.location.pathname;
+    // /simp -> /SIMP
+    if (/^\/simp\b/i.test(path) && !/^\/SIMP/.test(path)) {
+      var newPath = path.replace(/^\/simp/i, '/SIMP');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
+    // /areaofeffect -> /areaOfEffect
+    if (/^\/areaofeffect\b/i.test(path) && !/^\/areaOfEffect/.test(path)) {
+      var newPath = path.replace(/^\/areaofeffect/i, '/areaOfEffect');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
+  })();
+  </script>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
