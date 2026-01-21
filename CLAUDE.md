@@ -76,10 +76,10 @@ Each content type is a Jekyll collection with its own permalink pattern:
 |------------|-----------|--------|
 | publications | `/publications/:name/` | archive-item |
 | presentations | `/presentations/:name/` | workshop |
-| workshops | `/workshop-:name/` | workshop |
-| courses | `/course-:name/` | course-overview |
-| side-projects | `/project-:name/` | workshop |
-| projects | `/proj:name/` | workshop |
+| workshops | `/workshops/:name/` | workshop |
+| courses | `/courses/:name/` | course-overview |
+| side-projects | `/side-projects/:name/` | workshop |
+| projects | `/projects/:name/` | workshop |
 
 ### Front Matter Example
 
@@ -110,6 +110,35 @@ Custom colors in `assets/css/style.css`:
 - `--swatch-var-4629`: White
 - `--swatch-var-4819`: Light gray background
 - `--swatch-var-684`: Tan/beige accent
+
+## Thumbnails for Side Projects
+
+Side project pages (R packages, etc.) use screenshots of their pkgdown sites as thumbnails. To create a thumbnail:
+
+```python
+from playwright.sync_api import sync_playwright
+from pathlib import Path
+
+output_dir = Path(r"C:\Users\Gilles Colling\Documents\website\assets\images\content")
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page(viewport={"width": 2400, "height": 1600}, device_scale_factor=1)
+    page.goto('https://gillescolling.com/PACKAGE_NAME/')
+    page.wait_for_load_state('networkidle')
+    page.screenshot(path=str(output_dir / "PACKAGE_NAME.png"))
+    browser.close()
+```
+
+Then convert to JPG and WebP:
+```bash
+cd assets/images/content
+magick PACKAGE_NAME.png PACKAGE_NAME.jpg
+magick PACKAGE_NAME.png PACKAGE_NAME.webp
+rm PACKAGE_NAME.png
+```
+
+Required size: **2400x1600** pixels.
 
 ## Deployment
 

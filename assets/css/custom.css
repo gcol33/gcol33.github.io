@@ -1144,6 +1144,70 @@ button:focus:not(:focus-visible),
     color: var(--dm-text-secondary);
 }
 
+/* ======================================
+   CITATION BOX
+   ====================================== */
+
+.citation-box {
+    position: relative;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-accent-tan);
+    border-radius: 8px;
+    padding: 16px 50px 16px 16px;
+    margin: 1em 0;
+}
+
+.citation-text {
+    font-family: "RobotoSlab-Regular";
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: var(--color-accent-warm);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: var(--color-accent-tan);
+    color: var(--color-text-primary);
+}
+
+.copy-btn.copied {
+    background: #28a745;
+    color: white;
+}
+
+[data-bs-theme="dark"] .citation-box {
+    background: var(--dm-bg-secondary);
+    border-color: var(--dm-border);
+}
+
+[data-bs-theme="dark"] .citation-text {
+    color: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .copy-btn {
+    background: var(--dm-bg-tertiary);
+    color: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .copy-btn:hover {
+    background: var(--dm-border);
+    color: var(--dm-text-primary);
+}
+
 /* Visually hidden (for screen readers) */
 .visually-hidden {
     position: absolute;

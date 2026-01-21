@@ -35,3 +35,10 @@ The package benefits ecological and bioclimatic modeling, trait-based species se
 ```r
 install.packages("corrselect")
 ```
+
+## Citation
+
+<div class="citation-box">
+  <p class="citation-text">Colling G (2025). corrselect: Fast and Flexible Predictor Pruning. doi:10.32614/CRAN.package.corrselect</p>
+  <button class="copy-btn" aria-label="Copy citation"><i class="far fa-copy"></i></button>
+</div>

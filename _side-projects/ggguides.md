@@ -28,9 +28,15 @@ The [ggguides](https://gillescolling.com/ggguides/) package provides streamlined
 
 The package delivers five functional categories: **positioning** with functions like `legend_left()`, `legend_right()`, `legend_top()`, and `legend_bottom()`; **direction** control via `legend_horizontal()` and `legend_vertical()`; **styling** options for font size, family, wrapping, reversing, and reordering; tools for **multiple legends** including hiding, selecting, and managing guides; and **multi-panel integration** supporting patchwork and cowplot workflows.
 
-Available on GitHub under MIT license.
+Available on CRAN under MIT license.
 
 ```r
-# install.packages("devtools")
-devtools::install_github("gcol33/ggguides")
+install.packages("ggguides")
 ```
+
+## Citation
+
+<div class="citation-box">
+  <p class="citation-text">Colling G (2025). ggguides: Simplified Legend and Guide Alignment for ggplot2. doi:10.32614/CRAN.package.ggguides</p>
+  <button class="copy-btn" aria-label="Copy citation"><i class="far fa-copy"></i></button>
+</div>

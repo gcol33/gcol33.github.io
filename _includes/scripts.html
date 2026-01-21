@@ -1,4 +1,22 @@
 <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script>
+  // Copy citation functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.copy-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var text = this.closest('.citation-box').querySelector('.citation-text').textContent;
+        navigator.clipboard.writeText(text).then(function() {
+          btn.classList.add('copied');
+          btn.innerHTML = '<i class="fas fa-check"></i>';
+          setTimeout(function() {
+            btn.classList.remove('copied');
+            btn.innerHTML = '<i class="far fa-copy"></i>';
+          }, 2000);
+        });
+      });
+    });
+  });
+</script>
 <script src="{{ '/assets/js/blocs.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/lazysizes.min.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/scrollFX.js' | relative_url }}"></script>
