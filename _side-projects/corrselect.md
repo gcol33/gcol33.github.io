@@ -1,6 +1,6 @@
 ---
 layout: workshop
-title: "Corrselect"
+title: "corrselect"
 date: 2025-08-05
 category: "Side Project"
 category_url: "/side-projects/"
@@ -19,7 +19,7 @@ breadcrumb:
     url: "/engagement-archive/"
   - name: "Side Projects"
     url: "/side-projects/"
-  - name: "Corrselect"
+  - name: "corrselect"
 ---
 
 <p class="mb-4"><a href="https://gillescolling.com/corrselect/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
