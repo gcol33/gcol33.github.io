@@ -1,7 +1,7 @@
 ---
 layout: workshop
 title: "Species Accumulation Curves"
-short_title: "Liam's Workshop"
+short_title: "Species Accumulation"
 date: 2026-01-26
 category: "Education"
 category_url: "/education/"
