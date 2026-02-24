@@ -81,8 +81,12 @@ $(function()
 						}
 
 						// Log Error
-						var response = $.parseJSON(xhr.responseText);
-        				console.log("Mail Error: " + response.message);
+						try {
+							var response = JSON.parse(xhr.responseText);
+							console.error("Mail Error:", response && response.message);
+						} catch (parseErr) {
+							console.error("Mail Error: Could not parse response");
+						}
 			   		},
 		   		});
 			}

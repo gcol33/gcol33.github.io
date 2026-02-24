@@ -12,7 +12,7 @@ layout: default
         <h1 class="display-md text-bold text-lg-start">{{ page.title }}</h1>
         <div class="mt-3 writer-post-group mb-3">
           <p class="mb-0 p-sm">{{ page.date | date: "%b %d, %Y" }}</p>
-          <a href="{{ page.category_url }}" class="a-btn text-link-01 post-label">{{ page.category | default: 'Education' }}</a>
+          <a href="{{ page.category_url | default: '/education/' | relative_url }}" class="a-btn post-label">{{ page.category | default: 'Education' }}</a>
         </div>
         {% if page.description %}
         <p>{{ page.description | markdownify }}</p>
@@ -45,9 +45,9 @@ layout: default
       <div class="col text-start">
         <div class="row">
           <div class="col">
-            <h1 class="mb-4 text-center mb-lg-5">
+            <h2 class="mb-4 text-center mb-lg-5">
               <a class="text-link-01" href="{{ page.project.url }}">{{ page.project.title }}</a>
-            </h1>
+            </h2>
           </div>
         </div>
         <div class="row">
@@ -56,7 +56,7 @@ layout: default
               <div class="img-overlay-main-container overlay-push-down none animSpeedSlow" used-anim-speed="animSpeedSlow">
                 <div class="img-overlay-container d-flex align-items-center project-overlay" style="background: rgb(254, 255, 255);">
                   <div class="w-100">
-                    <h4 class="overlay-title" style="color: rgba(0,0,0,.7); font-family: RobotoSlab-Regular;">{{ page.project.overlay_title }}</h4>
+                    <h4 class="overlay-title" style="font-family: RobotoSlab-Regular;">{{ page.project.overlay_title }}</h4>
                     <a href="{{ page.project.url }}" class="overlay-btn btn btn-light" style="font-family: RobotoSlab-Regular;">More Info</a>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ layout: default
   <div class="container bloc-lg bloc-md-lg">
     <div class="row">
       <div class="col">
-        <h1 class="mb-4 text-center mb-lg-5">Lectures</h1>
+        <h2 class="mb-4 text-center mb-lg-5">Lectures</h2>
         <div class="lectures-scroll-container">
           <button class="lectures-scroll-btn lectures-scroll-prev" aria-label="Scroll left">
             <svg width="26" height="26" viewBox="0 0 32 32">
@@ -115,7 +115,7 @@ layout: default
   <div class="container bloc-lg bloc-md-lg">
     <div class="row">
       <div class="col">
-        <h1 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Chapters' }}</h1>
+        <h2 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Chapters' }}</h2>
         <div class="lectures-scroll-container">
           <button class="lectures-scroll-btn lectures-scroll-prev" aria-label="Scroll left">
             <svg width="26" height="26" viewBox="0 0 32 32">
