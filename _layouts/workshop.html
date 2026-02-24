@@ -16,7 +16,7 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="bloc bgc-4819 bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+<div class="bloc bg-surface bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
   <div class="bloc-shape-divider bloc-divider-bottom">
     <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
@@ -26,14 +26,14 @@ layout: default
     <div class="row">
       <div class="col-lg-6">
         <div>
-          <p class="a-btn a-block mt-1 mb-3 text-bold tc-4629 display-md link-style">{{ page.hero_title | default: page.title }}</p>
+          <p class="a-btn a-block mt-1 mb-3 text-bold tc-text-light display-md hero-title-link">{{ page.hero_title | default: page.title }}</p>
           <div class="pencil-post-footer">
             <a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.hero_label | default: page.category }}</a>
-            {% if page.hero_separator %}<a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02 link---style">–</a>{% endif %}
-            <p class="mb-0 p-sm tc-4629">{{ page.subtitle | default: page.date | date: "%b %d, %Y" }}</p>
+            {% if page.hero_separator %}<a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02 hero-separator">–</a>{% endif %}
+            <p class="mb-0 p-sm tc-text-light">{{ page.subtitle | default: page.date | date: "%b %d, %Y" }}</p>
           </div>
           {% if page.description %}
-          <p class="tc-4629 mt-2">{{ page.description }}</p>
+          <p class="tc-text-light mt-2">{{ page.description }}</p>
           {% endif %}
         </div>
       </div>
@@ -62,9 +62,9 @@ layout: default
 {% if page.hero_image or page.hero_bg_class or page.hero_content %}
 {% capture hero_content %}
 {% if page.hero_content %}
-<h2 class="mb-4 display-md tc-4629 text-bold">{{ page.hero_title | default: "Take aways" }}</h2>
-<div class="tc-4629">
-  <p class="tc-4629">{{ page.hero_content }}</p>
+<h2 class="mb-4 display-md tc-text-light text-bold">{{ page.hero_title | default: "Take aways" }}</h2>
+<div class="tc-text-light">
+  <p class="tc-text-light">{{ page.hero_content }}</p>
 </div>
 {% endif %}
 {% endcapture %}

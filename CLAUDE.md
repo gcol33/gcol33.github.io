@@ -102,14 +102,35 @@ breadcrumb:
 ---
 ```
 
-## CSS Variables
+## Naming Conventions
 
-Custom colors in `assets/css/style.css`:
-- `--swatch-var-7020`: Dark text (#212121)
-- `--swatch-var-7951`: Medium gray (#5e5e5e)
-- `--swatch-var-4629`: White
-- `--swatch-var-4819`: Light gray background
-- `--swatch-var-684`: Tan/beige accent
+| Category | Convention | Examples |
+|----------|-----------|----------|
+| CSS classes | kebab-case, semantic | `title-post`, `bg-surface`, `hero-separator` |
+| CSS color classes | `tc-text-*` / `bg-*` | `tc-text-primary`, `tc-text-light`, `bg-surface` |
+| HTML IDs | kebab-case | `hero-section`, `main-content` |
+| Image files | lowercase with hyphens | `gilles-comic.png`, `course-std.jpg` |
+| Collection files | kebab-case | `plot-data.md`, `neobiota-2024.md` |
+| JS variables/functions | camelCase | `scrollToTarget`, `handleSubmit` |
+
+### CSS Color Classes
+
+| Class | CSS Variable | Use |
+|-------|-------------|-----|
+| `tc-text-primary` | `--color-text-primary` | Dark text (#212121) |
+| `tc-text-dark` | `--color-black` | Black text |
+| `tc-text-muted` | `--color-text-secondary` | Secondary/muted text |
+| `tc-text-light` | `--color-white` | White text (on dark bg) |
+| `bg-surface` | `--color-bg-secondary` | Light gray background |
+
+### CSS Variables
+
+Custom color variables in `assets/css/style.css`:
+- `--color-text-primary`: Dark text (#212121)
+- `--color-text-secondary`: Medium gray (#5e5e5e)
+- `--color-white`: White
+- `--color-bg-secondary`: Light gray background
+- `--color-accent-tan`: Tan/beige accent
 
 ## Thumbnails for Side Projects
 

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Hero Section -->
-<div class="bloc bgc-4819 bg-background-hero l-bloc" id="hero-writer">
+<div class="bloc bg-surface bg-background-hero l-bloc" id="hero-writer">
   <div class="bloc-shape-divider bloc-divider-bottom">
     <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
@@ -22,8 +22,8 @@ layout: default
       </div>
       <div class="col-lg-6 col-md-5">
         <picture>
-          <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/Gilles_Comic.webp' | relative_url }}">
-          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/Gilles_Comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
+          <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' | relative_url }}">
+          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
         </picture>
       </div>
     </div>
@@ -36,7 +36,7 @@ layout: default
     <div class="row" data-scroll-fx-resistance="10">
       <div class="col mb-5">
         <div class="pencil-heading">
-          <h3 class="mb-0 text-bold tc-7020 text-uppercase"><span class="me-1 fa fa-star-of-life me-lg-1"></span>&nbsp;ReCENT<br></h3>
+          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-star-of-life me-lg-1"></span>&nbsp;ReCENT<br></h3>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@ layout: default
                 <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
                 <a href="{{ item.category_url | default: '/archive/' | relative_url }}" class="a-btn post-label">{{ item.category }}</a>
               </div>
-              <a href="{{ item.url | relative_url }}" class="a-btn a-block tital-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
+              <a href="{{ item.url | relative_url }}" class="a-btn a-block title-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
             </div>
           </div>
           {% endfor %}

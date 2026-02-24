@@ -499,7 +499,7 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] h5,
 [data-bs-theme="dark"] h6,
 [data-bs-theme="dark"] .navbar-brand,
-[data-bs-theme="dark"] .tital-post,
+[data-bs-theme="dark"] .title-post,
 [data-bs-theme="dark"] .text-link-01 {
     color: var(--dm-text-primary) !important;
 }
@@ -542,7 +542,7 @@ button:focus:not(:focus-visible),
     background-color: var(--dm-bg-primary);
 }
 
-[data-bs-theme="dark"] .bgc-4819 {
+[data-bs-theme="dark"] .bg-surface {
     background-color: var(--dm-bg-secondary) !important;
 }
 
@@ -568,14 +568,14 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] #hero.d-bloc h3,
 [data-bs-theme="dark"] #hero.d-bloc h4,
 [data-bs-theme="dark"] #hero.d-bloc p,
-[data-bs-theme="dark"] #hero.d-bloc .tc-4629,
+[data-bs-theme="dark"] #hero.d-bloc .tc-text-light,
 [data-bs-theme="dark"] #hero.d-bloc .display-md,
 [data-bs-theme="dark"] #hero-img.d-bloc h1,
 [data-bs-theme="dark"] #hero-img.d-bloc h2,
 [data-bs-theme="dark"] #hero-img.d-bloc h3,
 [data-bs-theme="dark"] #hero-img.d-bloc h4,
 [data-bs-theme="dark"] #hero-img.d-bloc p,
-[data-bs-theme="dark"] #hero-img.d-bloc .tc-4629 {
+[data-bs-theme="dark"] #hero-img.d-bloc .tc-text-light {
     color: rgba(255,255,255,0.9) !important;
 }
 
@@ -1262,7 +1262,7 @@ button:focus:not(:focus-visible),
     margin-bottom: 8px;
 }
 
-.related-card-title .tital-post {
+.related-card-title .title-post {
     font-size: 18px;
     line-height: 26px;
 }
