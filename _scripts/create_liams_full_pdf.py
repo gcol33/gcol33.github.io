@@ -47,7 +47,7 @@ sections = {
 cover_info = {
     "en": {
         "title": "Species Accumulation Curves",
-        "tagline": "How Do We Count Species We Can't See?",
+        "tagline": "",
         "type": "Ecology Workshop",
         "date": "January 26–27, 2026",
         "institution": "Division of BioInvasions, Global Change &amp; Macroecology",
@@ -57,7 +57,7 @@ cover_info = {
     },
     "de": {
         "title": "Artenakkumulationskurven",
-        "tagline": "Wie zählt man Arten, die man nicht sieht?",
+        "tagline": "",
         "type": "Ökologie-Workshop",
         "date": "26.–27. Jänner 2026",
         "institution": "Division of BioInvasions, Global Change &amp; Macroecology",
@@ -259,6 +259,7 @@ def render_file_to_pdf(browser, html_path, out_path, hide_cls, show_cls, lang_su
             p code, li code, h1 code, h2 code, h3 code {{ font-size: inherit; }}
             img {{ max-width: 100%; height: auto; }}
             .figure, .float-figure {{ max-width: 100%; overflow: hidden; }}
+            #session-infosession-info, #session-info {{ display: none !important; }}
         `;
         document.head.appendChild(style);
     }}""")

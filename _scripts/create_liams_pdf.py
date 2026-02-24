@@ -108,7 +108,7 @@ doc = SimpleDocTemplate(
     bottomMargin=2.5 * cm,
     leftMargin=2.5 * cm,
     rightMargin=2.5 * cm,
-    title="Species Accumulation Curves – Workshop with Liam",
+    title="Species Accumulation Curves",
     author="Gilles Colling",
     subject="Teaching Material",
 )
@@ -116,8 +116,7 @@ doc = SimpleDocTemplate(
 story = []
 
 # Title block
-story.append(Paragraph("How Do We Count Species We Can't See?", style_title))
-story.append(Paragraph("Species Accumulation Curves", style_subtitle))
+story.append(Paragraph("Species Accumulation Curves", style_title))
 story.append(Paragraph("January 26–27, 2026 · Division of BioInvasions, Global Change &amp; Macroecology · University of Vienna", style_meta))
 
 # Divider
