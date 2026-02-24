@@ -13,10 +13,10 @@ layout: default
     <div class="row">
       <div class="col-lg-6">
         <div>
-          <a href="{{ '/' | relative_url }}" class="a-btn a-block mt-1 mb-3 text-bold text-link-02 display-md link-style">{{ page.title }}</a>
+          <a href="{{ '/' | relative_url }}" class="a-btn a-block mt-1 mb-3 text-bold text-link-02 display-md hero-title-link">{{ page.title }}</a>
           <div class="pencil-post-footer">
             <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.category | default: 'Project' }}</a>
-            <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02 link---style">–</a>
+            <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02 hero-separator">–</a>
             <p class="mb-0 p-sm tc-text-light">{{ page.status | default: 'Currently running' }}</p>
           </div>
           {% if page.description %}

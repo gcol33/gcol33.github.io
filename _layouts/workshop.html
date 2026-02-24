@@ -26,10 +26,10 @@ layout: default
     <div class="row">
       <div class="col-lg-6">
         <div>
-          <p class="a-btn a-block mt-1 mb-3 text-bold tc-text-light display-md link-style">{{ page.hero_title | default: page.title }}</p>
+          <p class="a-btn a-block mt-1 mb-3 text-bold tc-text-light display-md hero-title-link">{{ page.hero_title | default: page.title }}</p>
           <div class="pencil-post-footer">
             <a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.hero_label | default: page.category }}</a>
-            {% if page.hero_separator %}<a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02 link---style">–</a>{% endif %}
+            {% if page.hero_separator %}<a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02 hero-separator">–</a>{% endif %}
             <p class="mb-0 p-sm tc-text-light">{{ page.subtitle | default: page.date | date: "%b %d, %Y" }}</p>
           </div>
           {% if page.description %}
