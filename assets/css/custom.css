@@ -542,7 +542,6 @@ button:focus:not(:focus-visible),
     background-color: var(--dm-bg-primary);
 }
 
-[data-bs-theme="dark"] .bgc-4819,
 [data-bs-theme="dark"] .bg-surface {
     background-color: var(--dm-bg-secondary) !important;
 }
@@ -569,7 +568,6 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] #hero.d-bloc h3,
 [data-bs-theme="dark"] #hero.d-bloc h4,
 [data-bs-theme="dark"] #hero.d-bloc p,
-[data-bs-theme="dark"] #hero.d-bloc .tc-4629,
 [data-bs-theme="dark"] #hero.d-bloc .tc-text-light,
 [data-bs-theme="dark"] #hero.d-bloc .display-md,
 [data-bs-theme="dark"] #hero-img.d-bloc h1,
@@ -577,7 +575,6 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] #hero-img.d-bloc h3,
 [data-bs-theme="dark"] #hero-img.d-bloc h4,
 [data-bs-theme="dark"] #hero-img.d-bloc p,
-[data-bs-theme="dark"] #hero-img.d-bloc .tc-4629,
 [data-bs-theme="dark"] #hero-img.d-bloc .tc-text-light {
     color: rgba(255,255,255,0.9) !important;
 }
