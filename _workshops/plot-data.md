@@ -231,7 +231,7 @@ They discussed sharing the table as an online document for broader accessibility
 </tbody>
 </table>
 
-<p class="mb-4 mt-lg-2 mb-lg-1 text-lg-start tc-text-muted"><strong>*Considerations for Grid-Based Data</strong></p>
+<p class="mb-4 mt-lg-2 mb-lg-1 text-lg-start tc-7951"><strong>*Considerations for Grid-Based Data</strong></p>
 
 <table class="base-table">
 <tbody>

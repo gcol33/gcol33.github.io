@@ -21,7 +21,7 @@ description: |
 
 hero_image: "/assets/images/content/course_fet_hero.jpg"
 hero_image_webp: "/assets/images/content/course_fet_hero.webp"
-hero_classes: "bg-surface bg-bg d-bloc bloc-bg-texture texture-darken-strong"
+hero_classes: "bgc-4819 bg-bg d-bloc bloc-bg-texture texture-darken-strong"
 
 intro_title: "Course Highlights"
 intro_content: |

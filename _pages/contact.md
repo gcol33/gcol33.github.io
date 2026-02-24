@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-API-Key": "{{ site.submitjson_api_key }}"
+          "X-API-Key": "sjk_1a071de23f934b12bfc91b790bc9d7c0"
         },
         body: JSON.stringify(jsonObject)
       });

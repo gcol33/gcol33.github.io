@@ -233,25 +233,26 @@ def render_file_to_pdf(browser, html_path, out_path, hide_cls, show_cls, lang_su
     page = browser.new_page()
     page.goto(html_path.as_uri())
     page.wait_for_load_state("networkidle")
-    page.evaluate("""([hideCls, showCls, langSuffix]) => {
-        document.querySelectorAll('.' + hideCls).forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.' + showCls).forEach(el => el.style.display = 'inline');
+    page.evaluate(f"""() => {{
+        document.querySelectorAll('.{hide_cls}').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.{show_cls}').forEach(el => el.style.display = 'inline');
         document.querySelectorAll('.lang-toggle').forEach(el => el.style.display = 'none');
-        if (langSuffix === 'de') {
+        if ('{lang_suffix}' === 'de') {{
             document.body.classList.add('lang-de');
-        } else {
+        }} else {{
             document.body.classList.remove('lang-de');
-        }
+        }}
+        // Hide R code blocks and fix styling
         const style = document.createElement('style');
         style.textContent = `
-            pre.r { display: none !important; }
-            p code, li code, h1 code, h2 code, h3 code { font-size: inherit; }
-            img { max-width: 100%; height: auto; }
-            .figure, .float-figure { max-width: 100%; overflow: hidden; }
-            #session-infosession-info, #session-info { display: none !important; }
+            pre.r {{ display: none !important; }}
+            p code, li code, h1 code, h2 code, h3 code {{ font-size: inherit; }}
+            img {{ max-width: 100%; height: auto; }}
+            .figure, .float-figure {{ max-width: 100%; overflow: hidden; }}
+            #session-infosession-info, #session-info {{ display: none !important; }}
         `;
         document.head.appendChild(style);
-    }""", [hide_cls, show_cls, lang_suffix])
+    }}""")
     page.wait_for_timeout(500)
     page.pdf(
         path=str(out_path), format="A4",

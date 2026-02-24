@@ -59,7 +59,7 @@ Usage: {% include related-content.html %}
             <div class="related-card-body">
               <span class="post-label mb-2">{{ item.category }}</span>
               <h4 class="related-card-title">
-                <a href="{{ item.url | relative_url }}" class="title-post">{{ item.short_title | default: item.title }}</a>
+                <a href="{{ item.url | relative_url }}" class="tital-post">{{ item.short_title | default: item.title }}</a>
               </h4>
               {% if item.date %}
               <p class="p-sm mb-0">{{ item.date | date: "%b %d, %Y" }}</p>

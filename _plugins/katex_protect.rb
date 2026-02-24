@@ -17,7 +17,7 @@ module Jekyll
       reset
 
       # Protect display math $$...$$ (multiline)
-      content = content.gsub(/\$\$([\s\S]+?)\$\$/) do
+      content = content.gsub(/\$\$(.+?)\$\$/m) do
         key = "KATEXDISPLAY#{@@counter}XETAKEND"
         @@display_blocks[key] = $1
         @@counter += 1

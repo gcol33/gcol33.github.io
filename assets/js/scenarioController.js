@@ -44,28 +44,26 @@ function updateMedia() {
   const imagePath = "/assets/scenario_plots/" + combo_id + ".jpg";
   const videoPath = "/assets/scenario_videos/" + combo_id + ".mp4";
 
+  console.log("✅ Image path:", imagePath);
+  console.log("✅ Video path:", videoPath);
+
   const image = document.getElementById("scenarioImage");
   const video = document.getElementById("scenarioVideo");
   const source = document.getElementById("videoSource");
 
   // Preload image
   const preloadImage = new Image();
+  preloadImage.src = imagePath;
   preloadImage.onload = () => {
     image.src = imagePath;
   };
-  preloadImage.onerror = () => {
-    image.src = imagePath; // Fallback: let browser handle error display
-  };
-  preloadImage.src = imagePath;
 
   // Update video directly
   const currentVideoSrc = source.getAttribute("src");
   if (videoPath !== currentVideoSrc) {
     source.src = videoPath;
     video.load();
-    video.play().catch(() => {
-      video.controls = true; // Show controls if autoplay blocked
-    });
+    video.play().catch(e => console.log("Video autoplay blocked:", e));
   }
 }
 

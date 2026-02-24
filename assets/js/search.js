@@ -78,14 +78,9 @@
       var results = searchIndex.search(query + '*');
       displayResults(results, query);
     } catch (e) {
-      // Fallback for invalid queries (e.g. special characters)
-      console.error('Search query failed, trying fallback:', e);
-      try {
-        var results = searchIndex.search(query);
-        displayResults(results, query);
-      } catch (fallbackErr) {
-        searchResults.innerHTML = '<p class="search-no-results">Could not process search query.</p>';
-      }
+      // Fallback for invalid queries
+      var results = searchIndex.search(query);
+      displayResults(results, query);
     }
   }
 
