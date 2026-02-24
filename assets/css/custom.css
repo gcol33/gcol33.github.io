@@ -500,6 +500,7 @@ button:focus:not(:focus-visible),
 [data-bs-theme="dark"] h6,
 [data-bs-theme="dark"] .navbar-brand,
 [data-bs-theme="dark"] .tital-post,
+[data-bs-theme="dark"] .title-post,
 [data-bs-theme="dark"] .text-link-01 {
     color: var(--dm-text-primary) !important;
 }
@@ -1262,7 +1263,8 @@ button:focus:not(:focus-visible),
     margin-bottom: 8px;
 }
 
-.related-card-title .tital-post {
+.related-card-title .tital-post,
+.related-card-title .title-post {
     font-size: 18px;
     line-height: 26px;
 }
