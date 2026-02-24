@@ -1,7 +1,7 @@
 ---
 layout: workshop
 title: "ggguides"
-date: 2025-09-08
+date: 2025-12-17
 category: "Side Project"
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/ggguides.jpg"
