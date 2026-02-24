@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/agriweed_proj.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_proj.webp"
 hero_bg_class: "bg-agriweed-proj"
 hero_combined: true
+hero_container_class: "bloc-md"
 hero_label: "Project"
 subtitle: "2021-2024"
 description: "Emerging Agricultural Weeds under climate and land-use changes in Central Europe: identifying high-risk species, modelling their distributions, assessing impacts and management need."

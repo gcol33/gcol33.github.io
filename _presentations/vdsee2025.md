@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/presentation_vdsee_2025.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_2025.webp"
 hero_bg_class: "bg-presentation-vdsee-2025-personal"
 hero_combined: true
+hero_container_class: "bloc-md"
 description: "At the VDSEE Symposium 2025, I presented my first paper, showcasing how neophyte species have significantly increased in agricultural landscapes over the past century, while archaeophytes have followed a more stable trajectory."
 hero_title: "A Gathering of Early-Career Researchers in Ecology and Evolution"
 breadcrumb:

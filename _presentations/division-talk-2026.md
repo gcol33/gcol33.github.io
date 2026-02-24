@@ -8,7 +8,9 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_division_2026.jpg"
 thumbnail_webp: "/assets/images/content/presentation_division_2026.webp"
 hero_bg_class: "bg-presentation-division-2026"
+texture_class: "texture-darken-extra"
 hero_combined: true
+hero_container_class: "bloc-md"
 description: "At the January 2026 division meeting, I presented my ongoing work on reconstructing habitat niche expansion patterns of alien plant species across Europe, using 1.9 million vegetation plots from the European Vegetation Archive."
 hero_title: "Reconstructing Habitat Niche Expansion"
 breadcrumb:

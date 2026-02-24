@@ -13,6 +13,10 @@ breadcrumb:
     url: "/course-foundevotheo/"
   - name: "Overview"
 
+prev_chapter:
+  title: "Back to Overview"
+  url: "/course-foundevotheo/"
+
 course:
   name: "Foundation of Evolutionary Theory"
   url: "/course-foundevotheo/"

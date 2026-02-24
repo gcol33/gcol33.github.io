@@ -17,6 +17,10 @@ prev_chapter:
   title: "Lecture 8"
   url: "/course-spattempdyn-lecture8/"
 
+next_chapter:
+  title: "Back to Overview"
+  url: "/course-spattempdyn/"
+
 math: true
 ---
 

@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/presentation_vdsee_header_2024.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
 hero_bg_class: "bg-presentation-vdsee-2024-personal"
 hero_combined: true
+hero_container_class: "bloc-md"
 description: "At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century."
 hero_title: "A Platform for Early-Career Researchers"
 breadcrumb:

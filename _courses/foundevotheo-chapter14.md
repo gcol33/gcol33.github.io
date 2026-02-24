@@ -16,6 +16,10 @@ breadcrumb:
 prev_chapter:
   title: "Chapter 13"
   url: "/course-foundevotheo-chapter13/"
+
+next_chapter:
+  title: "Back to Overview"
+  url: "/course-foundevotheo/"
 ---
 
 Darwin closes the *Origin* with a reflective and strategic chapter. One that summarizes, defends, and contextualizes the argument he has spent the entire book developing. He is cautious but confident, acknowledging the boldness of his claims and the controversy they provoked, while reiterating the logic and evidence that led him to them. This is not just a summary, but a final act of persuasion. After twenty years of study, experimentation, and writing, Darwin was convinced he was right, and he wanted his readers to see it too.
