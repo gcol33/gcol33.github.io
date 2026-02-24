@@ -59,7 +59,7 @@ p a:hover, li a:hover, .bloc-lg a:hover {
 
 /* Inline code - dark mode */
 [data-bs-theme="dark"] code {
-    color: #e8b4b8 !important;
+    color: var(--dm-code-color) !important;
     background-color: var(--dm-bg-tertiary) !important;
 }
 
@@ -482,6 +482,7 @@ button:focus:not(:focus-visible),
     --dm-text-secondary: #b0b0b0;
     --dm-accent: #f8f0ea;
     --dm-border: #404040;
+    --dm-code-color: #e8b4b8;
 }
 
 /* Body and page container */
@@ -562,9 +563,6 @@ button:focus:not(:focus-visible),
 /* Keep text colors unchanged on hero banners with background images in dark mode */
 /* Only target the direct banner/hero bloc by ID, not content sections */
 /* Note: #hero-writer (homepage) is excluded so it CAN change in dark mode */
-[data-bs-theme="dark"] #hero.d-bloc h1,
-[data-bs-theme="dark"] #hero.d-bloc h2,
-[data-bs-theme="dark"] #hero.d-bloc h3,
 [data-bs-theme="dark"] #hero.d-bloc h1,
 [data-bs-theme="dark"] #hero.d-bloc h2,
 [data-bs-theme="dark"] #hero.d-bloc h3,
