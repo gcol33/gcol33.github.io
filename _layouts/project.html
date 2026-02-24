@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Project Hero -->
-<div class="bloc bgc-4819 bloc-bg-texture texture-darken{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %} d-bloc" id="hero"{% if page.hero_image and not page.hero_bg_class %} style="background-image: url('{{ page.hero_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+<div class="bloc bg-surface bloc-bg-texture texture-darken{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %} d-bloc" id="hero"{% if page.hero_image and not page.hero_bg_class %} style="background-image: url('{{ page.hero_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
   <div class="bloc-shape-divider bloc-divider-bottom">
     <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
@@ -17,10 +17,10 @@ layout: default
           <div class="pencil-post-footer">
             <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.category | default: 'Project' }}</a>
             <a href="{{ page.category_url | default: '/publications/' | relative_url }}" class="a-btn p-sm text-link-02 link---style">–</a>
-            <p class="mb-0 p-sm tc-4629">{{ page.status | default: 'Currently running' }}</p>
+            <p class="mb-0 p-sm tc-text-light">{{ page.status | default: 'Currently running' }}</p>
           </div>
           {% if page.description %}
-          <p class="p-md tc-4629 mt-2">{{ page.description }}</p>
+          <p class="p-md tc-text-light mt-2">{{ page.description }}</p>
           {% endif %}
         </div>
       </div>
@@ -41,7 +41,7 @@ layout: default
 
 {% if page.team %}
 <!-- Team Section -->
-<div class="bloc l-bloc bgc-4819" id="team">
+<div class="bloc l-bloc bg-surface" id="team">
   <div class="container bloc-md">
     <div class="row mb-4">
       <div class="col-12">
@@ -60,7 +60,7 @@ layout: default
           {% endif %}
           <h5 class="text-bold">{{ member.name }}</h5>
           {% if member.role %}
-          <p class="tc-7951">{{ member.role }}</p>
+          <p class="tc-text-muted">{{ member.role }}</p>
           {% endif %}
           {% if member.affiliation %}
           <p class="p-sm">{{ member.affiliation }}</p>
@@ -99,11 +99,11 @@ layout: default
 
 {% if page.funding %}
 <!-- Funding Section -->
-<div class="bloc l-bloc bgc-4819" id="funding">
+<div class="bloc l-bloc bg-surface" id="funding">
   <div class="container bloc-sm">
     <div class="row">
       <div class="col-12 text-center">
-        <p class="p-sm tc-7951 mb-2">Funded by</p>
+        <p class="p-sm tc-text-muted mb-2">Funded by</p>
         <p class="text-bold">{{ page.funding }}</p>
       </div>
     </div>

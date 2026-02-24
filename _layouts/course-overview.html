@@ -25,8 +25,8 @@ layout: default
 <!-- Hero Image with Course Highlights -->
 {% if page.intro_content %}
 {% capture hero_content %}
-<h2 class="mb-4 display-md tc-4629 text-bold">{{ page.intro_title | default: 'Course Highlights' }}</h2>
-<div class="tc-4629">
+<h2 class="mb-4 display-md tc-text-light text-bold">{{ page.intro_title | default: 'Course Highlights' }}</h2>
+<div class="tc-text-light">
   {{ page.intro_content | markdownify }}
 </div>
 {% endcapture %}
@@ -90,7 +90,7 @@ layout: default
               <a href="{{ lecture.url }}">
                 {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto d-block lazyload lecture-img" width="256" height="171" %}
               </a>
-              <h5 class="tc-7343 mt-3">
+              <h5 class="tc-text-dark mt-3">
                 <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
               </h5>
               <p>{{ lecture.subtitle }}</p>
@@ -125,7 +125,7 @@ layout: default
           <div class="lectures-scroll-area">
             {% for chapter in page.chapters %}
             <div class="lecture-card chapter-card">
-              <h5 class="tc-7343 mt-0">
+              <h5 class="tc-text-dark mt-0">
                 <a class="text-link-01" href="{{ chapter.url }}">{{ chapter.title }}</a>
               </h5>
               <p class="mb-0">{{ chapter.subtitle }}</p>

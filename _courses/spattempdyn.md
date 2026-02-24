@@ -22,7 +22,7 @@ description: |
 
 hero_image: "/assets/images/content/course_std_banner.gif"
 hero_image_webp: "/assets/images/content/course_std_banner.gif"
-hero_classes: "bgc-4819 bg-course-std-banner d-bloc bloc-bg-texture texture-darken-strong"
+hero_classes: "bg-surface bg-course-std-banner d-bloc bloc-bg-texture texture-darken-strong"
 
 intro_title: "Course Highlights"
 intro_content: |
