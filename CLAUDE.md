@@ -104,12 +104,33 @@ breadcrumb:
 
 ## CSS Variables
 
-Custom colors in `assets/css/style.css`:
-- `--swatch-var-7020`: Dark text (#212121)
-- `--swatch-var-7951`: Medium gray (#5e5e5e)
-- `--swatch-var-4629`: White
-- `--swatch-var-4819`: Light gray background
-- `--swatch-var-684`: Tan/beige accent
+Custom CSS variables in `assets/css/style.css` `:root`:
+- `--color-text-primary`: Dark text (#212121)
+- `--color-text-secondary`: Medium gray (#5e5e5e)
+- `--color-white`: White
+- `--color-black`: Black
+- `--color-bg-secondary`: Light gray background
+- `--color-accent-tan`: Tan/beige accent
+- `--color-accent-cream`: Cream accent
+- `--color-border`: Border color
+
+Dark mode variables in `assets/css/custom.css`:
+- `--dm-bg-primary`, `--dm-bg-secondary`, `--dm-bg-tertiary`: Background tiers
+- `--dm-text-primary`, `--dm-text-secondary`: Text colors
+- `--dm-accent`, `--dm-border`, `--dm-code-color`: Accent/border/code
+
+## CSS Naming Conventions
+
+| CSS Class | Purpose |
+|-----------|---------|
+| `tc-text-primary` | Dark text color |
+| `tc-text-dark` | Black text color |
+| `tc-text-light` | White text color (hero sections) |
+| `tc-text-muted` | Secondary/muted text color |
+| `bg-surface` | Light gray background |
+| `hero-title-link` | Hero section title styling |
+| `hero-separator` | Hero section separator dash |
+| `title-post` | Post title link styling |
 
 ## Thumbnails for Side Projects
 
