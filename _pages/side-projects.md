@@ -38,7 +38,7 @@ breadcrumb:
               </a>
               <div class="mt-3 writer-post-group mb-3">
                 <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
-                <span class="post-label">{{ item.category }}</span>
+                <a href="{{ item.category_url | default: '/side-projects/' | relative_url }}" class="a-btn post-label">{{ item.category }}</a>
               </div>
               <a href="{{ item.url | relative_url }}" class="a-btn a-block title-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
             </div>
