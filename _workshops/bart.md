@@ -9,7 +9,7 @@ description: "From September 22 to 24, 2025, Jeremy Yoder and Colin Carlson led 
 thumbnail: "/assets/images/content/bart-modelling.png"
 thumbnail_webp: "/assets/images/content/bart-modelling.webp"
 hero_bg_class: "bg-bart-modelling2"
-texture_class: "texture-darken-strong"
+texture_class: "texture-darken-extra"
 hero_title: "Take aways"
 hero_content: "Across three days, the workshop built a continuous path from classical regression models to Bayesian tree ensembles, connecting ecological intuition with modern statistical tools. Through a mix of lectures and live coding in R, we worked step by step from basic species distribution models toward BART and its random-intercept extensions. Using the Joshua tree (<i>Yucca brevifolia</i>) dataset as a running example, we compared how different modeling approaches capture environmental structure across the southwestern United States. <br><br>Each session deepened the same idea: ecological responses are nonlinear, interactive, and uncertain, and modeling should reflect this complexity rather than simplify it away. BART provided a natural framework for that goal, combining the flexibility of decision trees with the interpretability of regression and the rigor of Bayesian inference. <br><br>We learned BART modeling as a way to move beyond the constraints of linear models, using ensembles of regression trees to uncover nonlinear relationships, capture interactions automatically, and quantify uncertainty while accounting for regional structure in the data."
 math: true
