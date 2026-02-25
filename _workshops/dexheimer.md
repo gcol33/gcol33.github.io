@@ -8,7 +8,7 @@ description: "This workshop, taught by Philipp Dexheimer in November 2024, was d
 thumbnail: "/assets/images/content/creode.jpg"
 thumbnail_webp: "/assets/images/content/creode.webp"
 hero_bg_class: "bg-creode"
-hero_container_class: "bloc-md bloc-lg-md bloc-xl-lg"
+hero_container_class: "pad-md pad-lg-md pad-xl-lg"
 hero_title: "Take aways"
 hero_content: "Visuals are never neutral. They guide interpretation, direct attention, and leave lasting impressions. By connecting design principles to a long history of scientific illustration, the course showed us that visual literacy, while secondary to the data itself, plays a decisive role in how that data is received. We began to question the role of figures in our own work and were encouraged to treat them as central to the scientific process."
 breadcrumb:

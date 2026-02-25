@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="bloc l-bloc" id="item-header">
-  <div class="container bloc-md bloc-sm-lg">
+<div class="section section-light" id="item-header">
+  <div class="container pad-md pad-sm-lg">
     <div class="row">
       <div class="col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
@@ -21,13 +21,13 @@ layout: default
 </div>
 
 {% if page.thumbnail %}
-<div class="bloc l-bloc bg-surface" id="item-image">
-  <div class="container bloc-sm">
+<div class="section section-light bg-surface" id="item-image">
+  <div class="container pad-sm">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <picture>
           <source type="image/webp" srcset="{{ page.thumbnail_webp | relative_url }}">
-          <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto d-block img-rd-md" alt="{{ page.title }}" loading="lazy">
+          <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto section-darkk img-rd-md" alt="{{ page.title }}" loading="lazy">
         </picture>
       </div>
     </div>
@@ -35,8 +35,8 @@ layout: default
 </div>
 {% endif %}
 
-<div class="bloc l-bloc" id="item-content">
-  <div class="container bloc-md">
+<div class="section section-light" id="item-content">
+  <div class="container pad-md">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
         {{ content }}

@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% include bloc-breadcrumb.html items=page.breadcrumb id="breadcrumb-section" %}
+{% include section-breadcrumb.html items=page.breadcrumb id="breadcrumb-section" %}
 
 <!-- Hero Section -->
-<div class="bloc l-bloc" id="hero">
-  <div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+<div class="section section-light" id="hero">
+  <div class="container pad-none-lg pad-none-md pad-none-sm pad-none">
     <div class="row">
       <div class="text-start col-md-10 offset-md-1 offset-lg-0 col-lg-12">
         <h1 class="display-md text-bold text-lg-start">{{ page.title }}</h1>
@@ -39,8 +39,8 @@ layout: default
 
 <!-- Project Section (if exists) -->
 {% if page.project %}
-<div class="bloc l-bloc" id="project-section">
-  <div class="container bloc-md bloc-lg-lg">
+<div class="section section-light" id="project-section">
+  <div class="container pad-md pad-lg-lg">
     <div class="row">
       <div class="col text-start">
         <div class="row">
@@ -73,8 +73,8 @@ layout: default
 
 <!-- Lectures/Chapters Section -->
 {% if page.lectures %}
-<div class="bloc l-bloc" id="lectures-section">
-  <div class="container bloc-lg bloc-md-lg">
+<div class="section section-light" id="lectures-section">
+  <div class="container pad-lg pad-md-lg">
     <div class="row">
       <div class="col">
         <h2 class="mb-4 text-center mb-lg-5">Lectures</h2>
@@ -88,7 +88,7 @@ layout: default
             {% for lecture in page.lectures %}
             <div class="lecture-card">
               <a href="{{ lecture.url }}">
-                {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto d-block lazyload lecture-img" width="256" height="171" %}
+                {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto section-darkk lazyload lecture-img" width="256" height="171" %}
               </a>
               <h5 class="tc-text-dark mt-3">
                 <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
@@ -111,8 +111,8 @@ layout: default
 
 <!-- Chapters Section (horizontal scroll, no images) -->
 {% if page.chapters %}
-<div class="bloc l-bloc" id="chapters-section">
-  <div class="container bloc-lg bloc-md-lg">
+<div class="section section-light" id="chapters-section">
+  <div class="container pad-lg pad-md-lg">
     <div class="row">
       <div class="col">
         <h2 class="mb-4 text-center mb-lg-5">{{ page.chapters_title | default: 'Chapters' }}</h2>

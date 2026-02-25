@@ -3,19 +3,19 @@ layout: default
 ---
 
 <!-- Hero Section -->
-<div class="bloc bg-surface bg-background-hero l-bloc" id="hero-writer">
-  <div class="bloc-shape-divider bloc-divider-bottom">
-    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+<div class="section bg-surface bg-background-hero section-light" id="hero-writer">
+  <div class="shape-divider divider-bottom">
+    <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container bloc-sm bloc-md-md bloc-lg-lg">
+  <div class="container pad-sm pad-md-md pad-lg-lg">
     <div class="row">
       <div class="col-lg-6 align-self-center mb-4 mb-lg-0 col-md-7 text-sm-center">
         <h3 class="mb-4"><i>"{{ page.quote | default: 'We live in cities, but the roots of our imagination sink into the forests.' }}"&nbsp;&nbsp;<br></i>({{ page.quote_author | default: 'Italo Calvino' }})<br></h3>
         <h1 class="text-bold mb-2 display-md text-center">{{ page.hero_title | default: site.title }}<br></h1>
         <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }}</h4>
-        <p class="mb-4 text-center mx-auto d-block p-style">{{ page.hero_description | default: site.description }}</p>
+        <p class="mb-4 text-center mx-auto section-darkk p-style">{{ page.hero_description | default: site.description }}</p>
         <div class="text-center">
           <a href="#" class="btn btn-lg float-md-none btn-d button-01" data-scroll-speed="1000" onclick="scrollToTarget('0',this)">Learn more</a>
         </div>
@@ -23,7 +23,7 @@ layout: default
       <div class="col-lg-6 col-md-5">
         <picture>
           <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' | relative_url }}">
-          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
+          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto section-darkk imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
         </picture>
       </div>
     </div>
@@ -31,8 +31,8 @@ layout: default
 </div>
 
 <!-- Category Navigation -->
-<div class="bloc l-bloc" id="category-nav">
-  <div class="container bloc-md bloc-sm-lg">
+<div class="section section-light" id="category-nav">
+  <div class="container pad-md pad-sm-lg">
     <div class="row" data-scroll-fx-resistance="10">
       <div class="col mb-5">
         <div class="pencil-heading">
@@ -60,8 +60,8 @@ layout: default
 </div>
 
 <!-- Recent Posts Grid -->
-<div class="bloc l-bloc background-blocs" id="blog-writer">
-  <div class="container bloc-sm bloc-sm-md">
+<div class="section section-light background-gradient" id="blog-writer">
+  <div class="container pad-sm pad-sm-md">
     <div class="row">
       <div class="text-start col-lg-12">
         <div class="blocs-grid-container writer-post-library">
@@ -70,7 +70,7 @@ layout: default
           <div class="writer-posts">
             <div>
               <a href="{{ item.url | relative_url }}">
-                {% include lazy-image.html src=item.thumbnail src_webp=item.thumbnail_webp alt=item.title class="img-fluid mx-auto d-block writer-post-image img-rd-md lazyload" width="398" height="265" %}
+                {% include lazy-image.html src=item.thumbnail src_webp=item.thumbnail_webp alt=item.title class="img-fluid mx-auto section-darkk writer-post-image img-rd-md lazyload" width="398" height="265" %}
               </a>
               <div class="mt-3 writer-post-group mb-3">
                 <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>

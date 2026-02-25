@@ -29,13 +29,13 @@ I arrived in Lisbon in the late afternoon, just in time to take in the city's at
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day1_1.webp">
-<img src="/assets/images/content/conference_neobiota2024_day1_1.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day1_1" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day1_1.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day1_1" width="628" height="419">
 </picture>
 </div>
 <div class="col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day1_2.webp">
-<img src="/assets/images/content/conference_neobiota2024_day1_2.jpg" class="img-fluid mx-auto none img-rd-md d-md-block d-none lazyload" alt="conference_neobiota2024_day1_2" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day1_2.jpg" class="img-fluid mx-auto none img-rd-md d-msection-darkk d-none lazyload" alt="conference_neobiota2024_day1_2" width="628" height="419">
 </picture>
 </div>
 </div>
@@ -48,7 +48,7 @@ As the evening went on, we talked about the upcoming conference, going over the 
 
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_banner.webp">
-<img src="/assets/images/content/conference_neobiota2024_banner.png" class="img-fluid mx-auto d-block mb-lg-3 mb-3 lazyload" alt="conference_neobiota2024_banner" width="1280" height="320">
+<img src="/assets/images/content/conference_neobiota2024_banner.png" class="img-fluid mx-auto section-darkk mb-lg-3 mb-3 lazyload" alt="conference_neobiota2024_banner" width="1280" height="320">
 </picture>
 
 #### First morning of the conference
@@ -76,14 +76,14 @@ However, Lisa also emphasized the ecological damage that many of these species c
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day2_fabio.webp">
-<img src="/assets/images/content/conference_neobiota2024_day2_fabio.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day2_fabio" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day2_fabio.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day2_fabio" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Fabio Mologni discussing his research on the cumulative impacts of invasive plant species in riparian ecosystems</i></p>
 </div>
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day2_ekin.webp">
-<img src="/assets/images/content/conference_neobiota2024_day2_ekin.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day2_ekin" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day2_ekin.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day2_ekin" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Ekin Kaplan presenting his literature review on long-term vegetation change</i></p>
 </div>
@@ -99,12 +99,12 @@ Ekin Kaplan presented a global literature review on the trajectories of local ve
 <div class="col-sm-12 col-lg-6 pb-lg-3 pb-3">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day2_final.webp">
-<img src="/assets/images/content/conference_neobiota2024_day2_final.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day2_final" width="628" height="837">
+<img src="/assets/images/content/conference_neobiota2024_day2_final.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day2_final" width="628" height="837">
 </picture>
 <p class="text-justify"><i>Enjoying a ginjinha with Adrián and Lisa, first introduced by monks in the 17th century, now a staple of Lisbon's bar culture, served straight or with a soaked cherry at historic taverns</i></p>
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day2_dinner.webp">
-<img src="/assets/images/content/conference_neobiota2024_day2_dinner.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day2_dinner" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day2_dinner.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day2_dinner" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Dinner with Ali, Adrián, and Tom at a local Lisbon restaurant</i></p>
 </div>
@@ -124,7 +124,7 @@ Ekin Kaplan presented a global literature review on the trajectories of local ve
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_anna.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_anna.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_anna" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day3_anna.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day3_anna" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Anna Schertler presenting her research on novel plant-pathogen interactions in alien fungal invasions</i></p>
 </div>
@@ -140,7 +140,7 @@ Ekin Kaplan presented a global literature review on the trajectories of local ve
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_gilles.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_gilles.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_gilles.jpg" width="628" height="942">
+<img src="/assets/images/content/conference_neobiota2024_day3_gilles.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day3_gilles.jpg" width="628" height="942">
 </picture>
 <p class="text-justify"><i>Me (Gilles Colling) presenting my soon to be submitted work on alien species accumulation in agricultural fields</i></p>
 </div>
@@ -162,7 +162,7 @@ In the afternoon, Franz Essl, the head of our group, gave a talk introducing a n
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_franz.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_franz.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_franz.jpg" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day3_franz.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day3_franz.jpg" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Franz Essl presenting on the global biogeography and macroecology of biological invasions in the Anthropocene</i></p>
 </div>
@@ -178,13 +178,13 @@ In the afternoon, Franz Essl, the head of our group, gave a talk introducing a n
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_dinner.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_dinner.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_dinner" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day3_dinner.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day3_dinner" width="628" height="419">
 </picture>
 </div>
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_day3_dinner2.webp">
-<img src="/assets/images/content/conference_neobiota2024_day3_dinner2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day3_dinner2" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_day3_dinner2.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day3_dinner2" width="628" height="419">
 </picture>
 </div>
 </div>
@@ -222,7 +222,7 @@ Later in the evening, Adrián took us to a typical South American salsa place, a
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_dance2.webp">
-<img src="/assets/images/content/conference_neobiota2024_dance2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_day4_final.jpg" width="628" height="353">
+<img src="/assets/images/content/conference_neobiota2024_dance2.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_day4_final.jpg" width="628" height="353">
 </picture>
 </div>
 </div>
@@ -238,7 +238,7 @@ With the conference officially over, I had most of the day free before my evenin
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_last.webp">
-<img src="/assets/images/content/conference_neobiota2024_last.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="conference_neobiota2024_last" width="628" height="419">
+<img src="/assets/images/content/conference_neobiota2024_last.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="conference_neobiota2024_last" width="628" height="419">
 </picture>
 </div>
 </div>

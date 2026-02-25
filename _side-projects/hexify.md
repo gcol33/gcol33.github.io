@@ -8,7 +8,7 @@ thumbnail: "/assets/images/content/hexify.jpg"
 thumbnail_webp: "/assets/images/content/hexify.webp"
 hero_bg_color: "#343739"
 hero_combined: true
-hero_container_class: "bloc-md"
+hero_container_class: "pad-md"
 hero_label: "Released"
 subtitle: "Feb 04, 2026"
 description: "Equal-area hexagonal grids on the Snyder ISEA icosahedron. Fast C++ core with sf/terra-compatible R wrappers."

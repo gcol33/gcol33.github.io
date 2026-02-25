@@ -1,10 +1,10 @@
-{% if include.classes %}<div class="bloc {{ include.classes }}" id="{{ include.id | default: 'hero-img' }}">{% else %}<div class="bloc bg-surface bloc-bg-texture {{ include.texture | default: 'texture-darken' }} d-bloc{% if include.bg_class %} {{ include.bg_class }}{% endif %}" id="{{ include.id | default: 'hero-img' }}"{% if include.bg_image %} style="background-image: url('{{ include.bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>{% endif %}
-  <div class="bloc-shape-divider bloc-divider-bottom">
-    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+{% if include.classes %}<div class="section {{ include.classes }}" id="{{ include.id | default: 'hero-img' }}">{% else %}<div class="section bg-surface bg-texture {{ include.texture | default: 'texture-darken' }} section-dark{% if include.bg_class %} {{ include.bg_class }}{% endif %}" id="{{ include.id | default: 'hero-img' }}"{% if include.bg_image %} style="background-image: url('{{ include.bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>{% endif %}
+  <div class="shape-divider divider-bottom">
+    <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container {{ include.container_class | default: 'bloc-md bloc-lg-md bloc-lg-lg' }}">
+  <div class="container {{ include.container_class | default: 'pad-md pad-lg-md pad-lg-lg' }}">
     <div class="row">
       <div class="{{ include.col_class | default: 'col-md-10 offset-md-1 offset-lg-0 col-lg-12' }}">
         {{ include.content }}

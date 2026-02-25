@@ -3,8 +3,8 @@ layout: default
 ---
 
 {% if page.breadcrumb %}
-<div class="bloc l-bloc" id="breadcrumb-section">
-  <div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+<div class="section section-light" id="breadcrumb-section">
+  <div class="container pad-sm-lg pad-sm-md pad-sm-sm pad-sm">
     <div class="row">
       <div class="text-start col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
@@ -16,13 +16,13 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="bloc bg-surface bloc-bg-texture {{ page.texture_class | default: "texture-darken" }} d-bloc{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
-  <div class="bloc-shape-divider bloc-divider-bottom">
-    <svg class="svg-divider bloc-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+<div class="section bg-surface bg-texture {{ page.texture_class | default: "texture-darken" }} section-dark{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+  <div class="shape-divider divider-bottom">
+    <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container {{ page.hero_container_class | default: "bloc-md bloc-lg-md bloc-xxl-lg" }}">
+  <div class="container {{ page.hero_container_class | default: "pad-md pad-lg-md pad-xxl-lg" }}">
     <div class="row">
       <div class="col-lg-6">
         <div>
@@ -42,8 +42,8 @@ layout: default
 </div>
 {% else %}
 <!-- Standard hero: separate white header and colored background -->
-<div class="bloc l-bloc" id="hero">
-  <div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+<div class="section section-light" id="hero">
+  <div class="container pad-none-lg pad-none-md pad-none-sm pad-none">
     <div class="row">
       <div class="text-start col-md-10 offset-md-1 offset-lg-0 col-lg-12">
         <h1 class="display-md text-bold">{{ page.title }}</h1>
@@ -78,8 +78,8 @@ layout: default
 {% endif %}
 {% endif %}
 
-<div class="bloc l-bloc" id="main-content">
-  <div class="container bloc-lg bloc-no-padding-lg">
+<div class="section section-light" id="main-content">
+  <div class="container pad-lg pad-none-lg">
     <div class="row">
       <div class="col text-start">
         {{ content }}

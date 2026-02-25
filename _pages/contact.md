@@ -8,8 +8,8 @@ breadcrumb:
   - name: "Contact"
 ---
 
-<div class="bloc l-bloc" id="bloc-6">
-  <div class="container bloc-sm">
+<div class="section section-light" id="contact-breadcrumb">
+  <div class="container pad-sm">
     <div class="row">
       <div class="text-start col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
@@ -18,8 +18,8 @@ breadcrumb:
   </div>
 </div>
 
-<div class="bloc l-bloc background-blocs" id="bloc-7">
-  <div class="container bloc-sm bloc-md-md bloc-md-lg">
+<div class="section section-light background-gradient" id="contact-content">
+  <div class="container pad-sm pad-md-md pad-md-lg">
     <div class="row">
       <div class="text-start col-lg-8 col-md-10">
         <h1 class="mb-4">Contact</h1>

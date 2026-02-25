@@ -4,7 +4,7 @@
 #hero p,
 #hero .display-md,
 #hero-img p,
-.bloc p {
+.section p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
@@ -12,7 +12,7 @@
 
 /* Fix: Ensure hero banner has enough height for content on mobile */
 @media (max-width: 991px) {
-    .bloc.d-bloc {
+    .section.section-dark {
         min-height: auto !important;
         padding-top: 60px !important;
         padding-bottom: 80px !important;
@@ -35,24 +35,24 @@ a {
 }
 
 /* Content links (inside paragraphs) - styled distinctly */
-p a, li a, .bloc-lg a {
+p a, li a, .pad-lg a {
     color: var(--color-text-muted);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
-p a:hover, li a:hover, .bloc-lg a:hover {
+p a:hover, li a:hover, .pad-lg a:hover {
     color: var(--color-text-primary);
     border-bottom-color: var(--color-text-primary);
 }
 
 /* Dark mode content links - consolidated selector */
-[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #main-content) a:not(.btn):not(.a-btn):not(.nav-link) {
+[data-bs-theme="dark"] :is(p, li, .pad-lg, .section-light, #main-content) a:not(.btn):not(.a-btn):not(.nav-link) {
     color: var(--dm-text-secondary) !important;
 }
 
-[data-bs-theme="dark"] :is(p, li, .bloc-lg, .l-bloc, #main-content) a:not(.btn):not(.a-btn):not(.nav-link):hover {
+[data-bs-theme="dark"] :is(p, li, .pad-lg, .section-light, #main-content) a:not(.btn):not(.a-btn):not(.nav-link):hover {
     color: var(--dm-text-primary) !important;
     border-bottom-color: var(--dm-text-primary);
 }
@@ -166,14 +166,14 @@ blockquote p {
 
 /* List styling - match body text (scoped to content areas, not navbar) */
 #main-content ol, #main-content ul,
-.bloc-lg ol, .bloc-lg ul,
+.pad-lg ol, .pad-lg ul,
 article ol, article ul {
     font-family: "RobotoSlab-Regular";
     font-size: 17px;
 }
 
 #main-content ol li, #main-content ul li,
-.bloc-lg ol li, .bloc-lg ul li,
+.pad-lg ol li, .pad-lg ul li,
 article ol li, article ul li {
     font-family: "RobotoSlab-Regular";
     font-size: 17px !important;
@@ -537,8 +537,8 @@ button:focus:not(:focus-visible),
     display: block !important;
 }
 
-/* Blocs */
-[data-bs-theme="dark"] .l-bloc {
+/* Sections */
+[data-bs-theme="dark"] .section-light {
     background-color: var(--dm-bg-primary);
 }
 
@@ -554,28 +554,28 @@ button:focus:not(:focus-visible),
 }
 
 /* Hero banners in dark mode - ensure container is above texture overlay */
-[data-bs-theme="dark"] #hero.d-bloc > .container,
-[data-bs-theme="dark"] #hero-img.d-bloc > .container {
+[data-bs-theme="dark"] #hero.section-dark > .container,
+[data-bs-theme="dark"] #hero-img.section-dark > .container {
     position: relative;
     z-index: 1;
 }
 
 /* Keep text colors unchanged on hero banners with background images in dark mode */
-/* Only target the direct banner/hero bloc by ID, not content sections */
+/* Only target the direct banner/hero section by ID, not content sections */
 /* Note: #hero-writer (homepage) is excluded so it CAN change in dark mode */
-[data-bs-theme="dark"] #hero.d-bloc h1,
-[data-bs-theme="dark"] #hero.d-bloc h2,
-[data-bs-theme="dark"] #hero.d-bloc h3,
-[data-bs-theme="dark"] #hero.d-bloc h4,
-[data-bs-theme="dark"] #hero.d-bloc p,
-[data-bs-theme="dark"] #hero.d-bloc .tc-text-light,
-[data-bs-theme="dark"] #hero.d-bloc .display-md,
-[data-bs-theme="dark"] #hero-img.d-bloc h1,
-[data-bs-theme="dark"] #hero-img.d-bloc h2,
-[data-bs-theme="dark"] #hero-img.d-bloc h3,
-[data-bs-theme="dark"] #hero-img.d-bloc h4,
-[data-bs-theme="dark"] #hero-img.d-bloc p,
-[data-bs-theme="dark"] #hero-img.d-bloc .tc-text-light {
+[data-bs-theme="dark"] #hero.section-dark h1,
+[data-bs-theme="dark"] #hero.section-dark h2,
+[data-bs-theme="dark"] #hero.section-dark h3,
+[data-bs-theme="dark"] #hero.section-dark h4,
+[data-bs-theme="dark"] #hero.section-dark p,
+[data-bs-theme="dark"] #hero.section-dark .tc-text-light,
+[data-bs-theme="dark"] #hero.section-dark .display-md,
+[data-bs-theme="dark"] #hero-img.section-dark h1,
+[data-bs-theme="dark"] #hero-img.section-dark h2,
+[data-bs-theme="dark"] #hero-img.section-dark h3,
+[data-bs-theme="dark"] #hero-img.section-dark h4,
+[data-bs-theme="dark"] #hero-img.section-dark p,
+[data-bs-theme="dark"] #hero-img.section-dark .tc-text-light {
     color: rgba(255,255,255,0.9) !important;
 }
 
@@ -589,15 +589,15 @@ button:focus:not(:focus-visible),
 }
 
 /* Gradient backgrounds - dark mode variant */
-[data-bs-theme="dark"] .background-blocs {
+[data-bs-theme="dark"] .background-gradient {
     background: linear-gradient(0deg, var(--dm-bg-primary) 0%, var(--dm-bg-secondary) 20%, var(--dm-bg-tertiary) 50%, var(--dm-bg-secondary) 80%, var(--dm-bg-primary) 100%);
 }
 
 /* SVG dividers - dark mode fill (must match section backgrounds) */
-[data-bs-theme="dark"] .bloc-divider-b-fill,
-[data-bs-theme="dark"] .bloc-divider-b-0-fill,
-[data-bs-theme="dark"] .bloc-divider-b-bloc-2-fill,
-[data-bs-theme="dark"] .bloc-divider-t-fill,
+[data-bs-theme="dark"] .section-divider-b-fill,
+[data-bs-theme="dark"] .section-divider-b-0-fill,
+[data-bs-theme="dark"] .section-divider-b-section-2-fill,
+[data-bs-theme="dark"] .section-divider-t-fill,
 [data-bs-theme="dark"] .svg-divider {
     fill: var(--dm-bg-primary) !important;
 }
@@ -754,14 +754,14 @@ button:focus:not(:focus-visible),
 
 /* Content images - rounded corners */
 #main-content img:not(.writer-post-image):not(.img-rd-md),
-.background-blocs img:not(.writer-post-image):not(.img-rd-md) {
+.background-gradient img:not(.writer-post-image):not(.img-rd-md) {
     border-radius: 8px;
 }
 
 /* Content images in dark mode - invert white backgrounds (charts, diagrams)
    Only apply to images that explicitly opt-in with .invert-dark class */
 [data-bs-theme="dark"] #main-content img.invert-dark,
-[data-bs-theme="dark"] .background-blocs img.invert-dark {
+[data-bs-theme="dark"] .background-gradient img.invert-dark {
     filter: invert(1) hue-rotate(180deg);
 }
 
@@ -1225,6 +1225,16 @@ button:focus:not(:focus-visible),
 
 .related-content {
     margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+    #main-content .container {
+        padding-bottom: 20px;
+    }
+
+    .related-content {
+        margin-top: 20px;
+    }
 }
 
 .related-card {

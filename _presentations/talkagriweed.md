@@ -8,7 +8,7 @@ thumbnail: "/assets/images/content/agriweed_gilles.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_gilles.webp"
 hero_bg_class: "bg-agriweed-gilles2"
 hero_combined: true
-hero_container_class: "bloc-md"
+hero_container_class: "pad-md"
 permalink: /talkagriweed/
 description: "Emerging Agricultural Weeds under climate and land-use changes in Central Europe: identifying high-risk species, modelling their distributions, assessing impacts and management need."
 hero_title: "Closing Meeting of the AgriWeedClim Project"
@@ -35,13 +35,13 @@ After the coffee break, Georg Martin Hörmann presented risk maps for current an
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/agriweed_gilles.webp">
-<img src="/assets/images/content/agriweed_gilles.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_gilles.jpg" width="628" height="419">
+<img src="/assets/images/content/agriweed_gilles.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="agriweed_gilles.jpg" width="628" height="419">
 </picture>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/agriweed_georg.webp">
-<img src="/assets/images/content/agriweed_georg.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="agriweed_georg.jpg" width="628" height="419">
+<img src="/assets/images/content/agriweed_georg.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="agriweed_georg.jpg" width="628" height="419">
 </picture>
 </div>
 </div>

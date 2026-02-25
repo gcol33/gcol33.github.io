@@ -8,7 +8,7 @@ thumbnail: "/assets/images/content/corrselect.jpg"
 thumbnail_webp: "/assets/images/content/corrselect.webp"
 hero_bg_color: "#343739"
 hero_combined: true
-hero_container_class: "bloc-md"
+hero_container_class: "pad-md"
 hero_label: "Released"
 subtitle: "Aug 05, 2025"
 description: "Predictor pruning using association-based and model-based approaches. Fast, deterministic solutions with minimal code."

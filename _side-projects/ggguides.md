@@ -8,7 +8,7 @@ thumbnail: "/assets/images/content/ggguides.jpg"
 thumbnail_webp: "/assets/images/content/ggguides.webp"
 hero_bg_color: "#343739"
 hero_combined: true
-hero_container_class: "bloc-md"
+hero_container_class: "pad-md"
 hero_label: "Released"
 subtitle: "Dec 17, 2025"
 description: "Simplified legend and guide alignment for ggplot2. One-liner functions for common legend operations."

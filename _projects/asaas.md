@@ -9,7 +9,7 @@ thumbnail: "/assets/images/content/project_asaas_field.jpg"
 thumbnail_webp: "/assets/images/content/project_asaas_field.webp"
 hero_bg_class: "bg-project-asaas"
 hero_combined: true
-hero_container_class: "bloc-md"
+hero_container_class: "pad-md"
 hero_title: "Alien Species Accumulation Across Scales"
 hero_label: "Project"
 hero_separator: true

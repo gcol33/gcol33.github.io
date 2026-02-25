@@ -1,4 +1,4 @@
 <picture>
   <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ include.src_webp | relative_url }}">
-  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ include.src | relative_url }}" class="{{ include.class | default: 'img-fluid mx-auto d-block lazyload' }}" alt="{{ include.alt }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %} loading="lazy">
+  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ include.src | relative_url }}" class="{{ include.class | default: 'img-fluid mx-auto section-darkk lazyload' }}" alt="{{ include.alt }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %} loading="lazy">
 </picture>
