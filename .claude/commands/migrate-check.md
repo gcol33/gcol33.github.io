@@ -47,10 +47,10 @@ For each page, verify:
 ## Common Issues to Check
 
 1. **Background images**: Use CSS classes (`hero_bg_class: "bg-workshop-pd-bg"`) not inline styles
-2. **Texture overlay**: Add `bloc-bg-texture texture-darken d-bloc` classes
+2. **Texture overlay**: Add `bg-texture texture-darken section-dark` classes
 3. **Tables**: Need `class="base-table collapsible-table"` and tables.js
 4. **Images**: Use `<picture>` with webp source, add `lazyload` class
-5. **Spacing**: Match `bloc-lg`, `bloc-md`, `bloc-sm` padding classes
+5. **Spacing**: Match `pad-lg`, `pad-md`, `pad-sm` padding classes
 6. **Grid layouts**: Match Bootstrap column classes exactly
 
 ## Execution

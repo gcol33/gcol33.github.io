@@ -15,7 +15,7 @@ layout: default
         <h3 class="mb-4"><i>"{{ page.quote | default: 'We live in cities, but the roots of our imagination sink into the forests.' }}"&nbsp;&nbsp;<br></i>({{ page.quote_author | default: 'Italo Calvino' }})<br></h3>
         <h1 class="text-bold mb-2 display-md text-center">{{ page.hero_title | default: site.title }}<br></h1>
         <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }}</h4>
-        <p class="mb-4 text-center mx-auto section-darkk p-style">{{ page.hero_description | default: site.description }}</p>
+        <p class="mb-4 text-center mx-auto d-block p-style">{{ page.hero_description | default: site.description }}</p>
         <div class="text-center">
           <a href="#" class="btn btn-lg float-md-none btn-d button-01" data-scroll-speed="1000" onclick="scrollToTarget('0',this)">Learn more</a>
         </div>
@@ -23,7 +23,7 @@ layout: default
       <div class="col-lg-6 col-md-5">
         <picture>
           <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' | relative_url }}">
-          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto section-darkk imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
+          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
         </picture>
       </div>
     </div>
@@ -70,7 +70,7 @@ layout: default
           <div class="writer-posts">
             <div>
               <a href="{{ item.url | relative_url }}">
-                {% include lazy-image.html src=item.thumbnail src_webp=item.thumbnail_webp alt=item.title class="img-fluid mx-auto section-darkk writer-post-image img-rd-md lazyload" width="398" height="265" %}
+                {% include lazy-image.html src=item.thumbnail src_webp=item.thumbnail_webp alt=item.title class="img-fluid mx-auto d-block writer-post-image img-rd-md lazyload" width="398" height="265" %}
               </a>
               <div class="mt-3 writer-post-group mb-3">
                 <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>

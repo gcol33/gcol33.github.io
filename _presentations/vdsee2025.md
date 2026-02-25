@@ -40,14 +40,14 @@ Our group was well represented at the symposium, contributing to discussions on 
 <div class="col-12 mb-3 mb-lg-0 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_ekin.webp">
-<img src="/assets/images/content/presentation_vdsee_ekin.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="nicolas" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_ekin.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Ekin Kaplan presenting a literature review on local plant community changes</i></p>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_pablo.webp">
-<img src="/assets/images/content/presentation_vdsee_pablo.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="nicolas" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_pablo.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="nicolas" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Pablo Aycart-Lazo presenting his research on bat conservation</i></p>
 </div>
@@ -62,7 +62,7 @@ Our group was well represented at the symposium, contributing to discussions on 
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_krystof.webp">
-<img src="/assets/images/content/presentation_vdsee_krystof.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="presentation_vdsee_krystof.jpg" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_krystof.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="presentation_vdsee_krystof.jpg" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Krystof Chytry presenting his research of austrian alpine plants</i></p>
 </div>
@@ -76,7 +76,7 @@ I presented my work as a poster titled "Ninety Years of Alien Species Accumulati
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_header.webp">
-<img src="/assets/images/content/presentation_vdsee_header.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="presentation_vdsee_header" width="628" height="486">
+<img src="/assets/images/content/presentation_vdsee_header.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="presentation_vdsee_header" width="628" height="486">
 </picture>
 <p class="text-justify"><i>Me (Gilles Colling) presenting a poster at VDSEE Symposium 2025</i></p>
 </div>

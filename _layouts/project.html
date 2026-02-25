@@ -55,7 +55,7 @@ layout: default
           {% if member.image %}
           <picture>
             <source type="image/webp" srcset="{{ member.image_webp | relative_url }}">
-            <img src="{{ member.image | relative_url }}" class="img-fluid mx-auto section-darkk mb-3 img-rd-md" alt="{{ member.name }}" width="200" height="200">
+            <img src="{{ member.image | relative_url }}" class="img-fluid mx-auto d-block mb-3 img-rd-md" alt="{{ member.name }}" width="200" height="200">
           </picture>
           {% endif %}
           <h5 class="text-bold">{{ member.name }}</h5>

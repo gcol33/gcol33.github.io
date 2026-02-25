@@ -45,13 +45,13 @@ Many of us work with plot data, yet we often do so in isolation, reinventing the
 <div class="col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_morning2.webp">
-<img src="/assets/images/content/workshop_pd_morning2.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="workshop_pd_morning" width="628" height="419">
+<img src="/assets/images/content/workshop_pd_morning2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="workshop_pd_morning" width="628" height="419">
 </picture>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_pie.webp">
-<img src="/assets/images/content/workshop_pd_pie.png" class="img-fluid mx-auto section-darkk img-chart-medium mb-lg-2 lazyload" alt="workshop_pd_pie" width="605" height="298">
+<img src="/assets/images/content/workshop_pd_pie.png" class="img-fluid mx-auto d-block img-chart-medium mb-lg-2 lazyload" alt="workshop_pd_pie" width="605" height="298">
 </picture>
 <p class="text-full-width text-justify">The majority of respondents (61.5%) plan to work with plot data in the future, with a smaller portion uncertain (30.8%) and only one person indicating they won't. This confirms that plot data will remain an important component for our group, making discussions around best practices still relevant.</p>
 </div>
@@ -78,13 +78,13 @@ In the survey, participants ranked common challenges in working with plot data. 
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_morning4.webp">
-<img src="/assets/images/content/workshop_pd_morning4.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="workshop_pd_morning2" width="628" height="419">
+<img src="/assets/images/content/workshop_pd_morning4.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="workshop_pd_morning2" width="628" height="419">
 </picture>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_morning3.webp">
-<img src="/assets/images/content/workshop_pd_morning3.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="workshop_pd_morning3" width="628" height="419">
+<img src="/assets/images/content/workshop_pd_morning3.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="workshop_pd_morning3" width="628" height="419">
 </picture>
 </div>
 </div>
@@ -162,13 +162,13 @@ In the afternoon, Groups 1 and 2 combined to continue their general discussions 
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_afternoon2.webp">
-<img src="/assets/images/content/workshop_pd_afternoon2.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="workshop_pd_afternoon2" width="628" height="419">
+<img src="/assets/images/content/workshop_pd_afternoon2.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="workshop_pd_afternoon2" width="628" height="419">
 </picture>
 </div>
 <div class="col">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/workshop_pd_afternoon.webp">
-<img src="/assets/images/content/workshop_pd_afternoon.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="workshop_pd_afternoon" width="628" height="419">
+<img src="/assets/images/content/workshop_pd_afternoon.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="workshop_pd_afternoon" width="628" height="419">
 </picture>
 </div>
 </div>

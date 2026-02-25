@@ -37,7 +37,7 @@ The program featured two keynote lectures, oral presentations, and poster sessio
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/presentation_vdsee_header_2024.webp">
-<img src="/assets/images/content/presentation_vdsee_header_2024.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="presentation_vdsee_header" width="628" height="419">
+<img src="/assets/images/content/presentation_vdsee_header_2024.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="presentation_vdsee_header" width="628" height="419">
 </picture>
 <p class="text-justify"><i>Me (Gilles Colling) presenting a poster at VDSEE Symposium 2024</i></p>
 </div>

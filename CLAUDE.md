@@ -121,6 +121,28 @@ Dark mode variables in `assets/css/custom.css`:
 
 ## CSS Naming Conventions
 
+### Section structure
+
+| CSS Class | Purpose |
+|-----------|---------|
+| `section` | Full-width section wrapper (flex, background cover) |
+| `section-light` | Light-background section (dark text) |
+| `section-dark` | Dark-background section (light text, used with hero banners) |
+| `bg-texture` | Background texture overlay (use with `texture-darken` etc.) |
+| `background-gradient` | Tan/cream gradient background |
+
+### Padding utilities
+
+| CSS Class | Padding |
+|-----------|---------|
+| `pad-lg` | 100px vertical |
+| `pad-md` | 50px vertical |
+| `pad-sm` | 20px vertical |
+| `pad-none` | 0px vertical |
+| `pad-{size}-{bp}` | Responsive variant (e.g. `pad-lg-lg` = 100px at >=992px) |
+
+### Text and color utilities
+
 | CSS Class | Purpose |
 |-----------|---------|
 | `tc-text-primary` | Dark text color |

@@ -42,7 +42,7 @@ breadcrumb:
         <p>I originally trained in physics at the University of Innsbruck, where I specialized in numerical physics and astrophysics. My early work involved developing solvers for complex systems, and I became increasingly interested in the methods themselves: numerical modelling, simulation, and data analysis. That interest eventually led me to ecology, where I saw the same tools could be used to address urgent questions about global change and biodiversity.</p>
         <picture>
           <source type="image/webp" srcset="/assets/images/content/long_about.webp">
-          <img src="/assets/images/content/long_about.jpg" class="img-fluid mx-auto section-darkk mb-3 mt-3 img-rd-md" alt="Field work" width="845" height="564">
+          <img src="/assets/images/content/long_about.jpg" class="img-fluid mx-auto d-block mb-3 mt-3 img-rd-md" alt="Field work" width="845" height="564">
         </picture>
         <p>Alongside my studies I gained experience in coding, open-source contributions, and data challenges, and worked on science communication projects such as interactive exhibits at the Luxembourg Museum of Natural History. These experiences shaped my approach to research.</p>
         <h3 class="mb-2">PhD Project</h3>

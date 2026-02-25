@@ -34,7 +34,7 @@ math: true
         <a href="https://news.mongabay.com/2022/09/harpy-eagles-return-to-costa-rica-means-rewildings-time-has-come-commentary/" target="_blank">
           <picture>
             <source type="image/webp" srcset="/assets/images/content/course_std_project_ref.webp">
-            <img src="/assets/images/content/course_std_project_ref.jpg" class="img-fluid mx-auto section-darkk img-rd-md lazyload" alt="course_std_project_ref" width="628" height="419">
+            <img src="/assets/images/content/course_std_project_ref.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="course_std_project_ref" width="628" height="419">
           </picture>
         </a>
       </div>

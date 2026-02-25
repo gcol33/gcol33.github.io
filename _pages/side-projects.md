@@ -33,7 +33,7 @@ breadcrumb:
               <a href="{{ item.url | relative_url }}">
                 <picture>
                   <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ item.thumbnail_webp | relative_url }}">
-                  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ item.thumbnail | relative_url }}" class="img-fluid mx-auto section-darkk writer-post-image img-rd-md lazyload" alt="{{ item.title }}" width="398" height="265" loading="lazy">
+                  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ item.thumbnail | relative_url }}" class="img-fluid mx-auto d-block writer-post-image img-rd-md lazyload" alt="{{ item.title }}" width="398" height="265" loading="lazy">
                 </picture>
               </a>
               <div class="mt-3 writer-post-group mb-3">
