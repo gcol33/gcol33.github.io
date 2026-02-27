@@ -79,7 +79,7 @@ layout: default
 {% endif %}
 
 <div class="section section-light" id="main-content">
-  <div class="container pad-lg pad-none-lg">
+  <div class="container {% if page.hero_combined %}pad-sm pad-none-lg{% else %}pad-lg pad-none-lg{% endif %}">
     <div class="row">
       <div class="col text-start">
         {{ content }}

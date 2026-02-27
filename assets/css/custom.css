@@ -1291,3 +1291,19 @@ button:focus:not(:focus-visible),
         height: 150px;
     }
 }
+
+/* ======================================
+   PAGE-SPECIFIC HERO BACKGROUNDS
+   ====================================== */
+
+/* rainbowR Conference 2026 - diagonal rainbow gradient */
+.bg-rainbowr2026 {
+    background: linear-gradient(135deg,
+        #e40303 0%,
+        #ff8c00 17%,
+        #ffed00 33%,
+        #008026 50%,
+        #004dff 67%,
+        #750787 83%,
+        #e40303 100%) !important;
+}
