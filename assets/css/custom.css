@@ -17,6 +17,12 @@
         padding-top: 60px !important;
         padding-bottom: 80px !important;
     }
+
+    /* Combined hero pages: container already has padding, avoid double spacing */
+    #hero.section-dark {
+        padding-top: 10px !important;
+        padding-bottom: 40px !important;
+    }
 }
 
 /* Reduce padding on project and lectures sections */
