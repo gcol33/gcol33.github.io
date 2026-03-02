@@ -73,7 +73,7 @@ A propagule is any part of an organism that can give rise to a new individual: a
 
 ## Nr. 2: Undercurrents
 
-This draws on my first PhD paper, which asks whether agricultural weeds in Central Europe have become more invasive over time. The underlying dataset compiles thousands of vegetation surveys spanning 1930 to 2020. The work gives this accumulation of fieldwork a chromatic body, translating decades of ecological change into currents that cross, converge, and pull apart. What the currents carry is a broader signal: the reorganisation of plant communities by human mobility, global trade, and land transformation, a process now unfolding at a planetary scale with no historical precedent.
+This draws on my [first PhD paper](/publications/colling-2025/), which asks whether agricultural weeds in Central Europe have become more invasive over time. The underlying dataset compiles thousands of vegetation surveys spanning 1930 to 2020. The work gives this accumulation of fieldwork a chromatic body, translating decades of ecological change into currents that cross, converge, and pull apart. What the currents carry is a broader signal: the reorganisation of plant communities by human mobility, global trade, and land transformation, a process now unfolding at a planetary scale with no historical precedent.
 
 ## Nr. 3: Emergent Topology
 
