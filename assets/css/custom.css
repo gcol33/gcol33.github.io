@@ -41,19 +41,15 @@ a {
 }
 
 /* Content links (inside paragraphs) - styled distinctly */
-p a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label):not(.text-link-02),
-li a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label),
-.pad-lg a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label) {
-    color: var(--color-text-muted) !important;
+p a, li a, .pad-lg a {
+    color: var(--color-text-muted);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
-p a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label):not(.text-link-02):hover,
-li a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label):hover,
-.pad-lg a:not(.btn):not(.a-btn):not(.nav-link):not(.post-label):hover {
-    color: var(--color-text-primary) !important;
+p a:hover, li a:hover, .pad-lg a:hover {
+    color: var(--color-text-primary);
     border-bottom-color: var(--color-text-primary);
 }
 
