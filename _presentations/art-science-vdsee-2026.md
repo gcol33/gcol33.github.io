@@ -36,6 +36,16 @@ The VDSEE Symposium 2026 included an Art & Science exhibition, organised by Mayl
 
 The exhibition featured works from seven contributors, spanning drawing, painting, sculpture, sound installation, and digital art. Carla Gomez-Montes presented "From Shadow to Light -- Unveiling the Wild", drawing on her work in archaeozoology and taphonomy. Nina Kraus showed "A Room in My Heart; An Inkling", a sculpture and painting informed by her research in evolutionary theory and philosophy of science. Yseult Hejja-Brichard exhibited "Natural Beauty: A Deconstructed Perspective", connecting visual ecology and sexual selection. Antonia Grausgruber, Rym Nouioua, and Lotte Doebke contributed further pieces drawing on embryology, bat bioacoustics, and freshwater ecology respectively. The evening also featured a live set by [Strand ohne Palme](https://www.instagram.com/strandohnepalme/), the band of Elias Kapitany, a PhD colleague from [Stefan Dullinger's group](https://ufind.univie.ac.at/de/person.html?id=115066).
 
+<div class="row mt-4 mb-4">
+<div class="col-12 col-lg-6 mx-auto">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/art_science_vdsee_2026_band.webp">
+<img src="/assets/images/content/art_science_vdsee_2026_band.jpg" class="img-fluid mx-auto d-block img-rd-md" alt="Strand ohne Palme performing live at the VDSEE Art and Science after-event" width="1200" height="800">
+</picture>
+<p class="text-center"><i>Strand ohne Palme playing at the after-event</i></p>
+</div>
+</div>
+
 I contributed four digital works under the title *Terminal Landscapes*, all generated in R, each one translating a different part of my doctoral research into visual form. The descriptions below outline the scientific context behind each piece.
 
 <div class="row mt-4 mb-2 g-3">
