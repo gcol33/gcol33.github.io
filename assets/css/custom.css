@@ -1302,6 +1302,17 @@ button:focus:not(:focus-visible),
    PAGE-SPECIFIC HERO BACKGROUNDS
    ====================================== */
 
+/* VDSEE Art & Science 2026 */
+.bg-art-science-vdsee-2026 {
+    background-image: url("/assets/images/content/art_science_vdsee_2026_hero.jpg");
+    background-image: image-set(
+        url("/assets/images/content/art_science_vdsee_2026_hero.webp") type("image/webp"),
+        url("/assets/images/content/art_science_vdsee_2026_hero.jpg") type("image/jpeg")
+    );
+    background-size: cover;
+    background-position: center;
+}
+
 /* rainbowR Conference 2026 - diagonal rainbow gradient */
 .bg-rainbowr2026 {
     background: linear-gradient(135deg,
