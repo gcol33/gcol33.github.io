@@ -22,29 +22,26 @@ breadcrumb:
   - name: "Art & Science 2026"
 ---
 
-<div class="row mt-4 mb-4">
-<div class="col-12 col-lg-6 mx-auto">
+<div class="row mt-4 mb-4 g-3">
+<div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/art_science_vdsee_2026_gilles.webp">
-<img src="/assets/images/content/art_science_vdsee_2026_gilles.jpg" class="img-fluid mx-auto d-block img-rd-md" alt="Gilles Colling standing next to the four exhibited artworks at the VDSEE Art and Science exhibition" width="628" height="419">
+<img src="/assets/images/content/art_science_vdsee_2026_gilles.jpg" class="img-fluid d-block img-rd-md" alt="Gilles Colling standing next to the four exhibited artworks at the VDSEE Art and Science exhibition" style="width:100%;height:300px;object-fit:cover;">
 </picture>
-<p class="text-center"><i>Standing next to the four pieces at the UBB cafeteria exhibition</i></p>
+<p class="text-center mt-2"><i>Standing next to the four pieces at the UBB cafeteria exhibition</i></p>
+</div>
+<div class="col-12 col-lg-6">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/art_science_vdsee_2026_band.webp">
+<img src="/assets/images/content/art_science_vdsee_2026_band.jpg" class="img-fluid d-block img-rd-md" alt="Strand ohne Palme performing live at the VDSEE Art and Science after-event" style="width:100%;height:300px;object-fit:cover;">
+</picture>
+<p class="text-center mt-2"><i>Strand ohne Palme playing at the after-event</i></p>
 </div>
 </div>
 
 The VDSEE Symposium 2026 included an Art & Science exhibition, organised by Mayline Goeb and Antonia Vogel, held on Thursday 26 February in the UBB cafeteria at the University of Vienna. The event invited PhD candidates from the Vienna Doctoral School of Ecology and Evolution to present artwork that draws on their research. After an opening by Chris Martine in HS2, guests were invited to the cafeteria to view the pieces and speak directly with the artists.
 
 The exhibition featured works from seven contributors, spanning drawing, painting, sculpture, sound installation, and digital art. Carla Gomez-Montes presented "From Shadow to Light -- Unveiling the Wild", drawing on her work in archaeozoology and taphonomy. Nina Kraus showed "A Room in My Heart; An Inkling", a sculpture and painting informed by her research in evolutionary theory and philosophy of science. Yseult Hejja-Brichard exhibited "Natural Beauty: A Deconstructed Perspective", connecting visual ecology and sexual selection. Antonia Grausgruber, Rym Nouioua, and Lotte Doebke contributed further pieces drawing on embryology, bat bioacoustics, and freshwater ecology respectively. The evening also featured a live set by [Strand ohne Palme](https://www.instagram.com/strandohnepalme/), the band of Elias Kapitany, a PhD colleague from [Stefan Dullinger's group](https://ufind.univie.ac.at/de/person.html?id=115066).
-
-<div class="row mt-4 mb-4">
-<div class="col-12 col-lg-6 mx-auto">
-<picture>
-<source type="image/webp" srcset="/assets/images/content/art_science_vdsee_2026_band.webp">
-<img src="/assets/images/content/art_science_vdsee_2026_band.jpg" class="img-fluid mx-auto d-block img-rd-md" alt="Strand ohne Palme performing live at the VDSEE Art and Science after-event" width="1200" height="800">
-</picture>
-<p class="text-center"><i>Strand ohne Palme playing at the after-event</i></p>
-</div>
-</div>
 
 I contributed four digital works under the title *Terminal Landscapes*, all generated in R, each one translating a different part of my doctoral research into visual form. The descriptions below outline the scientific context behind each piece.
 
