@@ -11,7 +11,7 @@ hero_bg_class: "bg-art-science-vdsee-2026"
 hero_combined: true
 hero_container_class: "pad-md"
 description: "Four algorithmic artworks exhibited at the VDSEE Symposium 2026 Art & Science event, each translating a strand of my PhD research into visual form."
-hero_title: "Where Ecology Meets Algorithm"
+hero_title: "Terminal Landscapes"
 breadcrumb:
   - name: "Home"
     url: "/"
