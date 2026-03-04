@@ -40,27 +40,29 @@ a {
     text-decoration: none;
 }
 
-/* Content links (inside paragraphs) - styled distinctly */
+/* Content links - color contrast only, no underline */
+/* .section-light qualifier needed to beat .section-light p a in style.css */
+.section-light p a,
+.section-light li a,
 p a, li a, .pad-lg a {
-    color: var(--color-text-muted);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s ease;
-}
-
-p a:hover, li a:hover, .pad-lg a:hover {
     color: var(--color-text-primary);
-    border-bottom-color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-/* Dark mode content links - consolidated selector */
+.section-light p a:hover,
+.section-light li a:hover,
+p a:hover, li a:hover, .pad-lg a:hover {
+    color: var(--color-text-secondary);
+}
+
+/* Dark mode content links */
 [data-bs-theme="dark"] :is(p, li, .pad-lg, .section-light, #main-content) a:not(.btn):not(.a-btn):not(.nav-link) {
-    color: var(--dm-text-secondary) !important;
+    color: var(--dm-text-primary);
 }
 
 [data-bs-theme="dark"] :is(p, li, .pad-lg, .section-light, #main-content) a:not(.btn):not(.a-btn):not(.nav-link):hover {
-    color: var(--dm-text-primary) !important;
-    border-bottom-color: var(--dm-text-primary);
+    color: var(--dm-text-secondary);
 }
 
 /* Inline code - dark mode */
@@ -1308,6 +1310,17 @@ button:focus:not(:focus-visible),
     background-image: image-set(
         url("/assets/images/content/art_science_vdsee_2026_hero.webp") type("image/webp"),
         url("/assets/images/content/art_science_vdsee_2026_hero.jpg") type("image/jpeg")
+    );
+    background-size: cover;
+    background-position: center;
+}
+
+/* VDSEE Symposium 2026 */
+.bg-vdsee-2026 {
+    background-image: url("/assets/images/content/vdsee_2026_hero.jpg");
+    background-image: image-set(
+        url("/assets/images/content/vdsee_2026_hero.webp") type("image/webp"),
+        url("/assets/images/content/vdsee_2026_hero.jpg") type("image/jpeg")
     );
     background-size: cover;
     background-position: center;
