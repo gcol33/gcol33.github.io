@@ -22,10 +22,7 @@ breadcrumb:
   - name: "Thinking in R"
 ---
 
-<p class="mb-4">
-  <a href="https://gcol33.github.io/functional-r/" class="btn btn-lg btn-d button-01">Read the Book</a>
-  <a href="https://github.com/gcol33/functional-r" class="btn btn-lg btn-outline-dark ms-2">Source on GitHub</a>
-</p>
+<a href="https://gcol33.github.io/functional-r/" class="btn btn-lg btn-d button-01 mb-4">Read the Book</a>
 
 ## What is it
 

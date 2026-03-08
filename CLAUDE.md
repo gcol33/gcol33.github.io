@@ -183,6 +183,20 @@ rm PACKAGE_NAME.png
 
 Required size: **2400x1600** pixels.
 
+## Navigation Structure
+
+Top-level nav: **Research** (Publications, Presentations) | **Engagement** (Education, Side Projects) | **Projects** (ASAAS, AgriWeedClim) | **Blog** | **Contact** | **About**
+
+- Books and long-form writing live under **Engagement > Side Projects** (e.g., Thinking in R)
+- Do not add a separate "Writing" or "Books" nav section unless there are multiple books to justify it
+- Keep nav items to 6 or fewer top-level entries
+
+## Button Styling
+
+- Use `btn btn-lg btn-d button-01` for primary action buttons
+- Do NOT combine `button-01` with `btn-outline-*` — the `button-01` class forces solid background and white text, overriding outline styles
+- For a single action per page, use one button (not two side by side)
+
 ## Deployment
 
 Push to `main` branch to deploy via GitHub Pages. Jekyll builds automatically.
