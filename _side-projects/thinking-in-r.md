@@ -22,11 +22,11 @@ breadcrumb:
   - name: "Thinking in R"
 ---
 
-<a href="https://gcol33.github.io/functional-r/" class="btn btn-lg btn-d button-01 mb-4">Read the Book</a>
+<a href="https://gillescolling.com/functional-r/" class="btn btn-lg btn-d button-01 mb-4">Read the Book</a>
 
 ## What is it
 
-[Thinking in R](https://gcol33.github.io/functional-r/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
+[Thinking in R](https://gillescolling.com/functional-r/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
 
 The book is different from most R introductions in one specific way: it treats R as a language with a design, not a collection of tricks to memorize. R descends from the lambda calculus, through Lisp, Scheme, and S. That lineage explains why everything in R is a vector, why functions are values you can pass around, why `x * 2` multiplies an entire column without a loop, and why `filter(df, x > 3)` can read column names without quotes. Most R books teach *what* to type. This one also explains *why* it works, because understanding the design makes everything else easier to learn.
 
