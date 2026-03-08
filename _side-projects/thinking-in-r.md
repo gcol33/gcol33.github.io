@@ -24,7 +24,7 @@ breadcrumb:
 
 <p class="mb-4">
   <a href="https://gcol33.github.io/functional-r/" class="btn btn-lg btn-d button-01">Read the Book</a>
-  <a href="https://github.com/gcol33/functional-r" class="btn btn-lg btn-outline-dark button-01 ms-2">Source on GitHub</a>
+  <a href="https://github.com/gcol33/functional-r" class="btn btn-lg btn-outline-dark ms-2">Source on GitHub</a>
 </p>
 
 ## What is it
@@ -45,9 +45,11 @@ No programming experience is assumed. By the end, you will have written real cod
 
 ## Why I wrote it
 
-I came to R from physics. I had written numerical solvers in Fortran, simulations in Python, and data pipelines in C++. When I started my PhD in ecology, R was the language everyone used, and nobody could tell me why it worked the way it did. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it? The answers I got were "that's just how R is" or "don't worry about it."
+I came to R from physics. When I started my PhD in ecology, R was the language everyone used, and nobody could tell me why it worked the way it did. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it? The answers I got were "that's just how R is" or "don't worry about it."
 
 I did worry about it. I went looking and found that every quirk has a reason, and the reasons form a coherent story: Church's lambda calculus (1936), McCarthy's Lisp (1958), Sussman and Steele's Scheme (1975), Chambers' S at Bell Labs (1976), and Ihaka and Gentleman's R in Auckland (1993). Once I understood that chain, R stopped being a bag of functions and became a language I could reason about. I wanted to write the book I wish I'd had when I started.
+
+There is also something deeper. Lambda calculus is extraordinarily elegant: three rules---variables, abstraction, application---and nothing else. No numbers, no loops, no data structures. Yet from those three rules you can build arithmetic, recursion, and any computation a machine can perform. That last part still strikes me as remarkable. In 1936, Turing defined computation with tapes and state machines; Church defined it with pure function application. The two models look nothing alike, yet they turned out to be exactly equivalent. Any function you can compute on a Turing machine, you can compute with lambdas, and vice versa. That equivalence is one of the most surprising results in the foundations of mathematics, and it means that functional programming is not a style or a preference---it is a complete model of computation. R inherits from that lineage, and I wanted to write a book that lets the reader feel it.
 
 The other motivation is simpler. The best R books are already free: Hadley Wickham's R for Data Science, Advanced R, R Packages. Geocomputation with R. STAT 545. They proved that open-source books work: they reach more people, they get community contributions, and they stay up to date. I wanted to contribute to that ecosystem rather than compete with it. Thinking in R fills a gap between "here's how to use dplyr" and "here's the formal theory of R's evaluation model." It's the middle layer: practical enough to teach a beginner, principled enough that the knowledge compounds.
 
