@@ -9,7 +9,7 @@ thumbnail_webp: "/assets/images/content/thinking-in-r.webp"
 hero_bg_color: "#343739"
 hero_combined: true
 hero_container_class: "pad-md"
-hero_label: "In Progress"
+hero_label: "Published"
 subtitle: "Mar 08, 2026"
 description: "A free, open-source book that teaches R from scratch and explains why the language works the way it does."
 breadcrumb:
