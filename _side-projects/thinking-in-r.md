@@ -42,7 +42,7 @@ No programming experience is assumed. By the end, you will have written real cod
 
 ## Why I wrote it
 
-I came to R from physics. When I started my PhD in ecology, R was the language everyone used, and nobody could tell me why it worked the way it did. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it? The answers I got were "that's just how R is" or "don't worry about it."
+I came to R from physics. When I started my PhD in ecology, R was the language everyone used, but the teaching materials rarely explained why it worked the way it did. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it? The standard answer was "that's just how R is" or "don't worry about it."
 
 I did worry about it. I went looking and found that every quirk has a reason, and the reasons form a coherent story: Church's lambda calculus (1936), McCarthy's Lisp (1958), Sussman and Steele's Scheme (1975), Chambers' S at Bell Labs (1976), and Ihaka and Gentleman's R in Auckland (1993). Once I understood that chain, R stopped being a bag of functions and became a language I could reason about.
 
