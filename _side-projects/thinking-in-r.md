@@ -50,7 +50,7 @@ There is also something deeper. Lambda calculus is extraordinarily elegant: thre
 
 ## Why open source
 
-Stallman started the free software movement because Xerox wouldn't give him the source code for a printer driver. I like the idea that anyone can contribute to something and make it better together.
+In 1980, the AI Lab at MIT got a new Xerox laser printer. It jammed all the time, and print jobs would pile up with no one the wiser. With the old printer, Stallman had just modified the driver to send a notification whenever the paper jammed. But Xerox refused to release the source code for the new one, and a researcher at Carnegie Mellon who had access refused to share it because he had signed an NDA. Stallman was furious. Three years later he launched the GNU Project, and the free software movement was born. I like the idea behind it: if something is broken, anyone should be able to fix it. Most of what I know about R comes from that same culture: other people's vignettes, blog posts, Stack Overflow answers, open-source textbooks. I like the idea that anyone can contribute to something and make it better together.
 
 A book on GitHub is also a living document. Readers can open issues when something is wrong, submit pull requests when something could be better, and fork the whole thing if they want to take it in a different direction. A printed book is frozen the day it ships.
 
