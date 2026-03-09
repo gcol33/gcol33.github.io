@@ -28,7 +28,7 @@ breadcrumb:
 
 [Thinking in R](https://gillescolling.com/thinking-in-r/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
 
-The book is different from most R introductions in one specific way: it treats R as a language with a design, not a collection of tricks to memorize. R descends from the lambda calculus, through Lisp, Scheme, and S. That lineage explains why everything in R is a vector, why functions are values you can pass around, why `x * 2` multiplies an entire column without a loop, and why `filter(df, x > 3)` can read column names without quotes. Most R books teach *what* to type. This one also explains *why* it works, because understanding the design makes everything else easier to learn.
+The book treats R as a language with a design, not a collection of tricks to memorize. R descends from the lambda calculus, through Lisp, Scheme, and S. That lineage explains why everything in R is a vector, why functions are values you can pass around, why `x * 2` multiplies an entire column without a loop, and why `filter(df, x > 3)` can read column names without quotes. Traditionally, R is taught as *what* to type; this book also explains *why* it works, because understanding the design makes everything else easier to learn.
 
 The five parts build on each other:
 
@@ -55,3 +55,10 @@ Stallman started the free software movement because Xerox wouldn't give him the 
 A book on GitHub is also a living document. Readers can open issues when something is wrong, submit pull requests when something could be better, and fork the whole thing if they want to take it in a different direction. A printed book is frozen the day it ships.
 
 The book is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The source is on [GitHub](https://github.com/gcol33/thinking-in-r). If you find an error, open an issue. If you want to contribute, open a pull request.
+
+## Citation
+
+<div class="citation-box">
+  <p class="citation-text">Colling G (2026). Thinking in R: A Free, Open-Source Introduction to R Programming. https://gillescolling.com/thinking-in-r/</p>
+  <button class="copy-btn" aria-label="Copy citation"><i class="far fa-copy"></i></button>
+</div>
