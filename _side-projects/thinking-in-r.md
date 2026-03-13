@@ -22,11 +22,11 @@ breadcrumb:
   - name: "Thinking in R"
 ---
 
-<a href="https://thinking-in-r.gillescolling.com/" class="btn btn-lg btn-d button-01 mb-4">Read the Book</a>
+<a href="https://gillescolling.com/thinking-in-r/" class="btn btn-lg btn-d button-01 mb-4">Read the Book</a>
 
 ## What is it
 
-[Thinking in R](https://thinking-in-r.gillescolling.com/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
+[Thinking in R](https://gillescolling.com/thinking-in-r/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
 
 The book treats R as a language with a design, not a collection of tricks to memorize. R descends from the lambda calculus, through Lisp, Scheme, and S. That lineage explains why everything in R is a vector, why functions are values you can pass around, why `x * 2` multiplies an entire column without a loop, and why `filter(df, x > 3)` can read column names without quotes. Traditionally, R is taught as *what* to type; this book also explains *why* it works, because understanding the design makes everything else easier to learn.
 
@@ -57,6 +57,6 @@ The book is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/license
 ## Citation
 
 <div class="citation-box">
-  <p class="citation-text">Colling G (2026). Thinking in R: A Free, Open-Source Introduction to R Programming. https://thinking-in-r.gillescolling.com/</p>
+  <p class="citation-text">Colling G (2026). Thinking in R: A Free, Open-Source Introduction to R Programming. https://gillescolling.com/thinking-in-r/</p>
   <button class="copy-btn" aria-label="Copy citation"><i class="far fa-copy"></i></button>
 </div>
