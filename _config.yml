@@ -4,6 +4,17 @@ description: "Physicist turned biologist in the search of aliens"
 url: "https://gillescolling.com"
 baseurl: ""
 
+# Social / SEO (used by jekyll-seo-tag for OG + Twitter Cards)
+twitter:
+  username: Gilles__Colling
+  card: summary_large_image
+social:
+  name: Gilles Colling
+  links:
+    - https://twitter.com/Gilles__Colling
+    - https://linkedin.com/in/gilles-colling-0b3747306/
+    - https://github.com/gcol33
+    - https://bsky.app/profile/gilles-colling.bsky.social
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -40,6 +51,10 @@ include:
 
 # Default front matter
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/content/og-default.jpg
   - scope:
       path: "_pages"
     values:

@@ -8,6 +8,11 @@
   // Case-insensitive redirects for package sites
   (function() {
     var path = window.location.pathname;
+    // /restrictr -> /restrictR
+    if (/^/restrictrb/i.test(path) && !/^/restrictR/.test(path)) {
+      var newPath = path.replace(/^/restrictr/i, '/restrictR');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
     // /simp -> /SIMP
     if (/^\/simp\b/i.test(path) && !/^\/SIMP/.test(path)) {
       var newPath = path.replace(/^\/simp/i, '/SIMP');

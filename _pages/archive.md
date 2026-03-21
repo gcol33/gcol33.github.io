@@ -2,6 +2,7 @@
 layout: default
 title: "All Posts"
 permalink: /archive/
+description: "All publications, presentations, workshops, and projects by Gilles Colling."
 breadcrumb:
   - name: "Home"
     url: "/"

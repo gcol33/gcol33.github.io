@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "About"
-permalink: /author/
+permalink: /about/
+description: "About Gilles Colling — physicist turned ecologist, PhD student at University of Vienna studying alien species accumulation across scales."
 breadcrumb:
   - name: "Home"
     url: "/"

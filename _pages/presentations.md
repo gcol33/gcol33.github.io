@@ -2,6 +2,7 @@
 layout: default
 title: "Presentations"
 permalink: /presentations/
+description: "Conference talks and presentations by Gilles Colling on ecology, alien species, and spatial statistics."
 breadcrumb:
   - name: "Home"
     url: "/"

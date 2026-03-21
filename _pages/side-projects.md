@@ -2,6 +2,7 @@
 layout: default
 title: "Side Projects"
 permalink: /side-projects/
+description: "R packages, open-source tools, and side projects by Gilles Colling — corrselect, hexify, ggguides, and more."
 breadcrumb:
   - name: "Home"
     url: "/"

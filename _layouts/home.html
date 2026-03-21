@@ -59,6 +59,37 @@ layout: default
   </div>
 </div>
 
+<!-- Featured Projects -->
+<div class="section section-light" id="featured-projects">
+  <div class="container pad-md pad-sm-lg">
+    <div class="row mb-4">
+      <div class="col">
+        <div class="pencil-heading">
+          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-cube me-lg-1"></span>&nbsp;Featured Projects<br></h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% assign featured = site.side-projects | sort: 'date' | reverse %}
+      {% for project in featured limit:4 %}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="{{ project.url | relative_url }}" class="featured-project-card d-block h-100">
+          <picture>
+            <source type="image/webp" srcset="{{ project.thumbnail_webp | relative_url }}">
+            <img src="{{ project.thumbnail | relative_url }}" class="img-fluid img-rd-md mb-3" alt="{{ project.title }}" width="398" height="265" loading="lazy">
+          </picture>
+          <h5 class="text-bold mb-1">{{ project.title }}</h5>
+          <p class="p-sm tc-text-muted mb-0">{{ project.description | truncate: 80 }}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-2">
+      <a href="{{ '/side-projects/' | relative_url }}" class="btn btn-lg btn-d button-02">All Projects</a>
+    </div>
+  </div>
+</div>
+
 <!-- Recent Posts Grid -->
 <div class="section section-light background-gradient" id="blog-writer">
   <div class="container pad-sm pad-sm-md">
@@ -84,6 +115,17 @@ layout: default
         <div class="text-center mt-lg-3 pt-3 mt-3">
           <a href="{{ '/archive/' | relative_url }}" class="btn btn-lg btn-d button-02">All</a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter Signup -->
+<div class="section section-light" id="newsletter">
+  <div class="container pad-md pad-sm-lg">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
+        {% include newsletter-signup.html %}
       </div>
     </div>
   </div>

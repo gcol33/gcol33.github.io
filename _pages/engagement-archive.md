@@ -2,6 +2,7 @@
 layout: default
 title: "Engagement Archive"
 permalink: /engagement-archive/
+description: "Workshops, courses, side projects, and open-source tools by Gilles Colling."
 breadcrumb:
   - name: "Home"
     url: "/"

@@ -2,6 +2,7 @@
 layout: default
 title: "Publications"
 permalink: /publications/
+description: "Academic publications by Gilles Colling on alien species, spatial ecology, and biodiversity modelling."
 breadcrumb:
   - name: "Home"
     url: "/"

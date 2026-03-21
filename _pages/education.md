@@ -2,6 +2,7 @@
 layout: default
 title: "Education"
 permalink: /education/
+description: "Workshops, courses, and educational materials by Gilles Colling on ecology, R programming, and data science."
 breadcrumb:
   - name: "Home"
     url: "/"

@@ -2,6 +2,7 @@
 layout: default
 title: "Contact"
 permalink: /contact/
+description: "Get in touch with Gilles Colling for research inquiries, collaborations, or questions."
 breadcrumb:
   - name: "Home"
     url: "/"

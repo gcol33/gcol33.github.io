@@ -1337,3 +1337,115 @@ button:focus:not(:focus-visible),
         #750787 83%,
         #e40303 100%) !important;
 }
+
+/* ======================================
+   SHARE BUTTONS
+   ====================================== */
+
+.share-buttons-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.share-btn:hover {
+    background: var(--color-text-primary);
+    color: var(--color-white);
+    border-color: var(--color-text-primary);
+}
+
+.share-btn.copied {
+    background: #2e7d32;
+    color: var(--color-white);
+    border-color: #2e7d32;
+}
+
+[data-bs-theme="dark"] .share-btn {
+    border-color: var(--dm-border);
+    color: var(--dm-text-secondary);
+}
+
+[data-bs-theme="dark"] .share-btn:hover {
+    background: var(--dm-text-primary);
+    color: var(--dm-bg-primary);
+    border-color: var(--dm-text-primary);
+}
+
+/* ======================================
+   AUTHOR BIO CARD
+   ====================================== */
+
+.author-bio {
+    margin-bottom: 1rem;
+}
+
+.author-bio .text-bold {
+    font-size: 15px;
+}
+
+.author-bio .p-sm {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ======================================
+   FEATURED PROJECT CARDS
+   ====================================== */
+
+.featured-project-card {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.featured-project-card:hover {
+    transform: translateY(-4px);
+}
+
+.featured-project-card:hover h5 {
+    color: var(--color-text-secondary);
+}
+
+[data-bs-theme="dark"] .featured-project-card:hover h5 {
+    color: var(--dm-text-secondary);
+}
+
+/* ======================================
+   NEWSLETTER SIGNUP
+   ====================================== */
+
+.newsletter-signup .form-control {
+    border-radius: 8px;
+}
+
+.newsletter-signup .btn {
+    white-space: nowrap;
+}
+
+.newsletter-form {
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 575px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+}

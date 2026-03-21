@@ -2,6 +2,7 @@
 layout: default
 title: "Research Archive"
 permalink: /research-archive/
+description: "Research publications and conference presentations by Gilles Colling."
 breadcrumb:
   - name: "Home"
     url: "/"
