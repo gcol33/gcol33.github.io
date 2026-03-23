@@ -24,7 +24,7 @@ breadcrumb:
     <div class="row">
       <div class="text-start col-lg-8 col-md-10">
         <h1 class="mb-2">Contact</h1>
-        <p class="mb-4">If you'd like to get in touch with me for research-related inquiries, feel free to reach out via email. I'm open to discussing topics related to my work, collaborations, or any relevant questions you might have.</p>
+        <p class="mb-4 tc-text-primary">If you'd like to get in touch with me for research-related inquiries, feel free to reach out via email. I'm open to discussing topics related to my work, collaborations, or any relevant questions you might have.</p>
 
         <form id="contact-form" action="https://api.submitjson.com/v1/submit/FnybrlFC2" method="POST">
           <div class="form-group mb-3">
