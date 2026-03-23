@@ -7,7 +7,7 @@ category_url: "/education/"
 thumbnail: "/assets/images/content/conference_rainbowr2026.jpg"
 thumbnail_webp: "/assets/images/content/conference_rainbowr2026.webp"
 hero_bg_class: "bg-rainbowr2026"
-texture_class: "texture-darken"
+texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
 permalink: /rainbowr2026/

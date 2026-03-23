@@ -7,6 +7,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/agriweed_gilles.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_gilles.webp"
 hero_bg_class: "bg-agriweed-gilles2"
+texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
 permalink: /talkagriweed/

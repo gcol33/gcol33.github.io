@@ -8,6 +8,7 @@ category_url: "/education/"
 thumbnail: "/assets/images/content/workshop_liams_stay.jpg"
 thumbnail_webp: "/assets/images/content/workshop_liams_stay.webp"
 hero_bg_class: "bg-workshop-liams-stay"
+texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
 description: "A two-day ecology workshop designed for a visiting school student, introducing biodiversity sampling, species accumulation curves, and spatial algorithms through hands-on R programming exercises."
@@ -37,4 +38,6 @@ The practical session consisted of seven exercises structured as a mini research
 
 ## Workshop Materials
 
-The full workshop materials, including theory slides and interactive exercises for both days, are available as a <a href="/liams_stay/" target="_blank">standalone bilingual web application</a>.
+The full workshop materials, including theory slides and interactive exercises for both days, are available as a standalone bilingual web application.
+
+<a href="/liams_stay/" target="_blank" class="btn btn-lg btn-d button-01">View Workshop Materials</a>

@@ -8,6 +8,7 @@ description: "This workshop on research data management in the life sciences was
 thumbnail: "/assets/images/content/workshop_rdm.jpg"
 thumbnail_webp: "/assets/images/content/workshop_rdm.webp"
 hero_bg_class: "bg-data-cycle2"
+texture_class: "texture-darken-strong"
 hero_title: "Take aways"
 hero_content: "The workshop showed that research data management is not a bureaucratic add-on but a core part of scientific practice. Good RDM strengthens reproducibility, supports collaboration, and extends the impact of projects beyond their immediate lifetime. Clear organization and documentation reduce the risk of data loss and make results easier to verify. What first appears as administration is in fact a practical tool for better science."
 breadcrumb:

@@ -7,6 +7,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/neobiota_2024.jpg"
 thumbnail_webp: "/assets/images/content/neobiota_2024.webp"
 hero_bg_class: "bg-conference-neobiota2024-bg"
+texture_class: "texture-darken-strong"
 permalink: /neobiota2024/
 description: "The 13th International Conference on Biological Invasions (NEOBIOTA 2024) was held from September 4 to 6, 2024, at the Faculty of Sciences of the University of Lisbon, Portugal. Organized by MARE – Marine and Environmental Research Centre, in collaboration with the University of Évora, the conference convened over 460 experts from approximately 50 countries to discuss the latest research and strategies concerning invasive alien species."
 hero_title: "Conference Highlights"

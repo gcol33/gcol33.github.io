@@ -16,7 +16,7 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="section bg-surface bg-texture {{ page.texture_class | default: "texture-darken" }} section-dark{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: center;"{% endif %}>
+<div class="section bg-surface bg-texture {{ page.texture_class | default: "texture-darken" }} section-dark{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: {{ page.hero_bg_position | default: 'center' }};"{% endif %}>
   <div class="shape-divider divider-bottom">
     <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
@@ -91,8 +91,8 @@ layout: default
           {% endfor %}
         </div>
         {% endif %}
-        {% include share-buttons.html %}
         {% include author-bio.html %}
+        {% include share-buttons.html %}
       </div>
     </div>
   </div>

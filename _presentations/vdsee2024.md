@@ -7,6 +7,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_header_2024.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
 hero_bg_class: "bg-presentation-vdsee-2024-personal"
+texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
 description: "At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century."

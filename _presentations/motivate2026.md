@@ -8,6 +8,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_motivate_2026_thumb.jpg"
 thumbnail_webp: "/assets/images/content/presentation_motivate_2026_thumb.webp"
 hero_bg_class: "bg-presentation-motivate-2026"
+texture_class: "texture-darken-strong"
 hero_combined: true
 description: "At the MOTIVATE consortium meeting in Vienna, I presented my work on reconstructing habitat niche expansion patterns of alien plant species across Europe, using the overrepresentation framework applied to 1.9 million vegetation plots from the European Vegetation Archive."
 hero_title: "Habitat Niche Expansion at MOTIVATE"

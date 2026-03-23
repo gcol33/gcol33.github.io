@@ -86,15 +86,11 @@ layout: default
           </button>
           <div class="lectures-scroll-area">
             {% for lecture in page.lectures %}
-            <div class="lecture-card">
-              <a href="{{ lecture.url }}">
-                {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto d-block lazyload lecture-img" width="256" height="171" %}
-              </a>
-              <h5 class="tc-text-dark mt-3">
-                <a class="text-link-01" href="{{ lecture.url }}">{{ lecture.title }}</a>
-              </h5>
+            <a href="{{ lecture.url }}" class="lecture-card lecture-card-link">
+              {% include lazy-image.html src=lecture.image src_webp=lecture.image_webp alt=lecture.title class="img-fluid mx-auto d-block lazyload lecture-img" width="256" height="171" %}
+              <h5 class="tc-text-dark mt-3">{{ lecture.title }}</h5>
               <p>{{ lecture.subtitle }}</p>
-            </div>
+            </a>
             {% endfor %}
           </div>
           <button class="lectures-scroll-btn lectures-scroll-next" aria-label="Scroll right">
@@ -124,12 +120,10 @@ layout: default
           </button>
           <div class="lectures-scroll-area">
             {% for chapter in page.chapters %}
-            <div class="lecture-card chapter-card">
-              <h5 class="tc-text-dark mt-0">
-                <a class="text-link-01" href="{{ chapter.url }}">{{ chapter.title }}</a>
-              </h5>
+            <a href="{{ chapter.url }}" class="lecture-card chapter-card lecture-card-link">
+              <h5 class="tc-text-dark mt-0">{{ chapter.title }}</h5>
               <p class="mb-0">{{ chapter.subtitle }}</p>
-            </div>
+            </a>
             {% endfor %}
           </div>
           <button class="lectures-scroll-btn lectures-scroll-next" aria-label="Scroll right">

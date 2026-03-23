@@ -96,7 +96,7 @@ layout: default
     <div class="row">
       <div class="text-start col-lg-12">
         <div class="blocs-grid-container writer-post-library">
-          {% assign all_items = site.workshops | concat: site.publications | concat: site.presentations | concat: site.side-projects | concat: site.projects | sort: 'date' | reverse %}
+          {% assign all_items = site.workshops | concat: site.publications | concat: site.presentations | concat: site.projects | sort: 'date' | reverse %}
           {% for item in all_items limit:6 %}
           <div class="writer-posts">
             <div>
@@ -113,19 +113,8 @@ layout: default
           {% endfor %}
         </div>
         <div class="text-center mt-lg-3 pt-3 mt-3">
-          <a href="{{ '/archive/' | relative_url }}" class="btn btn-lg btn-d button-02">All</a>
+          <a href="{{ '/research-archive/' | relative_url }}" class="btn btn-lg btn-d button-02">My Research</a>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Newsletter Signup -->
-<div class="section section-light" id="newsletter">
-  <div class="container pad-md pad-sm-lg">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
-        {% include newsletter-signup.html %}
       </div>
     </div>
   </div>

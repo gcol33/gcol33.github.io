@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Research Archive"
+title: "My Research"
 permalink: /research-archive/
 description: "Research publications and conference presentations by Gilles Colling."
 breadcrumb:
@@ -10,11 +10,11 @@ breadcrumb:
 ---
 
 <div class="section section-light" id="archive-header">
-  <div class="container pad-md pad-sm-lg">
+  <div class="container pad-sm pb-0">
     <div class="row">
       <div class="col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
-        <h1 class="text-bold mb-4">{{ page.title }}</h1>
+        <h1 class="text-bold mb-2">{{ page.title }}</h1>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ breadcrumb:
     <div class="row">
       <div class="text-start col-lg-12">
         <div class="blocs-grid-container writer-post-library">
-          {% assign all_items = site.publications | concat: site.presentations | sort: 'date' | reverse %}
+          {% assign all_items = site.publications | concat: site.presentations | concat: site.projects | sort: 'date' | reverse %}
           {% for item in all_items %}
           <div class="writer-posts">
             <div>

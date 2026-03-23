@@ -7,6 +7,7 @@ category_url: "/presentations/"
 thumbnail: "/assets/images/content/vdsee_2026_thumbnail.jpg"
 thumbnail_webp: "/assets/images/content/vdsee_2026_thumbnail.webp"
 hero_bg_class: "bg-vdsee-2026"
+texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
 description: "At the VDSEE Symposium 2026, I presented a poster on habitat niche breadth expansion in European alien plants and received the Best Poster award."

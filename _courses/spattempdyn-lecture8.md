@@ -22,8 +22,8 @@ course:
   url: "/course-spattempdyn/"
 
 next_chapter:
-  title: "Overview"
-  url: "/course-spattempdyn/"
+  title: "Project"
+  url: "/course-spattempdyn-project/"
 
 math: true
 ---

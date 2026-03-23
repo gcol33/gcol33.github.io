@@ -8,6 +8,7 @@ description: "This two-day academic writing workshop was organized by the Vienna
 thumbnail: "/assets/images/content/workshop_aw.jpg"
 thumbnail_webp: "/assets/images/content/workshop_aw.webp"
 hero_bg_class: "bg-writing-workshop"
+texture_class: "texture-darken-strong"
 hero_title: "Take aways"
 hero_content: "We left the course with a sharper sense of how to approach academic writing as both design and storytelling. The workshop emphasized that texts work at multiple scales. From the overall structure of a paper, to the flow of an abstract, to the rhythm of a single paragraph. Writing was presented as a craft of shaping arguments so that they build momentum and guide the reader. We also came away with practical strategies for targeting journals, making choices about style, and using feedback effectively. Most importantly, the workshop shifted how we saw revision: As a creative process of cutting, reordering, and refining until the text works as intended."
 breadcrumb:

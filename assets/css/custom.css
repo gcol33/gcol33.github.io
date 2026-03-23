@@ -216,6 +216,19 @@ article ol li, article ul li {
     width: 20%;
 }
 
+.lecture-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.lecture-card-link:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
+
 /* Chapter cards (text-only, no images) */
 .chapter-card {
     min-width: 160px;
@@ -343,8 +356,17 @@ article ol li, article ul li {
     overflow: visible;
 }
 
+/* Prevent footer from hiding behind sticky chapter nav */
+body.has-sticky-nav #pencil-footer {
+    padding-bottom: 80px;
+}
+
 .chapter-nav-sticky .btn {
     padding: 10px 24px;
+    font-size: 16px;
+}
+
+.chapter-nav-sticky .text-link-01 {
     font-size: 16px;
 }
 
