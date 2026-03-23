@@ -57,13 +57,13 @@ Usage: {% include related-content.html %}
             </a>
             {% endif %}
             <div class="related-card-body">
-              <span class="post-label mb-2">{{ item.category }}</span>
+              <div class="writer-post-group mb-2">
+                <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
+                <a href="{{ item.category_url | default: '/archive/' | relative_url }}" class="a-btn text-link-01 post-label">{{ item.category }}</a>
+              </div>
               <h4 class="related-card-title">
                 <a href="{{ item.url | relative_url }}" class="title-post">{{ item.short_title | default: item.title }}</a>
               </h4>
-              {% if item.date %}
-              <p class="p-sm mb-0">{{ item.date | date: "%b %d, %Y" }}</p>
-              {% endif %}
             </div>
           </article>
         </div>

@@ -11,7 +11,7 @@ hero_bg_class: "bg-art-science-vdsee-2026"
 texture_class: "texture-darken-strong"
 hero_combined: true
 hero_container_class: "pad-md"
-description: "Four algorithmic artworks exhibited at the VDSEE Symposium 2026 Art & Science event, each translating a strand of my PhD research into visual form."
+description: "Four pieces of algorithmic art, all generated in R, exhibited at the VDSEE Symposium 2026 Art & Science event."
 hero_title: "Terminal Landscapes"
 breadcrumb:
   - name: "Home"

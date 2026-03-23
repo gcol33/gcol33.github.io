@@ -1,5 +1,31 @@
 /* Custom CSS overrides */
 
+/* Hero name link - expand on hover like navbar brand */
+.hero-name-link {
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.hero-name-link:hover {
+    color: inherit;
+    transform: scale(1.05);
+}
+
+/* Nav dot separators */
+.nav-separator {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    line-height: 1;
+}
+
+@media (max-width: 767px) {
+    .nav-separator {
+        display: none;
+    }
+}
+
 /* Fix: Prevent text overflow on mobile */
 #hero p,
 #hero .display-md,

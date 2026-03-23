@@ -10,7 +10,7 @@ breadcrumb:
 ---
 
 <div class="section section-light" id="contact-breadcrumb">
-  <div class="container pad-sm">
+  <div class="container pad-sm pb-0">
     <div class="row">
       <div class="text-start col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
@@ -20,10 +20,10 @@ breadcrumb:
 </div>
 
 <div class="section section-light background-gradient" id="contact-content">
-  <div class="container pad-sm pad-md-md pad-md-lg">
+  <div class="container pad-sm">
     <div class="row">
       <div class="text-start col-lg-8 col-md-10">
-        <h1 class="mb-4">Contact</h1>
+        <h1 class="mb-2">Contact</h1>
         <p class="mb-4">If you'd like to get in touch with me for research-related inquiries, feel free to reach out via email. I'm open to discussing topics related to my work, collaborations, or any relevant questions you might have.</p>
 
         <form id="contact-form" action="https://api.submitjson.com/v1/submit/FnybrlFC2" method="POST">

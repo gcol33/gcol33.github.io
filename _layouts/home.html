@@ -13,11 +13,11 @@ layout: default
     <div class="row">
       <div class="col-lg-6 align-self-center mb-4 mb-lg-0 col-md-7 text-sm-center">
         <h3 class="mb-4"><i>"{{ page.quote | default: 'We live in cities, but the roots of our imagination sink into the forests.' }}"&nbsp;&nbsp;<br></i>({{ page.quote_author | default: 'Italo Calvino' }})<br></h3>
-        <h1 class="text-bold mb-2 display-md text-center">{{ page.hero_title | default: site.title }}<br></h1>
-        <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }}</h4>
+        <h1 class="text-bold mb-2 display-md text-center"><a href="{{ '/about/' | relative_url }}" class="text-decoration-none hero-name-link">{{ page.hero_title | default: site.title }}</a><br></h1>
+        <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }} <span class="tc-text-muted" style="font-size: 0.8em;">(he/him)</span></h4>
         <p class="mb-4 text-center mx-auto d-block p-style">{{ page.hero_description | default: site.description }}</p>
         <div class="text-center">
-          <a href="#category-nav" class="btn btn-lg float-md-none btn-d button-01">Learn more</a>
+          <a href="#featured-projects" class="btn btn-lg float-md-none btn-d button-01">Learn more</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-5">
@@ -25,35 +25,6 @@ layout: default
           <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' | relative_url }}">
           <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
         </picture>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Category Navigation -->
-<div class="section section-light" id="category-nav">
-  <div class="container pad-md pad-sm-lg">
-    <div class="row" data-scroll-fx-resistance="10">
-      <div class="col mb-5">
-        <div class="pencil-heading">
-          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-star-of-life me-lg-1"></span>&nbsp;ReCENT<br></h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col text-start explore-cat text-lg-start">
-        <div class="blocs-card-width text-lg-start nonein">
-          <a href="{{ '/publications/' | relative_url }}" class="nav-link menu-link a-block text-lg-center">Publications</a>
-        </div>
-        <div class="blocs-card-width">
-          <a href="{{ '/presentations/' | relative_url }}" class="nav-link menu-link a-block text-lg-center">Presentations</a>
-        </div>
-        <div class="blocs-card-width">
-          <a href="{{ '/education/' | relative_url }}" class="nav-link menu-link a-block text-lg-center">Education</a>
-        </div>
-        <div class="blocs-card-width">
-          <a href="{{ '/side-projects/' | relative_url }}" class="nav-link menu-link a-block text-lg-center">Side Projects</a>
-        </div>
       </div>
     </div>
   </div>

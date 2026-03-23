@@ -10,7 +10,7 @@ breadcrumb:
 ---
 
 <div class="section section-light" id="author-breadcrumb">
-  <div class="container pad-sm">
+  <div class="container pad-sm pb-0">
     <div class="row">
       <div class="text-start col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
@@ -22,7 +22,7 @@ breadcrumb:
 <div class="section section-light background-gradient" id="author-content">
   <div class="container pad-sm pad-md-md pad-md-lg">
     <div class="row hero-margin">
-      <div class="text-start col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <div class="text-start col-12">
         <div class="pencil-post-footer">
           <div class="pencil-heading">
             <picture>
@@ -34,12 +34,8 @@ breadcrumb:
           </div>
         </div>
         <p class="mt-3 mb-2">PhD Student</p>
-        <p class="mt-2 mb-4">I am Gilles Colling, a PhD student in the Division of BioInvasions, Global Change & Macroecology at the University of Vienna. My research focuses on the spread of alien species and how they accumulate across spatial scales. I combine large biodiversity databases with statistical modelling to understand when increases in regional species pools translate into local establishment, and when ecological or environmental constraints hold them back.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="text-start offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-sm-0 col-sm-12">
-        <h2 class="mb-2">Background</h2>
+        <p class="mt-2 mb-2">I am Gilles Colling, a PhD student in the Division of BioInvasions, Global Change & Macroecology at the University of Vienna. My research focuses on the spread of alien species and how they accumulate across spatial scales. I combine large biodiversity databases with statistical modelling to understand when increases in regional species pools translate into local establishment, and when ecological or environmental constraints hold them back.</p>
+        <h2 class="mb-2 mt-4">Background</h2>
         <p>I originally trained in physics at the University of Innsbruck, where I specialized in numerical physics and astrophysics. My early work involved developing solvers for complex systems, and I became increasingly interested in the methods themselves: numerical modelling, simulation, and data analysis. That interest eventually led me to ecology, where I saw the same tools could be used to address urgent questions about global change and biodiversity.</p>
         <picture>
           <source type="image/webp" srcset="/assets/images/content/long_about.webp">

@@ -7,11 +7,11 @@ layout: default
     <div class="row">
       <div class="col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
-        <div class="writer-post-group mb-3 mt-5">
+        <h1 class="text-bold mb-2">{{ page.title }}</h1>
+        <div class="writer-post-group mb-3 mt-3">
           <p class="mb-0 p-sm">{{ page.date | date: "%b %d, %Y" }}</p>
-          <span class="post-label">{{ page.category }}</span>
+          <a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn text-link-01 post-label">{{ page.category }}</a>
         </div>
-        <h1 class="text-bold mb-4">{{ page.title }}</h1>
         {% if page.authors %}
         <p class="tc-text-muted">{{ page.authors }}</p>
         {% endif %}
@@ -24,7 +24,7 @@ layout: default
 <div class="section section-light bg-surface" id="item-image">
   <div class="container pad-sm">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2">
+      <div class="col-12">
         <picture>
           <source type="image/webp" srcset="{{ page.thumbnail_webp | relative_url }}">
           <img src="{{ page.thumbnail | relative_url }}" class="img-fluid mx-auto d-block img-rd-md" alt="{{ page.title }}" loading="lazy">
@@ -38,7 +38,7 @@ layout: default
 <div class="section section-light" id="item-content">
   <div class="container pad-md">
     <div class="row">
-      <div class="col-lg-10 offset-lg-1">
+      <div class="col-12">
         {{ content }}
 
         {% if page.external_url %}
