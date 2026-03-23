@@ -28,7 +28,7 @@ breadcrumb:
 
 [Thinking in R](https://gillescolling.com/thinking-in-r/) is a free, open-source book that teaches R from zero. It covers the full path from first function call to metaprogramming and package development, organized in five parts and 33 chapters.
 
-The book treats R as a language with a design, not a collection of tricks to memorize. That design explains why everything in R is a vector, why functions are values you can pass around, why `x * 2` multiplies an entire column without a loop, and why `filter(df, x > 3)` can read column names without quotes. Each chapter explains *what* to type and *why* it works.
+Why is everything in R a vector? Why are functions values you can pass around? Why does `x * 2` multiply an entire column without a loop? Why can `filter(df, x > 3)` read column names without quotes? Each chapter answers questions like these — *what* to type and *why* it works that way.
 
 The five parts build on each other:
 
@@ -42,11 +42,11 @@ No programming experience is assumed. By the end, you will have written real cod
 
 ## Why I wrote it
 
-I came to R from physics. When I started my PhD in ecology, R was the language everyone used, but I kept running into questions nobody could answer. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it?
+I came to R from physics. When I started my PhD in ecology, R was the language everyone used, but I kept running into questions that none of the textbooks seemed to address. Why does assignment use `<-` instead of `=`? Why does `sapply()` sometimes return a matrix and sometimes a list? Why can you write `species` inside `filter()` without quoting it?
 
 So I went looking. Every quirk had a reason, and the reasons turned out to be connected: choices made in the 1930s about what computation *is*, carried through decades of language design, all the way into the R you install today. Once I saw that chain, R stopped being a bag of functions and became a language I could reason about.
 
-There is also something deeper. Lambda calculus has three rules --- variables, abstraction, application --- and nothing else. No numbers, no loops, no data structures. Yet from those three rules you can build arithmetic, recursion, and any computation a machine can perform. Turing defined computation with tapes and state machines; Church defined it with pure function application. The two look nothing alike, yet they turned out to be exactly equivalent. Functional programming is not a style or a preference --- it is a complete model of computation. R inherits from that lineage, and this book follows it.
+In 1936, two people independently proved that three rules are enough to compute anything a machine can compute. One of them used tapes. The other used only functions. R descends from the second one, and that descent explains things about R that most users never question.
 
 ## Why open source
 
