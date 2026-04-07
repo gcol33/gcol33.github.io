@@ -1497,3 +1497,10 @@ button:focus:not(:focus-visible),
         width: 100%;
     }
 }
+
+/* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
+@media (max-width: 991.98px) {
+    .social-icons-grid a.desktop-only {
+        display: none;
+    }
+}
