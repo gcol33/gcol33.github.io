@@ -1,5 +1,10 @@
 /* Custom CSS overrides */
 
+/* Subtle background for inline content blocks (banners, etc.) */
+.bg-subtle {
+    background-color: #f0f0f0;
+}
+
 /* Hero name link - expand on hover like navbar brand */
 .hero-name-link {
     color: inherit;
@@ -600,6 +605,10 @@ button:focus:not(:focus-visible),
 
 [data-bs-theme="dark"] .bg-surface {
     background-color: var(--dm-bg-secondary) !important;
+}
+
+[data-bs-theme="dark"] .bg-subtle {
+    background-color: #f0f0f0;
 }
 
 /* Hero section - use inverted background image for dark mode */

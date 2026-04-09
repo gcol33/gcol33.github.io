@@ -7,10 +7,7 @@ category: "Presentation"
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/art_science_vdsee_2026_thumbnail.jpg"
 thumbnail_webp: "/assets/images/content/art_science_vdsee_2026_thumbnail.webp"
-hero_bg_class: "bg-art-science-vdsee-2026"
-texture_class: "texture-darken-strong"
 hero_combined: true
-hero_container_class: "pad-md"
 description: "Four pieces of algorithmic art, all generated in R, exhibited at the VDSEE Symposium 2026 Art & Science event."
 hero_title: "Terminal Landscapes"
 breadcrumb:

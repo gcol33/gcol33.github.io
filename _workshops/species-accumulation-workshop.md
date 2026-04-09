@@ -7,10 +7,7 @@ category: "Education"
 category_url: "/education/"
 thumbnail: "/assets/images/content/workshop_liams_stay.jpg"
 thumbnail_webp: "/assets/images/content/workshop_liams_stay.webp"
-hero_bg_class: "bg-workshop-liams-stay"
-texture_class: "texture-darken-strong"
 hero_combined: true
-hero_container_class: "pad-md"
 description: "A two-day ecology workshop designed for a visiting school student, introducing biodiversity sampling, species accumulation curves, and spatial algorithms through hands-on R programming exercises."
 breadcrumb:
   - name: "Home"

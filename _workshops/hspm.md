@@ -7,8 +7,6 @@ category_url: "/education/"
 description: "From June 24 to 27, 2024, Jeff Doser and Marc Kéry led a workshop on hierarchical Bayesian spatial models at the Swiss Ornithological Institute in Sempach, Switzerland. Participants brought their own laptops with R, using the `spOccupancy` and `spAbundance` packages throughout the sessions. While the course didn't require prior experience with Bayesian or spatial statistics, a solid understanding of regression models in R was expected. All course materials, including lectures and code, were made available via GitHub."
 thumbnail: "/assets/images/content/hspm_ws_bg.jpg"
 thumbnail_webp: "/assets/images/content/hspm_ws_bg.webp"
-hero_bg_class: "bg-hspm-ws-bg"
-texture_class: "texture-darken-strong"
 hero_title: "Course Highlights"
 hero_content: "The course combined theoretical background with hands-on implementation, with about 70 percent of the time dedicated to lectures and the remaining 30 percent to exercises. It began with an overview of hierarchical modelling and spatial statistics, then moved into scalable modelling techniques using `spOccupancy` and `spAbundance`. Over four packed days, participants worked through topics including single- and multi-species occupancy models, joint species distribution models with imperfect detection, and multi-season models. Later sessions focused on modelling count data using spatial GLMMs, N-mixture models, and hierarchical distance sampling. Real-world applications, such as analyses of Swiss bird data, anchored the exercises in practice. Each day ran from 9:00 to around 17:30, with generous breaks and time set aside for questions and discussion."
 math: true

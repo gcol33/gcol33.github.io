@@ -6,12 +6,9 @@ category: "Presentation"
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/neobiota_2024.jpg"
 thumbnail_webp: "/assets/images/content/neobiota_2024.webp"
-hero_bg_class: "bg-conference-neobiota2024-bg"
-texture_class: "texture-darken-strong"
 permalink: /neobiota2024/
 description: "The 13th International Conference on Biological Invasions (NEOBIOTA 2024) was held from September 4 to 6, 2024, at the Faculty of Sciences of the University of Lisbon, Portugal. Organized by MARE – Marine and Environmental Research Centre, in collaboration with the University of Évora, the conference convened over 460 experts from approximately 50 countries to discuss the latest research and strategies concerning invasive alien species."
-hero_title: "Conference Highlights"
-hero_content: "The conference featured plenary sessions by Anthony Ricciardi and Gregory Ruiz, who shared their insights on the global challenges posed by biological invasions and strategies for mitigation. Over the course of three days, participants engaged in more than 200 lectures and sessions covering risk assessment, management and control of invasive species, detection and monitoring tools, introduction pathways, and the environmental and socio-economic impacts of biological invasions. Pre-conference workshops on September 3 focused on topics such as LIFE projects addressing biological invasions, assessment and management methods, economic utilization of invasive species, public policy development, and the role of citizen science. NeoBiota and Pensoft sponsored awards for Best Student Poster and Best Student Oral Presentation, with winners receiving free publications in the NeoBiota journal. Our group had a strong presence at NEOBIOTA 2024, contributing to discussions on invasion ecology from multiple angles, ranging from global syntheses to regional case studies. With talks and posters covering invasive plant dynamics, alien mammal conservation, and the ecological impacts of biological invasions, our research sparked discussions throughout the conference. Lisa Tedeschi, Franz Essl, Adrian García-Rodriguez, Tom Vorstenbosch, Fabio Mologni, Anna Schertler, Ekin Kaplan, and I all participated, sharing our work and engaging with researchers from across the world. Beyond the scientific sessions, the conference also provided a great opportunity to explore Lisbon, enjoy the local food, and catch up outside of the formal setting."
+hero_combined: true
 breadcrumb:
   - name: "Home"
     url: "/"
@@ -21,6 +18,10 @@ breadcrumb:
     url: "/presentations/"
   - name: "Neobiota 2024"
 ---
+
+## Conference Highlights
+
+The conference featured plenary sessions by Anthony Ricciardi and Gregory Ruiz, who shared their insights on the global challenges posed by biological invasions and strategies for mitigation. Over the course of three days, participants engaged in more than 200 lectures and sessions covering risk assessment, management and control of invasive species, detection and monitoring tools, introduction pathways, and the environmental and socio-economic impacts of biological invasions. Pre-conference workshops on September 3 focused on topics such as LIFE projects addressing biological invasions, assessment and management methods, economic utilization of invasive species, public policy development, and the role of citizen science. NeoBiota and Pensoft sponsored awards for Best Student Poster and Best Student Oral Presentation, with winners receiving free publications in the NeoBiota journal. Our group had a strong presence at NEOBIOTA 2024, contributing to discussions on invasion ecology from multiple angles, ranging from global syntheses to regional case studies. With talks and posters covering invasive plant dynamics, alien mammal conservation, and the ecological impacts of biological invasions, our research sparked discussions throughout the conference. Lisa Tedeschi, Franz Essl, Adrian García-Rodriguez, Tom Vorstenbosch, Fabio Mologni, Anna Schertler, Ekin Kaplan, and I all participated, sharing our work and engaging with researchers from across the world. Beyond the scientific sessions, the conference also provided a great opportunity to explore Lisbon, enjoy the local food, and catch up outside of the formal setting.
 
 ## September 3rd - Arrival
 
@@ -47,10 +48,12 @@ As the evening went on, we talked about the upcoming conference, going over the 
 
 ## September 4th - First Day at the Conference
 
+<div class="bg-subtle p-3 p-lg-4 rounded mb-lg-3 mb-3">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/conference_neobiota2024_banner.webp">
-<img src="/assets/images/content/conference_neobiota2024_banner.png" class="img-fluid mx-auto d-block mb-lg-3 mb-3 lazyload" alt="conference_neobiota2024_banner" width="1280" height="320">
+<img src="/assets/images/content/conference_neobiota2024_banner.png" class="img-fluid mx-auto d-block lazyload" alt="conference_neobiota2024_banner" width="1280" height="320">
 </picture>
+</div>
 
 #### First morning of the conference
 

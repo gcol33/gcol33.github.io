@@ -7,8 +7,6 @@ category_url: "/education/"
 description: "The Vegetation Plot Data Workshop took place at the Department at Rennweg, bringing together in house researchers working with vegetation plot data to discuss shared challenges and develop a more efficient and reproducible workflow. Organized by Michael Glaser and Bernd Lenzner, the one-day workshop provided an informal and interactive space to exchange experiences, identify common hurdles, and explore solutions for handling, standardizing, and analyzing plot data."
 thumbnail: "/assets/images/content/plots_ws.jpg"
 thumbnail_webp: "/assets/images/content/plots_ws.webp"
-hero_bg_class: "bg-workshop-pd-bg"
-texture_class: "texture-darken-strong"
 hero_title: "Take aways"
 hero_content: "We chose three common struggles when working with plot based data: data cleaning and standardization, taxonomic harmonization, and linking to other data sources. As for the output of the workshop: we made a table for common data sources and tools people want to combine with their plot data and additionally a table of common issues and pitfalls and suggestions on how to tackle these issues.<br><br>More generally we had a discussion about a checklist of common errors, such as duplicate plots and different abundance scales. Maybe this can be followed up with a short paper on how to deal with large plot databases."
 breadcrumb:

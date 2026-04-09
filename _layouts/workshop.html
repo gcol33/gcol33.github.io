@@ -16,13 +16,13 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="section bg-surface bg-texture {{ page.texture_class | default: "texture-darken" }} section-dark{% if page.hero_bg_class %} {{ page.hero_bg_class }}{% endif %}" id="hero"{% if page.hero_bg_color %} style="background-color: {{ page.hero_bg_color }};"{% elsif page.hero_bg_image %} style="background-image: url('{{ page.hero_bg_image | relative_url }}'); background-size: cover; background-position: {{ page.hero_bg_position | default: 'center' }};"{% endif %}>
+<div class="section section-dark" id="hero" style="background-color: #212121;">
   <div class="shape-divider divider-bottom">
     <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container {{ page.hero_container_class | default: "pad-md pad-lg-md pad-xxl-lg" }}">
+  <div class="container" style="padding: 35px 20px 50px;">
     <div class="row">
       <div class="col-lg-6">
         <div>
@@ -59,22 +59,14 @@ layout: default
   </div>
 </div>
 
-{% if page.hero_image or page.hero_bg_class or page.hero_content %}
-{% capture hero_content %}
 {% if page.hero_content %}
+{% capture hero_content %}
 <h2 class="mb-4 display-md tc-text-light text-bold">{{ page.hero_title | default: "Take aways" }}</h2>
 <div class="tc-text-light">
   <p class="tc-text-light">{{ page.hero_content }}</p>
 </div>
-{% endif %}
 {% endcapture %}
-{% include hero-banner.html
-   content=hero_content
-   texture=page.texture_class
-   bg_class=page.hero_bg_class
-   bg_image=page.hero_image
-   container_class=page.hero_container_class
-%}
+{% include hero-banner.html content=hero_content %}
 {% endif %}
 {% endif %}
 
