@@ -29,7 +29,7 @@ breadcrumb:
   <img src="/assets/images/content/ice-contest.jpg" class="img-fluid mx-auto d-block img-rd-md photo-border" alt="Ice fragment on black sand beach, Iceland" loading="lazy">
 </picture>
 
-> In the age of the Anthropocene, even small coastal scenes echo the planetary transformations reshaping ecosystems. My research examines these shifting patterns as life reorganizes across space and time.
+> In the age of the Anthropocene, even small coastal scenes echo the planetary transformations reshaping ecosystems. My research examines these shifting patterns as life reorganizes across space and time. © 2026 Gilles Colling
 
 This was taken on the black sand beach at Jökulsárlón, Iceland, where icebergs calved from the Breiðamerkurjökull glacier wash up, melt for a few hours, and disappear back into the sea. The piece of ice in the foreground had probably been on the beach for less than a day when I photographed it. The black sand is volcanic basalt. The ocean behind it is the North Atlantic.
 
