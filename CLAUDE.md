@@ -181,7 +181,7 @@ magick PACKAGE_NAME.png PACKAGE_NAME.webp
 rm PACKAGE_NAME.png
 ```
 
-Required size: **2400x1600** pixels.
+Required size: **2400x1600** pixels (3:2 ratio). This applies to **all** thumbnails site-wide, not just pkgdown screenshots. The homepage grid renders thumbnails at `width="398" height="265"` (3:2). Images with a different aspect ratio will appear broken in the grid.
 
 ## Navigation Structure
 

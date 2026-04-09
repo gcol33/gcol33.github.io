@@ -1458,10 +1458,17 @@ button:focus:not(:focus-visible),
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s ease;
+    min-width: 0;
 }
 
 .featured-project-card:hover {
     transform: translateY(-4px);
+}
+
+.featured-project-card h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .featured-project-card:hover h5 {
