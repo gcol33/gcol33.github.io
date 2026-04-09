@@ -1498,13 +1498,13 @@ button:focus:not(:focus-visible),
     }
 }
 
-/* Photo border — outline in light mode to frame white baked border; none needed in dark mode */
+/* Photo border — dark in light mode, light in dark mode */
 .photo-border {
-    outline: 3px solid var(--color-text-primary);
+    border: 5px solid var(--color-text-primary);
 }
 
 [data-bs-theme="dark"] .photo-border {
-    outline: none;
+    border-color: var(--dm-text-primary);
 }
 
 /* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
