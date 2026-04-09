@@ -8,6 +8,16 @@
   // Case-insensitive redirects for package sites
   (function() {
     var path = window.location.pathname;
+    // /inlaocc -> /INLAocc
+    if (/^/inlaoccb/i.test(path) && !/^/INLAocc/.test(path)) {
+      var newPath = path.replace(/^/inlaocc/i, '/INLAocc');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
+    // /tulpamesh -> /tulpaMesh
+    if (/^/tulpameshb/i.test(path) && !/^/tulpaMesh/.test(path)) {
+      var newPath = path.replace(/^/tulpamesh/i, '/tulpaMesh');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
     // /restrictr -> /restrictR
     if (/^/restrictrb/i.test(path) && !/^/restrictR/.test(path)) {
       var newPath = path.replace(/^/restrictr/i, '/restrictR');

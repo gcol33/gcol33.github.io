@@ -1498,13 +1498,13 @@ button:focus:not(:focus-visible),
     }
 }
 
-/* Photo border — dark in light mode, light in dark mode */
+/* Photo border — dark in light mode, white in dark mode */
 .photo-border {
-    border: 5px solid var(--color-text-primary);
+    border: 12px solid var(--color-text-primary);
 }
 
 [data-bs-theme="dark"] .photo-border {
-    border-color: var(--dm-text-primary);
+    border-color: var(--color-white);
 }
 
 /* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
