@@ -1498,6 +1498,15 @@ button:focus:not(:focus-visible),
     }
 }
 
+/* Photo border — outline in light mode to frame white baked border; none needed in dark mode */
+.photo-border {
+    outline: 3px solid var(--color-text-primary);
+}
+
+[data-bs-theme="dark"] .photo-border {
+    outline: none;
+}
+
 /* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
 @media (max-width: 991.98px) {
     .social-icons-grid a.desktop-only {
@@ -1505,11 +1514,3 @@ button:focus:not(:focus-visible),
     }
 }
 
-/* Photo border — dark in light mode, light in dark mode */
-.photo-border {
-    border: 5px solid #222222;
-}
-
-[data-bs-theme="dark"] .photo-border {
-    border: 5px solid #cccccc;
-}
