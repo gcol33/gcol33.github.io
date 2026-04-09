@@ -1504,3 +1504,12 @@ button:focus:not(:focus-visible),
         display: none;
     }
 }
+
+/* Photo border — dark in light mode, light in dark mode */
+.photo-border {
+    border: 5px solid #222222;
+}
+
+[data-bs-theme="dark"] .photo-border {
+    border: 5px solid #cccccc;
+}
