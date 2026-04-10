@@ -16,13 +16,14 @@ layout: default
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="section section-dark" id="hero" style="background-color: #212121;">
+<div class="section section-dark {% if page.hero_class %}{{ page.hero_class }}{% endif %}" id="hero" style="background-color: #212121;">
+  {% if page.hero_class %}<div class="rainbow-overlay"></div>{% endif %}
   <div class="shape-divider divider-bottom">
     <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container" style="padding: 35px 20px 50px;">
+  <div class="container" style="padding: 35px 20px 50px; position: relative; z-index: 1;">
     <div class="row">
       <div class="col-lg-6">
         <div>

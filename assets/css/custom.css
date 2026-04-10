@@ -1383,17 +1383,38 @@ button:focus:not(:focus-visible),
     background-position: center;
 }
 
-/* rainbowR Conference 2026 - diagonal rainbow gradient */
+/* rainbowR Conference 2026 - pride flag hero background */
 .bg-rainbowr2026 {
-    background: linear-gradient(135deg,
-        #e40303 0%,
-        #ff8c00 17%,
-        #ffed00 33%,
-        #008026 50%,
-        #004dff 67%,
-        #750787 83%,
-        #e40303 100%) !important;
+    background: linear-gradient(to bottom,
+        #e40303 0%,      #e40303 16.666%,
+        #ff8c00 16.666%, #ff8c00 33.333%,
+        #ffed00 33.333%, #ffed00 50%,
+        #008026 50%,     #008026 66.666%,
+        #004dff 66.666%, #004dff 83.333%,
+        #750787 83.333%, #750787 100%) !important;
 }
+
+.rainbow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+}
+
+.bg-rainbowr2026 .tc-text-light,
+.bg-rainbowr2026 p,
+.bg-rainbowr2026 .hero-title-link,
+.bg-rainbowr2026 .pencil-post-footer p {
+    color: #212121 !important;
+}
+
+.bg-rainbowr2026 .text-link-02 {
+    color: #ccc !important;
+}
+
 
 /* ======================================
    SHARE BUTTONS
