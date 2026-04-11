@@ -34,10 +34,10 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-heron-open-sign.webp">
-  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border" alt="Grey heron standing under an Open sign on a Tokyo canal at dusk" loading="lazy">
+  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border" alt="Grey heron standing under an Open sign on a Kyoto canal at dusk" loading="lazy">
 </picture>
 
-> A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Tokyo, looking straight up as if reading the opening hours. It had been fishing in the shallow water and happened to glance up just as I passed, holding the pose for a good ten seconds.
+> A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Kyoto, looking straight up as if reading the opening hours. It had been fishing in the shallow water and happened to glance up just as I passed, holding the pose for a good ten seconds.
 
 </div>
 
@@ -123,6 +123,6 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 ## On small absurdities
 
-Scrolling back through old folders for these was unexpectedly fun. Half of them I had forgotten, small absurdities I had caught and then left sitting on the hard drive. The Comedy Wildlife site does the same at scale: eleven years of finalists, and you can lose an afternoon there without meaning to.
+Scrolling back through old folders for these was unexpectedly fun. Half of them I had forgotten, small absurdities I had caught and then left sitting on the hard drive. The [Comedy Wildlife site](https://www.comedywildlifephoto.com/) does the same at scale: eleven years of finalists, and you can lose an afternoon there without meaning to.
 
 We tend to meet nature with a kind of reverent dread. Fragile, in crisis, red in tooth and claw. And it is all of those things. But give it a chance, sit with it a while, and another side comes forward: a heron peering up at a sign, a swan upended in the weeds, creatures completely at ease with their own absurdity. Half an hour with pictures like these and your week gets a little lighter. You just remember how to hold things more loosely.
