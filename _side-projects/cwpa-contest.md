@@ -22,7 +22,7 @@ breadcrumb:
 
 Paul Joynson-Hicks and Tom Sullam started the [Comedy Wildlife Photography Awards](https://www.comedywildlifephoto.com/) in Tanzania in 2015, with a very simple premise: wildlife doing something funny. The [gallery of past finalists](https://www.comedywildlifephoto.com/finalisedthankyou.php) goes up online every year, entries are free, and part of the contest's revenue goes to the Whitley Fund for Nature. The 2026 round is open until 30 June.
 
-A few weeks ago I was going back through years of old pictures for [a university submission](/side-projects/ice-contest/) and came across a bunch of silly animal snapshots I had forgotten about. I actually really like taking photos of animals, they just usually sit on the hard drive doing nothing. Finishing that more serious submission somehow gave me a small push to think the silly ones were worth sending in somewhere. I remembered the Comedy Wildlife Awards had a round open, checked the deadline, and sent seven in.
+A few weeks ago I was going back through years of old pictures for [a university submission](/side-projects/ice-contest/) and came across a bunch of silly animal snapshots I had forgotten about. I like taking pictures, especially of silly animals (who doesn't), they just usually sit on the hard drive doing nothing. Finishing that more serious submission somehow gave me a small push to think the silly ones were worth sending in somewhere. I remembered the Comedy Wildlife Awards had a round open, checked the deadline, and sent seven in.
 
 ## The entries
 
