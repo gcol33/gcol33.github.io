@@ -10,6 +10,7 @@ hero_combined: true
 hero_label: "Released"
 subtitle: "Aug 05, 2025"
 description: "Predictor pruning using association-based and model-based approaches. Fast, deterministic solutions with minimal code."
+tags: [r-package, statistics]
 breadcrumb:
   - name: "Home"
     url: "/"

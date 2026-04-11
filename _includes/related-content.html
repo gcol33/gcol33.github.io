@@ -6,30 +6,47 @@ Usage: {% include related-content.html %}
 
 {% assign current_category = page.category %}
 {% assign current_url = page.url %}
+{% assign current_tags = page.tags %}
 {% assign related = "" | split: "" %}
 
-{% comment %} Determine which collection to search based on category {% endcomment %}
-{% case current_category %}
-  {% when "Publication" %}
-    {% assign collection_items = site.publications %}
-  {% when "Presentation" %}
-    {% assign collection_items = site.presentations %}
-  {% when "Education" %}
-    {% assign collection_items = site.workshops | concat: site.courses %}
-  {% when "Project" %}
-    {% assign collection_items = site.projects %}
-  {% when "Side Project" %}
-    {% assign collection_items = site.side-projects %}
-  {% else %}
-    {% assign collection_items = site.publications | concat: site.presentations | concat: site.workshops | concat: site.projects | concat: site.side-projects %}
-{% endcase %}
+{% comment %} Search across all collections so tags can cross category boundaries {% endcomment %}
+{% assign collection_items = site.publications | concat: site.presentations | concat: site.workshops | concat: site.courses | concat: site.projects | concat: site["side-projects"] %}
+{% assign sorted_items = collection_items | sort: "date" | reverse %}
 
-{% comment %} Get related items (same category, different URL, max 3) {% endcomment %}
-{% for item in collection_items %}
-  {% if item.url != current_url and related.size < 3 %}
-    {% if item.category == current_category or current_category == nil %}
-      {% assign related = related | push: item %}
-    {% endif %}
+{% comment %} Pass 1: tag-scored matches. Pick items sharing any tag, ordered by overlap (approximated by iterating tags) then by date. {% endcomment %}
+{% if current_tags and current_tags.size > 0 %}
+  {% assign scored_urls = "" | split: "" %}
+  {% comment %} Highest-overlap first: look for items sharing >=2 tags, then >=1 {% endcomment %}
+  {% for min_overlap in "2,1" | split: "," %}
+    {% for item in sorted_items %}
+      {% if item.url == current_url %}{% continue %}{% endif %}
+      {% if scored_urls contains item.url %}{% continue %}{% endif %}
+      {% if related.size >= 3 %}{% break %}{% endif %}
+      {% if item.tags %}
+        {% assign overlap = 0 %}
+        {% for t in current_tags %}
+          {% if item.tags contains t %}{% assign overlap = overlap | plus: 1 %}{% endif %}
+        {% endfor %}
+        {% if overlap >= min_overlap %}
+          {% assign related = related | push: item %}
+          {% assign scored_urls = scored_urls | push: item.url %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} Pass 2: fall back to same-category recent items to fill remaining slots {% endcomment %}
+{% for item in sorted_items %}
+  {% if related.size >= 3 %}{% break %}{% endif %}
+  {% if item.url == current_url %}{% continue %}{% endif %}
+  {% assign already_in = false %}
+  {% for r in related %}
+    {% if r.url == item.url %}{% assign already_in = true %}{% break %}{% endif %}
+  {% endfor %}
+  {% if already_in %}{% continue %}{% endif %}
+  {% if item.category == current_category or current_category == nil %}
+    {% assign related = related | push: item %}
   {% endif %}
 {% endfor %}
 

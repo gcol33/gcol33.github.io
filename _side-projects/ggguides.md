@@ -10,6 +10,7 @@ hero_combined: true
 hero_label: "Released"
 subtitle: "Dec 17, 2025"
 description: "Simplified legend and guide alignment for ggplot2. One-liner functions for common legend operations."
+tags: [r-package, visualization]
 breadcrumb:
   - name: "Home"
     url: "/"

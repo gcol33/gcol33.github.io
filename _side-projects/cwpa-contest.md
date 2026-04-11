@@ -10,6 +10,7 @@ hero_combined: true
 hero_label: "Submitted"
 subtitle: "Apr 10, 2026"
 description: "Seven pictures from the archive sent off to the 2026 Comedy Wildlife Photography Awards."
+tags: [photography, photo-contest, wildlife]
 breadcrumb:
   - name: "Home"
     url: "/"

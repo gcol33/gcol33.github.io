@@ -10,6 +10,7 @@ hero_combined: true
 hero_label: "Released"
 subtitle: "Feb 04, 2026"
 description: "Equal-area hexagonal grids on the Snyder ISEA icosahedron. Fast C++ core with sf/terra-compatible R wrappers."
+tags: [r-package, spatial]
 breadcrumb:
   - name: "Home"
     url: "/"

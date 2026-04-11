@@ -10,6 +10,7 @@ hero_combined: true
 hero_label: "Published"
 subtitle: "Mar 08, 2026"
 description: "A free, open-source book that teaches R from scratch and explains why the language works the way it does."
+tags: [r-package, book, teaching]
 breadcrumb:
   - name: "Home"
     url: "/"
