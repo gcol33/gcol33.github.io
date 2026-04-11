@@ -43,27 +43,27 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <div class="col" markdown="1">
 
-### Deer on the Pitch
+### Deer in the Road
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-deer-commute.webp">
-  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A roe deer standing on a village football pitch with players in the background" loading="lazy">
+  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A roe deer standing in the road as a village sports team crosses behind it" loading="lazy">
 </picture>
 
-> A roe deer (*Capreolus capreolus*) standing in front of a village football team mid-match. Completely unimpressed by the tactical setup.
+> A roe deer (*Capreolus capreolus*) holding its ground in the middle of the road while a village sports team jogs across behind it. Completely unbothered by the traffic.
 
 </div>
 
 <div class="col" markdown="1">
 
-### The 7:45 Clothesline Service
+### Get a Room
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-beetles-clothesline.webp">
-  <img src="/assets/images/content/cwpa-beetles-clothesline.jpg" class="img-fluid img-rd-md photo-border" alt="A row of maybugs clinging to a clothesline at dusk" loading="lazy">
+  <img src="/assets/images/content/cwpa-beetles-clothesline.jpg" class="img-fluid img-rd-md photo-border" alt="A pair of maybugs mating on a clothesline" loading="lazy">
 </picture>
 
-> Maybugs (*Melolontha melolontha*) clinging to a clothesline in Luxembourg after one of their spring swarms. Once they grip, they stay put until morning.
+> Maybugs (*Melolontha melolontha*) caught in a very public moment on a clothesline in Lower Austria. Spring swarms do not leave much time for privacy.
 
 </div>
 
@@ -89,7 +89,7 @@ A few weeks ago I was going back through years of old pictures for [a university
   <img src="/assets/images/content/cwpa-mantis-lounger.jpg" class="img-fluid img-rd-md photo-border" alt="A European mantis standing on a white sun lounger next to a pool" loading="lazy">
 </picture>
 
-> A European mantis (*Mantis religiosa*) claimed the best seat on the pool deck and held it for the afternoon. Nobody in the household was willing to argue.
+> A European mantis (*Mantis religiosa*) claimed the best seat on the pool deck and held it for the afternoon. The lounger was reserved.
 
 </div>
 
@@ -108,7 +108,7 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <div class="col" markdown="1">
 
-### Swan, Bottoms Up
+### Bottoms Up
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-swan-bottoms-up.webp">
