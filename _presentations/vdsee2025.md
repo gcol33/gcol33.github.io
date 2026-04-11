@@ -9,6 +9,7 @@ thumbnail_webp: "/assets/images/content/presentation_vdsee_2025.webp"
 hero_combined: true
 description: "At the VDSEE Symposium 2025, I presented my first paper, showcasing how neophyte species have significantly increased in agricultural landscapes over the past century, while archaeophytes have followed a more stable trajectory."
 hero_title: "A Gathering of Early-Career Researchers in Ecology and Evolution"
+tags: [vdsee, invasive-species, agriweedclim]
 breadcrumb:
   - name: "Home"
     url: "/"

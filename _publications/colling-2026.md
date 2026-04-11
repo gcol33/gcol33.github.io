@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/corrselect.jpg"
 thumbnail_webp: "/assets/images/content/corrselect.webp"
 authors: "Colling G."
 external_url: "https://doi.org/10.21105/joss.09539"
+tags: [r-package, statistics]
 breadcrumb:
   - name: "Home"
     url: "/"

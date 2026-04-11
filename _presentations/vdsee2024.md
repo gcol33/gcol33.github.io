@@ -9,6 +9,7 @@ thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
 hero_combined: true
 hero_title: "A Platform for Early-Career Researchers"
 description: "At the VDSEE Symposium 2024, I presented preliminary work on neophyte spread across local and regional scales in agricultural landscapes over the past century."
+tags: [vdsee, invasive-species, agriweedclim]
 breadcrumb:
   - name: "Home"
     url: "/"

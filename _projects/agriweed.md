@@ -9,6 +9,7 @@ thumbnail_webp: "/assets/images/content/agriweed_proj.webp"
 hero_combined: true
 hero_label: "Project"
 subtitle: "2021-2024"
+tags: [invasive-species, agriweedclim, vegetation-plots]
 description: "Emerging Agricultural Weeds under climate and land-use changes in Central Europe: identifying high-risk species, modelling their distributions, assessing impacts and management need."
 breadcrumb:
   - name: "Home"

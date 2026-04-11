@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/conference_rainbowr2026.jpg"
 thumbnail_webp: "/assets/images/content/conference_rainbowr2026.webp"
 hero_combined: true
 hero_class: "bg-rainbowr2026"
+tags: [r-package, conference, teaching]
 permalink: /rainbowr2026/
 description: "The inaugural rainbowR virtual conference brought together LGBTQIA+ users of R and their allies on February 25-26, 2026. Featuring two keynotes, six regular talks, seven lightning talks, and four workshops, the conference showcased the diversity of R users and the breadth of what can be accomplished with R."
 hero_title: "The Inaugural rainbowR Virtual Conference"

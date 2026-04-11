@@ -13,6 +13,7 @@ hero_title: "Closing Meeting of the AgriWeedClim Project"
 hero_label: "Project"
 hero_separator: true
 subtitle: "2021-2024"
+tags: [invasive-species, agriweedclim, vegetation-plots]
 breadcrumb:
   - name: "Home"
     url: "/"

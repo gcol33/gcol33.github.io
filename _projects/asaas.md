@@ -12,6 +12,7 @@ hero_title: "Alien Species Accumulation Across Scales"
 hero_label: "Project"
 hero_separator: true
 subtitle: "Currently running"
+tags: [invasive-species, asaas, vegetation-plots]
 description: "Humans have transported thousands of species across the globe, often with long-lasting consequences for ecosystems. While the number of alien species in regional species pools such as countries or islands is steadily increasing, their actual presence in local communities remains surprisingly low. My PhD project, ASAAS (Alien Species Accumulation Across Scales), explores this mismatch between regional accumulation and local representation."
 breadcrumb:
   - name: "Home"

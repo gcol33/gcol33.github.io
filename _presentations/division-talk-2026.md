@@ -10,6 +10,7 @@ thumbnail_webp: "/assets/images/content/presentation_division_2026.webp"
 hero_combined: true
 description: "At the January 2026 division meeting, I presented my ongoing work on reconstructing habitat niche expansion patterns of alien plant species across Europe, using 1.9 million vegetation plots from the European Vegetation Archive."
 hero_title: "Reconstructing Habitat Niche Expansion"
+tags: [invasive-species, asaas, vegetation-plots]
 breadcrumb:
   - name: "Home"
     url: "/"

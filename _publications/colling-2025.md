@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/paper_1.jpg"
 thumbnail_webp: "/assets/images/content/paper_1.webp"
 authors: "Colling G., et al."
 external_url: "https://www.sciencedirect.com/science/article/pii/S0167880925000155?via%3Dihub"
+tags: [invasive-species, agriweedclim, vegetation-plots]
 breadcrumb:
   - name: "Home"
     url: "/"

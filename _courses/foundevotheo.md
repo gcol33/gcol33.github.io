@@ -7,6 +7,7 @@ category_url: "/education/"
 permalink: /course-foundevotheo/
 thumbnail: "/assets/images/content/course_fet.jpg"
 thumbnail_webp: "/assets/images/content/course_fet.webp"
+tags: [evolution, teaching]
 breadcrumb:
   - name: "Home"
     url: "/"

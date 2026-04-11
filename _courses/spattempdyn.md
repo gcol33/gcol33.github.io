@@ -8,6 +8,7 @@ category_url: "/education/"
 permalink: /course-spattempdyn/
 thumbnail: "/assets/images/content/course_std.jpg"
 thumbnail_webp: "/assets/images/content/course_std.webp"
+tags: [spatial, sdm, teaching]
 breadcrumb:
   - name: "Home"
     url: "/"

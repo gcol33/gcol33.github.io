@@ -9,6 +9,7 @@ thumbnail: "/assets/images/content/workshop_liams_stay.jpg"
 thumbnail_webp: "/assets/images/content/workshop_liams_stay.webp"
 hero_combined: true
 description: "A two-day ecology workshop designed for a visiting school student, introducing biodiversity sampling, species accumulation curves, and spatial algorithms through hands-on R programming exercises."
+tags: [teaching, r-package, statistics]
 breadcrumb:
   - name: "Home"
     url: "/"

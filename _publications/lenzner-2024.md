@@ -8,6 +8,7 @@ thumbnail: "/assets/images/content/co_paper_1.jpg"
 thumbnail_webp: "/assets/images/content/co_paper_1.webp"
 authors: "Lenzner B., et al."
 external_url: "https://besjournals.onlinelibrary.wiley.com/doi/10.1002/pan3.10712"
+tags: [invasive-species]
 breadcrumb:
   - name: "Home"
     url: "/"

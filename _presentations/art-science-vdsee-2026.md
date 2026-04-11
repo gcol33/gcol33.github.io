@@ -10,6 +10,7 @@ thumbnail_webp: "/assets/images/content/art_science_vdsee_2026_thumbnail.webp"
 hero_combined: true
 description: "Four pieces of algorithmic art, all generated in R, exhibited at the VDSEE Symposium 2026 Art & Science event."
 hero_title: "Terminal Landscapes"
+tags: [vdsee, r-package, visualization]
 breadcrumb:
   - name: "Home"
     url: "/"

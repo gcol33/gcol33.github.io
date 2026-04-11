@@ -7,6 +7,7 @@ category_url: "/education/"
 description: "This workshop, taught by Philipp Dexheimer in November 2024, was devoted to the practice of visual literacy in science. The central question running through the sessions was how to transform data, concepts, and narratives into visuals that both inform and resonate. The structure combined lectures with interactive exercises. Each session highlighted a particular domain of visualization, from the basics of file formats and typography to the narrative flow of conference talks, and then challenged us to apply these principles in practice. Peer feedback played a major role, with every figure, slide, or diagram tested by colleagues from different backgrounds. Dexheimer also placed the sessions in a broader context by showing historical and modern examples of influential scientific visuals, from Haeckel's drawings to Iwasa's animations."
 thumbnail: "/assets/images/content/creode.jpg"
 thumbnail_webp: "/assets/images/content/creode.webp"
+tags: [visual-literacy, teaching, visualization]
 hero_title: "Take aways"
 hero_content: "Visuals are never neutral. They guide interpretation, direct attention, and leave lasting impressions. By connecting design principles to a long history of scientific illustration, the course showed us that visual literacy, while secondary to the data itself, plays a decisive role in how that data is received. We began to question the role of figures in our own work and were encouraged to treat them as central to the scientific process."
 breadcrumb:
