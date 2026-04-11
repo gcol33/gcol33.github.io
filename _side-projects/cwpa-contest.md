@@ -30,27 +30,27 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <div class="col" markdown="1">
 
-### Checking the Hours
+### The Early Bird
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-heron-open-sign.webp">
-  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border" alt="Grey heron next to an Open 24 Hours diner sign in Iceland" loading="lazy">
+  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border" alt="Grey heron standing under an Open sign on a Tokyo canal at dusk" loading="lazy">
 </picture>
 
-> A grey heron (*Ardea cinerea*) posted up next to a diner sign on the south coast of Iceland. Looks like it is checking whether the kitchen is worth queueing for.
+> A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Tokyo, looking straight up as if reading the opening hours. It had been fishing in the shallow water and happened to glance up just as I passed, holding the pose for a good ten seconds.
 
 </div>
 
 <div class="col" markdown="1">
 
-### Deer in the Road
+### Morning Commute
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-deer-commute.webp">
-  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A roe deer standing in the road as a village sports team crosses behind it" loading="lazy">
+  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A sika deer walking alongside a football team heading to practice in Nara" loading="lazy">
 </picture>
 
-> A roe deer (*Capreolus capreolus*) holding its ground in the middle of the road while a village sports team jogs across behind it. Completely unbothered by the traffic.
+> A sika deer (*Cervus nippon*) falling in step with a football team heading to practice in Nara. Looks like they found their twelfth player.
 
 </div>
 
@@ -60,10 +60,10 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-beetles-clothesline.webp">
-  <img src="/assets/images/content/cwpa-beetles-clothesline.jpg" class="img-fluid img-rd-md photo-border" alt="A pair of maybugs mating on a clothesline" loading="lazy">
+  <img src="/assets/images/content/cwpa-beetles-clothesline.jpg" class="img-fluid img-rd-md photo-border" alt="A pair of cockchafers mating upside down on a clothesline" loading="lazy">
 </picture>
 
-> Maybugs (*Melolontha melolontha*) caught in a very public moment on a clothesline in Lower Austria. Spring swarms do not leave much time for privacy.
+> Two cockchafers (*Melolontha melolontha*) mating while dangling upside down from a clothesline in Lower Austria. Not the most private spot, but they did not seem to mind.
 
 </div>
 
@@ -76,33 +76,33 @@ A few weeks ago I was going back through years of old pictures for [a university
   <img src="/assets/images/content/cwpa-garden-eels-peek.jpg" class="img-fluid img-rd-md photo-border" alt="A colony of garden eels rising from the sand" loading="lazy">
 </picture>
 
-> A colony of garden eels (*Heteroconger hassi*) at Manta Point, Bali. They live with their tails anchored in the sand and rise up to their shoulders to feed in the current, then vanish into their holes the moment a diver drifts too close.
+> A colony of spotted garden eels (*Heteroconger hassi*). They live with their tails anchored in the sand and rise up to their shoulders to feed in the current, then vanish into their holes the moment a diver drifts too close.
 
 </div>
 
 <div class="col" markdown="1">
 
-### King of the Sun Loungers
+### Sunbathing
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-mantis-lounger.webp">
   <img src="/assets/images/content/cwpa-mantis-lounger.jpg" class="img-fluid img-rd-md photo-border" alt="A European mantis standing on a white sun lounger next to a pool" loading="lazy">
 </picture>
 
-> A European mantis (*Mantis religiosa*) claimed the best seat on the pool deck and held it for the afternoon. The lounger was reserved.
+> A European mantis (*Mantis religiosa*) claimed the best sun lounger by a pool in Portugal, striking its signature pose. All it is missing is a cocktail.
 
 </div>
 
 <div class="col" markdown="1">
 
-### Moonwalking on the Dock
+### Moonwalking at the Marina
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-seagull-marina.webp">
-  <img src="/assets/images/content/cwpa-seagull-marina.jpg" class="img-fluid img-rd-md photo-border" alt="A yellow-legged gull on a marina dock in the south of France" loading="lazy">
+  <img src="/assets/images/content/cwpa-seagull-marina.jpg" class="img-fluid img-rd-md photo-border" alt="A yellow-legged gull mid-stride along a marina edge in Italy" loading="lazy">
 </picture>
 
-> A yellow-legged gull (*Larus michahellis*) at a marina in the south of France. Michael Jackson would be proud.
+> A yellow-legged gull (*Larus michahellis*) moonwalking along the marina edge in Italy, mid-stride in perfect form. Michael Jackson would be proud.
 
 </div>
 
@@ -115,7 +115,7 @@ A few weeks ago I was going back through years of old pictures for [a university
   <img src="/assets/images/content/cwpa-swan-bottoms-up.jpg" class="img-fluid img-rd-md photo-border" alt="A mute swan tipped forward with only its rear end above the water" loading="lazy">
 </picture>
 
-> A mute swan (*Cygnus olor*) tipping forward to reach the weeds at the bottom of the lake, leaving only its rear end above the water.
+> A mute swan (*Cygnus olor*) tipping forward to reach the weeds at the bottom of an Austrian lake, leaving only its rear end above the water.
 
 </div>
 
