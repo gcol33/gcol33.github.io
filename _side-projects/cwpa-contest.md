@@ -37,7 +37,7 @@ A few weeks ago I was going back through years of old pictures for [a university
   <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border" alt="Grey heron standing under an Open sign on a Kyoto canal at dusk" loading="lazy">
 </picture>
 
-> A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Kyoto, looking straight up as if reading the opening hours. It had been fishing in the shallow water and happened to glance up just as I passed, holding the pose for a good ten seconds.
+> A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Kyoto, looking straight up as if reading the opening hours. Ready to order.
 
 </div>
 
