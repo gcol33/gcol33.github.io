@@ -47,10 +47,10 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-deer-commute.webp">
-  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A sika deer walking alongside a football team heading to practice in Nara" loading="lazy">
+  <img src="/assets/images/content/cwpa-deer-commute.jpg" class="img-fluid img-rd-md photo-border" alt="A sika deer standing in the road as a football team crosses behind it in Nara" loading="lazy">
 </picture>
 
-> A sika deer (*Cervus nippon*) falling in step with a football team heading to practice in Nara. Looks like they found their twelfth player.
+> A sika deer (*Cervus nippon*) holding its ground on the road in Nara as a football team crosses behind it on the way to practice. Looks like they found their twelfth player.
 
 </div>
 
@@ -120,3 +120,7 @@ A few weeks ago I was going back through years of old pictures for [a university
 </div>
 
 </div>
+
+## On small absurdities
+
+Nature is largely absurd. A heron pauses to read the opening hours. A mantis settles onto the best sun lounger and shows no intention of leaving. Somewhere a swan is upside down in the weeds, entirely at peace with it. These things are always happening. Noticing them is a way of staying on speaking terms with the world.
