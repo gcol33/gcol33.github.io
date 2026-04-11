@@ -123,4 +123,6 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 ## On small absurdities
 
-Nature is largely absurd. A heron pauses to read the opening hours. A mantis settles onto the best sun lounger and shows no intention of leaving. Somewhere a swan is upside down in the weeds, entirely at peace with it. These things are always happening. Noticing them is a way of staying on speaking terms with the world.
+Scrolling back through old folders for these was unexpectedly fun. Half of them I had forgotten, small absurdities I had caught and then left sitting on the hard drive. The Comedy Wildlife site does the same at scale: eleven years of finalists, and you can lose an afternoon there without meaning to.
+
+We tend to meet nature with a kind of reverent dread. Fragile, in crisis, red in tooth and claw. And it is all of those things. But give it a chance, sit with it a while, and another side comes forward: a heron peering up at a sign, a swan upended in the weeds, creatures completely at ease with their own absurdity. Half an hour with pictures like these and your week gets a little lighter. You just remember how to hold things more loosely.
