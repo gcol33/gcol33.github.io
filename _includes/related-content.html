@@ -17,7 +17,8 @@ Usage: {% include related-content.html %}
 {% if current_tags and current_tags.size > 0 %}
   {% assign scored_urls = "" | split: "" %}
   {% comment %} Highest-overlap first: look for items sharing >=2 tags, then >=1 {% endcomment %}
-  {% for min_overlap in "2,1" | split: "," %}
+  {% for min_overlap_str in "2,1" | split: "," %}
+    {% assign min_overlap = min_overlap_str | plus: 0 %}
     {% for item in sorted_items %}
       {% if item.url == current_url %}{% continue %}{% endif %}
       {% if scored_urls contains item.url %}{% continue %}{% endif %}
