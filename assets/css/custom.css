@@ -1544,6 +1544,88 @@ button:focus:not(:focus-visible),
     border-color: var(--color-white);
 }
 
+/* Uniform photo tile — locks mixed portrait/landscape photos to a single shape */
+.photo-tile {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+/* Photo tiles are clickable to open in fullscreen overlay */
+.photo-tile {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Variant: preserve full image, letterbox shows page background (uniform photo-border) */
+.photo-tile-contain {
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.photo-tile:hover,
+.photo-tile:focus {
+    opacity: 0.88;
+}
+
+/* Fullscreen photo overlay */
+.photo-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    cursor: zoom-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.photo-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.photo-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.photo-overlay-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease-in-out;
+}
+
+.photo-overlay-close svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.photo-overlay-close:hover,
+.photo-overlay-close:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
 /* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
 @media (max-width: 991.98px) {
     .social-icons-grid a.desktop-only {
