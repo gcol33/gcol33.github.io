@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 500">
+
+  <!-- HEAD (symmetrical, holes transparent via mask) -->
+  <defs>
+    <mask id="holes">
+      <rect width="100%" height="100%" fill="white"/>
+      <rect x="85" y="82" width="10" height="75" rx="5" fill="black"/>
+      <rect x="105" y="82" width="10" height="75" rx="5" fill="black"/>
+      <rect x="125" y="82" width="10" height="75" rx="5" fill="black"/>
+    </mask>
+  </defs>
+
+  <g id="Head">
+    <rect x="70" y="60" width="80" height="120" rx="20" fill="#d4af37" mask="url(#holes)"/>
+  </g>
+
+  <!-- NECK -->
+  <g id="Neck">
+    <polygon points="95,180 125,180 118,195 102,195" fill="#d4af37"/>
+    <polygon points="102,195 118,195 112,215 108,215" fill="#d4af37"/>
+  </g>
+
+  <!-- ROD -->
+  <g id="Rod">
+    <rect x="108.5" y="215" width="3" height="155" fill="#d4af37"/>
+  </g>
+
+  <!-- HANDLE -->
+  <g id="Handle">
+    <rect x="94" y="370" width="32" height="110" rx="16" fill="#111111"/>
+  </g>
+
+</svg>

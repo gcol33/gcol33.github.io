@@ -35,7 +35,7 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-heron-open-sign.webp">
-  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border photo-tile photo-tile-contain" alt="Grey heron standing under an Open sign on a Kyoto canal at dusk" loading="lazy">
+  <img src="/assets/images/content/cwpa-heron-open-sign.jpg" class="img-fluid img-rd-md photo-border photo-tile" alt="Grey heron standing under an Open sign on a Kyoto canal at dusk" loading="lazy">
 </picture>
 
 > A grey heron (*Ardea cinerea*) standing beneath a restaurant's "Open" sign on an evening canal walk in Kyoto, looking straight up as if reading the opening hours. Ready to order.
@@ -57,7 +57,7 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <div class="col" markdown="1">
 
-### Get a Room
+### Hold the Line
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-beetles-clothesline.webp">
@@ -70,7 +70,7 @@ A few weeks ago I was going back through years of old pictures for [a university
 
 <div class="col" markdown="1">
 
-### Garden Eels, Peeking
+### Garden Eels Spaget
 
 <picture>
   <source type="image/webp" srcset="/assets/images/content/cwpa-garden-eels-peek.webp">
@@ -117,6 +117,19 @@ A few weeks ago I was going back through years of old pictures for [a university
 </picture>
 
 > A mute swan (*Cygnus olor*) tipping forward to reach the weeds at the bottom of an Austrian lake, leaving only its rear end above the water.
+
+</div>
+
+<div class="col" markdown="1">
+
+### Bouquet Banquet
+
+<picture>
+  <source type="image/webp" srcset="/assets/images/content/cwpa-squirrel-pansies.webp">
+  <img src="/assets/images/content/cwpa-squirrel-pansies.jpg" class="img-fluid img-rd-md photo-border photo-tile" alt="A European ground squirrel peeking up through a bed of purple and orange pansies" loading="lazy">
+</picture>
+
+> A European ground squirrel (*Spermophilus citellus*) working through a flower bed in Austria, paws clasped between bites. The pansies are excellent this time of year.
 
 </div>
 

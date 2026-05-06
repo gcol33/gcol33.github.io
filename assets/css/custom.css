@@ -5,15 +5,16 @@
     background-color: #f0f0f0;
 }
 
-/* Hero name link - expand on hover like navbar brand */
-.hero-name-link {
-    color: inherit;
+/* Hero name link - black by default, grey on hover, scale effect.
+   .section-light qualifier beats style.css's .section-light h1 a { color: rgba(0,0,0,.6) } */
+.section-light .hero-name-link {
+    color: var(--color-text-primary);
     display: inline-block;
-    transition: transform 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.hero-name-link:hover {
-    color: inherit;
+.section-light .hero-name-link:hover {
+    color: var(--color-text-secondary);
     transform: scale(1.05);
 }
 
@@ -132,6 +133,17 @@ p a:hover, li a:hover, .pad-lg a:hover {
 /* Fix: Apply border-radius to writer-post-image border */
 .writer-post-image {
     border-radius: 20px;
+}
+
+/* Thumbnail zoom: crop edge whitespace by scaling 5% */
+a.thumb-zoom {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+a.thumb-zoom img {
+    transform: scale(1.05);
+    border-radius: 0 !important;
 }
 
 /* Fix: Apply border-radius to embedded videos */
@@ -818,8 +830,8 @@ button:focus:not(:focus-visible),
 }
 
 /* Content images - rounded corners */
-#main-content img:not(.writer-post-image):not(.img-rd-md),
-.background-gradient img:not(.writer-post-image):not(.img-rd-md) {
+#main-content img:not(.writer-post-image):not(.img-rd-md):not(.no-rd),
+.background-gradient img:not(.writer-post-image):not(.img-rd-md):not(.no-rd) {
     border-radius: 8px;
 }
 
@@ -1569,6 +1581,17 @@ button:focus:not(:focus-visible),
     opacity: 0.88;
 }
 
+/* Single-image zoom trigger (no fixed aspect-ratio, unlike photo-tile) */
+.zoomable {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.zoomable:hover,
+.zoomable:focus {
+    opacity: 0.88;
+}
+
 /* Fullscreen photo overlay */
 .photo-overlay {
     position: fixed;
@@ -1591,8 +1614,8 @@ button:focus:not(:focus-visible),
 }
 
 .photo-overlay img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(100% - 64px);
+    max-height: calc(100vh - 64px);
     object-fit: contain;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }

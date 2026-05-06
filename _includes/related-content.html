@@ -21,6 +21,7 @@ Usage: {% include related-content.html %}
     {% assign min_overlap = min_overlap_str | plus: 0 %}
     {% for item in sorted_items %}
       {% if item.url == current_url %}{% continue %}{% endif %}
+      {% if item.layout == "chapter" %}{% continue %}{% endif %}
       {% if scored_urls contains item.url %}{% continue %}{% endif %}
       {% if related.size >= 3 %}{% break %}{% endif %}
       {% if item.tags %}
@@ -41,6 +42,7 @@ Usage: {% include related-content.html %}
 {% for item in sorted_items %}
   {% if related.size >= 3 %}{% break %}{% endif %}
   {% if item.url == current_url %}{% continue %}{% endif %}
+  {% if item.layout == "chapter" %}{% continue %}{% endif %}
   {% assign already_in = false %}
   {% for r in related %}
     {% if r.url == item.url %}{% assign already_in = true %}{% break %}{% endif %}
