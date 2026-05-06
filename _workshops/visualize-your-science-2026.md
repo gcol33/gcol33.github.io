@@ -35,7 +35,7 @@ The production modules introduced vector drawing from scratch in Affinity Design
 
 ## Vector drawing
 
-The first assignment was to draw a favourite research item or kitchen appliance in vector graphics. I drew a golden spatula.
+The first assignment was to draw a favourite research item or kitchen appliance in vector graphics. I drew a golden spatula — the most coveted collectible in Bikini Bottom.
 
 <div class="row mt-4 mb-4 justify-content-center">
 <div class="col-6 col-md-3 col-lg-2">
