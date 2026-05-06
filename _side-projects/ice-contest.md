@@ -7,7 +7,6 @@ category_url: "/side-projects/"
 thumbnail: "/assets/images/content/ice-contest.jpg"
 thumbnail_webp: "/assets/images/content/ice-contest.webp"
 hero_combined: true
-hero_label: "Submitted"
 subtitle: "Apr 09, 2026"
 description: "Glacier ice on black volcanic sand at Jökulsárlón, Iceland. Entry for the 'Diversity of Life' photo contest, Faculty of Life Sciences, University of Vienna."
 tags: [photography, photo-contest]

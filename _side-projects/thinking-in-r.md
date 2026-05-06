@@ -7,7 +7,6 @@ category_url: "/side-projects/"
 thumbnail: "/assets/images/content/thinking-in-r.jpg"
 thumbnail_webp: "/assets/images/content/thinking-in-r.webp"
 hero_combined: true
-hero_label: "Published"
 subtitle: "Mar 08, 2026"
 description: "A free, open-source book that teaches R from scratch and explains why the language works the way it does."
 tags: [r-package, book, teaching]

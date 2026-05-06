@@ -10,7 +10,6 @@ hero_combined: true
 permalink: /talkagriweed/
 description: "Emerging Agricultural Weeds under climate and land-use changes in Central Europe: identifying high-risk species, modelling their distributions, assessing impacts and management need."
 hero_title: "Closing Meeting of the AgriWeedClim Project"
-hero_label: "Project"
 hero_separator: true
 subtitle: "2021-2024"
 tags: [invasive-species, agriweedclim, vegetation-plots]
