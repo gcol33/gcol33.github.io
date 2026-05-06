@@ -27,13 +27,13 @@ downloads:
 
 [Visualize your Science](https://www.visualizeyourscience.com) is an online PhD course by Andreas Dahlin on scientific communication and visual design, equivalent to four ECTS credits. The Spring 2026 edition ran from 10 March to 8 May 2026 and was structured around 22 video modules, four graded assignments with individual feedback meetings, and optional live drawing workshops.
 
-## What the course covers
+## What the course covered
 
-The foundational modules covered how images function in science: file formats, colour theory, typography, layout, composition, and image ethics. A module on data visualisation addressed representing quantitative information without distortion. The poster-specific modules moved into harder design problems: building hierarchy in a dense layout, getting content density and legibility to coexist, and making the whole thing read as one visual argument.
+The foundational modules covered how images function in science: file formats, colour theory, typography, layout, composition, and image ethics. A module on data visualisation covered how to represent quantitative information without distortion. The poster-specific modules moved into harder design problems: building hierarchy in a dense layout, balancing content density with legibility, and making the whole thing read as one visual argument.
 
-The production half introduced vector drawing from scratch in Affinity Designer (with Illustrator and Inkscape as alternatives): basic shapes and clip art, gradient drawing, tracing techniques, and document setup for A0 print. The final section covered poster presentation: pitching the work in under two minutes and using the poster as a visual aid during conversation.
+The production modules introduced vector drawing from scratch in Affinity Designer (with Illustrator and Inkscape as alternatives): basic shapes and clip art, gradient drawing, tracing techniques, and document setup for A0 print. The final section covered poster presentation: pitching the work in under two minutes and using the poster as a visual aid during conversation.
 
-## Assignment 1 — learning to draw
+## Vector drawing
 
 The first assignment was to draw a favourite research item or kitchen appliance in vector graphics. I drew a golden spatula.
 
