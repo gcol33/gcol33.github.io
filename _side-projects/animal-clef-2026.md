@@ -7,7 +7,7 @@ category_url: "/side-projects/"
 thumbnail: "/assets/images/content/animal-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/animal-clef-2026.webp"
 hero_combined: true
-hero_label: "6th of 230 — first solo entry"
+hero_label: "6th of 230 · first solo entry"
 subtitle: "May 06, 2026"
 description: "Solo entry to the AnimalCLEF 2026 individual animal re-identification challenge (LifeCLEF Lab, CLEF 2026). Final rank: 6/230 on the private leaderboard, top solo team."
 tags: [computer-vision, re-identification, clef, kaggle, machine-learning]
@@ -23,7 +23,7 @@ breadcrumb:
 
 ## The challenge
 
-[AnimalCLEF 2026](https://www.imageclef.org/AnimalCLEF2026), the individual animal re-identification task at the LifeCLEF Lab of [CLEF 2026](https://clef2026.clef-initiative.eu/), ran from 1 February to 7 May 2026 and drew 230 teams. Competitors must assign every test image to an identity cluster across four species: Eurasian lynx, fire salamander, loggerhead sea turtle, and Texas horned lizard. The test set mixes known training individuals with completely unseen ones; submissions are scored by Adjusted Rand Index (ARI), which measures pairwise cluster consistency against hidden ground-truth identities. Both false merges and missed merges hurt, and there is no way to abstain on novel individuals — they must be clustered together rather than left as singletons.
+[AnimalCLEF 2026](https://www.imageclef.org/AnimalCLEF2026), the individual animal re-identification task at the LifeCLEF Lab of [CLEF 2026](https://clef2026.clef-initiative.eu/), ran from 1 February to 7 May 2026 and drew 230 teams. Competitors must assign every test image to an identity cluster across four species: Eurasian lynx, fire salamander, loggerhead sea turtle, and Texas horned lizard. The test set mixes known training individuals with completely unseen ones; submissions are scored by Adjusted Rand Index (ARI), which measures pairwise cluster consistency against hidden ground-truth identities. Both false merges and missed merges hurt, and novel individuals must be assigned to a cluster; the scoring gives no credit for leaving them isolated.
 
 Each species demands something different. Lynx coat patterns and turtle scute arrangements separate cleanly on global appearance descriptors; salamander spot patterns and lizard ventral markings need local feature matching to tell individuals apart at fine scale. The test set spans 2,409 images (946 lynx, 689 salamander, 500 sea turtle, 274 horned lizard); the mix of known and novel individuals varies by species, which shapes the pipeline design for each.
 
@@ -32,7 +32,7 @@ Each species demands something different. Lynx coat patterns and turtle scute ar
 **[6th of 230 teams](https://www.kaggle.com/competitions/animal-clef-2026/leaderboard) on the private leaderboard, first place among solo entries.** Final scores: 0.61741 ARI public / 0.57038 ARI private, producing 833 predicted clusters across 2,409 test images.
 
 <div class="row mt-4 mb-4 justify-content-center">
-<div class="col-12" style="max-width:80%;">
+<div class="col-12 img-constrained-md">
 <picture>
   <source type="image/webp" srcset="/assets/images/content/animal-clef-2026.webp">
   <img src="/assets/images/content/animal-clef-2026.jpg" class="img-fluid mx-auto d-block img-rd-md zoomable" alt="System diagram for the AnimalCLEF 2026 entry" loading="lazy" style="padding: 2.5%;" data-zoom-src="/assets/images/content/animal-clef-2026-zoom.jpg">

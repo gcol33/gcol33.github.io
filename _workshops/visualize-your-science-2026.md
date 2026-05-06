@@ -65,7 +65,7 @@ The final assignment was a scientific poster. I put together a conference-ready 
 The poster runs across four panels. The first covers the dataset (1.9 million vegetation plots from the European Vegetation Archive) and RESOLVE's prediction performance across seven targets: year of recording, EUNIS habitat type, aspect, slope, area, altitude, and geographic location, with altitude reaching R² = 0.96 and habitat classification reaching 91.5% accuracy. The second reports an ablation: species composition alone accounts for 50–75% of the full model's performance, with taxonomy having the largest marginal impact on altitude prediction. The third compares RESOLVE against Random Forest, XGBoost, and spatial k-NN baselines. The fourth shows that model performance saturates at roughly 25% of the training set (~180k plots), with even 5% of the data achieving half the peak accuracy.
 
 <div class="row mt-4 mb-4 justify-content-center">
-<div class="col-12 col-md-10" style="max-width:80%;">
+<div class="col-12 img-constrained-md">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/vys_2026_poster_full.webp">
 <img src="/assets/images/content/vys_2026_poster_full.jpg" class="img-fluid d-block mx-auto no-rd zoomable" alt="Scientific poster: Neural networks reconstruct landscape properties from plant species composition">

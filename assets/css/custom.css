@@ -1592,6 +1592,13 @@ button:focus:not(:focus-visible),
     opacity: 0.88;
 }
 
+/* Constrain image wrappers to 80% width on md+ (full width on mobile) */
+@media (min-width: 768px) {
+    .img-constrained-md {
+        max-width: 80%;
+    }
+}
+
 /* Fullscreen photo overlay */
 .photo-overlay {
     position: fixed;
@@ -1608,14 +1615,22 @@ button:focus:not(:focus-visible),
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
+@media (max-width: 767px) {
+    .photo-overlay {
+        padding: 16px;
+    }
+}
+
 .photo-overlay.is-open {
     opacity: 1;
     visibility: visible;
 }
 
 .photo-overlay img {
-    max-width: calc(100% - 64px);
-    max-height: calc(100vh - 64px);
+    /* max-width/height are relative to the overlay's content box (after padding),
+       so 100% is already the correct constraint — no need to subtract padding again */
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
