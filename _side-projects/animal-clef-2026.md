@@ -41,7 +41,7 @@ Each species demands something different. Lynx coat patterns and turtle scute ar
 
 ## The pipeline
 
-Every pair of test images gets a score. The score encodes similarity — how likely those two images depict the same individual — derived from neural network embeddings and local feature matches. Those scores become edge weights in an undirected graph, one node per image; draw an edge wherever the weight exceeds a threshold, and the connected components are the clusters.
+Every pair of test images gets a score. The score encodes how likely those two images depict the same individual, derived from neural network embeddings and local feature matches. Those scores become edge weights in an undirected graph, one node per image; draw an edge wherever the weight exceeds a threshold, and the connected components are the clusters.
 
 Two signals feed each weight. Global descriptors compare the whole frame: coat pattern, scute arrangement, overall silhouette. Local keypoint matchers work at finer scale, anchoring on specific marks and finding correspondences patch by patch. Lynx and sea turtles separate cleanly on global appearance alone; salamanders and horned lizards, whose identifying marks are small and inconsistent across photographs, need the local signal. Which signal dominates, and at what threshold, is decided per species. Set the threshold too tight and the same individual fragments into separate clusters; too loose and strangers merge.
 
