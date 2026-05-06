@@ -46,7 +46,7 @@ The first assignment was to draw a favourite research item or kitchen appliance 
 
 ## Graphical abstract
 
-The second assignment called for a graphical abstract summarising a current research project. I made one for [RESOLVE](https://gillescolling.com/resolve/), my Python package that predicts sample attributes from compositional data. The abstract shows the vegetation ecology use case: species composition, taxonomy, and plot covariates feed in; area, slope, altitude, habitat type, and geographic location come out.
+The second assignment called for a graphical abstract summarising a current research project. I made one for [RESOLVE](https://gillescolling.com/resolve), my Python package that predicts sample attributes from compositional data. The abstract shows the vegetation ecology use case: species composition, taxonomy, and plot covariates feed in; area, slope, altitude, habitat type, and geographic location come out.
 
 <div class="row mt-4 mb-4 justify-content-center">
 <div class="col-10 col-md-8 col-lg-6">
