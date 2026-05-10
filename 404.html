@@ -8,6 +8,11 @@
   // Case-insensitive redirects for package sites
   (function() {
     var path = window.location.pathname;
+    // /texanshootr -> /texanshootR
+    if (/^/texanshootrb/i.test(path) && !/^/texanshootR/.test(path)) {
+      var newPath = path.replace(/^/texanshootr/i, '/texanshootR');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
     // /inlaocc -> /INLAocc
     if (/^/inlaoccb/i.test(path) && !/^/INLAocc/.test(path)) {
       var newPath = path.replace(/^/inlaocc/i, '/INLAocc');
