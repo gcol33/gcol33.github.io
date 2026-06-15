@@ -31,7 +31,7 @@ Two properties shape any entry. Training audio is clip-level focal recordings of
 **0.932 macro-AUC on the [public leaderboard](https://www.kaggle.com/competitions/birdclef-2026/leaderboard) (1968th of 4092 teams) and 0.917 on the private leaderboard (2415th).** Most of that score comes from a publicly shared baseline used unchanged; the soundscape-tuned models trained for this entry add a small, consistent correction on top. The two leaderboards did not rank the submissions in the same order, and the entry's more transferable outputs are two pieces of method: a leaderboard-free evaluation harness built on the released soundscapes, and a documented public-to-private generalisation gap.
 
 <div class="row mt-4 mb-4 justify-content-center">
-<div class="col-12 img-constrained-md">
+<div class="col-lg-8 col-md-10">
 <picture>
   <source type="image/webp" srcset="/assets/images/content/bird-clef-2026.webp">
   <img src="/assets/images/content/bird-clef-2026.jpg" class="img-fluid mx-auto d-block img-rd-md zoomable" alt="System diagram for the BirdCLEF+ 2026 entry" loading="lazy" style="padding: 2.5%;" data-zoom-src="/assets/images/content/bird-clef-2026-zoom.jpg">
