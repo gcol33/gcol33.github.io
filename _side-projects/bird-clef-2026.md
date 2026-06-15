@@ -8,7 +8,7 @@ thumbnail: "/assets/images/content/bird-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/bird-clef-2026.webp"
 hero_combined: true
 subtitle: "June 15, 2026"
-description: "A single-author BirdCLEF+ 2026 entry built mostly on a public baseline (LifeCLEF Lab, CLEF 2026). The parts that are mine: a leaderboard-free evaluation harness, an honest account of what did not work, and a diagnosed public-to-private generalisation gap."
+description: "Entry to the BirdCLEF+ 2026 acoustic species identification challenge (LifeCLEF Lab, CLEF 2026). An ensemble for the multi-taxon Pantanal soundscapes, paired with an offline evaluator to compare model blends without spending leaderboard submissions."
 tags: [bioacoustics, audio-classification, sound-event-detection, clef, kaggle, machine-learning]
 breadcrumb:
   - name: "Home"
@@ -20,23 +20,21 @@ breadcrumb:
   - name: "BirdCLEF+ 2026"
 ---
 
-Every team started from the same strong public baseline, so an entry came down to small additions of my own on top of it, and the public leaderboard returned a score only a few times a day. I built an offline evaluator on the 66 labelled soundscape recordings the organisers released: it scores any blend of my models in under a second, over the 75 species that carry labels there. That let me rank tens of configurations in an evening instead of one per leaderboard submission. The evaluator could not score the component that carried most of the prediction, the public embedding branch, because that branch trains on the same 66 recordings. The result turned on that blind spot: the blend that led the public leaderboard fell on the private split.
-
 ## The challenge
 
 [BirdCLEF+ 2026](https://www.imageclef.org/BirdCLEF2026), the acoustic species identification task at the LifeCLEF Lab of [CLEF 2026](https://clef2026.clef-initiative.eu/), concluded on 3 June 2026 and drew 4,092 teams. Competitors identify which of 234 species vocalise in continuous field recordings from the Pantanal of South America. The 2026 edition is multi-taxon, so one model has to separate birds, amphibians, insects, and reptiles, whose calls share almost nothing. Submissions are scored by macro-averaged ROC-AUC over the classes that carry a positive label in the hidden soundscape test set.
 
 That setup is harder than a leaderboard position makes it look. Training audio is clip-level focal recordings of a single calling individual, while the test audio is continuous soundscape with overlapping species and long silences, so a model is scored on a distribution it never trained on. Because the metric averages over classes, a handful of rare species move the score as much as the common ones, and the room to improve sits in the worst-scoring classes rather than the easy majority. Inference runs CPU-only under a wall-clock cap, which rules out large or numerous models. And the field is dense: a shared public baseline already reaches about 0.927, and from there the leaderboard is decided in the third decimal place, so a mid-pack finish among 4,092 teams sits only a few thousandths off the top.
 
-## What I added
+## Evaluating without the leaderboard
 
-Two things, and neither is the leaderboard position.
+A solo competitor gets only a few public-board reads a day, a slow way to choose between dozens of model blends. The organisers released 66 soundscape recordings with window-level labels, so I built an offline evaluator on them: it scores any model or blend in under a second, restricts the macro-average to the 75 species that carry a label there, and cross-validates across the files. One daily leaderboard slot became tens of offline comparisons in an evening.
 
-The first is a **way to evaluate without the leaderboard**. A solo competitor gets only a few public-board reads a day, which is a slow way to choose between ideas. The competition released 66 soundscape recordings with window-level labels, so I built an evaluator on them: it scores any model or blend in under a second, restricts the macro-average to the 75 species that actually carry a label there, and cross-validates across the files. A daily leaderboard slot became tens of offline comparisons in an evening.
+The evaluator reaches every part of the system but one, and that part explains the final standing. The component carrying most of the ranking is a public embedding branch that trains on the same 66 soundscapes the harness uses, so there is no clean way to hold it out and score it offline. The harness could rank everything except the piece it could not see, which is exactly where the public and private leaderboards diverged: the blend that led the public board ranked lower on the private split.
 
-The second is a **public-to-private gap I can explain**. The blend that topped my public score was not the best on the private split. The cause is specific: the component carrying most of the prediction is the public embedding branch, and it trains on the same 66 soundscapes my harness uses, so there is no clean way to hold it out and measure it. The harness could rank everything except the part that mattered most, which is precisely where the two boards disagreed.
+## Result
 
-The scores themselves are mid-pack: **0.932 macro-AUC on the [public leaderboard](https://www.kaggle.com/competitions/birdclef-2026/leaderboard) (1968th of 4092 teams), 0.917 on the private leaderboard (2415th)**, most of it carried by the public baseline.
+**0.932 macro-AUC on the [public leaderboard](https://www.kaggle.com/competitions/birdclef-2026/leaderboard) (1968th of 4092 teams), 0.917 on the private leaderboard (2415th of 4092).**
 
 <div class="row mt-4 mb-4 justify-content-center">
 <div class="col-lg-8 col-md-10">
@@ -61,7 +59,7 @@ The most ambitious thread, a deeper data pipeline with cross-year pretraining on
 
 The submitted system is an ensemble of two parts, combined only at the very end. Every model resamples audio to 32 kHz mono, cuts it into 5-second windows, and turns each window into a 128-band log-mel spectrogram before scoring all 234 classes.
 
-The first part is a publicly shared community baseline, used unchanged: an embedding branch built on the [Perch](https://arxiv.org/abs/2307.06292) bird-vocalisation model with a probe-classifier head, blended with a five-fold [EfficientNet](https://arxiv.org/abs/1905.11946) sound-event-detection ensemble. The second part is mine: a weighted triplet of convolutional networks I fine-tuned on the released soundscape recordings, an EfficientNet-B3, a pseudo-label-refined B3, and a [ConvNeXt](https://arxiv.org/abs/2201.03545)-Small, all taken from [timm](https://github.com/huggingface/pytorch-image-models) with single-channel input stems and trained with an [asymmetric loss](https://arxiv.org/abs/2009.14119). The triplet is rank-blended onto the baseline at a small weight (alpha = 0.10): the baseline carries most of the ranking, and the soundscape-tuned models supply a small correction on top.
+The first part is a publicly shared community baseline, used unchanged: an embedding branch built on the [Perch](https://arxiv.org/abs/2307.06292) bird-vocalisation model with a probe-classifier head, blended with a five-fold [EfficientNet](https://arxiv.org/abs/1905.11946) sound-event-detection ensemble. The second part is a weighted triplet of convolutional networks I fine-tuned on the released soundscape recordings, an EfficientNet-B3, a pseudo-label-refined B3, and a [ConvNeXt](https://arxiv.org/abs/2201.03545)-Small, all taken from [timm](https://github.com/huggingface/pytorch-image-models) with single-channel input stems and trained with an [asymmetric loss](https://arxiv.org/abs/2009.14119). The triplet is rank-blended onto the baseline at a small weight (alpha = 0.10): the baseline carries most of the ranking, and the soundscape-tuned models supply a small correction on top.
 
 ## Artefacts
 
