@@ -63,7 +63,7 @@ The first part is a publicly shared community baseline, used unchanged: an embed
 
 ## Artefacts
 
-- **Working note:** submitted to CLEF 2026 (LifeCLEF / BirdCLEF track); CEUR-WS proceedings forthcoming.
+- **Working note (preprint, DOI):** [10.5281/zenodo.20690477](https://doi.org/10.5281/zenodo.20690477)
 - **Code:** [github.com/gcol33/bird-clef-2026](https://github.com/gcol33/bird-clef-2026) (MIT licence)
 - **Trained weights:** [huggingface.co/gcol33/bird-clef-2026](https://huggingface.co/gcol33/bird-clef-2026) (CC BY 4.0, subject to upstream dataset restrictions)
 - **Competition page:** [kaggle.com/competitions/birdclef-2026](https://www.kaggle.com/competitions/birdclef-2026)
