@@ -24,11 +24,11 @@ breadcrumb:
 
 On June 25, 2026, I gave a short talk at the BioInvasions Research Exchange Club on two R packages I build in my spare time, and on why I make the time at all. Both grew out of recurring friction in our own work: cleaning species name lists, and running analyses on climate rasters and occurrence tables that outgrow memory. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
 
-## Why I keep a day a week for building R packages
+## Why I keep Fridays free
 
-A PhD starts wide open and ends as a long list of things you have to do. I wanted to hold on to the part I enjoy, so I set a rule early: about a fifth of my time, roughly one day a week, stays on projects I choose, and taxify and vectra are that fifth. There is a line in the work-stress literature behind the rule. Karasek's demand-control model (1979) finds that what wears people down is less the sheer volume of work and more how little of it they get to decide; a day a week of chosen work is a small lever on the control side.
+Nothing planned here. I just try to keep Fridays open to play with ideas, and taxify and vectra happen to be what came out of it. The talk mentioned the demand-control idea (Karasek 1979), that having a bit of say over your work helps about as much as the amount of it, which felt about right. Somewhere along those Fridays an interest in free software grew too.
 
-The spark came from rainbowR 2026, the inaugural LGBTQIA+ R conference, which a colleague suggested. The room ran from PhD students to senior researchers, all building free and open-source software, and I left thinking I could do this too. The two packages are released as free software for the same reason. As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master."
+A nudge came from rainbowR 2026, the inaugural LGBTQIA+ R conference, which a colleague suggested. It drew everyone from PhD students to senior researchers, all building free and open-source software, and I came away thinking I might be able to do this too. The two packages are free software for that reason. As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master."
 
 The two packages share one engine: taxify matches names on the same C engine that vectra is built around. The slot was one story with two demos on top, so the two halves below are how the talk ran.
 
