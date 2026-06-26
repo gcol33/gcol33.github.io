@@ -34,9 +34,32 @@ The two packages share one engine: taxify matches names on the same C engine tha
 
 ## taxify
 
-taxify resolves a column of species names to accepted names, offline. It cleans messy strings, catches typos, follows synonyms, and returns one standardized table. From there it joins published trait, status, and alien-species layers onto the result, drawing on open databases from across the tree of life (woodiness, EIVE, Diaz traits, AVONET, FishBase, and more). Matching runs in C against a name backbone kept on disk, so the same input gives the same output on any machine. The package is in active development.
+A lot of ecological work starts by unifying taxonomy, and the names never quite match. The same species arrives as `Quercus robur L.` carrying its authorship, as `Pinus cf. sylvestris` with a qualifier, as the hybrid `Nothofagus x alpina`, as a synonym (`Pinus abies` is `Picea abies`), or as a plain typo (`Quercus robus`). The talk walked through the three common routes for resolving a name list and where each one strains: WorldFlora loads the WFO backbone into memory and runs its fuzzy pass name by name; taxize calls out to around twenty web services, so it is tied to the network, rate limits, and answers that can shift between runs; taxadb keeps local snapshots but queries them in SQL and matches exact names, so typos and synonyms slip through.
 
-In the talk's demo, a fuzzy match of 1,000 names resolved in about a second on the local backbone, against roughly half an hour for the usual route over web services.
+taxify does the same job locally, in C. Hand it a column of messy names and one call returns accepted names, with the cleaning, synonym following, and fuzzy matching done against a name backbone kept on disk, so the same input gives the same output on any machine.
+
+```r
+taxify(c(
+  "Quercus robur",
+  "Pinus abies",          # synonym -> Picea abies
+  "Quercus robus",        # typo    -> Quercus robur
+  "Taraxacum officinale"
+), backend = "wfo")
+```
+
+In the talk's demo, the same 1,000 plant names matched in about a second on the local backbone, against roughly half an hour over web services.
+
+Once names are resolved, trait and status layers join on the accepted name: IUCN Red List status, GRIIS invasion status by country, EIVE indicator values, woodiness, FishBase ecology, and your own tables, drawing on published databases for plants, animals, fungi, and algae.
+
+```r
+taxify(plant_names, backend = "wfo") |>
+  add_conservation_status() |>   # IUCN Red List
+  add_invasive_status("AT") |>   # GRIIS, Austria
+  add_eive() |>                  # EIVE indicator values
+  add_data("TRY_traits.csv")     # your own table
+```
+
+The package is in active development.
 
 Install with `install.packages("pak")`, then `pak::pak("gcol33/taxify")`; the first call downloads the name backbone once.
 
@@ -46,9 +69,22 @@ Install with `install.packages("pak")`, then `pak::pak("gcol33/taxify")`; the fi
 
 ## vectra
 
-vectra fits models on rasters and tables too big to load into memory. It streams the data off disk in chunks with the usual dplyr verbs, keeping peak memory small at any file size, as a plain R package. It is on CRAN, and sf support for spatial work is in progress.
+vectra fits models on rasters and tables too big to load into memory. The talk opened on a routine task that breaks: read a WorldClim stack of 19 bioclim layers, turn every cell into a point, merge it with occurrences, and fit a GLM. R answers with `cannot allocate vector of size 6.3 Gb`, because the whole table has to sit in memory at once, and R's copy-on-modify means editing a single column can copy the entire thing.
 
-In the talk's demo, a GLM fit over a 6.26 GB table held about 0.48 GB in memory by folding one chunk at a time, the same fit either way.
+Existing engines solve this at a price: Arrow brings a new memory format to build around, DuckDB is a full in-process SQL database, and Spark is a distributed cluster driven through a JVM. vectra stays inside plain R. Underneath it leans on one idea: read one chunk, fold it into a running result, and keep only that chunk in memory. Sums, counts, means, and even a regression's normal equations combine this way, so the same dplyr verbs you already write stream off disk and `collect()` pulls the result in pieces.
+
+```r
+tbl_tiff("stack.tif") |>
+  mutate(warm = band1 > 10) |>
+  select(x, y, warm) |>
+  collect()
+```
+
+For models, `bigglm` folds a GLM chunk by chunk off disk through a chunk feeder. For fits that cannot fold, such as a GAM that needs all its rows at once, `offload` maps over groups and spills them to disk one group at a time.
+
+In the talk's demo, the GLM that peaked at 6.26 GB held about 0.48 GB in memory when folded a chunk at a time, the same fit either way.
+
+vectra is on CRAN, and sf support for spatial work is in progress.
 
 Install with `install.packages("vectra")`.
 
