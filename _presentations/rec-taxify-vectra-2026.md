@@ -9,7 +9,7 @@ thumbnail: "/assets/images/content/presentation_rec_2026.jpg"
 thumbnail_webp: "/assets/images/content/presentation_rec_2026.webp"
 hero_combined: true
 subtitle: "June 25, 2026"
-hero_title: "taxify and vectra"
+hero_title: "Taming big data and bad names"
 description: "A short talk at the BioInvasions Research Exchange Club on why I keep a day a week for software, and on the two R packages that came out of it: taxify, for resolving messy species names to accepted names offline; and vectra, for fitting models on rasters and tables too large to hold in memory."
 tags: [r-package, taxonomy, spatial, software]
 breadcrumb:
