@@ -24,13 +24,11 @@ breadcrumb:
 
 On June 25, 2026, I gave a short talk at the BioInvasions Research Exchange Club on two R packages I build in my spare time, and on why I make the time at all. Both grew out of recurring friction in our own work: cleaning species name lists, and running analyses on climate rasters and occurrence tables that outgrow memory. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
 
-## Why I contribute to open source
+## Why these are free
 
-As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master." taxify and vectra are free software for that reason. A nudge came from rainbowR 2026, the inaugural LGBTQIA+ R conference, which a colleague suggested. It drew everyone from PhD students to senior researchers, all building free and open-source software, and I came away thinking I might be able to do this too.
+The R ecosystem is free to use: thousands of packages, no license, no budget. taxify and vectra are free for the same reason. The nudge to publish them rather than keep them as private scripts came from rainbowR 2026, the inaugural LGBTQIA+ R conference. As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master."
 
-It is also how I regain a little control and lessen the strain. I keep Fridays open to work on whatever idea is in front of me, no roadmap, no goal for where it lands, and both packages came together over those Fridays. The talk mentioned the demand-control idea (Karasek 1979): having some say over your work eases the strain we all feel, and a free day is one way to get a little of that back.
-
-The two packages share one engine: taxify matches names on the same C engine that vectra is built around. The slot was one story with two demos on top, so the two halves below are how the talk ran.
+I keep Fridays for projects I choose. Karasek (1979) traced job strain less to how much work there is than to how much of it you control; an open day keeps some of that. taxify and vectra came out of those Fridays, and they share one engine: taxify matches names on the same C code vectra is built around.
 
 ## taxify
 
