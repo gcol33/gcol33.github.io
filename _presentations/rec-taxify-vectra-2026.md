@@ -24,7 +24,7 @@ breadcrumb:
 
 On June 25, 2026, I gave a short talk at the BioInvasions Research Exchange Club on two R packages I build in my spare time, and on why I make the time at all. Both grew out of recurring friction in our own work: cleaning species name lists, and running analyses on climate rasters and occurrence tables that outgrow memory. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
 
-## Why I keep a day a week for this
+## Why I keep a day a week for building R packages
 
 A PhD starts wide open and ends as a long list of things you have to do. I wanted to hold on to the part I enjoy, so I set a rule early: about a fifth of my time, roughly one day a week, stays on projects I choose, and taxify and vectra are that fifth. There is a line in the work-stress literature behind the rule. Karasek's demand-control model (1979) finds that what wears people down is less the sheer volume of work and more how little of it they get to decide; a day a week of chosen work is a small lever on the control side.
 
