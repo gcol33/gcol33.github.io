@@ -26,7 +26,7 @@ On June 25, 2026, I gave a short talk at the BioInvasions Research Exchange Club
 
 ## Why I keep Fridays free
 
-Nothing planned here. I just try to keep Fridays open to play with ideas, and taxify and vectra are two of the things I have built on them. The talk mentioned the demand-control idea (Karasek 1979): having some say over your work eases the strain we all feel, and a free day is a small way to get a little of that back. Somewhere along those Fridays an interest in free software grew too.
+I keep Fridays open to play with whatever idea is in front of me, no roadmap, no goal for where it lands. taxify and vectra are two of the things that have come together over those Fridays. The talk mentioned the demand-control idea (Karasek 1979): having some say over your work eases the strain we all feel, and a free day is a small way to get a little of that back. Somewhere along those Fridays an interest in free software grew too.
 
 A nudge came from rainbowR 2026, the inaugural LGBTQIA+ R conference, which a colleague suggested. It drew everyone from PhD students to senior researchers, all building free and open-source software, and I came away thinking I might be able to do this too. The two packages are free software for that reason. As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master."
 
