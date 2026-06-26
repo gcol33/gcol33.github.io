@@ -51,7 +51,7 @@ The system then anchors the graph through the labelled training set: when a test
 
 ## Artefacts
 
-- **Working note (preprint, DOI):** [10.5281/zenodo.20055000](https://doi.org/10.5281/zenodo.20055000)
+- **Working note (preprint):** [PDF](/assets/downloads/colling_animalclef_2026.pdf) · DOI [10.5281/zenodo.20055000](https://doi.org/10.5281/zenodo.20055000)
 - **Code:** [github.com/gcol33/animal-clef-2026](https://github.com/gcol33/animal-clef-2026) (MIT licence)
 - **Trained weights:** [huggingface.co/gcol33/animal-clef-2026](https://huggingface.co/gcol33/animal-clef-2026) (CC BY 4.0, subject to upstream dataset restrictions)
 - **Competition page:** [kaggle.com/competitions/animal-clef-2026](https://www.kaggle.com/competitions/animal-clef-2026)
