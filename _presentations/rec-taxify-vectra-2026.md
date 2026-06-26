@@ -10,7 +10,7 @@ thumbnail_webp: "/assets/images/content/presentation_rec_2026.webp"
 hero_combined: true
 subtitle: "June 25, 2026"
 hero_title: "Taming big data and bad names"
-description: "A short talk at the BioInvasions Research Exchange Club on why I keep a day a week for software, and on the two R packages that came out of it: taxify, for resolving messy species names to accepted names offline; and vectra, for fitting models on rasters and tables too large to hold in memory."
+description: "A short talk at the BioInvasions Research Exchange Club on two recurring frictions in ecological work: species names that will not match across datasets, and rasters and tables too large to hold in memory. The two R packages that take them on are taxify, resolving messy names to accepted names offline, and vectra, fitting models on data too big for memory."
 tags: [r-package, taxonomy, spatial, software]
 breadcrumb:
   - name: "Home"
@@ -22,13 +22,9 @@ breadcrumb:
   - name: "Research Exchange Club 2026"
 ---
 
-On June 25, 2026, I gave a short talk at the BioInvasions Research Exchange Club on two R packages I build in my spare time, and on why I make the time at all. Both grew out of recurring friction in our own work: cleaning species name lists, and running analyses on climate rasters and occurrence tables that outgrow memory. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
+Two things keep breaking in our work: species name lists that will not match across datasets, and climate rasters and occurrence tables that outgrow memory. taxify and vectra are the two R packages I build on the side to take those on, and the talk I gave at the BioInvasions Research Exchange Club on June 25, 2026 walked through both. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
 
-## Why these are free
-
-The R ecosystem is free to use: thousands of packages, no license, no budget. taxify and vectra are free for the same reason. The nudge to publish them rather than keep them as private scripts came from rainbowR 2026, the inaugural LGBTQIA+ R conference. As Richard Stallman, who started the free software movement and wrote the GPL, put it: "To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master."
-
-I keep Fridays for projects I choose. Karasek (1979) traced job strain less to how much work there is than to how much of it you control; an open day keeps some of that. taxify and vectra came out of those Fridays, and they share one engine: taxify matches names on the same C code vectra is built around.
+A PhD fills up with work you did not pick, and Karasek (1979) tied job strain to that loss of control more than to the volume. So I keep Fridays open for projects I choose, and taxify and vectra came out of them. I put them out free the way the R ecosystem I learned on is free; rainbowR 2026, the inaugural LGBTQIA+ R conference, was the nudge to publish rather than sit on the code. Both run on one engine, so the slot ran as two demos over one story: taxify matches names on the same C code vectra is built around.
 
 ## taxify
 
@@ -67,7 +63,7 @@ Install with `install.packages("pak")`, then `pak::pak("gcol33/taxify")`; the fi
 
 ## vectra
 
-vectra fits models on rasters and tables too big to load into memory. The talk opened on a routine task that breaks: read a WorldClim stack of 19 bioclim layers, turn every cell into a point, merge it with occurrences, and fit a GLM. R answers with `cannot allocate vector of size 6.3 Gb`, because the whole table has to sit in memory at once, and R's copy-on-modify means editing a single column can copy the entire thing.
+Read a WorldClim stack of 19 bioclim layers, turn every cell into a point, merge it with occurrences, and fit a GLM, and R stops with `cannot allocate vector of size 6.3 Gb`. The whole table has to sit in memory at once, and copy-on-modify means editing a single column can copy the entire thing. vectra fits the same model on rasters and tables too big to load into memory.
 
 Existing engines solve this at a price: Arrow brings a new memory format to build around, DuckDB is a full in-process SQL database, and Spark is a distributed cluster driven through a JVM. vectra stays inside plain R. Underneath it leans on one idea: read one chunk, fold it into a running result, and keep only that chunk in memory. Sums, counts, means, and even a regression's normal equations combine this way, so the same dplyr verbs you already write stream off disk and `collect()` pulls the result in pieces.
 
