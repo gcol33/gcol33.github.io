@@ -24,6 +24,8 @@ breadcrumb:
 
 Two problems come up often in my work: species name lists that are hard to match across datasets, and climate rasters and occurrence tables that can outgrow memory. taxify and vectra are the two R packages I build on the side to take those on, and the talk I gave at the BioInvasions Research Exchange Club on June 25, 2026 walked through both. The two handouts below reproduce the live examples; each is a single HTML file you can open in a browser, and both run offline against staged data so they work on any machine.
 
+The Research Exchange Club is new this semester. Two groups at the department have been merging, the BioInvasions group I work in and Stefan Dullinger's Biodiversity Dynamics and Conservation group, and a lot of what each side does day to day is easy to miss from the other. The club is the fix we are trying: a recurring slot where one person shows the room what they are working on. I took an early slot for these two packages, since they sit close to work both groups run into.
+
 A PhD fills up with work you did not pick, and Karasek (1979) tied job strain to that loss of control more than to the volume. So I keep Fridays open for projects I choose, and taxify and vectra came out of them. I put them out free the way the R ecosystem I learned on is free; rainbowR 2026, the inaugural LGBTQIA+ R conference, was the nudge to publish rather than sit on the code. Both run on one engine, so the slot ran as two demos over one story: taxify matches names on the same C code vectra is built around.
 
 ## taxify
