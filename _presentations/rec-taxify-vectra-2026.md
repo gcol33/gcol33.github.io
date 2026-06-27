@@ -26,7 +26,7 @@ Two problems come up often in my work: species name lists that are hard to match
 
 This semester our working group started a Research Exchange Club: a recurring meeting where one of us shows the others what they are working on. It came about as the BioInvasions and Biodiversity Dynamics and Conservation groups are merging, so a lot of each side's day-to-day work is easy to miss from the other. I presented taxify and vectra, since they sit close to work both groups run into.
 
-A PhD fills up with work you did not pick, and Karasek (1979) tied job strain to that loss of control more than to the volume. So I keep Fridays open for projects I choose, and taxify and vectra came out of them. I put them out free the way the R ecosystem I learned on is free; rainbowR 2026, the inaugural LGBTQIA+ R conference, was the nudge to publish rather than sit on the code. Both run on one engine, so the slot ran as two demos over one story: taxify matches names on the same C code vectra is built around.
+A PhD fills up with work you did not pick, and Karasek (1979) tied job strain to that loss of control more than to the volume. So I keep Fridays open for projects I choose, and taxify and vectra came out of them. In February this year I went to rainbowR, the inaugural LGBTQIA+ R conference. Everyone there, from PhD students to senior researchers, was building free and open-source software, and I came back wanting to do the same with these two. Both run on one engine, so the slot ran as two demos over one story: taxify matches names on the same C code vectra is built around.
 
 ## taxify
 
