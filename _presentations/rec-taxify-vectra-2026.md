@@ -49,15 +49,15 @@ Once names are resolved, trait and status layers join on the accepted name: IUCN
 
 ```r
 taxify(plant_names, backend = "wfo") |>
-  add_conservation_status() |>   # IUCN Red List
-  add_invasive_status("AT") |>   # GRIIS, Austria
+  add_iucn() |>                  # IUCN Red List
+  add_griis("AT") |>             # GRIIS, Austria
   add_eive() |>                  # EIVE indicator values
   add_data("TRY_traits.csv")     # your own table
 ```
 
 The package is in active development.
 
-Install with `install.packages("pak")`, then `pak::pak("gcol33/taxify")`; the first call downloads the name backbone once.
+Install with `install.packages("taxify")`; the first call downloads the name backbone once.
 
 - **Handout:** [handout_taxify.html](/assets/downloads/handout_taxify.html)
 - **Documentation:** [gillescolling.com/taxify](https://gillescolling.com/taxify)

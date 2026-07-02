@@ -2069,9 +2069,9 @@ that row. <code>add_data()</code> joins on the accepted name, so it
 lines up.</p>
 <p>taxify also ships:</p>
 <ul>
-<li>published trait and status layers (<code>add_woodiness()</code>,
+<li>published trait and status layers (<code>add_zanne()</code>,
 <code>add_eive()</code>, <code>add_diaz_traits()</code>,
-<code>add_conservation_status()</code>, and more)</li>
+<code>add_iucn()</code>, and more)</li>
 <li>a fallback chain across backbones for animals, fungi, and marine
 taxa (<code>backend = c(&quot;wfo&quot;, &quot;col&quot;, &quot;gbif&quot;)</code>)</li>
 </ul>
@@ -2100,15 +2100,15 @@ REPLAY
 <script>
 (function(){
 var G=[
-{n:'Plants',s:'Plants',c:'#6bcb77',L:[['add_woodiness()','woodiness, Zanne 2014'],['add_eive()','EIVE 1.0, Dengler 2023'],['add_diaz_traits()','seed mass & height, Diaz 2022'],['add_leda()','LEDA traits, Kleyer 2008'],['add_wcvp()','native range, WCVP / Kew'],['add_glonaf()','naturalized alien flora']]},
+{n:'Plants',s:'Plants',c:'#6bcb77',L:[['add_zanne()','woodiness, Zanne 2014'],['add_eive()','EIVE 1.0, Dengler 2023'],['add_diaz_traits()','seed mass & height, Diaz 2022'],['add_leda()','LEDA traits, Kleyer 2008'],['add_wcvp()','native range, WCVP / Kew'],['add_glonaf()','naturalized alien flora']]},
 {n:'Birds & mammals',s:'Birds/mammals',c:'#3ad7ff',L:[['add_avonet()','AVONET morphology'],['add_elton_traits()','EltonTraits diet & mass'],['add_pantheria()','PanTHERIA life-history']]},
-{n:'Amphibians & reptiles',s:'Amph & reptiles',c:'#b388ff',L:[['add_amphibio()','AmphiBIO traits'],['add_lizard_traits()','lizards, Meiri 2018']]},
-{n:'Fish',s:'Fish',c:'#4d96ff',L:[['add_fish_traits()','FISHMORPH morphology'],['add_fishbase()','FishBase ecology']]},
+{n:'Amphibians & reptiles',s:'Amph & reptiles',c:'#b388ff',L:[['add_amphibio()','AmphiBIO traits'],['add_repttraits()','reptiles, ReptTraits 2024']]},
+{n:'Fish',s:'Fish',c:'#4d96ff',L:[['add_fishmorph()','FISHMORPH morphology'],['add_fishbase()','FishBase ecology']]},
 {n:'Arthropods',s:'Arthropods',c:'#ff8fd0',L:[['add_arthropod_traits()','NW European arthropods'],['add_leptraits()','LepTraits butterflies']]},
 {n:'Fungi',s:'Fungi',c:'#ffd93d',L:[['add_fungal_traits()','FungalTraits, Polme 2020'],['add_funguild()','FUNGuild trophic guild']]},
 {n:'Algae',s:'Algae',c:'#33ffd0',L:[['add_algae_traits()','AlgaeTraits, Vranken 2023']]},
 {n:'Cross-taxon animals',s:'Cross-taxon',c:'#ffc24b',L:[['add_animaltraits()','body mass & metabolism'],['add_anage()','AnAge longevity']]},
-{n:'Status, alien & names',s:'Status & alien',c:'#ff3b6b',L:[['add_conservation_status()','IUCN Red List'],['add_invasive_status()','GRIIS invasive'],['add_alien_first_records()','first-record years'],['add_common_names()','vernacular names']]}
+{n:'Status, alien & names',s:'Status & alien',c:'#ff3b6b',L:[['add_iucn()','IUCN Red List'],['add_griis()','GRIIS invasive'],['add_alien_first_records()','first-record years'],['add_common_names()','vernacular names']]}
 ];
 
 var s=VA.setup('en-cv'); if(!s)return; var x=s.ctx,W=s.w,H=s.h,C=VA.C;
@@ -2155,7 +2155,7 @@ VA.run(draw,PERIOD,'en-rep','en','en-cv');
 <tbody>
 <tr class="odd">
 <td>Plants</td>
-<td><code>add_woodiness()</code>, <code>add_eive()</code>,
+<td><code>add_zanne()</code>, <code>add_eive()</code>,
 <code>add_diaz_traits()</code>, <code>add_leda()</code>,
 <code>add_wcvp()</code>, <code>add_glonaf()</code></td>
 </tr>
@@ -2166,11 +2166,11 @@ VA.run(draw,PERIOD,'en-rep','en','en-cv');
 </tr>
 <tr class="odd">
 <td>Amphibians &amp; reptiles</td>
-<td><code>add_amphibio()</code>, <code>add_lizard_traits()</code></td>
+<td><code>add_amphibio()</code>, <code>add_repttraits()</code></td>
 </tr>
 <tr class="even">
 <td>Fish</td>
-<td><code>add_fish_traits()</code>, <code>add_fishbase()</code></td>
+<td><code>add_fishmorph()</code>, <code>add_fishbase()</code></td>
 </tr>
 <tr class="odd">
 <td>Arthropods</td>
@@ -2191,8 +2191,8 @@ VA.run(draw,PERIOD,'en-rep','en','en-cv');
 </tr>
 <tr class="odd">
 <td>Status, alien &amp; names</td>
-<td><code>add_conservation_status()</code>,
-<code>add_invasive_status()</code>,
+<td><code>add_iucn()</code>,
+<code>add_griis()</code>,
 <code>add_alien_first_records()</code>,
 <code>add_common_names()</code></td>
 </tr>
@@ -2212,7 +2212,7 @@ al. 2022) all attach to the same hundred-name field list from above;
 once attached, the table is ready for ordinary R statistics straight
 away:</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>dat <span class="ot">&lt;-</span> field_res <span class="sc">|&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>  <span class="fu">add_woodiness</span>() <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>  <span class="fu">add_zanne</span>() <span class="sc">|&gt;</span></span>
 <span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>  <span class="fu">add_eive</span>() <span class="sc">|&gt;</span></span>
 <span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>  <span class="fu">add_diaz_traits</span>()</span>
 <span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a></span>

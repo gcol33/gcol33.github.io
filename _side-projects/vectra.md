@@ -34,6 +34,8 @@ Available on CRAN under MIT license.
 install.packages("vectra")
 ```
 
+Source and issues: [github.com/gcol33/vectra](https://github.com/gcol33/vectra).
+
 ## Citation
 
 <div class="citation-box">
