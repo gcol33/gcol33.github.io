@@ -1,6 +1,6 @@
 ---
 layout: archive-item
-title: "Colling et al. 2025"
+title: "Ninety years of alien plant species accumulation across regional and local scales in central European fields"
 date: 2025-01-08
 category: "Publication"
 category_url: "/publications/"
@@ -16,7 +16,7 @@ breadcrumb:
     url: "/research-archive/"
   - name: "Publications"
     url: "/publications/"
-  - name: "Colling et al. 2025"
+  - name: "Ninety years of alien plant accumulation in central European fields"
 ---
 
 Publication in Agriculture, Ecosystems & Environment.

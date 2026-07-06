@@ -1,6 +1,6 @@
 ---
 layout: archive-item
-title: "Lenzner et al. 2024"
+title: "The neglected importance of managing biological invasions for sustainable development"
 date: 2024-07-22
 category: "Publication"
 category_url: "/publications/"
@@ -16,7 +16,7 @@ breadcrumb:
     url: "/research-archive/"
   - name: "Publications"
     url: "/publications/"
-  - name: "Lenzner et al. 2024"
+  - name: "Managing biological invasions for sustainable development"
 ---
 
 Publication in People and Nature.

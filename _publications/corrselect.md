@@ -1,6 +1,6 @@
 ---
 layout: archive-item
-title: "Colling 2026"
+title: "corrselect: Fast and flexible predictor pruning for data analysis and modeling"
 date: 2026-02-25
 category: "Publication"
 category_url: "/publications/"
@@ -16,7 +16,7 @@ breadcrumb:
     url: "/research-archive/"
   - name: "Publications"
     url: "/publications/"
-  - name: "Colling 2026"
+  - name: "corrselect: predictor pruning for data analysis and modeling"
 ---
 
 Publication in Journal of Open Source Software, 11(118), 9539.
