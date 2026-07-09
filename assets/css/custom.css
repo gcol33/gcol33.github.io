@@ -26,9 +26,31 @@
     line-height: 1;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .nav-separator {
         display: none;
+    }
+}
+
+/* Keep the nav link row on a single line when the navbar is expanded */
+@media (min-width: 1200px) {
+    .site-navigation {
+        flex-wrap: nowrap;
+    }
+
+    .site-navigation .nav-link {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .site-navigation .nav-links {
+        font-size: 16px;
+    }
+
+    .site-navigation .nav-link {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
     }
 }
 
@@ -461,6 +483,43 @@ body.has-sticky-nav #pencil-footer {
     display: block;
     width: auto;
     height: auto;
+}
+
+/* Icon column narrows on smaller desktop widths; shrink icons to fit */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .social-icons-grid {
+        gap: 6px;
+    }
+
+    .social-icons-grid a svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .social-icons-grid {
+        gap: 5px;
+    }
+
+    .social-icons-grid a svg {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* Collapsed navbar: size the nav and icon columns to their content so the
+   icon row is not clipped by the rigid 8/4 column split */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    #navbar .navs-controls {
+        flex: 1 1 auto;
+        width: auto;
+    }
+
+    #navbar .nav-icon-background {
+        flex: 0 0 auto;
+        width: auto;
+    }
 }
 
 /* Light mode hover - darken icons */
@@ -1665,7 +1724,7 @@ button:focus:not(:focus-visible),
 }
 
 /* Academic IDs (ORCID, Google Scholar, ResearchGate) shown only on desktop */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
     .social-icons-grid a.desktop-only {
         display: none;
     }
