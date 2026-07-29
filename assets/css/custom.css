@@ -168,6 +168,24 @@ a.thumb-zoom img {
     border-radius: 0 !important;
 }
 
+/* Card titles occupy a single line, truncated with an ellipsis */
+.writer-post-library .writer-posts {
+    min-width: 0;
+}
+
+.writer-post-library .writer-posts > * {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.writer-post-library .title-post,
+.related-card-title .title-post {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* Fix: Apply border-radius to embedded videos */
 .ratio {
     border-radius: 20px;

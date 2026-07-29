@@ -1,6 +1,7 @@
 ---
 layout: archive-item
 title: "The neglected importance of managing biological invasions for sustainable development"
+short_title: "Managing biological invasions"
 date: 2024-07-22
 category: "Publication"
 category_url: "/publications/"

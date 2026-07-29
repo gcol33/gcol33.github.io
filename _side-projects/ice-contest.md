@@ -1,6 +1,7 @@
 ---
 layout: workshop
 title: "Photo Contest — Life Sciences Vienna"
+short_title: "Life Sciences Photo Contest"
 date: 2026-04-09
 category: "Side Project"
 category_url: "/side-projects/"

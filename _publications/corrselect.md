@@ -1,6 +1,7 @@
 ---
 layout: archive-item
 title: "corrselect: Fast and flexible predictor pruning for data analysis and modeling"
+short_title: "corrselect: predictor pruning"
 date: 2026-02-25
 category: "Publication"
 category_url: "/publications/"

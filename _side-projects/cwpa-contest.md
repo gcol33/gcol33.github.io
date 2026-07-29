@@ -1,6 +1,7 @@
 ---
 layout: workshop
 title: "Comedy Wildlife Photography Awards"
+short_title: "Comedy Wildlife Awards"
 date: 2026-04-10
 category: "Side Project"
 category_url: "/side-projects/"

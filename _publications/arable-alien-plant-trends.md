@@ -1,6 +1,7 @@
 ---
 layout: archive-item
 title: "Ninety years of alien plant species accumulation across regional and local scales in central European fields"
+short_title: "Alien plant accumulation in fields"
 date: 2025-01-08
 category: "Publication"
 category_url: "/publications/"
