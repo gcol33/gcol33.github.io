@@ -1,6 +1,7 @@
 ---
 layout: archive-item
 title: "Projected range shifts of emerging agricultural weeds under climate change in central Europe"
+short_title: "Projected range shifts of emerging agricultural"
 date: 2026-06-01
 category: "Publication"
 category_url: "/publications/"
