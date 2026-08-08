@@ -24,3 +24,6 @@ Thumbs.db
 
 # Playwright MCP tooling artifacts
 .playwright-mcp/
+
+# Working notes
+dev_notes/
