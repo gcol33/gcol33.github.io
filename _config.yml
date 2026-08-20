@@ -100,6 +100,9 @@ defaults:
 exclude:
   - CLAUDE.md
   - README.md
+  - current.md
+  - todo.md
+  - dev_notes
   - Gemfile
   - Gemfile.lock
   - node_modules
