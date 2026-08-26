@@ -4,7 +4,7 @@ title: "BART (Bayesian Additive Regression Trees) Workshop"
 short_title: "BART Workshop"
 date: 2025-09-22
 category: "Education"
-type: workshop
+type: attended
 category_url: "/education/"
 description: "From September 22 to 24, 2025, Jeremy Yoder and Colin Carlson led a workshop on Bayesian Additive Regression Trees (BART) and their application to species distribution modeling. The sessions combined conceptual explanations with hands-on coding, using the R packages embarcadero and dbarts. We worked through a complete workflow, starting from classical species distribution models and moving toward Bayesian tree ensembles with hierarchical extensions. The workshop did not require prior experience with BART or boosted trees, but a basic understanding of regression models in R was expected."
 thumbnail: "/assets/images/content/bart-modelling.png"

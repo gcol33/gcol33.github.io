@@ -19,9 +19,6 @@ breadcrumb:
   - name: "Presentations"
     url: "/presentations/"
   - name: "VDSEE Symposium 2024"
-downloads:
-  - name: "Program Booklet (PDF)"
-    url: "/assets/downloads/presentation_vdsee2024_booklet.pdf"
 ---
 
 ## Symposium Highlights
@@ -44,6 +41,5 @@ The program featured two keynote lectures, oral presentations, and poster sessio
 <div class="col">
 <p>During this period, I started analyzing the AgriWeedClim database while working with it's curator Michael Glaser to resolve inconsistencies in sampling methods and regional variations. Using generalized linear mixed-effect models, I quantified trends in alien species accumulation, focusing on the percentage of plots containing neophytes and the proportional and relative abundance of both neophytes and archaeophytes over time. Later, I received targeted feedback on my manuscript from colleagues who provided taxonomic insights and ecological context, and my supervisors, Franz Essl and Stefan Dullinger, offered guidance on refining the study design and finalizing the manuscript.</p>
 
-<p>For more details about the symposium, visit the <a href="/assets/downloads/presentation_vdsee2024_booklet.pdf" target="_blank">official program</a>.</p>
 </div>
 </div>

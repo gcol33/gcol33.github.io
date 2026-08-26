@@ -4,7 +4,7 @@ title: "Modelling Spatial and Temporal Dynamics of (Ecological) Animal and Plant
 short_title: "Spatial and Temporal Dynamics"
 date: 2023-10-05
 category: "Education"
-type: course
+type: notes
 category_url: "/education/"
 permalink: /course-spattempdyn/
 thumbnail: "/assets/images/content/course_std.jpg"

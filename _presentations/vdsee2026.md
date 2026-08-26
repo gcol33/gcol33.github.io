@@ -22,8 +22,6 @@ breadcrumb:
 downloads:
   - name: "Poster (PDF)"
     url: "/assets/downloads/poster_vdsee2026.pdf"
-  - name: "Booklet (PDF)"
-    url: "/assets/downloads/vdsee2026_booklet.pdf"
 ---
 
 The VDSEE Symposium 2026, organised by the Vienna Doctoral School of Ecology and Evolution, took place on 27 February 2026 at the University of Vienna's Biology Building. Now in its third year, the symposium brought together PhD candidates from across ecology and evolution for a day of oral and poster presentations, two keynote lectures, and the Art & Science exhibition held the evening before.
@@ -99,4 +97,3 @@ The evening before the symposium, the [Art & Science exhibition](/presentations/
 </div>
 </div>
 
-For more details about the symposium, see the <a href="/assets/downloads/vdsee2026_booklet.pdf" target="_blank">official programme booklet</a>.

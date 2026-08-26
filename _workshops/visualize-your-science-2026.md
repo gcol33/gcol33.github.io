@@ -4,7 +4,7 @@ title: "Visualize your Science — Spring 2026"
 short_title: "Visualize your Science"
 date: 2026-05-06
 category: "Education"
-type: workshop
+type: attended
 category_url: "/education/"
 thumbnail: "/assets/images/content/vys_2026_poster.jpg"
 thumbnail_webp: "/assets/images/content/vys_2026_poster.webp"

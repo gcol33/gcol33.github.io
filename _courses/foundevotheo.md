@@ -3,7 +3,7 @@ layout: course-overview
 title: "Foundation of Evolutionary Theory"
 date: 2024-04-09
 category: "Education"
-type: course
+type: notes
 category_url: "/education/"
 permalink: /course-foundevotheo/
 thumbnail: "/assets/images/content/course_fet.jpg"

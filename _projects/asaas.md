@@ -20,24 +20,44 @@ breadcrumb:
   - name: "Projects"
 ---
 
-## Research Focus
+## The puzzle
 
-The central question is whether this discrepancy reflects time lags in the spread of alien species or whether certain ecological and environmental constraints limit their ability to establish in local habitats. I study this process across multiple taxonomic groups, including plants, vertebrates, and selected invertebrates, and use large-scale datasets such as GloNAF, Alien Species First Record Database, sPlot, EVA, PREDICTS, BioTime, and AgriWeedClim.
+Regional lists of alien species keep growing. First-record curves for most countries show no sign of flattening. Walk into an average vegetation plot in that same country and you find one or two alien species, often none. Regional accumulation and local presence are moving on very different scales, and the gap between them is the question my PhD is built around.
 
-## Approach
+## What would explain it
 
-To study alien species accumulation across scales, I combine large global databases with statistical modelling. Datasets such as GloNAF, Alien Species First Record Database, sPlot, EVA, PREDICTS, BioTime, and AgriWeedClim provide complementary perspectives, from regional species pools to local community composition. Together they allow me to trace how alien species enter new regions, how long they take to appear in local plots, and whether their spread differs across taxonomic groups.
+Two explanations are on the table, and they lead to very different futures.
 
-I analyze these patterns by comparing regional and local trends over time, modelling the influence of residence time, habitat characteristics, and human disturbance on the likelihood of establishment. Particular attention is given to whether alien species saturate in local communities or whether continued propagule pressure, land-use change, and climate change open new opportunities for spread. Computer models are used to project future dynamics under different scenarios, linking historical accumulation with potential trajectories in the coming decades.
+The first is time. Spread takes decades. A species recorded once at a port needs generations to reach a meadow 300 km inland, so a large regional pool may simply be a pool of species that have not arrived yet. Under this reading, local alien richness will catch up, and the current gap is invasion debt waiting to be paid.
 
-This combined approach lets me move beyond single case studies toward a broader understanding of how alien species integrate into ecosystems. By treating regional and local scales together, I can test whether the apparent mismatch between them is a temporary lag or a more fundamental feature of invasion dynamics.
+The second is constraint. Most alien species may never leave the ruderal and man-made habitats they arrived in, because the climate, soil, or competition in semi-natural communities keeps them out. Under this reading, regional lists overstate what ecosystems will experience, and the gap is permanent.
 
-## Outlook
+The two are not exclusive, and which one dominates probably differs between taxa and habitats. Separating them requires following the same species through both scales over long periods.
 
-The results of ASAAS will contribute to a more nuanced understanding of how alien species spread and establish across scales. By clarifying whether the low local representation of alien species is simply a matter of time or the result of ecological constraints, the project aims to inform both theory and applied biodiversity research. For example, if time lags dominate, we may expect a future surge in alien species at the community level as regional pools continue to grow. If local constraints prove stronger, then regional accumulation might overestimate the impact on ecosystems.
+## The data
 
-Another perspective opened by this project is how different drivers interact. Propagule pressure, land-use change, and climate change may accelerate local establishment and overcome barriers that have so far kept alien species rare in communities. Linking these drivers to species traits and residence time could reveal why some groups expand rapidly while others remain confined to the regional pool.
+Regional accumulation comes from GloNAF (global naturalized alien flora) and the Alien Species First Record Database, which together give the year each alien species was first recorded in each region. Local presence comes from vegetation plot archives: the European Vegetation Archive (EVA), sPlot, and BioTime, which record which species were found in which plot in which year. PREDICTS adds local community data across further taxa. AgriWeedClim, a database our group compiled, contributes more than 32,000 arable field records from central Europe spanning the last century, one of the few sources deep enough in time to follow local dynamics directly.
 
-Beyond academic contributions, ASAAS has practical implications for how we monitor and anticipate biological invasions. Improved projections of spread can guide early detection, help prioritize management efforts, and refine expectations about which species and habitats are most vulnerable. The project also emphasizes the importance of integrating global datasets, showing how collaboration and data sharing can uncover large-scale patterns that individual studies cannot resolve.
+The project covers plants first, with vertebrates and selected invertebrates as comparison groups.
 
-In a broader sense, ASAAS is an opportunity to bridge scales in invasion ecology. It connects the big picture of global alien species accumulation with the fine-grained processes shaping local communities. Although rooted in pressing ecological questions, this project also reflects my own path as a physicist moving into quantitative ecology. It is both a scientific investigation of alien species dynamics and a chance to develop modelling approaches that help clarify one of the most important drivers of biodiversity change.
+## How I test it
+
+Each species carries a residence time, the number of years since its first regional record. If time lags dominate, residence time should predict local presence strongly, and the relationship should look the same across habitat types. If constraints dominate, the relationship should saturate, and it should differ sharply between man-made and semi-natural habitats.
+
+I fit these relationships with hierarchical count models (hurdle and negative binomial) across residence-time classes and EUNIS habitat types, and track how each species' habitat associations change as it ages in a region. Habitat transition analysis then reveals which habitats serve as entry points and which are reached later. Projections under land-use and climate scenarios follow from the fitted models.
+
+## What we have found so far
+
+In central European arable fields, ninety years of plot data show neophytes (species introduced after 1500) increasing steadily at both the regional and the local scale, while archaeophytes (earlier arrivals) followed a flat trajectory. The lag between the two scales is visible in the data and has not closed.
+
+Across 835,891 EVA plots from 56 countries, residence time shapes habitat associations in a consistent way. Overrepresentation of alien species in man-made and ruderal habitats rises from 20% for species resident under 20 years to 44% for species resident over 200 years. Species resident over 200 years are 3.4 times more likely to occupy several habitat types than recent arrivals, with the expected habitat count rising from 1.2 to 2.0. Anthropogenic habitats act as entry points, and colonisation of semi-natural habitats follows predictable pathways from there. This suggests substantial invasion debt: many established species have not yet reached the habitats available to them. This work received the Best Poster award at the [VDSEE Symposium 2026](/presentations/vdsee2026/).
+
+A side product of the arable work is a species distribution model of emerging agricultural weeds under climate change, produced through a master's thesis I co-supervised.
+
+## Papers
+
+- [Ninety years of alien plant species accumulation across regional and local scales in central European fields](/publications/arable-alien-plant-trends/)
+- [Projected range shifts of emerging agricultural weeds under climate change in central Europe](/publications/agricultural-weed-range-shifts/)
+- [The neglected importance of managing biological invasions for sustainable development](/publications/invasions-sustainable-development/)
+
+ASAAS is supervised by Franz Essl and Stefan Dullinger at the Division of BioInvasions, Global Change & Macroecology, University of Vienna, and funded by the Luxembourg National Research Fund (FNR). The [AgriWeedClim](/projects/agriweed/) project page describes the arable database in more detail.

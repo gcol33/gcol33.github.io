@@ -19,9 +19,6 @@ breadcrumb:
   - name: "Presentations"
     url: "/presentations/"
   - name: "VDSEE 2025"
-downloads:
-  - name: "Booklet (PDF)"
-    url: "/assets/downloads/presentation_vdsee2025_booklet.pdf"
 ---
 
 
@@ -85,6 +82,5 @@ I presented my work as a poster titled "Ninety Years of Alien Species Accumulati
 
 <p>During the poster session, I had the chance to discuss these results with colleagues and receive valuable feedback on refining the modeling framework. The symposium provided an excellent opportunity to engage with researchers working on similar topics and explore how historical datasets like AgriWeedClim can be used to understand long-term ecological changes.</p>
 
-<p>For more details about the symposium, visit the <a href="/assets/downloads/presentation_vdsee2025_booklet.pdf" target="_blank">official program</a>.</p>
 </div>
 </div>
