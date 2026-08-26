@@ -1,0 +1,31 @@
+{% comment %}
+Type filter chips. Usage: {% include type-filter.html types="talk:Talks,poster:Posters" %}
+Filters every element carrying data-type on the page; hides list year headings with no visible rows.
+{% endcomment %}
+<div class="pres-filter mt-3" role="group" aria-label="Filter by type">
+  <button type="button" class="pres-filter-btn active" data-filter="all">All</button>
+  {% assign pairs = include.types | split: "," %}
+  {% for pair in pairs %}{% assign kv = pair | split: ":" %}
+  <button type="button" class="pres-filter-btn" data-filter="{{ kv[0] }}">{{ kv[1] }}</button>
+  {% endfor %}
+</div>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.pres-filter-btn');
+  var items = document.querySelectorAll('[data-type]');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var f = btn.getAttribute('data-filter');
+      buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+      items.forEach(function (el) {
+        el.hidden = f !== 'all' && el.getAttribute('data-type') !== f;
+      });
+      document.querySelectorAll('.pres-list-year').forEach(function (yr) {
+        var n = yr.nextElementSibling, any = false;
+        while (n && n.tagName === 'DD') { if (!n.hidden) any = true; n = n.nextElementSibling; }
+        yr.hidden = !any;
+      });
+    });
+  });
+})();
+</script>

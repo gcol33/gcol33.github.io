@@ -3,6 +3,7 @@ layout: workshop
 title: "Thinking in R"
 date: 2026-03-08
 category: "Side Project"
+type: book
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/thinking-in-r.jpg"
 thumbnail_webp: "/assets/images/content/thinking-in-r.webp"

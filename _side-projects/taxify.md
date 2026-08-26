@@ -3,6 +3,7 @@ layout: workshop
 title: "taxify"
 date: 2026-06-26
 category: "Side Project"
+type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/taxify.jpg"
 thumbnail_webp: "/assets/images/content/taxify.webp"

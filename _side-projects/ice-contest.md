@@ -4,6 +4,7 @@ title: "Photo Contest — Life Sciences Vienna"
 short_title: "Life Sciences Photo Contest"
 date: 2026-04-09
 category: "Side Project"
+type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/ice-contest.jpg"
 thumbnail_webp: "/assets/images/content/ice-contest.webp"

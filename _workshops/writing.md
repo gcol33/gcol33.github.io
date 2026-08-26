@@ -3,6 +3,7 @@ layout: workshop
 title: "Academic Writing Workshop"
 date: 2025-01-28
 category: "Education"
+type: workshop
 category_url: "/education/"
 description: "This two-day academic writing workshop was organized by the Vienna Doctoral School of Ecology and Evolution (VDSEE) and the Vienna Doctoral School of Cognition, Behaviour and Neuroscience (VDS CoBeNe). It was held at the University of Vienna on January 28-29, 2025, and led by Mag. Birgit Peterson. The workshop focused on the process of writing and revising scientific texts, with particular attention to journal articles in the life sciences. Rather than presenting writing as a one-time act of composition, it framed the process as iterative, structured, and strategic. Sessions combined short lectures, group discussions, and hands-on exercises based on published papers and participants' own projects."
 thumbnail: "/assets/images/content/workshop_aw.jpg"

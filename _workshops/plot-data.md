@@ -3,6 +3,7 @@ layout: workshop
 title: "Vegetation Plot Workshop"
 date: 2025-03-13
 category: "Education"
+type: workshop
 category_url: "/education/"
 description: "The Vegetation Plot Data Workshop took place at the Department at Rennweg, bringing together in house researchers working with vegetation plot data to discuss shared challenges and develop a more efficient and reproducible workflow. Organized by Michael Glaser and Bernd Lenzner, the one-day workshop provided an informal and interactive space to exchange experiences, identify common hurdles, and explore solutions for handling, standardizing, and analyzing plot data."
 thumbnail: "/assets/images/content/plots_ws.jpg"

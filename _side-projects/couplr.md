@@ -3,6 +3,7 @@ layout: workshop
 title: "couplr"
 date: 2026-01-21
 category: "Side Project"
+type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/couplr.jpg"
 thumbnail_webp: "/assets/images/content/couplr.webp"

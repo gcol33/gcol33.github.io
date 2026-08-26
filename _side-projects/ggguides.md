@@ -3,6 +3,7 @@ layout: workshop
 title: "ggguides"
 date: 2025-12-17
 category: "Side Project"
+type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/ggguides.jpg"
 thumbnail_webp: "/assets/images/content/ggguides.webp"

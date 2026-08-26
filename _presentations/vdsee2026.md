@@ -9,7 +9,7 @@ thumbnail: "/assets/images/content/vdsee_2026_thumbnail.jpg"
 thumbnail_webp: "/assets/images/content/vdsee_2026_thumbnail.webp"
 hero_combined: true
 description: "At the VDSEE Symposium 2026, I presented a poster on habitat niche breadth expansion in European alien plants and received the Best Poster award."
-hero_title: "Best Poster Award at the Third VDSEE Symposium"
+hero_title: "Tracking Habitat Associations of European Neophytes Across Residence Time"
 tags: [vdsee, invasive-species, asaas, poster-award]
 breadcrumb:
   - name: "Home"

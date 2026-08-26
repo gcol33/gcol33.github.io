@@ -3,6 +3,7 @@ layout: workshop
 title: "AnimalCLEF 2026"
 date: 2026-05-06
 category: "Side Project"
+type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/animal-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/animal-clef-2026.webp"

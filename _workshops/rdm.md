@@ -3,6 +3,7 @@ layout: workshop
 title: "Research Data Management"
 date: 2024-10-23
 category: "Education"
+type: workshop
 category_url: "/education/"
 description: "This workshop on research data management in the life sciences was developed at the University of Vienna and delivered in an interactive format using LiaScript. It introduced the principles and practices of handling research data across the entire research cycle, with the goal of making data FAIR: Findable, Accessible, Interoperable, and Reusable. Rather than treating data management as an afterthought, the course framed it as a foundation of good scientific practice. Each module combined theory, case studies, and practical exercises to highlight both the opportunities and the responsibilities that come with managing research data in the life sciences."
 thumbnail: "/assets/images/content/workshop_rdm.jpg"

@@ -3,6 +3,7 @@ layout: workshop
 title: "rainbowR Conference 2026"
 date: 2026-02-26
 category: "Education"
+type: workshop
 category_url: "/education/"
 thumbnail: "/assets/images/content/conference_rainbowr2026.jpg"
 thumbnail_webp: "/assets/images/content/conference_rainbowr2026.webp"

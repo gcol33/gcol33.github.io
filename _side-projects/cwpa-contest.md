@@ -4,6 +4,7 @@ title: "Comedy Wildlife Photography Awards"
 short_title: "Comedy Wildlife Awards"
 date: 2026-04-10
 category: "Side Project"
+type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/cwpa-contest.jpg"
 thumbnail_webp: "/assets/images/content/cwpa-contest.webp"

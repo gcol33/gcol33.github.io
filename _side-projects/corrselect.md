@@ -3,6 +3,7 @@ layout: workshop
 title: "corrselect"
 date: 2025-08-05
 category: "Side Project"
+type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/corrselect.jpg"
 thumbnail_webp: "/assets/images/content/corrselect.webp"

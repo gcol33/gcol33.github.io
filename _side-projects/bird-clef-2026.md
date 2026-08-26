@@ -3,6 +3,7 @@ layout: workshop
 title: "BirdCLEF+ 2026"
 date: 2026-06-15
 category: "Side Project"
+type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/bird-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/bird-clef-2026.webp"

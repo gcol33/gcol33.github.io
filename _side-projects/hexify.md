@@ -3,6 +3,7 @@ layout: workshop
 title: "hexify"
 date: 2026-02-04
 category: "Side Project"
+type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/hexify.jpg"
 thumbnail_webp: "/assets/images/content/hexify.webp"

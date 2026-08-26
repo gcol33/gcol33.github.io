@@ -3,6 +3,7 @@ layout: workshop
 title: "Neobiota 2024"
 date: 2024-09-03
 category: "Presentation"
+hero_title: "Ninety Years of Alien Plant Species Accumulation in Central European Fields"
 type: poster
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/neobiota_2024.jpg"

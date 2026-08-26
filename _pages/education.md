@@ -17,6 +17,7 @@ breadcrumb:
       <div class="col-12">
         {% include breadcrumb.html items=page.breadcrumb %}
         <h1 class="text-bold mb-2">{{ page.title }}</h1>
+        {% include type-filter.html types="workshop:Workshops,course:Courses" %}
       </div>
     </div>
   </div>
@@ -30,21 +31,7 @@ breadcrumb:
           {% assign course_overviews = site.courses | where: "layout", "course-overview" %}
           {% assign items = site.workshops | concat: course_overviews | sort: 'date' | reverse %}
           {% for item in items %}
-          <div class="writer-posts">
-            <div>
-              <a href="{{ item.url | relative_url }}">
-                <picture>
-                  <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ item.thumbnail_webp | relative_url }}">
-                  <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ item.thumbnail | relative_url }}" class="img-fluid mx-auto d-block writer-post-image img-rd-md lazyload" alt="{{ item.title }}" width="398" height="265" loading="lazy">
-                </picture>
-              </a>
-              <div class="mt-3 writer-post-group mb-3">
-                <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
-                <a href="{{ item.category_url | default: '/education/' | relative_url }}" class="a-btn post-label">{{ item.category }}</a>
-              </div>
-              <a href="{{ item.url | relative_url }}" class="a-btn a-block title-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
-            </div>
-          </div>
+          {% include archive-card.html item=item category_url="/education/" %}
           {% endfor %}
         </div>
       </div>
