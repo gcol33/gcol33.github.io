@@ -5,7 +5,7 @@ date: 2024-10-23
 category: "Education"
 type: workshop
 category_url: "/education/"
-description: "This workshop on research data management in the life sciences was developed at the University of Vienna and delivered in an interactive format using LiaScript. It introduced the principles and practices of handling research data across the entire research cycle, with the goal of making data FAIR: Findable, Accessible, Interoperable, and Reusable. Rather than treating data management as an afterthought, the course framed it as a foundation of good scientific practice. Each module combined theory, case studies, and practical exercises to highlight both the opportunities and the responsibilities that come with managing research data in the life sciences."
+description: "This workshop on research data management in the life sciences was developed at the University of Vienna and delivered in an interactive format using LiaScript. It introduced the principles and practices of handling research data across the entire research cycle, with the goal of making data FAIR: Findable, Accessible, Interoperable, and Reusable. The course framed data management as a foundation of good scientific practice that starts at the planning stage. Each module combined theory, case studies, and practical exercises to highlight both the opportunities and the responsibilities that come with managing research data in the life sciences."
 thumbnail: "/assets/images/content/workshop_rdm.jpg"
 thumbnail_webp: "/assets/images/content/workshop_rdm.webp"
 tags: [data-management, teaching]
@@ -33,7 +33,7 @@ The final layer was preservation and sharing. The course encouraged the use of n
 
 ## Practical Skills
 
-Alongside the conceptual framework, the workshop provided concrete habits for daily work. File naming and directory structure were presented as deceptively simple tools with large impact. A directory might separate raw, processed, and external datasets, scripts for analysis, and outputs such as figures and tables. File names that include dates, versions, and clear descriptors make it immediately obvious what a file contains. Instead of searching through folders or relying on memory, one can understand at a glance whether a file is raw input, a cleaned version, or an output ready for publication.
+Alongside the conceptual framework, the workshop provided concrete habits for daily work. File naming and directory structure were presented as deceptively simple tools with large impact. A directory might separate raw, processed, and external datasets, scripts for analysis, and outputs such as figures and tables. File names that include dates, versions, and clear descriptors make it immediately obvious what a file contains. At a glance one can tell whether a file is raw input, a cleaned version, or an output ready for publication.
 
 We also practiced writing data management plans. These documents translate abstract principles into step-by-step planning for specific projects. They specify file formats, naming conventions, metadata standards, storage methods, and sharing strategies. The exercise showed that planning clarifies responsibilities within a team, ensures funder compliance, and prevents ad hoc decisions later in the project.
 
