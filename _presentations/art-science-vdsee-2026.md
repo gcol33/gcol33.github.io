@@ -4,6 +4,7 @@ title: "VDSEE Art & Science Exhibition 2026"
 short_title: "Art & Science 2026"
 date: 2026-02-26
 category: "Presentation"
+type: exhibition
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/art_science_vdsee_2026_thumbnail.jpg"
 thumbnail_webp: "/assets/images/content/art_science_vdsee_2026_thumbnail.webp"

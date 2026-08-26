@@ -4,6 +4,7 @@ title: "MOTIVATE Meeting Vienna 2026"
 short_title: "MOTIVATE Vienna"
 date: 2026-02-19
 category: "Presentation"
+type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_motivate_2026_thumb.jpg"
 thumbnail_webp: "/assets/images/content/presentation_motivate_2026_thumb.webp"

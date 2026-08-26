@@ -3,6 +3,7 @@ layout: workshop
 title: "AgriWeedClim"
 date: 2024-10-16
 category: "Presentation"
+type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/agriweed_gilles.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_gilles.webp"

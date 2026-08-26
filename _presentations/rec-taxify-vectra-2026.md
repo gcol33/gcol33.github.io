@@ -4,6 +4,7 @@ title: "Research Exchange Club 2026"
 short_title: "Research Exchange Club"
 date: 2026-06-25
 category: "Presentation"
+type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_rec_2026.jpg"
 thumbnail_webp: "/assets/images/content/presentation_rec_2026.webp"

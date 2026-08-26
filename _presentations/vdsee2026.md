@@ -3,6 +3,7 @@ layout: workshop
 title: "VDSEE Symposium 2026"
 date: 2026-02-27
 category: "Presentation"
+type: poster
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/vdsee_2026_thumbnail.jpg"
 thumbnail_webp: "/assets/images/content/vdsee_2026_thumbnail.webp"

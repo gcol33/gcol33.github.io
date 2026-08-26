@@ -3,6 +3,7 @@ layout: workshop
 title: "Neobiota 2024"
 date: 2024-09-03
 category: "Presentation"
+type: poster
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/neobiota_2024.jpg"
 thumbnail_webp: "/assets/images/content/neobiota_2024.webp"

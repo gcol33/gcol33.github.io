@@ -4,6 +4,7 @@ title: "Division Talk 2026"
 short_title: "Division Talk"
 date: 2026-01-15
 category: "Presentation"
+type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_division_2026.jpg"
 thumbnail_webp: "/assets/images/content/presentation_division_2026.webp"

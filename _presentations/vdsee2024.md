@@ -3,6 +3,7 @@ layout: workshop
 title: "VDSEE Symposium 2024"
 date: 2024-02-16
 category: "Presentation"
+type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_header_2024.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_header_2024.webp"
