@@ -5,7 +5,7 @@ permalink: /presentations/
 description: "Conference talks and presentations by Gilles Colling on ecology, alien species, and spatial statistics."
 sources: [presentations]
 category_url: "/presentations/"
-type_filter: "talk:Talks,poster:Posters"
+type_filter: "talk:Talks,poster:Posters,exhibition:Exhibitions"
 breadcrumb:
   - name: "Home"
     url: "/"

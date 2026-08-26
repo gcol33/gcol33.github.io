@@ -3,7 +3,7 @@ Grid card for archive pages. Usage: {% include archive-card.html item=item categ
 Pass label_by="category" on mixed archives to label cards by collection instead of by type.
 {% endcomment %}
 {% assign item = include.item %}
-<div class="writer-posts" data-type="{{ item.type }}">
+<div class="writer-posts"{% if item.type %} data-type="{{ item.type }}"{% endif %}>
   <div>
     <a href="{{ item.url | relative_url }}">
       <picture>

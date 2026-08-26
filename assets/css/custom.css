@@ -673,6 +673,20 @@ button:focus:not(:focus-visible),
     color: var(--dm-accent) !important;
 }
 
+[data-bs-theme="dark"] .svg-menu-icon {
+    stroke: var(--dm-text-primary);
+}
+
+/* Below the navbar breakpoint the links move into a black slide-out drawer,
+   in both themes, so they need light text there */
+.nav-special.sidebar-nav .nav-links {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-special.sidebar-nav .nav-links:hover {
+    color: var(--color-white) !important;
+}
+
 [data-bs-theme="dark"] nav .dropdown-menu {
     background-color: var(--dm-bg-secondary);
     border-color: var(--dm-border) !important;
@@ -1746,6 +1760,12 @@ button:focus:not(:focus-visible),
     .social-icons-grid a.desktop-only {
         display: none;
     }
+}
+
+/* An explicit display on a component beats the browser default for [hidden],
+   so filtered-out grid cards and list rows need this to disappear */
+[hidden] {
+    display: none !important;
 }
 
 /* Presentations: type filter and list view */
