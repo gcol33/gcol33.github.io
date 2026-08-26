@@ -39,4 +39,4 @@ The practical session consisted of seven exercises structured as a mini research
 
 The full workshop materials, including theory slides and interactive exercises for both days, are available as a standalone bilingual web application.
 
-<a href="/liams_stay/" target="_blank" class="btn btn-lg btn-d button-01">View Workshop Materials</a>
+<a href="/workshops/liams-workshop/" target="_blank" rel="noopener" class="btn btn-lg btn-d button-01">View Workshop Materials</a>
