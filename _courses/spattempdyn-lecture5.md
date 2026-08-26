@@ -28,7 +28,7 @@ next_chapter:
 math: true
 ---
 
-Lecture 5 introduced class-structured population models, where individuals are categorized into different groups based on age, sex, developmental stage, or physiological condition. Unlike previous models that treated populations as homogeneous, class-structured models allow for more realistic representations of survival and reproduction patterns across different life stages. The lecture focused on age-structured models, particularly Leslie matrices, and included an application to whale populations.
+Lecture 5 introduced class-structured population models, where individuals are categorized into different groups based on age, sex, developmental stage, or physiological condition. Previous models treated populations as homogeneous. Class-structured models allow for more realistic representations of survival and reproduction patterns across different life stages. The lecture focused on age-structured models, particularly Leslie matrices, and included an application to whale populations.
 
 #### Class-Structured Models
 
@@ -94,7 +94,7 @@ where $S_{IC}, S_{MI}, S_{RI}$ represent transitions between classes, $S_{II}, S
 
 #### Density Dependence in Class-Structured Models
 
-Class-structured models can incorporate density dependence by modifying fertility or survival rates. To incorporate density dependence, we replace $N$ with $f(N)$ in the transition functions. Instead of assuming that all individuals experience fixed survival and fertility rates, we introduce functions that scale survival or reproduction rates based on population size. Two common approaches are:
+Class-structured models can incorporate density dependence by modifying fertility or survival rates. To incorporate density dependence, we replace $N$ with $f(N)$ in the transition functions. We introduce functions that scale survival or reproduction rates based on population size. Two common approaches are:
 
 1. Beverton-Holt (Compensatory Density Dependence), assumes population growth slows as density increases. It is defined as:
 

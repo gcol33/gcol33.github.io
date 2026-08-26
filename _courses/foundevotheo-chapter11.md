@@ -30,7 +30,7 @@ In Chapter 11 of the *Origin*, Darwin turns to one of the most compelling lines 
 
 Naturalists of Darwin's time were puzzled by the stark differences in faunas across the continents. Africa, South America, and Australia each possessed their own distinct groups of animals, unlike those in Europe and Asia, even when climates and habitats were similar. In a biblical framework, this was difficult to explain. German naturalist Johann Friedrich Blumenbach famously mocked the idea that sloths, which take an hour to crawl six feet, could have migrated all the way from Mount Ararat to South America after Noah's flood.
 
-Darwin offered a different lens. Instead of taking species distributions as given, he asked why and how these patterns arose. Why do similar climates on different continents support such different organisms? Why do island species resemble those on nearby mainlands, even when separated by hundreds of miles of ocean?
+Darwin offered a different lens. He asked why and how these distribution patterns arose. Why do similar climates on different continents support such different organisms? Why do island species resemble those on nearby mainlands, even when separated by hundreds of miles of ocean?
 
 Darwin's answer was rooted in evolution. He emphasized that barriers to migration, such as oceans, mountains, and deserts, shape the patterns we observe. Organisms evolve in isolation, and over time, even closely related species diverge. This explains why species within a continent are often more similar to each other than they are to organisms in other continents, regardless of climate. On his theory, the key is inheritance: shared ancestry explains biological similarity, and geographic separation explains difference.
 
@@ -42,7 +42,7 @@ He denied that evolutionary change results simply from isolation. There is no *l
 
 A major theme of the chapter is Darwin's rejection of the idea that similar species in distant regions were independently created. Instead, he argues that such distributions must result from dispersal. When the same species is found in widely separated places, this can often be explained by migration followed by survival in suitable habitats. Those who reject this explanation, he insists, are forced to invoke miracles.
 
-Terrestrial mammals, Darwin notes, rarely have inexplicable distributions. Unlike birds or plants, they cannot easily cross oceans. Thus, we find no mammals naturally shared between Europe and Australia. If species were independently created in different places, why would mammals be absent from some continents altogether?
+Terrestrial mammals, Darwin notes, rarely have inexplicable distributions. They cross oceans far less easily than birds or plants do. Thus, we find no mammals naturally shared between Europe and Australia. If species were independently created in different places, why would mammals be absent from some continents altogether?
 
 His conclusion is that each species originates in one area and spreads from there as far as its powers of movement and survival allow. Discontinuous distributions (where the same species appears in widely separated locations) can usually be explained by some form of dispersal, often aided by birds, ocean currents, or changing climate.
 

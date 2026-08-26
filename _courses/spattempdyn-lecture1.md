@@ -68,7 +68,7 @@ This type of growth is common in early-stage population expansion but does not c
 
 ### Exponential Growth
 
-Unlike linear growth, exponential growth describes a process where the rate of change is proportional to the current population size. The general form of exponential growth is:
+Exponential growth describes a process where the rate of change is proportional to the current population size. The general form of exponential growth is:
 
 $$\frac{dN}{dt} = rN$$
 
@@ -88,7 +88,7 @@ Of course, unlimited exponential growth is not realistic because resources event
 
 ### Quadratic Growth and Interaction Effects
 
-Moving beyond exponential growth, we learned how interactions between individuals or species can lead to quadratic growth patterns. Unlike linear or exponential models, which assume independent individuals, quadratic models introduce density-dependent interactions, where the rate of change depends on how individuals interact with each other. One example is competition for resources, where the probability of two individuals encountering each other increases with population size. If resources are limited, the growth rate slows down as population density increases. This type of relationship is often represented using a quadratic term, which modifies the classic exponential growth equation.
+Moving beyond exponential growth, we learned how interactions between individuals or species can lead to quadratic growth patterns. Linear and exponential models assume independent individuals. Quadratic models introduce density-dependent interactions, where the rate of change depends on how individuals interact with each other. One example is competition for resources, where the probability of two individuals encountering each other increases with population size. If resources are limited, the growth rate slows down as population density increases. This type of relationship is often represented using a quadratic term, which modifies the classic exponential growth equation.
 
 The Law of Mass Action, describes how the rate of a process depends on the density of interacting individuals. This principle is widely used in epidemiological models to represent how diseases spread. The number of new infections per unit time is often proportional to the number of susceptible ($S$) and infected ($I$) individuals in a population, leading to a quadratic term:
 
@@ -108,7 +108,7 @@ These quadratic interactions consider that in many ecological systems, growth is
 
 ### Logarithmic Growth
 
-Some biological processes do not exhibit simple linear or exponential growth but instead follow a logarithmic pattern, where the rate of increase slows over time. One example is Dyar's rule, which describes larval growth in insects. Unlike continuous growth, insect larvae grow in discrete stages, molting between each stage. The size of the insect increases at a nearly constant ratio between molts:
+Some biological processes do not exhibit simple linear or exponential growth but instead follow a logarithmic pattern, where the rate of increase slows over time. One example is Dyar's rule, which describes larval growth in insects. Insect larvae grow in discrete stages, molting between each stage. The size of the insect increases at a nearly constant ratio between molts:
 
 $$\text{size}(t) = b \cdot 1.4^t,$$
 

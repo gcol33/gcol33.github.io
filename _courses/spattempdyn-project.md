@@ -158,9 +158,9 @@ Mortality and survival functions are included in the model with two types of mor
 
 Simulating the harpy eagle reintroduction requires careful thought to handle the scale of movement, territory assignment, and population dynamics. A naïve approach, where every eagle evaluates its movement options, searches for a mate, and checks for available territories in real time, would quickly become computationally infeasible.
 
-One of the biggest inefficiencies in the simulations comes from recalculating the same values repeatedly. Rather than dynamically determining which locations an eagle can move to at every time step, the model precomputes movement options for every possible location in the landscape. This means that when an eagle needs to move, it simply looks up precomputed options rather than recalculating them from scratch. The same principle applies to territories, rather than scanning the entire landscape to find available nesting sites, the model keeps an up-to-date list of what is occupied and what is available. This dramatically reduced our computation time.
+One of the biggest inefficiencies in the simulations comes from recalculating the same values repeatedly. The model precomputes movement options for every possible location in the landscape and looks them up at each time step. This means that when an eagle needs to move, it simply looks up precomputed options rather than recalculating them from scratch. The same principle applies to territories, rather than scanning the entire landscape to find available nesting sites, the model keeps an up-to-date list of what is occupied and what is available. This dramatically reduced our computation time.
 
-Many of our operations, such as calculating movement possibilities or assigning territories, can be done simultaneously rather than sequentially. By distributing these tasks across multiple CPU cores, the model speeds up operations that would otherwise slow down the simulation. Instead of iterating over every eagle one by one, groups of individuals are processed in parallel per time step, reducing the bottleneck of handling large populations.
+Many of our operations, such as calculating movement possibilities or assigning territories, can be done simultaneously rather than sequentially. By distributing these tasks across multiple CPU cores, the model speeds up operations that would otherwise slow down the simulation. Groups of individuals are processed in parallel per time step, reducing the bottleneck of handling large populations.
 
 Finding mates in a simulation is a challenge. Instead of iterating over every possible pair (which would be computationally expensive), the model:
 
@@ -168,7 +168,7 @@ Finding mates in a simulation is a challenge. Instead of iterating over every po
 
 This avoids an exhaustive $\mathcal{O}(n^2)$ complexity for pairwise comparisons.
 
-Instead of dynamically expanding lists or recalculating movement at every step, the model preallocates space for individuals, their movement history, and population statistics. We aimed to keep the simulation realistic without adding unnecessary complexity. This led to the choice of fixing territories in advance rather than assigning them dynamically. Density-dependent mortality was left out to avoid slowdowns. Similarly, once a pair occupies a territory, they remain there until one of them dies.
+The model preallocates space for individuals, their movement history, and population statistics. We aimed to keep the simulation realistic without adding unnecessary complexity. This led to the choice of fixing territories in advance rather than assigning them dynamically. Density-dependent mortality was left out to avoid slowdowns. Similarly, once a pair occupies a territory, they remain there until one of them dies.
 
 <div class="row">
   <div class="col-md-4">

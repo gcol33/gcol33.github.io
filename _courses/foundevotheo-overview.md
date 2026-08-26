@@ -74,6 +74,6 @@ The lecture also traced Darwin's personal transformation, from a creationist dee
 
 ### The One Long Argument
 
-The lecture concluded with a discussion of Darwin's rhetorical strategy. He describes his book as "one long argument" for the theory of evolution by natural selection. Rather than presenting this theory all at once, Darwin builds his case gradually, beginning with artificial selection and variation under domestication, and leading the reader through a sequence of evidence that culminates in a natural explanation for life's diversity.
+The lecture concluded with a discussion of Darwin's rhetorical strategy. He describes his book as "one long argument" for the theory of evolution by natural selection. Darwin builds his case gradually, beginning with artificial selection and variation under domestication, and leading the reader through a sequence of evidence that culminates in a natural explanation for life's diversity.
 
 By contrasting evolutionary predictions with the shortcomings of creationist explanations, Darwin ensured that each step of the book contributed to this overarching argument.

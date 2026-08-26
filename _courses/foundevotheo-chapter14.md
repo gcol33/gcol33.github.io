@@ -22,7 +22,7 @@ next_chapter:
   url: "/course-foundevotheo/"
 ---
 
-Darwin closes the *Origin* with a reflective and strategic chapter. One that summarizes, defends, and contextualizes the argument he has spent the entire book developing. He is cautious but confident, acknowledging the boldness of his claims and the controversy they provoked, while reiterating the logic and evidence that led him to them. This is not just a summary, but a final act of persuasion. After twenty years of study, experimentation, and writing, Darwin was convinced he was right, and he wanted his readers to see it too.
+Darwin closes the *Origin* with a reflective and strategic chapter. One that summarizes, defends, and contextualizes the argument he has spent the entire book developing. He is cautious but confident, acknowledging the boldness of his claims and the controversy they provoked, while reiterating the logic and evidence that led him to them. It is a summary and a final act of persuasion. After twenty years of study, experimentation, and writing, Darwin was convinced he was right, and he wanted his readers to see it too.
 
 He opens with a clear statement: *This whole volume is one long argument*, now defined more narrowly as the theory of *descent with modification through natural selection*. This idea, controversial and revolutionary at the time, challenges the creationist view that each species was separately and divinely created. Darwin doesn't retreat from this confrontation, he meets it head-on.
 
@@ -40,7 +40,7 @@ He challenges the logic of special creation. Why, he asks, would a Creator desig
 
 Darwin's theory also explains imperfection. Natural selection does not produce perfection; it produces fitness relative to a particular environment. That's why species from one region may be outcompeted by introduced species from another. It's why instincts, like anatomical structures, are not always optimal. This deeply challenges the idea that living beings are divinely perfected. Creationism, Darwin argues, cannot account for the rough edges of life. Evolution can.
 
-He reviews many facts that support natural selection: the variability of species-defining traits; the imperfection of instincts; the pattern of related forms on the same continent under widely different conditions; the long endurance of allied forms like marsupials in Australia and edentates in America. All these patterns are easily explained by descent with modification. None are well explained by special creation.
+He reviews many facts that support natural selection: the variability of species-defining traits; the imperfection of instincts; the pattern of related forms on the same continent under widely different conditions; the long endurance of allied forms like marsupials in Australia and edentates in America. All these patterns are easily explained by descent with modification. Special creation explains each of them poorly.
 
 At this point, Darwin broadens his scope. He reflects on why his ideas faced so much resistance. He believes it's partly because most people cannot grasp the scale of geological time, or the cumulative power of tiny changes across countless generations. A hundred million years is too vast for the human mind to hold. But just as astronomers no longer claim that God guides each planet's motion individually, Darwin argues, we should not insist that each species was individually created. It is simpler, more elegant, and more scientific to accept that species evolve under fixed natural laws.
 
