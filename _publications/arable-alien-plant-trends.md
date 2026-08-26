@@ -20,7 +20,7 @@ breadcrumb:
   - name: "Ninety years of alien plant accumulation in central European fields"
 ---
 
-Publication in Agriculture, Ecosystems & Environment.
+Publication in Agriculture, Ecosystems & Environment. Presented as a poster at [NEOBIOTA 2024](/neobiota2024/) in Lisbon and at the [VDSEE Symposium 2025](/presentations/vdsee2025/) in Vienna ([poster PDF](/assets/downloads/poster_neobiota2024.pdf)).
 
 ## Abstract
 

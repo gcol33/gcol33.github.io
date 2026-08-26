@@ -9,7 +9,10 @@ thumbnail_webp: "/assets/images/content/neobiota_2024.webp"
 permalink: /neobiota2024/
 description: "The 13th International Conference on Biological Invasions (NEOBIOTA 2024) was held from September 4 to 6, 2024, at the Faculty of Sciences of the University of Lisbon, Portugal. Organized by MARE – Marine and Environmental Research Centre, in collaboration with the University of Évora, the conference convened over 460 experts from approximately 50 countries to discuss the latest research and strategies concerning invasive alien species."
 hero_combined: true
-tags: [invasive-species, conference]
+tags: [invasive-species, conference, agriweedclim]
+downloads:
+  - name: "Poster (PDF)"
+    url: "/assets/downloads/poster_neobiota2024.pdf"
 breadcrumb:
   - name: "Home"
     url: "/"
@@ -154,6 +157,18 @@ Ekin Kaplan presented a global literature review on the trajectories of local ve
 <p>Our study focused on tracking the accumulation of old (archaeophytes) and new (neophytes) alien plant species in arable fields across ten Central European countries from 1930 to 2019. Using an extensive dataset of 21,747 vegetation plots from the AgriWeedClim database, we applied generalized linear mixed-effect models to analyze species trends at different spatial scales. At the regional scale, we examined the percentage of plots containing neophytes to assess broad patterns of invasion, while at the local scale, we analyzed the proportion and relative abundance of alien species per plot, providing insights into their increasing dominance.</p>
 <p>The results revealed a clear divergence between neophytes and archaeophytes over time. The percentage of plots containing neophytes increased dramatically, from 34.2% in 1930 to 70.1% in 2019, while their proportion in plots nearly doubled from 5.5% to 10.2%, and their relative abundance rose from 4.1% to 9.9%. This indicates that neophytes are not only spreading across the landscape but also gaining a stronger foothold within individual fields. In contrast, archaeophytes showed a much more stable pattern, with their proportion rising only slightly from 23.2% to 25.3%, and their relative abundance declining from 21.2% to 19.5% over the same period.</p>
 <p>A sensitivity analysis revealed that this rise in neophyte dominance was primarily driven by a few widespread species, such as Veronica persica and Erigeron annuus, which were frequently recorded throughout the study period. These findings suggest that neophytes are increasingly shaping weed communities in agricultural landscapes, with the potential to drive long-term changes in plant community composition. As neophytes continue to expand across both regional and local scales, their growing prevalence could homogenize weed communities.</p>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-12 col-lg-8 mx-auto">
+<a href="/assets/downloads/poster_neobiota2024.pdf" target="_blank">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/poster_neobiota2024.webp">
+<img src="/assets/images/content/poster_neobiota2024.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Poster: Ninety years of alien plant species accumulation across regional and local scales in central European fields" width="1200" height="1697">
+</picture>
+</a>
+<p class="text-center mt-2"><i>The poster (Colling, Glaser, Dullinger & Essl). Click to open the PDF.</i></p>
 </div>
 </div>
 

@@ -19,6 +19,8 @@ breadcrumb:
     url: "/presentations/"
   - name: "VDSEE 2026"
 downloads:
+  - name: "Poster (PDF)"
+    url: "/assets/downloads/poster_vdsee2026.pdf"
   - name: "Booklet (PDF)"
     url: "/assets/downloads/vdsee2026_booklet.pdf"
 ---
@@ -81,6 +83,18 @@ The evening before the symposium, the [Art & Science exhibition](/presentations/
 <p>Using a hurdle negative binomial model, I examined how residence time influences both the probability and magnitude of neophyte overrepresentation across 18 EUNIS habitat types. Man-made and ruderal habitats showed the highest overrepresentation, increasing from 20% (0–20 years residence) to 44% (>200 years). Species established for over 200 years had a 3.4-fold higher probability of occupying multiple habitats compared to recent arrivals, with expected habitat counts rising from 1.2 to 2.0.</p>
 
 <p>Habitat transition analysis revealed predictable colonisation pathways, with anthropogenic habitats as primary entry points. These findings quantify substantial invasion debt: many established neophytes have not yet reached equilibrium with available habitats.</p>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-12 col-lg-8 mx-auto">
+<a href="/assets/downloads/poster_vdsee2026.pdf" target="_blank">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/poster_vdsee2026.webp">
+<img src="/assets/images/content/poster_vdsee2026.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Poster: Tracking habitat associations of European neophytes across residence time" width="1200" height="1697">
+</picture>
+</a>
+<p class="text-center mt-2"><i>The poster (Colling, Lenzner, Glaser, Seebens, Dullinger & Essl), updated in August 2026 with the current analysis from the manuscript. Click to open the PDF.</i></p>
 </div>
 </div>
 
