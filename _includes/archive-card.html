@@ -1,5 +1,6 @@
 {% comment %}
 Grid card for archive pages. Usage: {% include archive-card.html item=item category_url="/presentations/" %}
+Pass label_by="category" on mixed archives to label cards by collection instead of by type.
 {% endcomment %}
 {% assign item = include.item %}
 <div class="writer-posts" data-type="{{ item.type }}">
@@ -12,7 +13,7 @@ Grid card for archive pages. Usage: {% include archive-card.html item=item categ
     </a>
     <div class="mt-3 writer-post-group mb-3">
       <p class="mb-0 p-sm">{{ item.date | date: "%b %d, %Y" }}</p>
-      <a href="{{ item.category_url | default: include.category_url | relative_url }}" class="a-btn post-label">{{ item.type | default: item.category | capitalize }}</a>
+      <a href="{{ item.category_url | default: include.category_url | relative_url }}" class="a-btn post-label">{% if include.label_by == "category" %}{{ item.category }}{% else %}{{ item.type | default: item.category | capitalize }}{% endif %}</a>
     </div>
     <a href="{{ item.url | relative_url }}" class="a-btn a-block title-post mt-0 mb-2">{{ item.short_title | default: item.title }}</a>
   </div>
