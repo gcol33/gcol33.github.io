@@ -53,6 +53,22 @@
     });
   })();
 
+  // The slide-out drawer is pinned open at a fixed 300px, so a window growing
+  // past the navbar breakpoint lays its links out in a row inside that strip
+  // and clips them. Hand the close back to the nav's own handler.
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    if (!toggle) return;
+
+    window.addEventListener('resize', function() {
+      var navbarExpanded = toggle.offsetParent === null;
+      var closeBtn = document.querySelector('.close-special-menu');
+      if (navbarExpanded && closeBtn) {
+        closeBtn.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+      }
+    });
+  })();
+
   // Scroll-to-top button: hide when scrolling up
   (function() {
     var scrollBtn = document.querySelector('.scrollToTop');
