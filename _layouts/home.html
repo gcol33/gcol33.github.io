@@ -17,7 +17,7 @@ layout: default
         <h4 class="mb-4 text-center">{{ page.hero_subtitle | default: 'PhD Student at University Vienna' }} <span class="tc-text-muted" style="font-size: 0.8em;">(he/him)</span></h4>
         <p class="mb-4 text-center mx-auto d-block p-style">{{ page.hero_description | default: site.description }}</p>
         <div class="text-center">
-          <a href="#featured-projects" class="btn btn-lg float-md-none btn-d button-01">Learn more</a>
+          <a href="#research-projects" class="btn btn-lg float-md-none btn-d button-01">Learn more</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-5">
@@ -30,13 +30,44 @@ layout: default
   </div>
 </div>
 
+<!-- Research Projects -->
+<div class="section section-light" id="research-projects">
+  <div class="container pad-md pad-sm-lg">
+    <div class="row mb-4">
+      <div class="col">
+        <div class="pencil-heading">
+          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-flask me-lg-1"></span>&nbsp;Research Projects<br></h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% assign research_projects = site.projects | sort: 'date' | reverse %}
+      {% for project in research_projects %}
+      <div class="col-lg-6 mb-4">
+        <a href="{{ project.url | relative_url }}" class="featured-project-card d-block h-100">
+          <picture>
+            <source type="image/webp" srcset="{{ project.thumbnail_webp | relative_url }}">
+            <img src="{{ project.thumbnail | relative_url }}" class="img-fluid img-rd-md mb-3" alt="{{ project.title }}" width="398" height="265" loading="lazy">
+          </picture>
+          <h5 class="text-bold mb-1">{{ project.short_title | default: project.title }}{% if project.subtitle %} <span class="p-sm tc-text-muted">({{ project.subtitle }})</span>{% endif %}</h5>
+          <p class="p-sm tc-text-muted mb-0">{{ project.description | truncate: 160 }}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-2">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-lg btn-d button-02">All Research Projects</a>
+    </div>
+  </div>
+</div>
+
 <!-- Featured Projects -->
 <div class="section section-light" id="featured-projects">
   <div class="container pad-md pad-sm-lg">
     <div class="row mb-4">
       <div class="col">
         <div class="pencil-heading">
-          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-cube me-lg-1"></span>&nbsp;Featured Projects<br></h3>
+          <h3 class="mb-0 text-bold tc-text-primary text-uppercase"><span class="me-1 fa fa-cube me-lg-1"></span>&nbsp;Side Projects<br></h3>
         </div>
       </div>
     </div>
@@ -56,7 +87,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="text-center mt-2">
-      <a href="{{ '/side-projects/' | relative_url }}" class="btn btn-lg btn-d button-02">All Projects</a>
+      <a href="{{ '/side-projects/' | relative_url }}" class="btn btn-lg btn-d button-02">All Side Projects</a>
     </div>
   </div>
 </div>

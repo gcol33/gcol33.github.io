@@ -701,6 +701,30 @@ button:focus:not(:focus-visible),
     display: block !important;
 }
 
+/* Open the top-level menus on hover once the navbar is expanded */
+@media (min-width: 1200px) {
+    .hover-open-submenu .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* The drawer draws its own transparent submenu; only the link colour needs to
+   beat the black-on-white dropdown rule in style.css */
+.nav-special .nav .dropdown-menu .nav-link,
+[data-bs-theme="dark"] .nav-special .nav .dropdown-menu .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-special .nav .dropdown-menu .nav-link:hover {
+    background-color: transparent;
+    color: var(--color-white) !important;
+}
+
+.nav-special .dropdown-divider {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
 /* Sections */
 [data-bs-theme="dark"] .section-light {
     background-color: var(--dm-bg-primary);
