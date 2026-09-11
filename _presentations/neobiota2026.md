@@ -138,23 +138,11 @@ Posters were presented on numbered digital screens, with the audience following 
 <div class="col">
 <p class="text-justify">Ali modelled the current and future potential distributions of 9,701 naturalised alien plant species from the Global Naturalized Alien Flora (GloNAF) database, using species distribution models to project their potential spread by the end of the 21st century.</p>
 <p class="text-justify">Lisa compared the two most widely used types of biodiversity data, presence records and expert-drawn range maps, and asked where they disagree in global mammal distribution data and what drives these mismatches, including whether a population is native or alien.</p>
-</div>
-</div>
-
-<div class="row">
-<div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7712_lisa.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7712_lisa.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Lisa Tedeschi presenting her poster on screen 2" width="628" height="471">
 </picture>
 <p class="text-justify"><i>Lisa presenting "Mind the gap: mismatches between presence records and expert range maps in global mammal distribution data"</i></p>
-</div>
-<div class="col-12 col-lg-6">
-<picture>
-<source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7713_fabio.webp">
-<img src="/assets/images/content/neobiota-2026/IMG_7713_fabio.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Fabio Mologni presenting a poster on plant height and seed mass on screen 5" width="628" height="471">
-</picture>
-<p class="text-justify"><i>Fabio presenting "How do dispersal–persistence trade-offs manifest in the covariation of plant height and seed mass?"</i></p>
 </div>
 </div>
 
