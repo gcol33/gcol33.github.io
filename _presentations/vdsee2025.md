@@ -3,7 +3,7 @@ layout: workshop
 title: "VDSEE Symposium 2025"
 date: 2025-02-21
 category: "Presentation"
-type: talk
+type: poster
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_vdsee_2025.jpg"
 thumbnail_webp: "/assets/images/content/presentation_vdsee_2025.webp"
