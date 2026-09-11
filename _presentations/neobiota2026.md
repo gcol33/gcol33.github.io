@@ -56,7 +56,7 @@ On Friday morning, I presented this work as a flash talk in the Herman Teirlinck
 
 Invasion risk assessments describe where alien species occur today, but not where they will occur. The accumulation of alien species in regional floras is well documented, yet whether individual species progressively colonise new habitat types over time had not been quantified. A species confined to disturbed roadsides today may spread into grasslands, wetlands and forests over the coming decades, while current risk frameworks treat habitat associations as static. Common ragweed (*Ambrosia artemisiifolia*) alone affected 13.5 million people with allergies in Europe before biological control, at €7.4 billion in medical and lost-work costs per year (Schaffner et al. 2020).
 
-Together with Michael Glaser, Bernd Lenzner, Stefan Dullinger, Hanno Seebens and Franz Essl, I tracked 1,357 alien plant species across 18 habitat types in 1,023,883 vegetation plots from 55 European countries, recorded in the European Vegetation Archive from 1930 to today. For each species, we compared its occurrence in each habitat against how common that habitat was locally, within equal-area hexagonal grid cells, which identifies the habitats in which a species is overrepresented while accounting for uneven sampling.
+Together with Michael Glaser, Stefan Dullinger, Hanno Seebens, Bernd and Franz, I tracked 1,357 alien plant species across 18 habitat types in 1,023,883 vegetation plots from 55 European countries, recorded in the European Vegetation Archive from 1930 to today. For each species, we compared its occurrence in each habitat against how common that habitat was locally, within equal-area hexagonal grid cells, which identifies the habitats in which a species is overrepresented while accounting for uneven sampling.
 
 The habitat niche keeps broadening with residence time. The share of species overrepresented in more than one habitat rose from 33% for species resident for up to 20 years to 74% for those resident for more than 200 years, and the number of habitats per species rose from 1.5 to 2.5, about one habitat more. The rise shows no plateau and continues past 200 years. Ruderal habitats are the gateway at every step, linking human-made and semi-natural vegetation, while few species were overrepresented in alpine grasslands and in mires (bogs and fens).
 
@@ -64,7 +64,13 @@ This points to a pervasive invasion debt: species introduced in recent decades, 
 
 ## Talks from Our Group
 
-Anna Schertler's flash talk, "When Fungal Blind Spots Spill Over: How Knowledge Gaps Undermine Invasion Science and Conservation", was in the same Friday morning session as mine. In the Friday afternoon session on general contributions, Bernd Lenzner presented a review of model-based scenarios on biological invasions, and Franz Essl looked back on twenty-five years of NEOBIOTA and how it built a community for invasion science in Europe and beyond. His talk included a few "not so serious glimpses" of NEOBIOTA, and a picture of Bernd as the Hulk.
+Anna's flash talk, "When Fungal Blind Spots Spill Over: How Knowledge Gaps Undermine Invasion Science and Conservation", was in the same Friday morning session as mine. In the Friday afternoon session on general contributions, Bernd presented a review of model-based scenarios on biological invasions, and Franz looked back on twenty-five years of NEOBIOTA and how it built a community for invasion science in Europe and beyond.
+
+At the conference, Fabio turned a photo of Bernd into a Hulk meme and posted it in our group chat.
+
+On Friday, Franz's talk reached the slide headed "NEOBIOTA: The European Group on Biological Invasions". Next to the title, on the big screen: Bernd. Green. Arms up. HULK SMASH INVASIVE SPECIES.
+
+We like to do good work. We can also be silly and not so serious.
 
 <div class="row">
 <div class="col-12 col-lg-6">
@@ -72,14 +78,14 @@ Anna Schertler's flash talk, "When Fungal Blind Spots Spill Over: How Knowledge 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7702_anna.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7702_anna.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Slide titled When Fungal Blind Spots Spill Over" width="628" height="471">
 </picture>
-<p class="text-justify"><i>Anna Schertler presenting "When Fungal Blind Spots Spill Over: How Knowledge Gaps Undermine Invasion Science and Conservation"</i></p>
+<p class="text-justify"><i>Anna presenting "When Fungal Blind Spots Spill Over: How Knowledge Gaps Undermine Invasion Science and Conservation"</i></p>
 </div>
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7707_bernd.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7707_bernd.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Slide titled A review of model-based scenarios on biological invasions" width="628" height="353">
 </picture>
-<p class="text-justify"><i>Bernd Lenzner presenting "A review of model-based scenarios on biological invasions"</i></p>
+<p class="text-justify"><i>Bernd presenting "A review of model-based scenarios on biological invasions"</i></p>
 </div>
 </div>
 
@@ -89,14 +95,14 @@ Anna Schertler's flash talk, "When Fungal Blind Spots Spill Over: How Knowledge 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7706_franz-hulk.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7706_franz-hulk.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Franz Essl on stage in front of a NEOBIOTA slide showing the Hulk Smash Invasive Species picture" width="628" height="834">
 </picture>
-<p class="text-justify"><i>Franz Essl presenting "Twenty-five years of Neobiota", with Bernd as the Hulk on the slide</i></p>
+<p class="text-justify"><i>Franz presenting "Twenty-five years of Neobiota", with Bernd as the Hulk on the slide</i></p>
 </div>
 <div class="col-12 col-lg-4">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7699_bernd.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7699_bernd.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Bernd Lenzner holding up a long uprooted plant stem on sandy ground" width="628" height="832">
 </picture>
-<p class="text-justify"><i>The original photo of Bernd Lenzner</i></p>
+<p class="text-justify"><i>The original photo of Bernd</i></p>
 </div>
 <div class="col-12 col-lg-4">
 <picture>
@@ -113,7 +119,7 @@ Anna Schertler's flash talk, "When Fungal Blind Spots Spill Over: How Knowledge 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7708.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7708.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Slide titled Not so serious glimpses on Neobiota with a collage of photos" width="628" height="353">
 </picture>
-<p class="text-center mt-2"><i>From Franz Essl's talk: "Not so serious glimpses on Neobiota"</i></p>
+<p class="text-center mt-2"><i>From Franz's talk: "Not so serious glimpses on Neobiota"</i></p>
 </div>
 </div>
 
@@ -127,11 +133,11 @@ Posters were presented on numbered digital screens, with the audience following 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7710_ali.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7710_ali.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Ali Omer presenting his poster on screen 2" width="628" height="837">
 </picture>
-<p class="text-justify"><i>Ali Omer presenting "Spatial and compositional shifts of plant invasion risk under future environmental change"</i></p>
+<p class="text-justify"><i>Ali presenting "Spatial and compositional shifts of plant invasion risk under future environmental change"</i></p>
 </div>
 <div class="col">
-<p class="text-justify">Ali Omer modelled the current and future potential distributions of 9,701 naturalised alien plant species from the Global Naturalized Alien Flora (GloNAF) database, using species distribution models to project their potential spread by the end of the 21st century.</p>
-<p class="text-justify">Lisa Tedeschi compared the two most widely used types of biodiversity data, presence records and expert-drawn range maps, and asked where they disagree in global mammal distribution data and what drives these mismatches, including whether a population is native or alien.</p>
+<p class="text-justify">Ali modelled the current and future potential distributions of 9,701 naturalised alien plant species from the Global Naturalized Alien Flora (GloNAF) database, using species distribution models to project their potential spread by the end of the 21st century.</p>
+<p class="text-justify">Lisa compared the two most widely used types of biodiversity data, presence records and expert-drawn range maps, and asked where they disagree in global mammal distribution data and what drives these mismatches, including whether a population is native or alien.</p>
 </div>
 </div>
 
@@ -141,14 +147,14 @@ Posters were presented on numbered digital screens, with the audience following 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7712_lisa.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7712_lisa.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Lisa Tedeschi presenting her poster on screen 2" width="628" height="471">
 </picture>
-<p class="text-justify"><i>Lisa Tedeschi presenting "Mind the gap: mismatches between presence records and expert range maps in global mammal distribution data"</i></p>
+<p class="text-justify"><i>Lisa presenting "Mind the gap: mismatches between presence records and expert range maps in global mammal distribution data"</i></p>
 </div>
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7713_fabio.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7713_fabio.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Fabio Mologni presenting a poster on plant height and seed mass on screen 5" width="628" height="471">
 </picture>
-<p class="text-justify"><i>Fabio Mologni presenting "How do dispersal–persistence trade-offs manifest in the covariation of plant height and seed mass?"</i></p>
+<p class="text-justify"><i>Fabio presenting "How do dispersal–persistence trade-offs manifest in the covariation of plant height and seed mass?"</i></p>
 </div>
 </div>
 
@@ -158,14 +164,14 @@ Posters were presented on numbered digital screens, with the audience following 
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7709_fabio.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7709_fabio.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Fabio Mologni presenting a poster on trait assembly on islands on screen 5" width="628" height="837">
 </picture>
-<p class="text-justify"><i>Fabio Mologni presenting "Geographic and anthropogenic factors drive distinct trait assembly patterns in native and non-native seed plants on islands"</i></p>
+<p class="text-justify"><i>Fabio presenting "Geographic and anthropogenic factors drive distinct trait assembly patterns in native and non-native seed plants on islands"</i></p>
 </div>
 <div class="col-12 col-lg-6">
 <picture>
 <source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7711_bernd.webp">
 <img src="/assets/images/content/neobiota-2026/IMG_7711_bernd.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Bernd Lenzner presenting the OneSTOP poster on screen 4" width="628" height="837">
 </picture>
-<p class="text-justify"><i>Bernd Lenzner presenting the OneSTOP poster "Prioritisation maps for Red List species protection"</i></p>
+<p class="text-justify"><i>Bernd presenting the OneSTOP poster "Prioritisation maps for Red List species protection"</i></p>
 </div>
 </div>
 
@@ -190,7 +196,7 @@ Wednesday was the field trip day, and I used it for a city trip through Brussels
 </div>
 </div>
 
-On Tuesday, I met Ingolf Kühn from the Helmholtz Centre for Environmental Research (UFZ) in Halle, Editor-in-Chief of the journal NeoBiota, who works on plant invasions and macroecology, and during the week I caught up with Hanno Seebens, one of my co-authors. For food, I tried Aki Ramen and Heritage Kitchen. With Ruiling Liu and Fabio Mologni, I went to the Delirium bar, which has around 2,000 beers, and I tried a lambic, the spontaneously fermented beer of the Brussels region.
+On Tuesday, I met Ingolf Kühn from the Helmholtz Centre for Environmental Research (UFZ) in Halle, Editor-in-Chief of the journal NeoBiota, who works on plant invasions and macroecology, and during the week I caught up with Hanno, one of my co-authors. For food, I tried Aki Ramen and Heritage Kitchen. With Ruiling Liu and Fabio, I went to the Delirium bar, which has around 2,000 beers, and I tried a lambic, the spontaneously fermented beer of the Brussels region.
 
 ## Conference Dinner
 
@@ -210,5 +216,39 @@ On Thursday evening, the conference dinner took place in the Dinosaur Gallery of
 <img src="/assets/images/content/neobiota-2026/IMG_7701_people.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Guests at the conference dinner in the Dinosaur Gallery" width="628" height="471">
 </picture>
 <p class="text-justify"><i>The Dinosaur Gallery seen from above</i></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12 col-lg-6">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/neobiota-2026/5E85CCA9-DADB-4EFE-8D0F-F300F5D8B61C_mammoth.webp">
+<img src="/assets/images/content/neobiota-2026/5E85CCA9-DADB-4EFE-8D0F-F300F5D8B61C_mammoth.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Mammoth skeleton with long curved tusks at the top of a staircase" width="628" height="471">
+</picture>
+<p class="text-justify"><i>A mammoth at the top of the stairs</i></p>
+</div>
+<div class="col-12 col-lg-6">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/neobiota-2026/798AD8E8-A1CE-4528-9172-8DCFF2CD2FEB_dinosaurs.webp">
+<img src="/assets/images/content/neobiota-2026/798AD8E8-A1CE-4528-9172-8DCFF2CD2FEB_dinosaurs.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Two dinosaur skeletons on a glass floor under pink and blue lighting" width="628" height="419">
+</picture>
+<p class="text-justify"><i>Dinosaur skeletons in the gallery</i></p>
+</div>
+</div>
+
+<div class="row pb-3">
+<div class="col-12 col-lg-6">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/neobiota-2026/F4A5D9C2-FE1B-4700-8064-43586DA2B450_under-our-feet.webp">
+<img src="/assets/images/content/neobiota-2026/F4A5D9C2-FE1B-4700-8064-43586DA2B450_under-our-feet.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Dinosaur skeleton behind a sign reading under our feet in French, Dutch, English and German" width="628" height="785">
+</picture>
+<p class="text-justify"><i>Under our feet, in four languages</i></p>
+</div>
+<div class="col-12 col-lg-6">
+<picture>
+<source type="image/webp" srcset="/assets/images/content/neobiota-2026/IMG_7672_whale.webp">
+<img src="/assets/images/content/neobiota-2026/IMG_7672_whale.jpg" class="img-fluid mx-auto d-block img-rd-md lazyload" alt="Whale skeleton hanging from the ceiling, lit in blue, seen from below" width="628" height="837">
+</picture>
+<p class="text-justify"><i>A whale skeleton overhead</i></p>
 </div>
 </div>
