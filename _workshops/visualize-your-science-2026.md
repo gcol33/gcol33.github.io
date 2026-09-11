@@ -3,9 +3,9 @@ layout: workshop
 title: "Visualize your Science — Spring 2026"
 short_title: "Visualize your Science"
 date: 2026-05-06
-category: "Education"
-type: attended
-category_url: "/education/"
+category: "Conferences & Workshops"
+type: workshop
+category_url: "/conferences-workshops/"
 thumbnail: "/assets/images/content/vys_2026_poster.jpg"
 thumbnail_webp: "/assets/images/content/vys_2026_poster.webp"
 thumbnail_zoom: true
@@ -18,8 +18,8 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
-    url: "/education/"
+  - name: "Conferences & Workshops"
+    url: "/conferences-workshops/"
   - name: "Visualize your Science 2026"
 downloads:
   - name: "Diploma (PDF)"

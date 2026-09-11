@@ -76,13 +76,13 @@ defaults:
       type: "workshops"
     values:
       layout: "workshop"
-      category: "Education"
+      category: "Conferences & Workshops"
   - scope:
       path: ""
       type: "courses"
     values:
       layout: "course-overview"
-      category: "Education"
+      category: "Teaching"
   - scope:
       path: ""
       type: "projects"

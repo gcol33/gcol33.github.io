@@ -2,7 +2,7 @@
 layout: course-overview
 title: "Foundation of Evolutionary Theory"
 date: 2024-04-09
-category: "Education"
+category: "Teaching"
 type: notes
 category_url: "/education/"
 permalink: /course-foundevotheo/
@@ -14,7 +14,7 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
+  - name: "Teaching"
     url: "/education/"
   - name: "Foundation of Evolutionary Theory"
 

@@ -2,10 +2,10 @@
 // hides list year headings whose rows are all filtered out.
 (function () {
   function init() {
-    var buttons = document.querySelectorAll('.pres-filter-btn');
+    var buttons = document.querySelectorAll('.archive-filter-btn');
     if (!buttons.length) return;
     var items = document.querySelectorAll('[data-type]');
-    var years = document.querySelectorAll('.pres-list-year');
+    var years = document.querySelectorAll('.archive-list-year');
 
     function apply(filter) {
       items.forEach(function (el) {

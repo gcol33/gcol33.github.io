@@ -1,0 +1,40 @@
+# Item types used by archive pages. Order sets the order of the filter chips;
+# label names a single item, plural names its chip, link names an external_url link.
+article:
+  label: Paper
+  plural: Papers
+  link: Paper
+preprint:
+  label: Preprint
+  plural: Preprints
+  link: Preprint
+talk:
+  label: Talk
+  plural: Talks
+poster:
+  label: Poster
+  plural: Posters
+exhibition:
+  label: Exhibition
+  plural: Exhibitions
+package:
+  label: Package
+  plural: R packages
+competition:
+  label: Competition
+  plural: Competitions
+book:
+  label: Book
+  plural: Books
+taught:
+  label: Taught
+  plural: Taught
+workshop:
+  label: Workshop
+  plural: Workshops
+conference:
+  label: Conference
+  plural: Conferences
+notes:
+  label: Notes
+  plural: Course notes

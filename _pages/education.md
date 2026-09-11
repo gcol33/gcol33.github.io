@@ -1,15 +1,16 @@
 ---
 layout: archive
-title: "Education"
+title: "Teaching"
 permalink: /education/
-description: "Workshops, courses, and educational materials by Gilles Colling on ecology, R programming, and data science."
+description: "Workshops I taught and course notes by Gilles Colling on ecology, R programming, and data science."
 sources: [workshops, courses]
+types: [taught, notes]
 category_url: "/education/"
-type_filter: "taught:Taught,attended:Attended,conference:Conferences,notes:Course notes"
+type_filter: true
 breadcrumb:
   - name: "Home"
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
+  - name: "Teaching"
 ---

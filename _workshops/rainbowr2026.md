@@ -2,9 +2,9 @@
 layout: workshop
 title: "rainbowR Conference 2026"
 date: 2026-02-26
-category: "Education"
+category: "Conferences & Workshops"
 type: conference
-category_url: "/education/"
+category_url: "/conferences-workshops/"
 thumbnail: "/assets/images/content/conference_rainbowr2026.jpg"
 thumbnail_webp: "/assets/images/content/conference_rainbowr2026.webp"
 hero_combined: true
@@ -18,8 +18,8 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
-    url: "/education/"
+  - name: "Conferences & Workshops"
+    url: "/conferences-workshops/"
   - name: "rainbowR 2026"
 ---
 

@@ -7,7 +7,7 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
+  - name: "Teaching"
     url: "/education/"
   - name: "Foundation of Evolutionary Theory"
     url: "/course-foundevotheo/"

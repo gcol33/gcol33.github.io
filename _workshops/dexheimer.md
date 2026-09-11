@@ -2,9 +2,9 @@
 layout: workshop
 title: "Visual Literacy for Scientists"
 date: 2024-11-12
-category: "Education"
-type: attended
-category_url: "/education/"
+category: "Conferences & Workshops"
+type: workshop
+category_url: "/conferences-workshops/"
 description: "This workshop, taught by Philipp Dexheimer in November 2024, was devoted to the practice of visual literacy in science. The central question running through the sessions was how to transform data, concepts, and narratives into visuals that both inform and resonate. The structure combined lectures with interactive exercises. Each session highlighted a particular domain of visualization, from the basics of file formats and typography to the narrative flow of conference talks, and then challenged us to apply these principles in practice. Peer feedback played a major role, with every figure, slide, or diagram tested by colleagues from different backgrounds. Dexheimer also placed the sessions in a broader context by showing historical and modern examples of influential scientific visuals, from Haeckel's drawings to Iwasa's animations."
 thumbnail: "/assets/images/content/creode.jpg"
 thumbnail_webp: "/assets/images/content/creode.webp"
@@ -16,8 +16,8 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
-    url: "/education/"
+  - name: "Conferences & Workshops"
+    url: "/conferences-workshops/"
   - name: "Visual Literacy for Scientists"
 ---
 

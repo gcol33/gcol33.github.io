@@ -2,9 +2,9 @@
 layout: workshop
 title: "Hierarchical Spatial Modelling"
 date: 2024-06-24
-category: "Education"
-type: attended
-category_url: "/education/"
+category: "Conferences & Workshops"
+type: workshop
+category_url: "/conferences-workshops/"
 description: "From June 24 to 27, 2024, Jeff Doser and Marc Kéry led a workshop on hierarchical Bayesian spatial models at the Swiss Ornithological Institute in Sempach, Switzerland. Participants brought their own laptops with R, using the `spOccupancy` and `spAbundance` packages throughout the sessions. While the course didn't require prior experience with Bayesian or spatial statistics, a solid understanding of regression models in R was expected. All course materials, including lectures and code, were made available via GitHub."
 thumbnail: "/assets/images/content/hspm_ws_bg.jpg"
 thumbnail_webp: "/assets/images/content/hspm_ws_bg.webp"
@@ -17,8 +17,8 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
-    url: "/education/"
+  - name: "Conferences & Workshops"
+    url: "/conferences-workshops/"
   - name: "Hierarchical spatial modelling"
 ---
 

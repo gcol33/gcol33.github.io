@@ -4,6 +4,8 @@ title: "corrselect: Fast and flexible predictor pruning for data analysis and mo
 short_title: "corrselect: predictor pruning"
 date: 2026-02-25
 category: "Publication"
+type: article
+venue: "Journal of Open Source Software"
 category_url: "/publications/"
 thumbnail: "/assets/images/content/corrselect.jpg"
 thumbnail_webp: "/assets/images/content/corrselect.webp"

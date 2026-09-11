@@ -4,6 +4,8 @@ title: "Ninety years of alien plant species accumulation across regional and loc
 short_title: "Alien plant accumulation in fields"
 date: 2025-01-08
 category: "Publication"
+type: article
+venue: "Agriculture, Ecosystems & Environment"
 category_url: "/publications/"
 thumbnail: "/assets/images/content/paper_1.jpg"
 thumbnail_webp: "/assets/images/content/paper_1.webp"

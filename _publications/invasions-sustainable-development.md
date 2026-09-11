@@ -4,6 +4,8 @@ title: "The neglected importance of managing biological invasions for sustainabl
 short_title: "Managing biological invasions"
 date: 2024-07-22
 category: "Publication"
+type: article
+venue: "People and Nature"
 category_url: "/publications/"
 thumbnail: "/assets/images/content/co_paper_1.jpg"
 thumbnail_webp: "/assets/images/content/co_paper_1.webp"

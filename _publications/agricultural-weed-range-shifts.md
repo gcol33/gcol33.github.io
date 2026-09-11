@@ -4,6 +4,8 @@ title: "Projected range shifts of emerging agricultural weeds under climate chan
 short_title: "Projected range shifts of emerging agricultural"
 date: 2026-06-01
 category: "Publication"
+type: article
+venue: "Weed Research"
 category_url: "/publications/"
 thumbnail: "/assets/images/content/agricultural-weed-range-shifts.jpg"
 thumbnail_webp: "/assets/images/content/agricultural-weed-range-shifts.webp"

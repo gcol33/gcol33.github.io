@@ -3,7 +3,7 @@ layout: course-overview
 title: "Modelling Spatial and Temporal Dynamics of (Ecological) Animal and Plant Populations"
 short_title: "Spatial and Temporal Dynamics"
 date: 2023-10-05
-category: "Education"
+category: "Teaching"
 type: notes
 category_url: "/education/"
 permalink: /course-spattempdyn/
@@ -15,7 +15,7 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
+  - name: "Teaching"
     url: "/education/"
   - name: "Spatial and Temporal Dynamics"
 

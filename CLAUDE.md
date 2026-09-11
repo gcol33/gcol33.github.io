@@ -185,7 +185,7 @@ Required size: **2400x1600** pixels (3:2 ratio). This applies to **all** thumbna
 
 ## Navigation Structure
 
-Top-level nav: **Research** (Publications, Presentations) | **Engagement** (Education, Side Projects) | **Projects** (ASAAS, AgriWeedClim) | **Blog** | **Contact** | **About**
+Top-level nav: **Research** (Publications, Presentations) | **Engagement** (Teaching, Conferences & Workshops, Side Projects) | **Projects** (ASAAS, AgriWeedClim) | **Blog** | **Contact** | **About**
 
 - Books and long-form writing live under **Engagement > Side Projects** (e.g., Thinking in R)
 - Do not add a separate "Writing" or "Books" nav section unless there are multiple books to justify it

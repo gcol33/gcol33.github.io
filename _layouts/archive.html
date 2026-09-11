@@ -5,10 +5,13 @@ layout: default
 {% comment %}
 Listing page. Front matter drives it:
   sources:       collection names to list, e.g. [publications, presentations]
+  types:         optional list of item types to keep from those collections, e.g. [workshop, conference]
   category_url:  fallback chip link for items that set no category_url
   label_by:      "category" to label cards by collection instead of by type
-  type_filter:   chip filter spec, e.g. "talk:Talks,poster:Posters"
-Page body renders below the grid.
+  type_filter:   true to show one chip per item type present (labels from _data/types.yml)
+  list:          true to add the year-grouped list of the same items below the grid
+  list_title:    "title" to lead list rows with each item's title instead of its hero_title
+Page body renders below the grid and list.
 {% endcomment %}
 
 {% assign items = "" | split: "" %}
@@ -19,6 +22,9 @@ Page body renders below the grid.
   {% endif %}
   {% assign items = items | concat: collection %}
 {% endfor %}
+{% if page.types %}
+  {% assign items = items | where_exp: "item", "page.types contains item.type" %}
+{% endif %}
 {% assign items = items | sort: 'date' | reverse %}
 
 <div class="section section-light" id="archive-header">
@@ -28,7 +34,7 @@ Page body renders below the grid.
         {% include breadcrumb.html items=page.breadcrumb %}
         <h1 class="text-bold mb-2">{{ page.title }}</h1>
         {% if page.type_filter %}
-        {% include type-filter.html types=page.type_filter %}
+        {% include type-filter.html items=items %}
         {% endif %}
       </div>
     </div>
@@ -48,5 +54,9 @@ Page body renders below the grid.
     </div>
   </div>
 </div>
+
+{% if page.list %}
+{% include archive-list.html items=items title_field=page.list_title %}
+{% endif %}
 
 {{ content }}

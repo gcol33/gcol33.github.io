@@ -1,0 +1,48 @@
+{% comment %}
+Year-grouped list for archive pages. Usage: {% include archive-list.html items=items title_field=page.list_title %}
+Rows lead with hero_title and show title beneath it; title_field="title" leads with title instead.
+Row labels and external-link text come from _data/types.yml; rows carry data-type for the chip filter.
+{% endcomment %}
+{% assign current_year = "" %}
+<div class="section section-light" id="archive-list">
+  <div class="container pad-sm pad-sm-md">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-bold mb-4">List</h2>
+        <dl class="archive-list">
+        {% for item in include.items %}
+          {% assign year = item.date | date: "%Y" %}
+          {% if year != current_year %}
+            {% assign current_year = year %}
+            <dt class="archive-list-year">{{ year }}</dt>
+          {% endif %}
+          {% assign kind = site.data.types[item.type] %}
+          {% if include.title_field == "title" or item.hero_title == nil %}
+            {% assign heading = item.title %}{% assign subtitle = "" %}
+          {% else %}
+            {% assign heading = item.hero_title %}{% assign subtitle = item.title %}
+          {% endif %}
+          <dd class="archive-list-item"{% if item.type %} data-type="{{ item.type }}"{% endif %}>
+            <span class="archive-list-date">{{ item.date | date: "%b %d" }}</span>
+            <span class="archive-list-type post-label">{{ kind.label | default: item.category }}</span>
+            <span class="archive-list-body">
+              <a href="{{ item.url | relative_url }}" class="archive-list-title">{{ heading }}</a>
+              {% if item.authors or item.venue %}
+              <span class="archive-list-venue tc-text-muted">{{ item.authors }}{% if item.authors and item.venue %} · {% endif %}{% if item.venue %}<i>{{ item.venue }}</i>{% endif %}</span>
+              {% elsif subtitle != "" %}
+              <span class="archive-list-venue tc-text-muted">{{ subtitle }}</span>
+              {% endif %}
+              {% if item.external_url or item.downloads %}
+              <span class="archive-list-links">
+                {% if item.external_url %}<a href="{{ item.external_url }}" target="_blank" rel="noopener">{{ kind.link | default: "Link" }}</a>{% endif %}
+                {% for d in item.downloads %}<a href="{{ d.url | relative_url }}" target="_blank" rel="noopener">{{ d.name }}</a>{% endfor %}
+              </span>
+              {% endif %}
+            </span>
+          </dd>
+        {% endfor %}
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>

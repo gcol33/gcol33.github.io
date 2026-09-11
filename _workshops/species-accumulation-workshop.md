@@ -3,7 +3,7 @@ layout: workshop
 title: "Species Accumulation Curves"
 short_title: "Species Accumulation"
 date: 2026-01-26
-category: "Education"
+category: "Teaching"
 type: taught
 category_url: "/education/"
 thumbnail: "/assets/images/content/workshop_liams_stay.jpg"
@@ -16,7 +16,7 @@ breadcrumb:
     url: "/"
   - name: "Engagement"
     url: "/engagement-archive/"
-  - name: "Education"
+  - name: "Teaching"
     url: "/education/"
   - name: "Species Accumulation Curves"
 ---

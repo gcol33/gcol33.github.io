@@ -1,11 +1,15 @@
 {% comment %}
-Type filter chips. Usage: {% include type-filter.html types="talk:Talks,poster:Posters" %}
+Type filter chips. Usage: {% include type-filter.html items=items %}
+One chip per type present in items, in the order and with the plural labels of _data/types.yml;
+nothing renders when fewer than two types are present.
 Behaviour lives in assets/js/type-filter.js, loaded site-wide from scripts.html.
 {% endcomment %}
-<div class="pres-filter mt-3" role="group" aria-label="Filter by type">
-  <button type="button" class="pres-filter-btn active" data-filter="all" aria-pressed="true">All</button>
-  {% assign pairs = include.types | split: "," %}
-  {% for pair in pairs %}{% assign kv = pair | split: ":" %}
-  <button type="button" class="pres-filter-btn" data-filter="{{ kv[0] }}" aria-pressed="false">{{ kv[1] }}</button>
-  {% endfor %}
+{% assign present = include.items | map: "type" | compact | uniq %}
+{% if present.size > 1 %}
+<div class="archive-filter mt-3" role="group" aria-label="Filter by type">
+  <button type="button" class="archive-filter-btn active" data-filter="all" aria-pressed="true">All</button>
+  {% for entry in site.data.types %}{% if present contains entry[0] %}
+  <button type="button" class="archive-filter-btn" data-filter="{{ entry[0] }}" aria-pressed="false">{{ entry[1].plural }}</button>
+  {% endif %}{% endfor %}
 </div>
+{% endif %}
