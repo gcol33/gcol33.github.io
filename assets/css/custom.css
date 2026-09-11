@@ -1869,9 +1869,14 @@ button:focus:not(:focus-visible),
 }
 @media (max-width: 575.98px) {
     .archive-list-item {
-        grid-template-columns: 4.5em 1fr;
+        grid-template-columns: auto 1fr;
+        gap: 6px 10px;
+        margin-bottom: 18px;
     }
     .archive-list-type {
         grid-column: 2;
+    }
+    .archive-list-body {
+        grid-column: 1 / -1;
     }
 }
