@@ -44,6 +44,3 @@ cites a page stating that value, as do 6,901 of the 7,038 recorded dispersal mod
 the README gives a reason for each remaining gap. Names are matched against four
 taxonomic checklists held at fixed versions, whose versions and checksums ship with the
 data, so the taxonomy can be reproduced.
-
-Version 1.0 is an independent release. Its taxonomy and first-record sources differ from
-the 0.x pre-releases, so it is not a drop-in replacement for them.
