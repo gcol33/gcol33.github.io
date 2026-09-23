@@ -1623,6 +1623,12 @@ button:focus:not(:focus-visible),
     transform: translateY(-4px);
 }
 
+@media (min-width: 992px) {
+    #research-projects .col-lg-6:nth-child(even) .featured-project-card {
+        margin-left: auto;
+    }
+}
+
 .featured-project-card h5 {
     white-space: nowrap;
     overflow: hidden;
