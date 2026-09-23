@@ -1732,6 +1732,39 @@ nav .dropdown-menu .nav-link {
     opacity: 0.88;
 }
 
+/* Justified photo row: each item's width is proportional to its aspect ratio
+   (--ar: width/height), so all images in the row share one height. An --ar
+   differing from the image's own ratio crops it to that ratio (centred). */
+.photo-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.photo-row > * {
+    flex: calc(var(--ar, 1)) 1 0%;
+    min-width: 0;
+}
+
+.photo-row img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: var(--ar);
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+    .photo-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .photo-row > * {
+        flex: none;
+        width: 100%;
+    }
+}
+
 /* Single-image zoom trigger (no fixed aspect-ratio, unlike photo-tile) */
 .zoomable {
     cursor: zoom-in;
