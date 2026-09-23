@@ -8,6 +8,10 @@ preprint:
   label: Preprint
   plural: Preprints
   link: Preprint
+dataset:
+  label: Dataset
+  plural: Datasets
+  link: Dataset
 talk:
   label: Talk
   plural: Talks

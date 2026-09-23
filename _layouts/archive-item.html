@@ -44,9 +44,10 @@ layout: default
         {{ content }}
 
         {% if page.external_url %}
+        {% assign kind = site.data.types[page.type] %}
         <div class="mt-4">
           <a href="{{ page.external_url }}" class="btn btn-d button-01" target="_blank">
-            View Publication <span class="fa fa-external-link-alt ms-2"></span>
+            View {{ kind.link | default: "Publication" }} <span class="fa fa-external-link-alt ms-2"></span>
           </a>
         </div>
         {% endif %}
