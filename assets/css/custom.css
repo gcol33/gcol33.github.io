@@ -1616,6 +1616,7 @@ button:focus:not(:focus-visible),
     color: inherit;
     transition: transform 0.2s ease;
     min-width: 0;
+    max-width: 398px;
 }
 
 .featured-project-card:hover {
