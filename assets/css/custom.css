@@ -692,13 +692,9 @@ button:focus:not(:focus-visible),
     border-color: var(--dm-border) !important;
 }
 
-/* Disable hover on dropdowns when one is clicked open */
-.hover-open-submenu.dropdown-clicked .dropdown:hover > .dropdown-menu {
+/* While one menu is open by click, hovering another item does not open it */
+.hover-open-submenu.dropdown-clicked .dropdown:hover > .dropdown-menu:not(.show) {
     display: none !important;
-}
-
-.hover-open-submenu.dropdown-clicked .dropdown.show > .dropdown-menu {
-    display: block !important;
 }
 
 /* Open the top-level menus on hover once the navbar is expanded */
@@ -707,6 +703,24 @@ button:focus:not(:focus-visible),
         display: block;
         margin-top: 0;
     }
+
+    .hover-open-submenu .nav-item.dropdown.hover-closed:hover > .dropdown-menu:not(.show) {
+        display: none;
+    }
+
+    .hover-open-submenu:not(.dropdown-clicked) .nav-item.dropdown:not(.hover-closed):hover > .dropdown-toggle::after {
+        content: "\f077";
+    }
+}
+
+/* Menu width follows its longest entry instead of a fixed 200px */
+nav .dropdown-menu {
+    width: auto;
+    min-width: 200px;
+}
+
+nav .dropdown-menu .nav-link {
+    white-space: nowrap;
 }
 
 /* The drawer draws its own transparent submenu; only the link colour needs to
@@ -1630,6 +1644,12 @@ button:focus:not(:focus-visible),
 #research-projects .featured-project-card img {
     width: 100%;
     height: auto;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
+#research-projects .col-lg-6:first-child .featured-project-card img {
+    object-position: 50% 75%;
 }
 
 @media (min-width: 992px) {

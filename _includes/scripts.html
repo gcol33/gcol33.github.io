@@ -37,19 +37,36 @@
     }
   })();
 
-  // Fix navbar dropdown: disable hover when any dropdown is clicked open
+  // Navbar dropdowns: hover-open is suppressed while a menu is open by click.
+  // The class follows the menus' actual .show state after each transition.
   (function() {
     var nav = document.querySelector('.hover-open-submenu');
     if (!nav) return;
 
-    // When a dropdown is shown via click, add class to disable hover
-    nav.addEventListener('show.bs.dropdown', function() {
-      nav.classList.add('dropdown-clicked');
-    });
+    function sync() {
+      nav.classList.toggle('dropdown-clicked', !!nav.querySelector('.dropdown-menu.show'));
+    }
 
-    // When dropdown is hidden, remove the class
-    nav.addEventListener('hide.bs.dropdown', function() {
-      nav.classList.remove('dropdown-clicked');
+    nav.addEventListener('shown.bs.dropdown', sync);
+    nav.addEventListener('hidden.bs.dropdown', function(e) {
+      sync();
+      // A menu closed while the pointer is over its item stays closed until the pointer leaves
+      var item = e.target.closest('.dropdown');
+      if (item && item.matches(':hover')) item.classList.add('hover-closed');
+    });
+    // A click on a toggle whose menu is showing only because of hover closes it
+    window.addEventListener('click', function(e) {
+      var toggle = e.target.closest('.hover-open-submenu .dropdown-toggle');
+      if (!toggle || !window.matchMedia('(hover: hover)').matches) return;
+      var menu = toggle.nextElementSibling;
+      if (!menu || menu.classList.contains('show') || menu.offsetParent === null) return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggle.closest('.dropdown').classList.add('hover-closed');
+    }, true);
+    nav.addEventListener('mouseout', function(e) {
+      var item = e.target.closest('.dropdown');
+      if (item && !item.contains(e.relatedTarget)) item.classList.remove('hover-closed');
     });
   })();
 
