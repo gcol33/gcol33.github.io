@@ -17,6 +17,11 @@
       'areaOfEffect'
     ];
     var path = window.location.pathname;
+    // /tulpaobs -> /tulpaObs
+    if (/^/tulpaobsb/i.test(path) && !/^/tulpaObs/.test(path)) {
+      var newPath = path.replace(/^/tulpaobs/i, '/tulpaObs');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
     for (var i = 0; i < packages.length; i++) {
       var name = packages[i];
       if (path.indexOf('/' + name) === 0) return;
