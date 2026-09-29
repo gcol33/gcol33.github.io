@@ -52,8 +52,8 @@ The system then anchors the graph through the labelled training set: when a test
 
 ## Artefacts
 
-- **Working note (accepted):** [PDF](/assets/downloads/colling_animalclef_2026.pdf) · DOI [10.5281/zenodo.20055000](https://doi.org/10.5281/zenodo.20055000)
-- **Code:** [github.com/gcol33/animal-clef-2026](https://github.com/gcol33/animal-clef-2026) (MIT licence)
+- **Working note (accepted):** [PDF](/assets/downloads/colling_animalclef_2026.pdf) · DOI [10.5281/zenodo.20054999](https://doi.org/10.5281/zenodo.20054999)
+- **Code:** [github.com/gcol33/animal-clef-2026](https://github.com/gcol33/animal-clef-2026) (MIT licence) · DOI [10.5281/zenodo.23039748](https://doi.org/10.5281/zenodo.23039748)
 - **Trained weights:** [huggingface.co/gcol33/animal-clef-2026](https://huggingface.co/gcol33/animal-clef-2026) (CC BY 4.0, subject to upstream dataset restrictions)
 - **Competition page:** [kaggle.com/competitions/animal-clef-2026](https://www.kaggle.com/competitions/animal-clef-2026)
 - **Official challenge:** [imageclef.org/AnimalCLEF2026](https://www.imageclef.org/AnimalCLEF2026) · [CLEF 2026](https://clef2026.clef-initiative.eu/) (21–24 September, Jena)
