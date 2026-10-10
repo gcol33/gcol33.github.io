@@ -5,32 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page not found</title>
   <script>
-  // Case-insensitive redirects for package sites
+  // Case-insensitive redirect into any project site of the account: the first
+  // path segment is matched against the names of repositories that publish Pages,
+  // and the rest of the path, the query and the hash are kept.
   (function() {
-    var packages = [
-      'BiHeat',
-      'texanshootR',
-      'INLAocc',
-      'tulpaMesh',
-      'restrictR',
-      'SIMP',
-      'areaOfEffect'
-    ];
     var path = window.location.pathname;
-    // /tulpaobs -> /tulpaObs
-    if (/^/tulpaobsb/i.test(path) && !/^/tulpaObs/.test(path)) {
-      var newPath = path.replace(/^/tulpaobs/i, '/tulpaObs');
-      window.location.replace(newPath + window.location.search + window.location.hash);
+    var segment = path.split('/')[1];
+    if (!segment) return;
+    var wanted = segment.toLowerCase();
+    var rest = path.slice(1 + segment.length);
+    function scan(page) {
+      fetch('https://api.github.com/users/gcol33/repos?per_page=100&page=' + page)
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(repos) {
+          for (var i = 0; i < repos.length; i++) {
+            var name = repos[i].name;
+            if (!repos[i].has_pages || name.toLowerCase() !== wanted) continue;
+            if (name !== segment) {
+              window.location.replace('/' + name + rest + window.location.search + window.location.hash);
+            }
+            return;
+          }
+          if (repos.length === 100) scan(page + 1);
+        })
+        .catch(function() {});
     }
-    for (var i = 0; i < packages.length; i++) {
-      var name = packages[i];
-      if (path.indexOf('/' + name) === 0) return;
-      if (new RegExp('^/' + name + '\\b', 'i').test(path)) {
-        var newPath = path.replace(new RegExp('^/' + name, 'i'), '/' + name);
-        window.location.replace(newPath + window.location.search + window.location.hash);
-        return;
-      }
-    }
+    scan(1);
   })();
   </script>
   <style>
