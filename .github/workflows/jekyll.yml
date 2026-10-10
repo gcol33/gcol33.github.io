@@ -35,6 +35,14 @@ jobs:
         run: |
           echo "submitjson_api_key: ${{ secrets.SUBMITJSON_API_KEY }}" >> _config.yml
 
+      - name: List repositories that publish Pages
+        run: |
+          gh api --paginate "users/${{ github.repository_owner }}/repos?per_page=100" \
+            --jq '.[] | select(.has_pages) | .name' | jq -R . | jq -s . > _data/pages_repos.json
+          cat _data/pages_repos.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:

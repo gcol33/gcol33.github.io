@@ -1,3 +1,8 @@
+---
+layout: null
+permalink: /404.html
+sitemap: false
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +11,24 @@
   <title>Page not found</title>
   <script>
   // Case-insensitive redirect into any project site of the account: the first
-  // path segment is matched against the names of repositories that publish Pages,
-  // and the rest of the path, the query and the hash are kept.
+  // path segment is matched against the names of repositories that publish Pages
+  // (written to _data/pages_repos.json at build time), and the rest of the path,
+  // the query and the hash are kept.
   (function() {
+    var sites = {{ site.data.pages_repos | jsonify }} || [];
     var path = window.location.pathname;
     var segment = path.split('/')[1];
     if (!segment) return;
     var wanted = segment.toLowerCase();
-    var rest = path.slice(1 + segment.length);
-    function scan(page) {
-      fetch('https://api.github.com/users/gcol33/repos?per_page=100&page=' + page)
-        .then(function(r) { return r.ok ? r.json() : []; })
-        .then(function(repos) {
-          for (var i = 0; i < repos.length; i++) {
-            var name = repos[i].name;
-            if (!repos[i].has_pages || name.toLowerCase() !== wanted) continue;
-            if (name !== segment) {
-              window.location.replace('/' + name + rest + window.location.search + window.location.hash);
-            }
-            return;
-          }
-          if (repos.length === 100) scan(page + 1);
-        })
-        .catch(function() {});
+    for (var i = 0; i < sites.length; i++) {
+      var name = sites[i];
+      if (name.toLowerCase() !== wanted) continue;
+      if (name !== segment) {
+        var rest = path.slice(1 + segment.length);
+        window.location.replace('/' + name + rest + window.location.search + window.location.hash);
+      }
+      return;
     }
-    scan(1);
   })();
   </script>
   <style>
