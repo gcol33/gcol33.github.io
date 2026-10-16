@@ -1,0 +1,526 @@
+{
+  "/assets/images/content/agricultural-weed-range-shifts.webp": [
+    {
+      "url": "/assets/images/responsive/agricultural-weed-range-shifts-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/agricultural-weed-range-shifts-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/agricultural-weed-range-shifts-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/agriweed_gilles.webp": [
+    {
+      "url": "/assets/images/responsive/agriweed_gilles-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/agriweed_gilles-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/agriweed_gilles-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/agriweed_proj.webp": [
+    {
+      "url": "/assets/images/responsive/agriweed_proj-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/agriweed_proj-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/agriweed_proj-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/animal-clef-2026.webp": [
+    {
+      "url": "/assets/images/responsive/animal-clef-2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/animal-clef-2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/animal-clef-2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/art_science_vdsee_2026_thumbnail.webp": [
+    {
+      "url": "/assets/images/responsive/art_science_vdsee_2026_thumbnail-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/art_science_vdsee_2026_thumbnail-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/art_science_vdsee_2026_thumbnail-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/bart-modelling.webp": [
+    {
+      "url": "/assets/images/responsive/bart-modelling-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/bart-modelling-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/bart-modelling-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/bird-clef-2026.webp": [
+    {
+      "url": "/assets/images/responsive/bird-clef-2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/bird-clef-2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/bird-clef-2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/co_paper_1.webp": [
+    {
+      "url": "/assets/images/responsive/co_paper_1-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/co_paper_1-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/co_paper_1-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/conference_rainbowr2026.webp": [
+    {
+      "url": "/assets/images/responsive/conference_rainbowr2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/conference_rainbowr2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/conference_rainbowr2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/corrselect.webp": [
+    {
+      "url": "/assets/images/responsive/corrselect-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/corrselect-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/corrselect-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/couplr.webp": [
+    {
+      "url": "/assets/images/responsive/couplr-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/couplr-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/couplr-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/course_fet.webp": [
+    {
+      "url": "/assets/images/responsive/course_fet-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/course_fet-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/course_fet-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/course_std.webp": [
+    {
+      "url": "/assets/images/responsive/course_std-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/course_std-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/course_std-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/creode.webp": [
+    {
+      "url": "/assets/images/responsive/creode-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/creode-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/creode-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/cwpa-contest.webp": [
+    {
+      "url": "/assets/images/responsive/cwpa-contest-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/cwpa-contest-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/cwpa-contest-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/ggguides.webp": [
+    {
+      "url": "/assets/images/responsive/ggguides-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/ggguides-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/ggguides-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/hexify.webp": [
+    {
+      "url": "/assets/images/responsive/hexify-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/hexify-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/hexify-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/hspm_ws_bg.webp": [
+    {
+      "url": "/assets/images/responsive/hspm_ws_bg-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/hspm_ws_bg-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/hspm_ws_bg-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/ice-contest.webp": [
+    {
+      "url": "/assets/images/responsive/ice-contest-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/ice-contest-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/ice-contest-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/neobiota_2024.webp": [
+    {
+      "url": "/assets/images/responsive/neobiota_2024-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/neobiota_2024-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/neobiota_2024-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/neobiota_2026.webp": [
+    {
+      "url": "/assets/images/responsive/neobiota_2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/neobiota_2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/neobiota_2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/neoplants-eu.webp": [
+    {
+      "url": "/assets/images/responsive/neoplants-eu-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/neoplants-eu-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/neoplants-eu-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/paper_1.webp": [
+    {
+      "url": "/assets/images/responsive/paper_1-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/paper_1-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/paper_1-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/plots_ws.webp": [
+    {
+      "url": "/assets/images/responsive/plots_ws-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/plots_ws-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/plots_ws-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/presentation_division_2026.webp": [
+    {
+      "url": "/assets/images/responsive/presentation_division_2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/presentation_division_2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/presentation_division_2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/presentation_motivate_2026_thumb.webp": [
+    {
+      "url": "/assets/images/responsive/presentation_motivate_2026_thumb-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/presentation_motivate_2026_thumb-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/presentation_motivate_2026_thumb-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/presentation_rec_2026.webp": [
+    {
+      "url": "/assets/images/responsive/presentation_rec_2026-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/presentation_rec_2026-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/presentation_rec_2026-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/presentation_vdsee_2025.webp": [
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_2025-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_2025-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_2025-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/presentation_vdsee_header_2024.webp": [
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_header_2024-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_header_2024-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/presentation_vdsee_header_2024-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/project_asaas_field.webp": [
+    {
+      "url": "/assets/images/responsive/project_asaas_field-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/project_asaas_field-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/project_asaas_field-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/taxify.webp": [
+    {
+      "url": "/assets/images/responsive/taxify-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/taxify-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/taxify-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/thinking-in-r.webp": [
+    {
+      "url": "/assets/images/responsive/thinking-in-r-400.webp",
+      "width": 400
+    }
+  ],
+  "/assets/images/content/vdsee_2026_thumbnail.webp": [
+    {
+      "url": "/assets/images/responsive/vdsee_2026_thumbnail-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/vdsee_2026_thumbnail-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/vdsee_2026_thumbnail-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/vectra.webp": [
+    {
+      "url": "/assets/images/responsive/vectra-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/vectra-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/vectra-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/vys_2026_poster.webp": [
+    {
+      "url": "/assets/images/responsive/vys_2026_poster-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/vys_2026_poster-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/vys_2026_poster-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/workshop_aw.webp": [
+    {
+      "url": "/assets/images/responsive/workshop_aw-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/workshop_aw-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/workshop_aw-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/workshop_liams_stay.webp": [
+    {
+      "url": "/assets/images/responsive/workshop_liams_stay-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/workshop_liams_stay-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/workshop_liams_stay-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/images/content/workshop_rdm.webp": [
+    {
+      "url": "/assets/images/responsive/workshop_rdm-400.webp",
+      "width": 400
+    },
+    {
+      "url": "/assets/images/responsive/workshop_rdm-800.webp",
+      "width": 800
+    },
+    {
+      "url": "/assets/images/responsive/workshop_rdm-1200.webp",
+      "width": 1200
+    }
+  ]
+}

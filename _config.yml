@@ -103,6 +103,7 @@ exclude:
   - current.md
   - todo.md
   - dev_notes
+  - scripts
   - Gemfile
   - Gemfile.lock
   - node_modules

@@ -19,6 +19,27 @@
 }
 
 /* Nav dot separators */
+#site-nav {
+    --bs-offcanvas-width: min(320px, 100vw);
+}
+
+@media (max-width: 1199.98px) {
+    #site-nav .site-navigation {
+        padding: 0 20px 24px;
+        overflow-y: auto;
+    }
+
+    #site-nav .nav-link {
+        white-space: normal;
+        padding: 10px 0;
+    }
+
+    #site-nav .dropdown-menu {
+        min-width: 0;
+        padding: 0 12px;
+    }
+}
+
 .nav-separator {
     display: flex;
     align-items: center;
@@ -753,10 +774,77 @@ nav .dropdown-menu .nav-link {
 }
 
 /* Hero section - use inverted background image for dark mode */
+.bg-background-hero {
+    background-image: url("/assets/images/responsive/background-hero-1600.webp");
+}
+
 [data-bs-theme="dark"] .bg-background-hero {
-    background-image: url("/assets/images/content/background-hero-dark.jpg");
-    background-image: -webkit-image-set(url("/assets/images/content/background-hero-dark.webp") 1x, url("/assets/images/content/background-hero-dark.webp") 2x);
-    background-image: image-set(url("/assets/images/content/background-hero-dark.jpg") 1x, url("/assets/images/content/background-hero-dark.jpg") 2x, url("/assets/images/content/background-hero-dark.webp") 1x, url("/assets/images/content/background-hero-dark.webp") 2x);
+    background-image: url("/assets/images/responsive/background-hero-dark-1600.webp");
+}
+
+@media (max-width: 767.98px) {
+    #navbar {
+        padding-top: calc(8px + env(safe-area-inset-top, 0px));
+    }
+
+    .bg-background-hero {
+        background-image: url("/assets/images/responsive/background-hero-800.webp");
+    }
+
+    [data-bs-theme="dark"] .bg-background-hero {
+        background-image: url("/assets/images/responsive/background-hero-dark-800.webp");
+    }
+
+    #hero-writer .imagehero {
+        width: min(70%, 250px);
+        height: auto;
+        max-width: 100%;
+    }
+
+    #hero-writer h3 {
+        font-size: 1.15rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #hero-writer h4 {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .writer-post-library .title-post {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #navbar .navs-controls {
+        order: 0 !important;
+        padding: 0;
+        min-width: 0;
+    }
+
+    #navbar .nav-icon-background {
+        order: 1 !important;
+        margin: 0;
+        padding: 0 0 8px;
+    }
+
+    #navbar .social-icons-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    #navbar .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    #nav-toggle {
+        min-width: 44px;
+        min-height: 44px;
+    }
 }
 
 /* Hero banners in dark mode - ensure container is above texture overlay */

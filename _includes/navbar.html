@@ -15,14 +15,15 @@
         </nav>
         <nav class="navbar navbar-light row navbar-expand-xl pt-0 pb-0 nav-invert hover-open-submenu">
           <div class="container-fluid nav-invert">
-            <button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-17897">
+            <button id="nav-toggle" type="button" class="navbar-toggler border-0 p-0" aria-controls="site-nav" aria-label="Open navigation" data-bs-toggle="offcanvas" data-bs-target="#site-nav">
               <span class="navbar-toggler-icon">
                 <svg height="32" viewBox="0 0 32 32" width="32">
                   <path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path>
                 </svg>
               </span>
             </button>
-            <div class="collapse navbar-collapse navbar-19859 navbar-17897 sidebar-nav">
+            <div class="offcanvas-xl offcanvas-start" id="site-nav" tabindex="-1" aria-label="Main navigation">
+              <button type="button" class="btn-close d-xl-none align-self-end m-3" data-bs-dismiss="offcanvas" data-bs-target="#site-nav" aria-label="Close navigation"></button>
               <ul class="site-navigation nav navbar-nav">
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link nav-links link-about-style dropdown-toggle" id="nav-research" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research</a>

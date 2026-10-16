@@ -68,12 +68,7 @@ Usage: {% include related-content.html %}
           <article class="related-card">
             {% if item.thumbnail %}
             <a href="{{ item.url | relative_url }}" class="related-card-image">
-              <picture>
-                {% if item.thumbnail_webp %}
-                <source type="image/webp" srcset="{{ item.thumbnail_webp | relative_url }}">
-                {% endif %}
-                <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" class="img-fluid" loading="lazy">
-              </picture>
+              {% include lazy-image.html src=item.thumbnail src_webp=item.thumbnail_webp alt=item.title class="img-fluid" width="398" height="265" %}
             </a>
             {% endif %}
             <div class="related-card-body">

@@ -21,10 +21,9 @@ layout: default
         </div>
       </div>
       <div class="col-lg-6 col-md-5">
-        <picture>
-          <source type="image/webp" srcset="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-srcset="{{ page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' | relative_url }}">
-          <img src="{{ '/assets/images/lazyload-ph.png' | relative_url }}" data-src="{{ page.hero_image | default: '/assets/images/hero/gilles-comic.png' | relative_url }}" class="img-fluid mx-auto d-block imagehero img-style mb-lg-2 lazyload" alt="{{ page.hero_image_alt | default: 'Profile' }}" width="325" height="699" loading="lazy">
-        </picture>
+        {% assign portrait = page.hero_image | default: '/assets/images/hero/gilles-comic.png' %}
+        {% assign portrait_webp = page.hero_image_webp | default: '/assets/images/hero/gilles-comic.webp' %}
+        {% include lazy-image.html src=portrait src_webp=portrait_webp alt=page.hero_title class="img-fluid mx-auto d-block imagehero img-style mb-lg-2" width="697" height="1500" loading="eager" priority="high" %}
       </div>
     </div>
   </div>
@@ -45,10 +44,7 @@ layout: default
       {% for project in research_projects %}
       <div class="col-lg-6 mb-4">
         <a href="{{ project.url | relative_url }}" class="featured-project-card d-block h-100">
-          <picture>
-            <source type="image/webp" srcset="{{ project.thumbnail_webp | relative_url }}">
-            <img src="{{ project.thumbnail | relative_url }}" class="img-fluid img-rd-md mb-3" alt="{{ project.title }}" width="398" height="265" loading="lazy">
-          </picture>
+          {% include lazy-image.html src=project.thumbnail src_webp=project.thumbnail_webp alt=project.title class="img-fluid img-rd-md mb-3" width="398" height="265" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 991px) 696px, (max-width: 1199px) 456px, 636px" %}
           <h5 class="text-bold mb-1">{{ project.short_title | default: project.title }}{% if project.subtitle %} <span class="p-sm tc-text-muted">({{ project.subtitle }})</span>{% endif %}</h5>
           <p class="p-sm tc-text-muted mb-0">{{ project.description | truncate: 160 }}</p>
         </a>
@@ -76,10 +72,7 @@ layout: default
       {% for project in featured limit:4 %}
       <div class="col-lg-3 col-md-6 mb-4">
         <a href="{{ project.url | relative_url }}" class="featured-project-card d-block h-100">
-          <picture>
-            <source type="image/webp" srcset="{{ project.thumbnail_webp | relative_url }}">
-            <img src="{{ project.thumbnail | relative_url }}" class="img-fluid img-rd-md mb-3" alt="{{ project.title }}" width="398" height="265" loading="lazy">
-          </picture>
+          {% include lazy-image.html src=project.thumbnail src_webp=project.thumbnail_webp alt=project.title class="img-fluid img-rd-md mb-3" width="398" height="265" sizes="(max-width: 767px) calc(100vw - 40px), 320px" %}
           <h5 class="text-bold mb-1">{{ project.title }}</h5>
           <p class="p-sm tc-text-muted mb-0">{{ project.description | truncate: 80 }}</p>
         </a>
