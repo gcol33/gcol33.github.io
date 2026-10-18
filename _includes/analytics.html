@@ -6,7 +6,7 @@
   var sent = false;
 
   setTimeout(function() {
-    if (document.hidden) return;
+    if (document.hidden || navigator.webdriver) return;
     // One hit per page per 12 hours
     var key = "hit:" + location.pathname;
     var last = localStorage.getItem(key);
