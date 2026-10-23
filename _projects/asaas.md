@@ -38,7 +38,7 @@ The two are not exclusive, and which one dominates probably differs between taxa
 
 Regional accumulation comes from GloNAF (global naturalized alien flora) and the Alien Species First Record Database, which together give the year each alien species was first recorded in each region. Local presence comes from vegetation plot archives: the European Vegetation Archive (EVA), sPlot, and BioTime, which record which species were found in which plot in which year. PREDICTS adds local community data across further taxa. AgriWeedClim, a database our group compiled, contributes more than 32,000 arable field records from central Europe spanning the last century, one of the few sources deep enough in time to follow local dynamics directly.
 
-The project covers plants first, with vertebrates and selected invertebrates as comparison groups.
+The project focuses on alien plants.
 
 ## How I test it
 
@@ -50,12 +50,7 @@ I fit these relationships with Bayesian hurdle models with country-level random 
 
 In central European arable fields, ninety years of plot data show neophytes (species introduced after 1500) increasing steadily at both the regional and the local scale, while archaeophytes (earlier arrivals) followed a flat trajectory. The lag between the two scales is visible in the data and has not closed.
 
-Across 835,891 EVA plots (1930–2023, 53 European countries and regions), I compared 1,357 alien plants introduced after 1492 by their minimum residence time, the years since the first record in each country. A species counts as overrepresented in a habitat when it occurs there more often than the local habitat mix would predict. The probability of overrepresentation in more than one habitat rises from 21% for species resident up to 20 years to 62% for species resident over 200 years, and the expected habitat count from 1.31 to 2.17. Ruderal habitats increase most steeply (9% to 40%), followed by arable land (15% to 24%), while alpine and nutrient-poor habitats stay rarely overrepresented. Species are usually first recorded as overrepresented in man-made habitats, and then most often in dry and mesic grasslands. Each species has one date per country, so this compares recent and long-established species and does not follow any single species over time. The pattern suggests that anthropogenic habitats act as entry points, and that the aliens already here could still reach the natural habitats that remain largely free of them today. This work received the Best Poster award at the [VDSEE Symposium 2026](/presentations/vdsee2026/).
-
-<picture>
-<source type="image/webp" srcset="/assets/images/content/asaas_residence_time_fig1.webp">
-<img src="/assets/images/content/asaas_residence_time_fig1.jpg" class="img-fluid d-block img-rd-md mt-4 mb-4" alt="Probability of multi-habitat overrepresentation, expected habitat count and observed habitat-count distributions by residence-time class" width="1200" height="667" loading="lazy">
-</picture>
+Across 1,023,883 EVA plots recorded between 1930 and 2023, I compared 1,314 alien plants introduced after 1492 by their minimum residence time, the years since the first record in each country. A species counts as overrepresented in a habitat when it occurs there more often than the local habitat mix would predict. Among species overrepresented in at least one habitat, an estimated quarter of those introduced within the past 20 years were overrepresented in multiple habitats, rising to nearly three-quarters among those present for over 200 years. Long-established species were more often overrepresented in ruderal habitats and arable land, as well as in semi-natural woodland fringes and heath and scrub, while overrepresentation remained rare in alpine habitats and mires. Each species has one date per country, so this compares recent and long-established species and does not follow any single species over time. The pattern suggests that alien plants may continue to expand their habitat use for centuries after introduction. This work received the Best Poster award at the [VDSEE Symposium 2026](/presentations/vdsee2026/).
 
 A side product of the arable work is a species distribution model of emerging agricultural weeds under climate change, produced through a master's thesis I co-supervised.
 
@@ -65,4 +60,4 @@ A side product of the arable work is a species distribution model of emerging ag
 - [Projected range shifts of emerging agricultural weeds under climate change in central Europe](/publications/agricultural-weed-range-shifts/)
 - [The neglected importance of managing biological invasions for sustainable development](/publications/invasions-sustainable-development/)
 
-ASAAS is supervised by Franz Essl and Stefan Dullinger at the Division of BioInvasions, Global Change & Macroecology, University of Vienna, and funded by the Luxembourg National Research Fund (FNR). The [AgriWeedClim](/projects/agriweed/) project page describes the arable database in more detail.
+ASAAS is supervised by Franz Essl and Stefan Dullinger at the Division of BioInvasions, Global Change & Macroecology, University of Vienna. The [AgriWeedClim](/projects/agriweed/) project page describes the arable database in more detail.
