@@ -41,4 +41,4 @@ I sent the fix to psmux ([#900](https://github.com/psmux/psmux/pull/900)). The n
 
 My setup is a stack of small tools: Tailscale, Termius, psmux and the agent. When one of them is missing a piece, I can add it.
 
-In *Star Trek IV*, Scotty lands in the 1980s, picks up a computer mouse and talks into it: "Hello, computer." In 1986 that was a joke. When I dictate a task into my phone and watch my workstation carry it out, it feels like we are slowly getting to the version of that scene where the computer answers.
+In *Star Trek IV*, Scotty lands in 1986, picks up a computer mouse and talks into it: "Hello, computer." Star Trek imagined a future where you speak to a computer and it does the work. When I dictate a task into my phone and watch my workstation carry it out, that future feels close, and I think it is about to change how people use computers.
