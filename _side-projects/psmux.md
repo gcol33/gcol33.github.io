@@ -34,10 +34,10 @@ I like it because of how I work now. A few years ago it was normal to sit at a P
 But when I scrolled up in Termius, the SSH app I use on my phone, the earlier output wasn't there, because psmux redraws the screen in place. I couldn't read back what the agent had done. I wrote a client mode that sends the pane's plain output to the terminal instead, and scrolling back works again:
 
 ```
-psmux attach -f passthrough
+psmux attach -f scrollback
 ```
 
-I sent the fix to psmux ([#900](https://github.com/psmux/psmux/pull/900)). The next day the maintainer had added it, tested it over SSH, fixed a bug I had missed, thanked me and sent a list of five things to improve. As an open-source developer you mostly hear from people when something breaks, so a review like that really got to me. I worked through all five in a follow-up ([#913](https://github.com/psmux/psmux/pull/913)).
+I sent the fix to psmux ([#900](https://github.com/psmux/psmux/pull/900)). The next day the maintainer had added it, tested it over SSH, fixed a bug I had missed, thanked me and sent a list of five things to improve. As an open-source developer you mostly hear from people when something breaks, so a review like that really got to me. I worked through all five in a follow-up ([#913](https://github.com/psmux/psmux/pull/913)), and the maintainer merged that too, with my name kept on every commit.
 
 My setup is a stack of small tools: Tailscale, Termius, psmux and the agent. When one of them is missing a piece, I can add it.
 
