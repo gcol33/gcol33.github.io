@@ -24,6 +24,9 @@ exhibition:
 package:
   label: Package
   plural: R packages
+contribution:
+  label: Contribution
+  plural: Contributions
 competition:
   label: Competition
   plural: Competitions
