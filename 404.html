@@ -17,26 +17,6 @@ sitemap: false
   (function() {
     var sites = {{ site.data.pages_repos | jsonify }} || [];
     var path = window.location.pathname;
-    // /tulpamesh -> /tulpaMesh
-    if (/^/tulpameshb/i.test(path) && !/^/tulpaMesh/.test(path)) {
-      var newPath = path.replace(/^/tulpamesh/i, '/tulpaMesh');
-      window.location.replace(newPath + window.location.search + window.location.hash);
-    }
-    // /areaofeffect -> /areaOfEffect
-    if (/^/areaofeffectb/i.test(path) && !/^/areaOfEffect/.test(path)) {
-      var newPath = path.replace(/^/areaofeffect/i, '/areaOfEffect');
-      window.location.replace(newPath + window.location.search + window.location.hash);
-    }
-    // /biheat -> /BiHeat
-    if (/^/biheatb/i.test(path) && !/^/BiHeat/.test(path)) {
-      var newPath = path.replace(/^/biheat/i, '/BiHeat');
-      window.location.replace(newPath + window.location.search + window.location.hash);
-    }
-    // /occurrencecleaner -> /OccurrenceCleaner
-    if (/^/occurrencecleanerb/i.test(path) && !/^/OccurrenceCleaner/.test(path)) {
-      var newPath = path.replace(/^/occurrencecleaner/i, '/OccurrenceCleaner');
-      window.location.replace(newPath + window.location.search + window.location.hash);
-    }
     var segment = path.split('/')[1];
     if (!segment) return;
     var wanted = segment.toLowerCase();
