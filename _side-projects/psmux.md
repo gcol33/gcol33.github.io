@@ -23,7 +23,7 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://github.com/psmux/psmux/commit/39a9bf87" class="btn btn-lg btn-d button-01">View the Commit on psmux</a></p>
 
-I think agentic LLMs are changing how people work. These are AI models that do more than answer questions: they run commands, read the output and carry on from there. A few years ago it was normal to sit at a PC all day. More and more, I set up another way to work: I dictate into my phone, the text goes to an agent on my workstation over [Tailscale](https://tailscale.com), a private network between my own devices, and the agent runs the commands. I find that workflow cool in itself.
+I think agentic LLMs, AI models that can use a computer on their own, are changing how people work. A few years ago it was normal to sit at a PC all day. More and more, I set up another way to work: I dictate into my phone, the text goes to an agent on my workstation over [Tailscale](https://tailscale.com), a private network between my own devices, and the agent runs the commands. I find that workflow cool in itself.
 
 What holds it together is a terminal session that keeps running when I walk away. On Linux, tmux does that: the session lives on the machine, and I drop in and out of it from wherever I am. [psmux](https://github.com/psmux/psmux) brings the same to Windows, natively, written in Rust. With it I can close the laptop and pick up the same session on my phone, with everything still running.
 
