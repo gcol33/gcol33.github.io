@@ -23,11 +23,13 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://gillescolling.com/hexify/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
 
-The [hexify](https://gillescolling.com/hexify/) package implements an equal-area hexagonal discrete global grid system (DGGS) using the Snyder ISEA projection in R. It provides a fast C++ core for projection and aperture quantization, with sf- and terra-compatible R wrappers for grid generation and coordinate assignment.
+I needed equal-area hexagonal grids over the globe, and dggridR, the R package for them, was extremely confusing to me. So I coded the grid by hand, to understand what the heck was going on. In the end I made it freely available, with the features I needed.
+
+[hexify](https://gillescolling.com/hexify/) builds equal-area hexagonal grids over the whole globe, a discrete global grid system (DGGS) on the Snyder ISEA projection. It has a fast C++ core for projection and aperture quantization, with sf- and terra-compatible R wrappers for grid generation and coordinate assignment.
 
 The package supports multiple grid resolutions through aperture quantization, allowing users to generate hexagonal grids at varying spatial scales. Core functions handle the conversion between geographic coordinates and hexagonal cell identifiers, making it straightforward to bin point data, aggregate raster values, or create gridded representations of spatial phenomena at any resolution.
 
-Under the hood, hexify uses a C++ backend for the computationally intensive Snyder equal-area icosahedral projection, ensuring fast performance even for large datasets. The R interface integrates directly with the sf and terra ecosystems, so grids can be used seamlessly in spatial analysis workflows.
+Under the hood, hexify uses a C++ backend for the computationally intensive Snyder equal-area icosahedral projection, ensuring fast performance even for large datasets. The R interface integrates directly with the sf and terra ecosystems, so the grids go straight into spatial analysis workflows.
 
 Available on CRAN under MIT license.
 

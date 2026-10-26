@@ -23,7 +23,9 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://gillescolling.com/vectra/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
 
-The [vectra](https://gillescolling.com/vectra/) package runs `dplyr`-style queries on datasets larger than RAM. It is backed by a pull-based columnar execution engine written in C11, so a query streams through the data one batch at a time and peak memory stays bounded regardless of how large the file on disk is.
+The first language I learned was C++, so I keep thinking about where things sit in memory. When I found out that R always loads all the data into memory, I thought: why not do it like Netflix, and stream it in packets?
+
+[vectra](https://gillescolling.com/vectra/) does that for `dplyr`-style queries. Its engine, written in C11, streams the data through a query one batch at a time, so peak memory stays bounded however large the file on disk is.
 
 The familiar verbs are all there: **filter()**, **select()**, **mutate()**, **group_by()**, and **summarise()**, along with the **left_join()**, **inner_join()**, and **fuzzy_join()** family, **arrange()**, the **slice_*()** helpers, and window functions such as **row_number()**, **rank()**, **lag()**, **cumsum()**, and **ntile()**. Execution is lazy: verbs build a plan that **explain()** can print, and **collect()** or **collect_chunked()** pulls the result when you ask for it.
 

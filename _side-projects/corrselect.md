@@ -23,7 +23,9 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://gillescolling.com/corrselect/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
 
-The [corrselect](https://gillescolling.com/corrselect/) package provides fast and flexible predictor pruning for data analysis and modeling in R. It addresses the admissible set problem, identifying maximal variable subsets where no pair exceeds a user-defined association threshold, helping reduce multicollinearity and redundancy in datasets.
+Many tools that remove correlated predictors pick one subset for you. In practice I saw many scientists choose their predictors by hand instead, by trial and error, until the correlations looked acceptable. I wanted to see all the choices.
+
+[corrselect](https://gillescolling.com/corrselect/) lists every maximal subset of variables in which no pair exceeds a correlation threshold you set, so you can pick the subset that fits your question.
 
 The package offers two main approaches: **corrPrune()** for association-based pruning that operates model-free on raw data, and **modelPrune()** for VIF-based iterative removal compatible with `lm`, `glm`, `lme4`, and `glmmTMB` engines. Both functions support a `force_in` parameter to protect important variables from removal.
 

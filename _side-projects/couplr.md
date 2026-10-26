@@ -23,7 +23,9 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://gillescolling.com/couplr/" class="btn btn-lg btn-d button-01">View Package Documentation</a></p>
 
-The [couplr](https://gillescolling.com/couplr/) package provides high-level functions for optimal one-to-one matching between two groups in R. It addresses direct covariate matching without requiring intermediate propensity score modeling, making it useful for causal inference, experimental design, resource allocation, and image processing tasks.
+I came into contact with linear assignment problems through matching pixels: pairing each pixel of one image with a pixel of another at the lowest total cost. Once a solver gave me an answer, I wanted a certificate that the answer was optimal. I realized I could get one by considering the dual, a weaker problem whose solution bounds the best possible cost; when the two meet, the matching is optimal. That check became `verify_assignment()`, and the solvers around it became [couplr](https://gillescolling.com/couplr/).
+
+Today couplr does optimal one-to-one matching between two groups in R. It matches directly on covariates, without a propensity score model in between, which makes it useful for causal inference, experimental design, resource allocation and image processing.
 
 The package offers two main matching functions: **match_couples()** for optimal matching with automatic preprocessing, multiple scaling methods, distance constraints, and blocking support; and **greedy_couples()** for fast approximate matching using sorted, row-best, or priority queue strategies (10-100x faster for large datasets). Use `match_couples()` for n < 5,000 where guaranteed optimality matters; switch to `greedy_couples()` for larger datasets prioritizing speed.
 
