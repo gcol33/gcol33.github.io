@@ -23,14 +23,20 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://github.com/psmux/psmux/commit/39a9bf87" class="btn btn-lg btn-d button-01">View the Commit on psmux</a></p>
 
-[psmux](https://github.com/psmux/psmux) is an open-source tmux for Windows, written in Rust. I contributed one feature to it. tmux keeps terminal sessions running on a machine, so you can disconnect and pick up where you left off. I use it to work on my Windows workstation over SSH from my phone.
+I think agentic LLMs are changing how people work. These are AI models that do more than answer questions: they run commands, read the output and carry on from there. A few years ago it was normal to sit at a PC all day. More and more, I set up another way to work: I dictate into my phone, the text goes to an agent on my workstation over [Tailscale](https://tailscale.com), a private network between my own devices, and the agent runs the commands. I find that workflow cool in itself.
 
-psmux redraws the screen in place, so I couldn't scroll up on my phone. I added a client mode that sends the active pane's plain output to the terminal instead, so scrolling back works again:
+What holds it together is a terminal session that keeps running when I walk away. On Linux, tmux does that: the session lives on the machine, and I drop in and out of it from wherever I am. [psmux](https://github.com/psmux/psmux) brings the same to Windows, natively, written in Rust. With it I can close the laptop and pick up the same session on my phone, with everything still running.
+
+One thing didn't work. psmux redraws the screen in place, so when I scrolled up in Termius, the SSH app I use on my phone, the earlier output wasn't there. For reading long logs, that is most of what I need. So I wrote a client mode that sends the pane's plain output to the terminal instead, and scrolling back works again:
 
 ```
 psmux attach -f passthrough
 ```
 
-It landed on psmux master in October 2026 ([#900](https://github.com/psmux/psmux/pull/900), from issue [#898](https://github.com/psmux/psmux/issues/898)). A follow-up with the maintainer's suggestions is in review ([#913](https://github.com/psmux/psmux/pull/913)): it renames the flag to `-f scrollback`, lets the server enforce read-only clients, and lets the client leave the window size to other clients.
+I could have kept the fix on my own machine, and at first I did. Every psmux update overwrote it. In the project itself it works for everyone who uses psmux from a phone, and I stop maintaining a private copy. It's also the best way I know to learn: someone who knows the code far better than I do reads mine and tells me what they would do differently.
 
-Source and issues: [github.com/psmux/psmux](https://github.com/psmux/psmux).
+That is exactly what happened. I opened an issue and a pull request, and the next day the maintainer had picked it up. They rebased it themselves, tested it over a real SSH connection, fixed a bug I had missed, and wrote me a careful list of five things to improve, with kind words around it. As an open-source developer you mostly hear from people when something breaks, so a review like that really got to me. I worked through all five points in a follow-up ([#913](https://github.com/psmux/psmux/pull/913)). The feature itself is on psmux master ([#900](https://github.com/psmux/psmux/pull/900), from issue [#898](https://github.com/psmux/psmux/issues/898)).
+
+I like small tools like this one: one sharp idea, a small team, something I use every day. Together with agentic tools, they are what make this way of working possible for me. They're also the projects where a single contribution still changes something, and where you get to talk to the person who built it.
+
+In *Star Trek IV*, Scotty lands in the 1980s, picks up a computer mouse and talks into it: "Hello, computer." In 1986 that was a joke. When I dictate a task into my phone and watch my workstation carry it out, it feels like we are slowly getting to the version of that scene where the computer answers.
