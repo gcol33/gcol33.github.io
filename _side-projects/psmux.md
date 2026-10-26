@@ -23,20 +23,22 @@ breadcrumb:
 
 <p class="mb-4"><a href="https://github.com/psmux/psmux/commit/39a9bf87" class="btn btn-lg btn-d button-01">View the Commit on psmux</a></p>
 
-I think agentic LLMs are changing how people work. A few years ago it was normal to sit at a PC all day. More and more, I set up another way to work: I dictate into my phone, the text goes to an agent on my workstation over [Tailscale](https://tailscale.com), a private network between my own devices, and the agent runs the commands. I find that workflow cool in itself.
+tmux is my favourite tool for working from my phone. It keeps the terminal session running on the machine itself, so I can resume where I left off. Phones drop their connection from time to time, and without tmux I would have to start over each time.
 
-The agent runs inside [psmux](https://github.com/psmux/psmux), a tmux for Windows written in Rust. When I SSH into my workstation from my phone, I land in the same session the agent is working in. When I put the phone away, the agent keeps going.
+Windows never had that. tmux needs the terminal interface of Unix systems, which Windows lacks, so on Windows it only runs inside WSL, a Linux system running inside Windows.
 
-One thing didn't work. psmux redraws the screen in place, so when I scrolled up in Termius, the SSH app I use on my phone, the earlier output wasn't there and I couldn't read back what the agent had done. I wrote a client mode that sends the pane's plain output to the terminal instead, and scrolling back works again:
+Then I found [psmux](https://github.com/psmux/psmux), a tmux for Windows written in Rust. It runs natively and takes the same commands as tmux.
+
+I like it because of how I work now. A few years ago it was normal to sit at a PC all day, and agentic LLMs are changing that: more and more, I dictate into my phone, the text goes to an agent on my workstation over [Tailscale](https://tailscale.com), a private network between my own devices, and the agent runs the commands. I find that workflow cool in itself. The agent runs inside psmux, so when I SSH in from my phone I land in the same session it is working in, and when I put the phone away it keeps going.
+
+But when I scrolled up in Termius, the SSH app I use on my phone, the earlier output wasn't there, because psmux redraws the screen in place. I couldn't read back what the agent had done. I wrote a client mode that sends the pane's plain output to the terminal instead, and scrolling back works again:
 
 ```
 psmux attach -f passthrough
 ```
 
-I could have kept the fix on my own machine, and at first I did. Every psmux update overwrote it. In the project itself it works for everyone who uses psmux from a phone, and I stop maintaining a private copy.
+I sent the fix to psmux ([#900](https://github.com/psmux/psmux/pull/900)). The next day the maintainer had added it, tested it over SSH, fixed a bug I had missed, thanked me and sent a list of five things to improve. As an open-source developer you mostly hear from people when something breaks, so a review like that really got to me. I worked through all five in a follow-up ([#913](https://github.com/psmux/psmux/pull/913)).
 
-I opened an issue and a pull request, and the next day the maintainer had picked it up. They rebased it themselves, tested it over a real SSH connection, fixed a bug I had missed, and thanked me and wrote a careful list of five things to improve. One of them I would never have found alone: `passthrough` already means something else in tmux. As an open-source developer you mostly hear from people when something breaks, so a review like that really got to me. I worked through all five points in a follow-up ([#913](https://github.com/psmux/psmux/pull/913)). The feature itself is on psmux master ([#900](https://github.com/psmux/psmux/pull/900), from issue [#898](https://github.com/psmux/psmux/issues/898)).
-
-My setup is a stack of small tools: Tailscale, Termius, psmux and the agent. Each does one job, and when one of them is missing a piece, I can add it, as I did here. In a project this size, the person who built it reads your code the next day.
+My setup is a stack of small tools: Tailscale, Termius, psmux and the agent. When one of them is missing a piece, I can add it.
 
 In *Star Trek IV*, Scotty lands in the 1980s, picks up a computer mouse and talks into it: "Hello, computer." In 1986 that was a joke. When I dictate a task into my phone and watch my workstation carry it out, it feels like we are slowly getting to the version of that scene where the computer answers.
