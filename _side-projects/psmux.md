@@ -1,6 +1,6 @@
 ---
 layout: workshop
-title: "psmux"
+title: "Contribution to psmux"
 date: 2026-10-25
 category: "Side Project"
 type: contribution
@@ -9,7 +9,7 @@ thumbnail: "/assets/images/content/psmux.jpg"
 thumbnail_webp: "/assets/images/content/psmux.webp"
 hero_combined: true
 subtitle: "Oct 25, 2026"
-description: "A client mode for psmux, tmux for Windows, that keeps the terminal's own scrollback over SSH. Landed on psmux master."
+description: "A feature I added to psmux, an open-source tmux for Windows: a client mode that keeps the terminal's own scrollback over SSH."
 tags: [open-source, rust, terminal]
 breadcrumb:
   - name: "Home"
@@ -18,12 +18,12 @@ breadcrumb:
     url: "/engagement-archive/"
   - name: "Side Projects"
     url: "/side-projects/"
-  - name: "psmux"
+  - name: "Contribution to psmux"
 ---
 
 <p class="mb-4"><a href="https://github.com/psmux/psmux/commit/39a9bf87" class="btn btn-lg btn-d button-01">View the Commit on psmux</a></p>
 
-[psmux](https://github.com/psmux/psmux) is tmux for Windows, written in Rust. tmux keeps terminal sessions running on a machine, so you can disconnect and pick up where you left off. I use it to work on my Windows workstation over SSH from my phone.
+[psmux](https://github.com/psmux/psmux) is an open-source tmux for Windows, written in Rust. I contributed one feature to it. tmux keeps terminal sessions running on a machine, so you can disconnect and pick up where you left off. I use it to work on my Windows workstation over SSH from my phone.
 
 psmux redraws the screen in place, so I couldn't scroll up on my phone. I added a client mode that sends the active pane's plain output to the terminal instead, so scrolling back works again:
 
