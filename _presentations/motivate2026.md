@@ -24,6 +24,11 @@ breadcrumb:
 
 From February 18 to 20, 2026, the MOTIVATE consortium held its project meeting at the Department of Botany and Biodiversity Research, Rennweg 14, Vienna. The three-day meeting brought together researchers from across Europe to discuss project progress, share results, and plan future analyses. The meeting was hosted by Michael Glaser, Franz Essl, Stefan Dullinger, and Bernd Lenzner, and organized around work package updates, invited talks, breakout sessions, and collaborative working time.
 
+<picture>
+<source type="image/webp" srcset="/assets/images/content/presentation_motivate_2026.webp">
+<img src="/assets/images/content/presentation_motivate_2026.jpg" class="img-fluid d-block img-rd-md mt-4 mb-4" alt="Group photo of the MOTIVATE consortium on the roof terrace of the Department of Botany and Biodiversity Research, Vienna, with the city skyline behind" width="2000" height="1500">
+</picture>
+
 ## The Meeting
 
 Day 1 focused on work package updates, with each team presenting the current status of their respective WPs. Teams from Halle (WP1), Vienna (WP2), Oviedo (WP3), Italy (WP4), Brno (WP5), and Oulu (WP6) reported on their progress, followed by an overview of WP7. The day concluded with a walking tour of Vienna and dinner at 575-Sagmeister.
