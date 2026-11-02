@@ -1,0 +1,41 @@
+{% comment %}
+Dark full-width title banner shared by workshop, project and archive-item layouts.
+Parameters:
+  title             title text
+  title_url         optional link target for the title
+  label, label_url  category link under the title
+  separator         true → dash between label and meta
+  meta              date or status text next to the label
+  description       optional paragraph under the title
+  description_class optional extra classes for the description paragraph
+  hero_class        optional extra section class (adds the rainbow overlay)
+{% endcomment %}
+<div class="section section-dark {{ include.hero_class }}" id="hero" style="background-color: #212121;">
+  {% if include.hero_class %}<div class="rainbow-overlay"></div>{% endif %}
+  <div class="shape-divider divider-bottom">
+    <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
+      <path d="M1000,0V250H0v-1Z"></path>
+    </svg>
+  </div>
+  <div class="container" style="padding-top: 35px; padding-bottom: 50px; position: relative; z-index: 1;">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          {% if include.title_url %}
+          <a href="{{ include.title_url | relative_url }}" class="a-btn a-block mt-1 mb-3 text-bold text-link-02 display-md hero-title-link">{{ include.title }}</a>
+          {% else %}
+          <p class="a-btn a-block mt-1 mb-3 text-bold tc-text-light display-md hero-title-link">{{ include.title }}</p>
+          {% endif %}
+          <div class="pencil-post-footer">
+            <a href="{{ include.label_url | relative_url }}" class="a-btn p-sm text-link-02">{{ include.label }}</a>
+            {% if include.separator %}<a href="{{ include.label_url | relative_url }}" class="a-btn p-sm text-link-02 hero-separator">–</a>{% endif %}
+            <p class="mb-0 p-sm tc-text-light">{{ include.meta }}</p>
+          </div>
+          {% if include.description %}
+          <p class="tc-text-light mt-2 {{ include.description_class }}">{{ include.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,45 +2,15 @@
 layout: default
 ---
 
-{% if page.breadcrumb %}
-<div class="section section-light" id="breadcrumb-section">
-  <div class="container pad-sm-lg pad-sm-md pad-sm-sm pad-sm">
-    <div class="row">
-      <div class="text-start col-12">
-        {% include breadcrumb.html items=page.breadcrumb %}
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
+{% if page.breadcrumb %}{% include section-breadcrumb.html items=page.breadcrumb %}{% endif %}
 
 {% if page.hero_combined %}
 <!-- Combined hero: title/description inside colored background -->
-<div class="section section-dark {% if page.hero_class %}{{ page.hero_class }}{% endif %}" id="hero" style="background-color: #212121;">
-  {% if page.hero_class %}<div class="rainbow-overlay"></div>{% endif %}
-  <div class="shape-divider divider-bottom">
-    <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
-      <path d="M1000,0V250H0v-1Z"></path>
-    </svg>
-  </div>
-  <div class="container" style="padding-top: 35px; padding-bottom: 50px; position: relative; z-index: 1;">
-    <div class="row">
-      <div class="col-12">
-        <div>
-          <p class="a-btn a-block mt-1 mb-3 text-bold tc-text-light display-md hero-title-link">{{ page.hero_title | default: page.title }}</p>
-          <div class="pencil-post-footer">
-            <a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02">{{ page.hero_label | default: page.category }}</a>
-            {% if page.hero_separator %}<a href="{{ page.category_url | default: '/archive/' | relative_url }}" class="a-btn p-sm text-link-02 hero-separator">–</a>{% endif %}
-            <p class="mb-0 p-sm tc-text-light">{{ page.subtitle | default: page.date | date: "%b %d, %Y" }}</p>
-          </div>
-          {% if page.description %}
-          <p class="tc-text-light mt-2">{{ page.description }}</p>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% assign hero_title = page.hero_title | default: page.title %}
+{% assign hero_label = page.hero_label | default: page.category %}
+{% assign hero_label_url = page.category_url | default: '/archive/' %}
+{% assign hero_meta = page.subtitle | default: page.date | date: "%b %d, %Y" %}
+{% include page-hero.html title=hero_title label=hero_label label_url=hero_label_url separator=page.hero_separator meta=hero_meta description=page.description hero_class=page.hero_class %}
 {% else %}
 <!-- Standard hero: separate white header and colored background -->
 <div class="section section-light" id="hero">
