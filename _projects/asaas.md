@@ -7,7 +7,6 @@ category: "Project"
 category_url: "/projects/"
 thumbnail: "/assets/images/content/project_asaas_field.jpg"
 thumbnail_webp: "/assets/images/content/project_asaas_field.webp"
-hero_combined: true
 hero_title: "Alien Species Accumulation Across Scales"
 hero_label: "Project"
 hero_separator: true

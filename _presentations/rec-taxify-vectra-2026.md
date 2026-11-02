@@ -8,7 +8,6 @@ type: talk
 category_url: "/presentations/"
 thumbnail: "/assets/images/content/presentation_rec_2026.jpg"
 thumbnail_webp: "/assets/images/content/presentation_rec_2026.webp"
-hero_combined: true
 subtitle: "June 25, 2026"
 hero_title: "Taming big data and bad names"
 description: "A short talk at the BioInvasions Research Exchange Club on two recurring frictions in ecological work: species names that will not match across datasets, and rasters and tables too large to hold in memory. The two R packages that take them on are taxify, resolving messy names to accepted names offline, and vectra, fitting models on data too big for memory."

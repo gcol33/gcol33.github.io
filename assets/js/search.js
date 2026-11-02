@@ -14,17 +14,6 @@
 
     if (!searchModal || !searchInput || !searchResults) return;
 
-    // Load search data
-    fetch('/search.json')
-      .then(function(response) { return response.json(); })
-      .then(function(data) {
-        searchData = data;
-        buildIndex();
-      })
-      .catch(function(err) {
-        console.error('Failed to load search index:', err);
-      });
-
     // Search input handler
     searchInput.addEventListener('input', debounce(performSearch, 200));
 
@@ -46,6 +35,39 @@
       }
     });
   });
+
+  // Lunr and the index are fetched on first open, so pages without a search pay nothing
+  var LUNR_URL = 'https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js';
+  var indexPromise = null;
+
+  function loadScript(src) {
+    return new Promise(function(resolve, reject) {
+      var s = document.createElement('script');
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+  }
+
+  function loadIndex() {
+    if (!indexPromise) {
+      var lib = window.lunr ? Promise.resolve() : loadScript(LUNR_URL);
+      var data = fetch('/search.json').then(function(response) { return response.json(); });
+      indexPromise = Promise.all([lib, data])
+        .then(function(res) {
+          searchData = res[1];
+          buildIndex();
+          if (searchInput.value.trim().length >= 2) performSearch();
+        })
+        .catch(function(err) {
+          indexPromise = null;
+          console.error('Failed to load search index:', err);
+          searchResults.innerHTML = '<p class="search-no-results">Search is unavailable right now.</p>';
+        });
+    }
+    return indexPromise;
+  }
 
   function buildIndex() {
     searchIndex = lunr(function() {
@@ -122,6 +144,7 @@
   }
 
   function openSearch() {
+    loadIndex();
     searchModal.classList.add('show');
     searchModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';

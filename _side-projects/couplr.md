@@ -7,7 +7,6 @@ type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/couplr.jpg"
 thumbnail_webp: "/assets/images/content/couplr.webp"
-hero_combined: true
 subtitle: "Jan 21, 2026"
 description: "Optimal one-to-one matching for causal inference and experimental design. High-level matching with balance diagnostics and 18 LAP algorithms."
 tags: [r-package, statistics]

@@ -6,7 +6,6 @@ category: "Project"
 category_url: "/projects/"
 thumbnail: "/assets/images/content/agriweed_proj.jpg"
 thumbnail_webp: "/assets/images/content/agriweed_proj.webp"
-hero_combined: true
 hero_label: "Project"
 subtitle: "2021-2024"
 tags: [invasive-species, agriweedclim, vegetation-plots]

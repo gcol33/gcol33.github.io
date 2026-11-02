@@ -7,7 +7,6 @@ type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/animal-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/animal-clef-2026.webp"
-hero_combined: true
 subtitle: "May 06, 2026"
 description: "Entry to the AnimalCLEF 2026 individual animal re-identification challenge (LifeCLEF Lab, CLEF 2026). Final rank: 6/230 on the private leaderboard, top solo team."
 tags: [computer-vision, re-identification, clef, kaggle, machine-learning]

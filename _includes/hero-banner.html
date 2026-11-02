@@ -1,10 +1,10 @@
-{% if include.classes %}<div class="section {{ include.classes }}" id="{{ include.id | default: 'hero-img' }}">{% else %}<div class="section section-dark" id="{{ include.id | default: 'hero-img' }}" style="background-color: #212121;">{% endif %}
+<div class="section {{ include.classes | default: 'section-dark hero-dark' }}" id="{{ include.id | default: 'hero-img' }}">
   <div class="shape-divider divider-bottom">
     <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container" style="padding-top: 35px; padding-bottom: 50px;">
+  <div class="container hero-container">
     <div class="row">
       <div class="{{ include.col_class | default: 'col-12' }}">
         {{ include.content }}

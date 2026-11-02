@@ -9,7 +9,6 @@ category_url: "/conferences-workshops/"
 thumbnail: "/assets/images/content/vys_2026_poster.jpg"
 thumbnail_webp: "/assets/images/content/vys_2026_poster.webp"
 thumbnail_zoom: true
-hero_combined: true
 description: "A three-week PhD course on scientific communication and visual design, producing a graphical abstract and a scientific poster for the RESOLVE project."
 hero_title: "Visualize your Science — Spring 2026"
 tags: [scientific-communication, poster-design, data-visualization, phd-training, resolve]

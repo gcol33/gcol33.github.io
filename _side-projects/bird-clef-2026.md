@@ -7,7 +7,6 @@ type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/bird-clef-2026.jpg"
 thumbnail_webp: "/assets/images/content/bird-clef-2026.webp"
-hero_combined: true
 subtitle: "June 15, 2026"
 description: "Entry to the BirdCLEF+ 2026 acoustic species identification challenge (LifeCLEF Lab, CLEF 2026). An ensemble for the multi-taxon Pantanal soundscapes, paired with an offline evaluator to compare model blends without spending leaderboard submissions."
 tags: [bioacoustics, audio-classification, sound-event-detection, clef, kaggle, machine-learning]

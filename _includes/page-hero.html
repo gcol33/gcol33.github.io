@@ -1,5 +1,5 @@
 {% comment %}
-Dark full-width title banner shared by workshop, project and archive-item layouts.
+Dark full-width title banner shared by the workshop, archive-item and course-overview layouts.
 Parameters:
   title             title text
   title_url         optional link target for the title
@@ -10,14 +10,14 @@ Parameters:
   description_class optional extra classes for the description paragraph
   hero_class        optional extra section class (adds the rainbow overlay)
 {% endcomment %}
-<div class="section section-dark {{ include.hero_class }}" id="hero" style="background-color: #212121;">
+<div class="section section-dark hero-dark {{ include.hero_class }}" id="hero">
   {% if include.hero_class %}<div class="rainbow-overlay"></div>{% endif %}
   <div class="shape-divider divider-bottom">
     <svg class="svg-divider section-divider-b-0-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250">
       <path d="M1000,0V250H0v-1Z"></path>
     </svg>
   </div>
-  <div class="container" style="padding-top: 35px; padding-bottom: 50px; position: relative; z-index: 1;">
+  <div class="container hero-container">
     <div class="row">
       <div class="col-12">
         <div>

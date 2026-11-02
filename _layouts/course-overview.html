@@ -43,10 +43,10 @@ layout: default
           <div class="col">
             <div>
               <div class="img-overlay-main-container overlay-push-down none animSpeedSlow" used-anim-speed="animSpeedSlow">
-                <div class="img-overlay-container d-flex align-items-center project-overlay" style="background: rgb(254, 255, 255);">
+                <div class="img-overlay-container d-flex align-items-center project-overlay">
                   <div class="w-100">
-                    <h4 class="overlay-title" style="color: rgba(0,0,0,.7); font-family: RobotoSlab-Regular;">{{ page.project.overlay_title }}</h4>
-                    <a href="{{ page.project.url }}" class="overlay-btn btn btn-light" style="font-family: RobotoSlab-Regular;">More Info</a>
+                    <h4 class="overlay-title">{{ page.project.overlay_title }}</h4>
+                    <a href="{{ page.project.url }}" class="overlay-btn btn btn-light">More Info</a>
                   </div>
                 </div>
                 {% include lazy-image.html src=page.project.image src_webp=page.project.image_webp alt=page.project.title class="custom-bric-img-item img-fluid lazyload" %}

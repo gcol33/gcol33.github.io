@@ -7,7 +7,6 @@ type: conference
 category_url: "/conferences-workshops/"
 thumbnail: "/assets/images/content/conference_rainbowr2026.jpg"
 thumbnail_webp: "/assets/images/content/conference_rainbowr2026.webp"
-hero_combined: true
 hero_class: "bg-rainbowr2026"
 tags: [r-package, conference, teaching]
 permalink: /rainbowr2026/

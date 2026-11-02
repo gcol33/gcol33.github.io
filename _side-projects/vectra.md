@@ -7,7 +7,6 @@ type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/vectra.jpg"
 thumbnail_webp: "/assets/images/content/vectra.webp"
-hero_combined: true
 subtitle: "Jun 26, 2026"
 description: "A columnar query engine for larger-than-RAM data in R. dplyr-style verbs backed by a pull-based C11 engine, with native raster and vector support."
 tags: [r-package, data]

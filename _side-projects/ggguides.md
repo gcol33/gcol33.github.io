@@ -7,7 +7,6 @@ type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/ggguides.jpg"
 thumbnail_webp: "/assets/images/content/ggguides.webp"
-hero_combined: true
 subtitle: "Dec 17, 2025"
 description: "Simplified legend and guide alignment for ggplot2. One-liner functions for common legend operations."
 tags: [r-package, visualization]

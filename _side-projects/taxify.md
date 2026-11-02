@@ -7,7 +7,6 @@ type: package
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/taxify.jpg"
 thumbnail_webp: "/assets/images/content/taxify.webp"
-hero_combined: true
 subtitle: "Jun 26, 2026"
 description: "Offline taxonomic name matching against local Darwin Core backbones. Hand it a column of messy species names and get one standardized data.frame."
 tags: [r-package, ecology]

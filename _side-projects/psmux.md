@@ -7,7 +7,6 @@ type: contribution
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/psmux.jpg"
 thumbnail_webp: "/assets/images/content/psmux.webp"
-hero_combined: true
 subtitle: "Oct 25, 2026"
 description: "A feature I added to psmux, an open-source tmux for Windows: a client mode that keeps the terminal's own scrollback over SSH."
 tags: [open-source, rust, terminal]

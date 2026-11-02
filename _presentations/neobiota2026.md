@@ -10,7 +10,6 @@ thumbnail: "/assets/images/content/neobiota_2026.jpg"
 thumbnail_webp: "/assets/images/content/neobiota_2026.webp"
 permalink: /neobiota2026/
 description: "The 14th International Conference on Biological Invasions (NEOBIOTA 2026) took place from 7 to 11 September 2026 at the Tour & Taxis site in Brussels, Belgium. I presented how alien plants keep colonising new habitat types for centuries after their introduction, based on 1,023,883 vegetation plots from the European Vegetation Archive."
-hero_combined: true
 tags: [invasive-species, conference]
 downloads:
   - name: "Slides (PDF)"

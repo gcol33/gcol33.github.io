@@ -22,8 +22,8 @@ breadcrumb:
 description: |
   I participated in the course *"Modelling Spatial and Temporal Dynamics of Ecological Populations"* led by Johannes Wessely and Bernd Lenzner. As a colleague at the Biodiversity Centre, it was great learning from our groups senior researchers such as Johannes and Bernd, who build this course to bridge ecological theory with practical computational skills. We started by exploring what ecological models actually represent: simplified abstractions of complex biological systems. Models don't replicate every detail of reality; instead, they capture essential dynamics needed to address specific ecological questions clearly. The course encouraged us to formulate ecological hypotheses and then translate these ideas into the correct mathematical representations and finally implementing and running a toy model of our own creation.
 
-hero_image: "/assets/images/content/course_std_banner.gif"
-hero_image_webp: "/assets/images/content/course_std_banner.gif"
+hero_image: "/assets/images/content/course_std_banner.webp"
+hero_image_webp: "/assets/images/content/course_std_banner.webp"
 hero_classes: "bg-surface bg-course-std-banner section-dark bg-texture texture-darken-strong"
 
 intro_title: "Course Highlights"

@@ -8,7 +8,6 @@ type: competition
 category_url: "/side-projects/"
 thumbnail: "/assets/images/content/cwpa-contest.jpg"
 thumbnail_webp: "/assets/images/content/cwpa-contest.webp"
-hero_combined: true
 subtitle: "Apr 10, 2026"
 description: "Seven pictures from the archive sent off to the 2026 Comedy Wildlife Photography Awards."
 tags: [photography, photo-contest, wildlife]

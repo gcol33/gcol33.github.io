@@ -1007,6 +1007,19 @@ nav .dropdown-menu .nav-link {
 }
 
 /* Dark mode overlay styling */
+.project-overlay {
+    background: #feffff;
+}
+
+.project-overlay .overlay-title {
+    color: rgba(0, 0, 0, .7);
+}
+
+.project-overlay .overlay-title,
+.project-overlay .overlay-btn {
+    font-family: RobotoSlab-Regular;
+}
+
 [data-bs-theme="dark"] .project-overlay {
     background: var(--dm-bg-primary) !important;
 }
@@ -2035,5 +2048,35 @@ nav .dropdown-menu .nav-link {
     }
     .archive-list-body {
         grid-column: 1 / -1;
+    }
+}
+
+/* Dark title and image banners */
+.hero-dark {
+    background-color: #212121;
+}
+
+.hero-container {
+    padding-top: 35px;
+    /* clears the 100px diagonal .svg-divider at the section's bottom right */
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navbar brand pulse on hover */
+@keyframes pulse {
+    from { transform: scale3d(1, 1, 1); }
+    50% { transform: scale3d(1.05, 1.05, 1.05); }
+    to { transform: scale3d(1, 1, 1); }
+}
+
+.pulse-hvr:hover {
+    animation: pulse 1s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pulse-hvr:hover {
+        animation: none;
     }
 }
